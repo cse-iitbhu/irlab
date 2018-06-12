@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IR Lab @ IIT-BHU</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <!-- latest jQuery direct from google's CDN -->
+    <script type="text/javascript" src="js/modernizr.custom.96161.js"></script>
+    <script type="text/javascript" src="js/responsive-nav.js"></script>
+    <script type="text/javascript" src="js/z.jquery.min.js"></script>
+    <!-- teaching js -->
+    <script type="text/javascript" src="js/z.jquery.min.js"></script>
+    <!-- latest jQuery direct from google's CDN -->
+    <script type="text/javascript" src="js/zjquery-ui.min.js"></script>
+    <!-- teaching js -->
+    <script src="js/modernizr.custom.96161.js"></script>
+    <!-- All JavaScript at the bottom, except for Modernizr / Respond. Modernizr ena
+
+  <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+    <link href="css/zurich.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/portfolio1.css">
+    <link rel='stylesheet' href='css/portfolio2.css'>
+    <!-- teaching css -->
+    <!--link href="css/zresponsive-nav.css" rel="stylesheet"-->
+
+
+
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'onv2jgw',
+                    scriptTimeout: 3000
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = '//use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
+
+    <script type="text/javascript">
+        // BUG orientation portrait/lanscape IOS //
+        if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+            var viewportmeta = document.querySelector('meta[name="viewport"]');
+            if (viewportmeta) {
+                viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+                document.addEventListener('orientationchange', function() {
+                    viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1';
+                }, false);
+            }
+        };
+
+        // Enable Responsive Video Resize  http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+        $(function() {
+            var $allVideos = $("iframe[src^='http://player.vimeo.com'], iframe[src^='http://www.youtube.com'], object, embed"),
+                $fluidEl = $("div.video");
+            $allVideos.each(function() {
+                $(this)
+                    // jQuery .data does not work on object/embed elements
+                    .attr('data-aspectRatio', this.height / this.width)
+                    .removeAttr('height')
+                    .removeAttr('width');
+            });
+            $(window).resize(function() {
+                var newWidth = $fluidEl.width();
+                $allVideos.each(function() {
+                    var $el = $(this);
+                    $el
+                        .width(newWidth)
+                        .height(newWidth * $el.attr('data-aspectRatio'));
+                });
+            }).resize();
+        });
+
+    </script>
+
+</head>
+
+
+
+
+
+<!------------------------------------------------------------------------NAVIGATION BAR------------------------------------------------------------------->
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="load"></div>
+    </div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top " role="navigation">
+        <!--------------IR LAB LOGO --------------------------------
+        <div style="padding-left: 50px; padding-top:10px"><a href="index.html#intro"><img src="img/logoir.png" style="z-index:1; float:left; max-width:125px; max-height:39px; width:auto; height:auto;  filter: alpha(opacity=50);"></a></div>   
+      <!-------------/IR LAB LOGO -------------------------------->
+        <div class="container">
+
+            <div class="navbar-header page-scroll">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+
+                    <h1 style="margin: 0 0 30px;
+text-transform: uppercase;
+font-family: Montserrat,sans-serif;
+font-weight: 700;
+letter-spacing: 1px;
+">IR Lab </h1>
+
+                </a>
+            </div>
+
+            <!-- Navigation Bar ---->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html#intro">Home</a></li>
+                    <li><a href="index.html#members">Members</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ongoing.html">Ongoing Projects</a></li>
+                            <li><a href="completed.html">Completed Projects</a></li>
+                            <li><a href="data.html">Data</a></li>
+                            <li><a href="phd.html">PhD Research</a></li>
+                            <li><a href="postdoc.html">PostDoc Research</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="index.html#publication">Publications</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Announcements<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="achievement.html">Achievements</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                        <li><a href="index.html#teaching">Teachings</a></li>
+                        <li><a href="index.html#opportunities">Opportunities</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!------------------------------------------------------/Navigation Bar---------------------------------------------------------------------------------------------->
+
+    <!-- Section: services -->
+    <section id="publication" class="home-section text-center bg-gray">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2 id="top">PORTFOLIO</h2>
+                                <!---------------------------------------PORTFOLIO HEADING AT THE TOP------------------------------------>
+                                <i class="fa fa-2x fa-angle-down"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="portfolio">
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+
+                <!-- Left Column -->
+                <div class="w3-third">
+
+                    <div class="w3-white w3-text-grey w3-card-4">
+                        <div class="w3-display-container">
+                            <img src="img/spalsir.jpg" style="width:100%" alt="Avatar">
+                            <!---------------------------------MEMBER's IMAGE------------------------------------->
+
+                            <div class="w3-display-bottomleft w3-container w3-text-black">
+                                <!--<h2 style="color:black">Dr. Sukomal Pal</h2>-->
+                                <!-----------------------------------MEMBER's NAME------------------------------------>
+                            </div>
+                        </div>
+                        <div class="w3-container">
+                            <p><b style="font-size:16px">Dr. Sukomal Pal</b></p>
+                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Assistant Professor</p>
+                            <!------MEMBER's POSITION-------------------->
+                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Varanasi, U.P., India</p>
+                            <!--------CURRENT LOCATION------------------>
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>spal.cse@iitbhu.ac.in</p>
+                            <!----------Official Mail ID---------------->
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>sukomalpal@gmail.com</p>
+                            <!-----------Personal Mail ID--------------->
+                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(+91) 947 119 1533</p>
+                            <!------------Contact number---------------->
+                            <hr>
+
+                            <!-------------------------------------------------------------------------------  -------------->
+
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>About</b></p>
+                            <!---------------------About (Introduction)-------------------------------------------------------------------------------->
+                            <p><b>Research Interests</b><br> Data Mining, Information Retrieval, XML Retrieval, IR Evaluation, Natural Language Processing<br>
+                                <b>Courses Taught/Teaching</b><br> Information Retrieval, Operating Systems, Advanced Operating Systems, Computer Organization, Internet Technology<br> Computer Programming, Probability & Statistics, Database Management Systems, Internet & Multimedia <br>
+                            </p>
+
+                            <!-----------------------About (Introduction)------------------------------------------------------------------------->
+
+                            <!-------------------------------------Skills of the member------------------------------------------------------
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                            <p>Programming(PYTHON/JAVA/C++)</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+                            </div>
+                            <p>Data Analysis Tools(R/SPSS)</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+                                    <div class="w3-center w3-text-white">80%</div>
+                                </div>
+                            </div>
+
+                            <!----<p>Illustrator</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+                            </div>
+                            <p>Media</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+                            </div>
+                            <------------------>
+                            <!------------------------
+                            <br>
+                            
+
+                            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                            <p>English</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+                            </div>
+                            <p>Spanish</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+                            </div>
+                            <p>German</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+                            </div>
+                            <br>
+                            <-------------------------------------------------->
+                        </div>
+                    </div><br>
+                    <!-- End Left Column -->
+                </div>
+
+                <!-- Right Column -->
+                <div class="w3-twothird">
+                    <!-------------------------------------------------------------------Publication Section---------------------------------------------->
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>PUBLICATIONS</h2>
+                        <!----heading Publication-->
+                        <!-------------------------------------------------------------------Books---------------------------------------------->
+                        <b>Book</b>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Sub-document level Information Retrieval: Retrieval and Evaluation</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016</h6>
+                            <p>LAP LAMBERT Academic Publishing (2016-09-13), ISBN 978-3-659-94969-2</p>
+                            <p>AUTHOR:Sukomal Pal</p>
+                            <hr>
+                        </div>
+                        <b>Invited Book Chapter</b>
+                            <div class="w3-container">
+                            <h5 class="w3-opacity"><b>XML Retrieval: A Survey</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011</h6>
+                            <p>Internet Policies and Issues. Volume 8, pp.229 - 272, B.G. Kutais (Ed.), Nova Science Publishers, Inc.</p>
+                            <p>AUTHOR:Sukomal Pal, Mandar Mitra</p>
+                            
+                        </div>
+                        
+
+                        <!-------------------------------------------------------------------International Journal---------------------------------------------->
+                        <b>International Journals</b>
+                      <!-------------------------------------------------------------------International Journal-01---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>A Survey on Transliterated Text Processing</b></h5>
+                            <!--<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>JUNE 2017</h6>--->
+                            <p>Sadhana-Academy Proceedings in Engineering Science</p>
+                            <p>AUTHORS:Dinesh Kumar Prabhakar, Sukomal Pal</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Journal-01---------------------------------------------->
+                        <!-------------------------------------------------------------------International Journal-1---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Summarization and Information Access in Legal Domain: A Survey</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>JUNE 2017</h6>
+                            <p>Aritificial Intelligence Review, DOI 10.1007/s10462-017-9566-2, 2017</p>
+                            <p>AUTHORS:Ambedkar Kanapala, Sukomal Pal, Rajendra Pamula</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Journal-1---------------------------------------------->
+                        <!-------------------------------------------------------------------International Journal-2---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b> Recent Developments in Social Spam Detection and Combating Techniques: A Survey</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>JAN 2006 - SEPT 2010</h6>
+                            <p>Information Processing & Management , 52(6), pp. 1053 - 1073, 2016. cited by 18 (Google Scholar). <b> (Best Paper Award 2016 - Honorable Mention)</b></p>
+                            <p>AUTHORS:Manajit Chakraborty, Sukomal Pal, Rahul Pramanik, Ravindranath Chowdhary</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Journal-2---------------------------------------------->
+                        <!-------------------------------------------------------------------International Journal-3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b> Sub-document level information retrieval: retrieval and evaluation</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013</h6>
+                            <p>Dissertation abstract,ACM SIGIR Forum, Volume 47, Issue 1, pp. 65 - 66</p>
+                            <p>AUTHOR:Sukomal Pal</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Journal-3---------------------------------------------->
+                        <!-------------------------------------------------------------------International Journal-4---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Evaluation effort, reliability and reusability in XML retrieval</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011</h6>
+                            <p>Journal of the American Society for Information Science and Technology, 62(2), pp. 375 - 394,2011. Cited by 16 (Google Scholar) <b> (Best JASIST Paper Award 2011)</b></p>
+                            <p>AUTHORS:Sukomal Pal, Mandar Mitra, Jaap Kamps</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Journal-4---------------------------------------------->
+                        <!-------------------------------------------------------------------International Journal-5---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>The FIRE 2008 Evaluation Exercise</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2010</h6>
+                            <p>ACM Transactions on Asian Language Information Processing, Volume 9, Issue 3, Article 10, September 2010. Cited by 19 (Google Scholar).
+                            </p>
+                            <p>AUTHORS:Prasenjit Majumder, Mandar Mitra, Dipasree Pal, Ayan Bandyopadhyay, Samaresh Maiti, Sukomal Pal,Deboshree Modak, Sucharita Sanyal</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Journal-5---------------------------------------------->
+                        <!-------------------------------------------------------------------International Journal-6---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Association against Dissociation: Some Pragmatic Considerations for Fre-quent Itemset Generation under Fixed and Variable Thresholds</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>December 2005</h6>
+                            <p>ACM SIGKDD Explorations, Volume7, Issue 2, pp. 151-159, December 2005. Cited by 9 (Google Scholar).
+                            </p>
+                            <p>AUTHORS:Sukomal Pal, Aditya Bagchi</p>
+                            
+                        </div>
+                        <!-------------------------------------------------------------------/International Journal-6---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-Section--------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-1-------------------------------------------->
+                        <b>International Conference/Workshop Proceedings</b>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>ISM @ NTCIR-12 Temporalia Task: Experiments with MaxEnt, Naive Bayes and Decision Tree classifiers</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016</h6>
+                            <p>Temporalia, NTCIR-12, Japan, 2016 </p>
+                            <p> AUTHORS: Jitendra Kumar, Sudha Shanker Prasad and Sukomal Pal</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-1-------------------------------------------->
+                           <!-------------------------------------------------------------------International Conference/Workshop Proceedings-2---------------------------------------------->
+
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Sentiment Classification: An Approach for Indian Language Tweets Using Decision Tree</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2015</h6>
+                            <p>Mining Intelligence and Knowledge Exploration - Third International Conference, MIKE, Hyderabad, India, pp. 656-663 </p>
+                            <p> AUTHORS: Sudha Shanker Prasad, Jitendra Kumar, Dinesh Kumar Prabhakar and Sukomal Pal</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-2---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-2---------------------------------------------->
+
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>ISM@FIRE-2014: Named Entity Recognition for Indian Languages</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 5 - 7 December 2014</h6>
+                            <p>FIRE 2014 Post-Proceedings, Bangalore, ACM Digital Library.</p>
+                            <p> AUTHORS: Dinesh Kumar Prabhakar, Shantanu Dubey, Bharti Goel and Sukomal Pal</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-2---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-2---------------------------------------------->
+
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Popular Acronym Retrieval through Text Messaging</b></h5>
+                            <!--<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 5 - 7 December 2014</h6>-->
+                            <p>FIRE 2014 Post-Proceedings,Bangalore, ACM Digital Library.</p>
+                            <p> AUTHORS: Sukomal Pal, Praveen Yadav, Rishabh Kumar, Surender Singh, Ashok Kumar, Harsh Singh, Abhishek Ranjan and L Gautam</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-2---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-3---------------------------------------------->
+
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>What the user does not want?: Query reformulation through term inclusion-exclusion</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 18 - 21, 2015</h6>
+                            <p>Proceedings of the Second ACM IKDD Conference on Data Sciences(CoDS ’15), pp. 116 - 117, Bangalore </p>
+                            <p> AUTHORS: Rahul Pramanik, Sukomal Pal, Manajit Chakraborty</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-3---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-3---------------------------------------------->
+
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Test Collection for Legal IR from Social Media</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>5 - 7 December, 2014</h6>
+                            <p>FIRE 2014, Bangalore, ACM.</p>
+                            <p> AUTHORS: Ambedkar Kanapala, Sukomal Pal</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-3---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-3---------------------------------------------->
+
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>ISM@FIRE-2013 Shared Task on Transliterated Search</b></h5>
+                            <!--<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>5 - 7 December, 2014</h6>-->
+                            <p>Proceedings of the 5th 2013 Forum on Information Retrieval Evaluation, FIRE ’13, New Delhi, India,17:1–17:6, ACM.</p>
+                            <p> AUTHORS: Dinesh Kumar Prabhakar and Sukomal Pal </p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-3---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-4---------------------------------------------->
+
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Social Book Search Track: ISM@INEX’14 Suggestion Task</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>15 - 18 September 2014</h6>
+                            <p>CLEF (Online Working Notes / Labs / Workshop), Rome, Italy, 2012,Sheffield, UK. </p>
+                            <p> AUTHORS: Ritesh Kumar, Sukomal Pal</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-4---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-9---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Passage Retrieval for Tweet Contextualization at INEX 2012</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012</h6>
+                            <p>CLEF (Online Working Notes / Labs / Workshop),Rome, Italy, 2012, Cited by 1 (Google Scholar). </p>
+                            <p> AUTHORS:Ayan Bandyopadhyay, Sukomal Pal, Mandar Mitra, Prasenjit Majumder, Kripabandhu Ghosh</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-9---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-9---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>ISM@FIRE-2011 Bengali Monolingual Task: A frequency-based stemmer</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012</h6>
+                            <p>Prasenjit Majumder, Mandar Mitra, Pushpak Bhattacharyya, L. Venkata Subramaniam, Danish Contractor, Paolo Rosso editors.Multilingual Information Access in South Asian Languages - Third International Workshop, FIRE 2011, Bombay, India, Revised Selected Papers, pp. 51 - 58, Volume 7536,Springer LNCS, 2012.Cited by 1 (Google Scholar) </p>
+                            <p> AUTHORS:Raktim Banerjee, Sukomal Pal</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-9---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-9---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Indian School of Mines, Dhanbad at INEX 2011 Snippet Retrieval Task</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012</h6>
+                            <p>Shlomo Geva, Jaap Kamps, and Ralf Schenkel, editors. Focused Retrieval of Content and Structure : 10th International Workshop of the Initiative for the Evaluation of XML Retrieval, INEX 2011. Saarbruecken,Germany, December 12-14, 2012. Revised and Selected Papers. Volume 7424 of Lecture Notes in Computer Science. Springer Verlag, Berlin, Heidelberg, 2012. </p>
+                            <p> AUTHORS:Sukomal Pal, Preeti Tamrakar</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-9---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-9---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Using Negative Information in Search</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 18-20, 2011</h6>
+                            <p>Second International Conference on Emerging Applications of Information Technology, Feb 18-20, 2011, Kolkata,India. Cited by 2 (Google Scholar). </p>
+                            <p> AUTHORS:Sauparna Palchowdhury, Sukomal Pal, Mandar Mitra</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-9---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-5---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Estimating Pool-depth on Per Query Basis</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> June 15-18, 2010</h6>
+                            <p>Proc. of EVIA 2010: 3rd International Workshop on Evaluating Information Access, a Satellite Workshop of NTCIR-8, pp. 2-6, June 15-18, 2010, Tokyo, Japan, Cited by 1 </p>
+                            <p> AUTHORS: Sukomal Pal, Mandar Mitra, Samaresh Maiti</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-5---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-6---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Parameter Tuning in Pivoted Normalization for XML retrieval: ISI@INEX09 Adhoc Focused Task</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2010</h6>
+                            <p>Focused Retrieval and Evaluation, 8th International Workshop of the Initiative for the Evaluation of XML Retrieval (INEX 2009), Geva, S., Kamps, J., Trotman,A. (Eds.) Springer LNCS, 2010. Cited by 3 (Google Scholar).</p>
+                            <p> AUTHORS:Sukomal Pal, Mandar Mitra, Debasis Ganguly</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-6---------------------------------------------->
+                         <!-------------------------------------------------------------------International Conference/Workshop Proceedings-8---------------------------------------------->
+                                    <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Indian Statistical Institute at INEX 2008 Adhoc Track</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2009</h6>
+                            <p>PAdvances in Focused Retrieval,7th International Workshop of the Initiative for the Evaluation of XML Retrieval (INEX 2008), Geva, S.,Kamps, J., Trotman, A. (Eds.), Springer LNCS 5631, pp. 79-86, 2009. </p>
+                            <p> AUTHORS: Sukomal Pal, Mandar Mitra, Debasis Ganguly, Samaresh Maiti, Ayan Bandyopadhyay, Aparajita Sen,Sukanya Mitra</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-8---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-7---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Stability of INEX 2007 Evaluation Measures</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008</h6>
+                            <p>Proc.of the Second International Workshop on EValuating Information Access (EVIA 2008), pp. 23-29, NTCIR7, Japan. Cited by 3 (Google Scholar). </p>
+                            <p> AUTHORS:Sukomal Pal, Mandar Mitra, Arnab Chakraborty</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-7---------------------------------------------->
+                        <!-------------------------------------------------------------------International Conference/Workshop Proceedings-7---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Indian Statistical Institute at INEX 2007 Adhoc track: VSM Approach</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2007</h6>
+                            <p>Focused Access to XML Documents, 6th International Workshop of the Initiative for the Evaluation of XML Retrieval (INEX 2007), Fuhr, N., Kamps, J., Lalmas, M., Trotman, A. (Eds.),Springer LNCS 4862,pp. 122-128, 2008. Cited by 3 (Google Scholar). </p>
+                            <p> AUTHORS:Sukomal Pal, Mandar Mitra</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-7---------------------------------------------->
+                         <!-------------------------------------------------------------------International Conference/Workshop Proceedings-7---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Text Collections for FIRE</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008</h6>
+                            <p>SIGIR ’08: Proceedings of the 31st annual international ACM SIGIR conference on Research and Development in Information Retrieval, pp. 699-700, ACM SIGIR 2008, Singapore. Cited by 8 (Google Scholar). </p>
+                            <p> AUTHORS:Prasenjit Majumder, Mandar Mitra, Dipasree Pal, Ayan Bandyopadhyay, Samaresh Maiti, Sukanya Mitra,Aparajita Sen, Sukomal Pal</p>
+                        </div>
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-7---------------------------------------------->
+                       
+               
+           
+                        <!-------------------------------------------------------------------/International Conference/Workshop Proceedings-Section--------------------------------------------->
+                        <!-------------------------------------------------------------------Others-Section---------------------------------------------->
+                        <!-------------------------------------------------------------------Others-1-------------------------------------------->
+                        <b>Others</b>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>ISM@ FIRE-2013 Information Access in The Legal Domain</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2013</h6>
+                            <p>FIRE-2013 Workshop Pre-Proceedings, New Delhi, 2013. </p>
+                            <p> AUTHORS: Ambedkar Kanapala, Sukomal Pal</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Others-1-------------------------------------------->
+                        <!-------------------------------------------------------------------Others-2------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>ISM@ FIRE2013 shared task on Transliterated Search</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2013</h6>
+                            <p>FIRE-2013 Workshop Pre-Proceedings, New Delhi, 2013. </p>
+                            <p> AUTHORS: Dinesh K Prabhakar, Sukomal Pal</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Others-2-------------------------------------------->
+                            <!-------------------------------------------------------------------Others-3------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>ISM FIRE-2012 Adhoc Retrieval Task and Morpheme Extraction Task</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2012</h6>
+                            <p>FIRE-2012 Workshop Pre-Proceedings, Kolkata. </p>
+                            <p> AUTHORS: Avinash Yadav, Robins Yadav, Sukomal Pal</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Others-3-------------------------------------------->
+                        <!-------------------------------------------------------------------Others-4------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Indian School of Mines, Dhanbad at INEX 2011 Snippet Retrieval Task</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2011</h6>
+                            <p>Geva, S., Kamps, J., Schenkel, R. (Eds.), IR Publications,Amsterdam. ISBN 978-90-814485-8-1, INEX working Notes Series, Vol. 2011, pp. 245-250, 2011. </p>
+                            <p> AUTHORS: Sukomal Pal, Preeti Tamrakar</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Others--------------------------------------------->
+                        <!-------------------------------------------------------------------Others-4------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>ISM FIRE-2011: Monolingual Task</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2011</h6>
+                            <p>FIRE 2011 Working Notes, pp.18 - 21, IIT Bombay, 2011. </p>
+                            <p> AUTHORS: Raktim Banerjee, Sukomal Pal</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Others--------------------------------------------->
+                         <!-------------------------------------------------------------------Others-4------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Indian Statistical Institute at INEX 2009 Adhoc Focused Task</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2009</h6>
+                            <p>Geva, S., Kamps, J., Trotman, A. (Eds.), IR Publications,Amsterdam. ISBN 978-90-814485-2-9, pp. 94-98. </p>
+                            <p> AUTHORS: Sukomal Pal, Mandar Mitra, Debasis Ganguly</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Others--------------------------------------------->
+                        <!-------------------------------------------------------------------Others-4------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>XML Retrieval: A Survey</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2007</h6>
+                            <p>Technical Report,TR/ISI/CVPR/IR07-01, (available at http://www.isical.ac.in/∼sukomal r), 2007. Cited by 7 (Google Scholar). </p>
+                            <p> AUTHORS: Sukomal Pal, Mandar Mitra</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Others--------------------------------------------->
+                        <!-------------------------------------------------------------------Others-4------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Indian Statistical Institute at INEX 2006 Adhoc track: A Preliminary VSM Approach</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2006</h6>
+                            <p>INEX 2006 Workshop Pre-Proceedings, pp. 118-120, Dagstuhl,Germany. </p>
+                            <p> AUTHORS: Sukomal Pal, Mandar Mitra, Prasenjit Majumder</p>
+                        </div>
+                        <!-------------------------------------------------------------------/Others--------------------------------------------->
+                        <!-------------------------------------------------------------------/Others-Section---------------------------------------------->
+                    </div>
+                    <!-------------------------------------------------------------------/Publication Section---------------------------------------------->
+
+
+                    <!-------------------------------------------------------------------Awards Section---------------------------------------------->
+
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>HONORS / AWARDS / ACHIEVEMENTS</h2>
+                        <!-------------------------------------------------------------------Award-1---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>IPM Best Paper Award</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2016 </h6>
+                            <p>Honorable Mention from Elsevier, (with Manjit Chakraborty, Rahul Pramanik and C Rabindranath Chowdary)</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Award-1---------------------------------------------->
+                        <!-------------------------------------------------------------------Award-2---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Visiting Scientist </b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept, 2015 - Oct, 2015</h6>
+                            <p>University of Padova, Italy</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Award-2---------------------------------------------->
+                        <!-------------------------------------------------------------------Award-3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Visiting Researcher</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2013</h6>
+                            <p>Invited at University of Amsterdam, the Netherlands </p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Award-3---------------------------------------------->
+                        <!-------------------------------------------------------------------Award-4---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Best JASIST PAPER Award </b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2012</h6>
+                            <p>American Society for Information Science and Technology (with Mandar Mitra and Jaap Kamps) </p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Award-4---------------------------------------------->
+                          <!-------------------------------------------------------------------Award-4---------------------------------------------->
+                        <b> Softwares Developed</b>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>PARTM: Popular Acronym Retrieval through Text Messaging </b></h5>
+                            <!--<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2012</h6>-->
+                            <p>An online system in Java which searches for a given acronym in the English Wikipedia and provides its fullform alongwith a brief introduction in native language. The software is meant for users of low-cost mobile phones which have no internet facility and native language support and the users are not conversant inEnglish. The query corrects erroneous input and provides output transliterated text. </p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Award-4---------------------------------------------->
+                              <!-------------------------------------------------------------------/Award-4---------------------------------------------->
+                              <div class="w3-container">
+                            <h5 class="w3-opacity"><b>ISMStemmer </b></h5>
+                            <!--<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2012</h6>-->
+                                  <p>A Corpus-based language-independent stemmer written in C built on Apriori algorithm from Market Basket Data Analysis in Data Mining.</p>
+                        </div>
+                        <!-------------------------------------------------------------------/Award-4---------------------------------------------->
+
+                    </div>
+                    <!-------------------------------------------------------------------/Awards Section---------------------------------------------->
+
+
+
+                    <!-------------------------------------------------------------------Experience Section---------------------------------------------->
+
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>EXPERIENCE</h2>
+                        <!-------------------------------------------------------------------Experience---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Assistant Professor</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 24, 2016 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                            <p>Dept. of Computer Science & Engineering, Indian Insititute of Technology (BHU)</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Experience---------------------------------------------->
+                        <!-------------------------------------------------------------------Experience---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Assistant Professor</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 13, 2010 - Feb 23, 2015</h6>
+                            <p>Indian Institute of Mines, Dhanbad</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Experience---------------------------------------------->
+                        <!-------------------------------------------------------------------Experience---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Lecturer</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 23, 2010 - Dec 11, 2010</h6>
+                            <p>Indian Institute of Information Technology, Allahabad </p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Experience---------------------------------------------->
+                        <!-------------------------------------------------------------------Experience---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Project-Linked Researcher (Category A) </b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 17, 2007 - July 22, 2010</h6>
+                            <p>Computer Vision and Pattern Recognition Unit, Indian Statical Institute, Kolkata </p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Experience---------------------------------------------->
+                        <!-------------------------------------------------------------------Experience---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Research Fellow</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 28, 2005 - April 16, 2007</h6>
+                            <p>Computer Vision and Pattern Recognition Unit, Indian Statical Institute, Kolkata </p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Experience---------------------------------------------->
+                        <!-------------------------------------------------------------------Experience---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Assistant System Engineer</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 24, 1999 - Aug 07, 2003</h6>
+                            <p>Tata Consultancy Services, India </p>
+                        </div>
+                        <!-------------------------------------------------------------------/Experience---------------------------------------------->
+                    </div>
+                    <!-------------------------------------------------------------------/Experience Section---------------------------------------------->
+
+
+
+
+
+
+
+                    <!-------------------------------------------------------------------Education Section---------------------------------------------->
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>EDUCATION</h2>
+                        <!-------------------------------------------------------------------Education-1----------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>ISI, Kolkata</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>(Submitted 1 Feb, 2012, Defended 10 Sep,2012 )</h6>
+                            <p>Ph. D. (Computer Science)<br>
+                                <i>Title of Thesis:</i>Sub-document Level Information retrieval: Retrieval and Evaluation<br>
+                                <i>Supervisor:</i> Mandar Mitra<br>
+                                <i>Reviewers:</i> Ellen Voorhees, Tetsuya Sakai<br>
+                                <i>External faculty in defense:</i> Soumen Chakrabarti <br>
+                            </p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Education-1----------------------------------------------->
+                        <!-------------------------------------------------------------------Education-2----------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>ISI, Kolkata</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2003 - 2005</h6>
+                            <p>M. Tech. (Computer Science)</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Education-2----------------------------------------------->
+                        <!-------------------------------------------------------------------Education-3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>IIEST (erstwhile Bengal Engineering College), Shibpur</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1995 - 1999</h6>
+                            <p>B.E. (Electrical Engineering)</p><br>
+                        </div>
+                        <!-------------------------------------------------------------------/Education-3---------------------------------------------->
+                    </div>
+                    <!-------------------------------------------------------------------/Education Section---------------------------------------------->
+
+                    <!-- End Right Column -->
+                </div>
+
+                <!-- End Grid -->
+            </div>
+
+            <!-- End Page Container -->
+        </div>
+    </div>
+    <!-------------------------------------------------------------------Footer----------------------------------------------->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="wow shake" data-wow-delay="0.4s">
+                        <div class="page-scroll marginbot-30">
+                            <a href="spal.html#top" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+                        </div>
+                    </div>
+                    <p>&copy; 2018-19 | <a href="https://www.iitbhu.ac.in/" style="color:#f8f8f8;">Indian Institute of Technology (Banaras Hindu University), Varanasi.</a> All Rights Reserved.</p>
+                    <!----iit bhu website link------------------------------------->
+                    <div class="credits">
+                        <!--
+              All the links in the footer should remain intact. 
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Squadfree
+            -->
+                        <a href="https://www.iitbhu.ac.in/dept/cse">Department of Computer Science and Engineering IIT-BHU</a>
+                        <!---------------------Dept of cse-iit-bhu link----->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------------------------------------------------------------------/Footer----------------------------------------------->
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <!--<script src="contactform/contactform.js"></script>-->
+
+</body>
+
+</html>
