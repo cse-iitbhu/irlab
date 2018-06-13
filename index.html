@@ -698,60 +698,32 @@
                 <div class="col-lg-8">
                     <!--------------------------------------------------------Creating  a box in contact section ------------------------------------------------------>
                     <div class="boxed-grey">
+			                
+                        <div id="map" style="width:100%;height:400px;"></div>
+                                       <script>
+                        function initMap(){
+                            var location = {lat:25.2620946, lng:82.9934343}
+                            var map=new google.maps.Map(document.getElementById("map"),{
+                                
+                                zoom: 4,
+                                centre: location
+                            });
+                            var marker=new google.maps.Marker({
+                                position: location,
+                                map: map 
+                            });
+                        }
+                    </script>
+                    
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-eMAYboA2CHjHGzfIZdAXEb2LZ5zvJDc&callback=initMap">
+                        
+                    </script>
+                          
+                        
 
-                        <div id="sendmessage">Your message has been sent. Thank you!</div>
-                        <div id="errormessage"></div>
-                        <form id="contact-form" action="" method="post" role="form" class="contactForm">
-                            <div class="row">
-                                <!-------------------------------------------------In column1--------------------------------------------------------->
-                                <div class="col-md-6">
-                                    <!-------------------------------------Give the name of the sender of message ------------------------------------------------>
-                                    <div class="form-group">
-                                        <label for="name">
-                                Name</label>
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                        <div class="validation"></div>
-                                    </div>
-                                    <!--------------------------------------Name Added---------------------------------------------------------------------->
-                                    <!-------------------------------------Give the email id of sender of the message------------------------------------------------->
-                                    <div class="form-group">
-                                        <label for="email">
-                                Email Address</label>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                            <div class="validation"></div>
-                                        </div>
-                                    </div>
-                                    <!-----------------------------------------------Email id added-------------------------------------->
-                                    <!-------------------------------------Give the Subject of the message------------------------------------------------->
-                                    <div class="form-group">
-                                        <label for="subject">
-                                Subject</label>
-                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                        <div class="validation"></div>
-                                    </div>
-                                    <!-----------------------------------------------Subject added-------------------------------------->
-                                </div>
-                                <!---------------------------------------------------------/Column1--------------------------------------------------->
-
-                                <!---------------------------------------------------------/Column2--------------------------------------------------->
-                                <!---------------------------------------------------------Message Box----------------------------------------------------->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="name">
-                                Message</label>
-                                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                        <div class="validation"></div>
-                                    </div>
-                                </div>
-                                <!----------------------------------------------------------Message----------------------------------------------------------------->
-                                <div class="col-md-12">
-                                    <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
-                            Send Message</button>
-                                </div>
-                            </div>
-                        </form>
                     </div>
+
+      
                     <!----------------------------------------------------box closed------------------------------------------------------------------------->
                 </div>
                 <!------------------------------------------------------------------------------Address & mail--------------------------------------------------------------------------->
