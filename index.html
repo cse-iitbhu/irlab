@@ -698,26 +698,40 @@
                 <div class="col-lg-8">
                     <!--------------------------------------------------------Creating  a box in contact section ------------------------------------------------------>
                     <div class="boxed-grey">
+			        <!--The div element for the map -->
+   				 <div id="map"></div>
 			                
-                        <div id="map" style="width:100%;height:400px;"></div>
-                                       <script>
-                        function initMap(){
-                            var location = {lat:25.2620946, lng:82.9934343}
-                            var map=new google.maps.Map(document.getElementById("map"),{
-                                
-                                zoom: 4,
-                                centre: location
-                            });
-                            var marker=new google.maps.Marker({
-                                position: location,
-                                map: map 
-                            });
-                        }
-                    </script>
-                    
-                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdeH2_CMUsHWFlcI-iq7D11BEiifISIM4&callback=initMap">
-                        
-                    </script>
+                                 <script>
+                            // Initialize and add the map
+                            function initMap() {
+                                // The location of Uluru
+                                var uluru = {
+                                    lat: 25.2620946,
+                                    lng: 82.9934343
+                                };
+                                // The map, centered at Uluru
+                                var map = new google.maps.Map(
+                                    document.getElementById('map'), {
+                                        zoom: 14,
+                                        center: uluru
+                                    });
+                                // The marker, positioned at Uluru
+                                var marker = new google.maps.Marker({
+                                    position: uluru,
+                                    map: map
+                                });
+                            }
+
+                        </script>
+                        <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdeH2_CMUsHWFlcI-iq7D11BEiifISIM4&callback=initMap">
+
+
+                        </script>
                           
                         
 
