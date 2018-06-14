@@ -331,7 +331,7 @@
                             <div class="inner">
                                 <a href="https://scholar.google.co.in/citations?user=80Bcnq8AAAAJ&hl=en&oi=ao">
                                     <h5>Mr. Ribhav Soni</h5>
-                                    <p class="subtitle">IDD SCHOLAR</p>
+                                    <p class="subtitle">IDD Scholar</p>
                                     <div class="avatar"> <img src="img/ribhav.jpg" alt="" class="img-responsive img-circle" />
 
                                     </div>
@@ -720,6 +720,42 @@
                                     position: uluru,
                                     map: map
                                 });
+				    
+		  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Information Retrieval Lab</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Department of Computer Science & Engineering IIT (BHU) Varanasi</b>,' +
+      'Started in the year 2018, the IR Lab at the Dept. of CSE, IIT(BHU) '+
+      'is focused on research in the following fields but not limited to: '+
+      'Text IR, '+
+      'Data Mining, '+
+      'Social Media Analytics, '+
+      'Recommender Systems, '+
+      'Evaluation, '+
+      'Artificial Intelligence. </p> '+
+      
+  
+      '</div>'+
+      '</div>';
+
+
+                                var infowindow = new google.maps.InfoWindow({
+                                    content: contentString
+                                });
+
+
+                                var marker = new google.maps.Marker({
+                                    position: uluru,
+                                    map: map,
+                                    
+                                });
+                                marker.addListener('click', function() {
+                                    infowindow.open(map, marker);
+                                });
+
+                            }
                             }
 
                         </script>
