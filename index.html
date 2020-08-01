@@ -1463,122 +1463,31 @@
         </div>
     </section>
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-5">
                     <hr class="marginbot-50">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8">
-                    <!--------------------------------------------------------Creating  a box in contact section ------------------------------------------------------>
-                    <div class="boxed-grey">
-			        <!--The div element for the map -->
-   				 <div id="map"></div>
-			                
-                                 <script>
-                            // Initialize and add the map
-                            function initMap() {
-                                // The location of Uluru
-                                var uluru = {
-    				 lat: 25.262188,
-                                    lng: 82.9934835
-                                };
-                                // The map, centered at Uluru
-                                var map = new google.maps.Map(
-                                    document.getElementById('map'), {
-                                        zoom: 18,
-                                        center: uluru
-                                    });
-                                // The marker, positioned at Uluru
-                                var marker = new google.maps.Marker({
-                                    position: uluru,
-                                    map: map
-                                });
-				    
-		  var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Information Retrieval Lab</h1>'+
-      '<div id="bodyContent">'+
-
-      '<p>Started in the year 2018, the IR Lab at the Dept. of CSE, IIT(BHU) '+
-      'is focused on research in the following fields but not limited to: '+
-      'Text IR, '+
-      'Data Mining, '+
-      'Social Media Analytics, '+
-      'Recommender Systems, '+
-      'Evaluation, '+
-      'Artificial Intelligence. </p> '+
-      
-  
-      '</div>'+
-      '</div>';
-
-
-                                var infowindow = new google.maps.InfoWindow({
-                                    content: contentString
-                                });
-
-
-                                var marker = new google.maps.Marker({
-                                    position: uluru,
-                                    map: map,
-                                    
-                                });
-                                marker.addListener('click', function() {
-                                    infowindow.open(map, marker);
-                                });
-
-                            
-                            }
-
-                        </script>
-                        <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdeH2_CMUsHWFlcI-iq7D11BEiifISIM4&callback=initMap">
-
-
-                        </script>
-                          
-                        
-
-                    </div>
-
-      
-                    <!----------------------------------------------------box closed------------------------------------------------------------------------->
-                </div>
-                <!------------------------------------------------------------------------------Address & mail--------------------------------------------------------------------------->
                 <div class="col-lg-4">
                     <div class="widget-contact">
                         <h5>ADDRESS</h5>
-
-                        <address>		  <i class="fa fa-map-marker"></i>
-				  <strong>TF-01, Information Retrieval Lab</strong><br>
-				  Dept. of Computer Science and Engineering<br>
-				  Indian Institute of Technology (Banaras Hindu University)<br/>
-                            Varanasi - 221005 <br/>
-                            Uttar Pradesh, India
-
-<br>
-				  <!--<abbr title="Phone">P:</abbr> (+91) 947-119-1533----------------If we want to add a phone number in future----->
-				</address>
-
+                        <address><i class="fa fa-map-marker"></i>
+					  		<strong>TF-01, Information Retrieval Lab</strong><br>
+					  		Dept. of Computer Science and Engineering<br>
+					  		Indian Institute of Technology (Banaras Hindu University)<br/>
+	                        Varanasi - 221005 <br/>
+	                        Uttar Pradesh, India<br>
+					  		<!--<abbr title="Phone">P:</abbr> (+91) 947-119-1533----------------If we want to add a phone number in future----->
+						</address>
                         <address>
-				  <i class="fa fa-envelope"></i>
-				  <strong>Email</strong><br>
-				  <a href="mailto:#">spal.cse@iitbhu.ac.in</a>
-				</address>
-
-
+				  			<i class="fa fa-envelope"></i>
+				  			<strong>Email</strong><br>
+				  			<a href="mailto:#">spal.cse@iitbhu.ac.in</a>
+						</address>
                     </div>
                 </div>
-                <!-----------------------------------------------------------------------------------------/Address & email------------------------------------------------------------->
             </div>
-
         </div>
 
     <!-- --------------------------------------------------Section: footer------------------------------------------------------------------------------------------------->
