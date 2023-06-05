@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Supriya Chanda" >
+
+    <title>IR Lab @ IIT-BHU</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <!-- latest jQuery direct from google's CDN -->
+    <script type="text/javascript" src="js/modernizr.custom.96161.js"></script>
+    <script type="text/javascript" src="js/responsive-nav.js"></script>
+    <script type="text/javascript" src="js/z.jquery.min.js"></script>
+    <!-- teaching js -->
+    <script type="text/javascript" src="js/z.jquery.min.js"></script>
+    <!-- latest jQuery direct from google's CDN -->
+    <script type="text/javascript" src="js/zjquery-ui.min.js"></script>
+    <!-- teaching js -->
+    <script src="js/modernizr.custom.96161.js"></script>
+    <!-- All JavaScript at the bottom, except for Modernizr / Respond. Modernizr ena
+
+  <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+    <link href="css/zurich.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/portfolio1.css">
+    <link rel='stylesheet' href='css/portfolio2.css'>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'onv2jgw',
+                    scriptTimeout: 3000
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = '//use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
+
+    <script type="text/javascript">
+        // BUG orientation portrait/lanscape IOS //
+        if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+            var viewportmeta = document.querySelector('meta[name="viewport"]');
+            if (viewportmeta) {
+                viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+                document.addEventListener('orientationchange', function() {
+                    viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1';
+                }, false);
+            }
+        };
+
+        // Enable Responsive Video Resize  http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+        $(function() {
+            var $allVideos = $("iframe[src^='http://player.vimeo.com'], iframe[src^='http://www.youtube.com'], object, embed"),
+                $fluidEl = $("div.video");
+            $allVideos.each(function() {
+                $(this)
+                    // jQuery .data does not work on object/embed elements
+                    .attr('data-aspectRatio', this.height / this.width)
+                    .removeAttr('height')
+                    .removeAttr('width');
+            });
+            $(window).resize(function() {
+                var newWidth = $fluidEl.width();
+                $allVideos.each(function() {
+                    var $el = $(this);
+                    $el
+                        .width(newWidth)
+                        .height(newWidth * $el.attr('data-aspectRatio'));
+                });
+            }).resize();
+        });
+
+    </script>
+
+</head>
+
+
+
+
+
+<!------------------------------------------------------------------------NAVIGATION BAR------------------------------------------------------------------->
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="load"></div>
+    </div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top " role="navigation">
+        <!--------------IR LAB LOGO --------------------------------
+        <div style="padding-left: 50px; padding-top:10px"><a href="index.html#intro"><img src="img/logoir.png" style="z-index:1; float:left; max-width:125px; max-height:39px; width:auto; height:auto;  filter: alpha(opacity=50);"></a></div>   
+      <!-------------/IR LAB LOGO -------------------------------->
+        <div class="container">
+
+            <div class="navbar-header page-scroll">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+
+                    <h1 style="margin: 0 0 30px;
+text-transform: uppercase;
+font-family: Montserrat,sans-serif;
+font-weight: 700;
+letter-spacing: 1px;
+">IR LAB </h1>
+
+                </a>
+            </div>
+
+            <!-- Navigation Bar ---->
+            
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!------------------------------------------------------/Navigation Bar---------------------------------------------------------------------------------------------->
+
+    <!-- Section: services -->
+    <section id="publication" class="home-section text-center bg-gray">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2 id="top">PORTFOLIO</h2>
+                                <!---------------------------------------PORTFOLIO HEADING AT THE TOP------------------------------------>
+                                <i class="fa fa-2x fa-angle-down"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="portfolio">
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+
+                <!-- Left Column -->
+                <div class="w3-third">
+
+                    <div class="w3-white w3-text-grey w3-card-4">
+                        <div class="w3-display-container">
+                            <img src="img/supriya.jpg" style="width:100%" alt="Avatar">
+                        </div>
+                        <div class="w3-container">
+                            <p><b style="color:black; font-size:20px">SUPRIYA CHANDA</b></p>  <!-----MEMBER's NAME---->
+                            <p><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large w3-text-teal"></i>Research Scholar</p>  <!----MEMBER's POSITION---->
+                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Kharagpur, West Bengal, India</p>  <!--CURRENT LOCATION---->
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>supriyachanda.rs.cse18@itbhu.ac.in</p> <!---Official Mail ID---->
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>suplife24@gmail.com</p>  <!---Personal Mail ID---->
+                            <p><i class="fa fa-whatsapp fa-fw w3-margin-right w3-large w3-text-teal"></i>(+91) 948 820 5994</p>
+                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(+91) 993 271 7325</p>
+                            <!--<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(+91) 876 563 1236</p>  <!---Contact number--->
+                            <hr>
+				
+  
+
+                            <!-------------------------------------------------------------------------------  -------------->
+
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>About</b></p>
+                            <!---------------------About (Introduction)-------------------------------------------------------------------------------->
+                            <p style="color:black; font-size:14px"> 
+                                I am Supriya Chanda, a Ph.D student in the Department of Computer Science and Engineering, IIT (BHU), Varanasi. 
+                                I am doing my research under the guidance of Dr. Sukomal Pal at the Information retrieval lab. <br>
+                                <b> Area of Interest:-</b> Information Retrival, Natural Language Processing, Machine Learning and Cryptography <br>
+                                <b>Research Description:-</b>Information retrieval for Indian languages with Code-Mixing
+                            </p>
+
+                            <!-----------------------About (Introduction)------------------------------------------------------------------------->                  
+                             
+                            <!-------------------------------------Skills of the member------------------------------------------------------
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                            <p>Programming(PYTHON/JAVA/C++)</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+                            </div>
+                            <p>Data Analysis Tools(R/SPSS)</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+                                    <div class="w3-center w3-text-white">80%</div>
+                                </div>
+                            </div>
+
+                            <!----<p>Illustrator</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+                            </div>
+                            <p>Media</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+                            </div>
+                            <------------------>
+                            <!------------------------
+                            <br>
+                            
+
+                            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                            <p>English</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+                            </div>
+                            <p>Spanish</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+                            </div>
+                            <p>German</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+                            </div>
+                            <br>
+                            <-------------------------------------------------->
+                        </div>
+                    </div>
+                    
+<div class="w3-white w3-text-grey w3-card-4" style="margin-top:16px">
+  <div class="w3-container">
+   <p><a href="https://scholar.google.com/citations?user=wB9WetAAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-3x fa-fw w3-margin-right w3-large w3-text-teal"></i>Google Scholar</a></p>
+   <!-- <p><a href="https://dblp.uni-trier.de/pers/hd/p/Pradhan:Tribikram" target="_blank"><i class="ai ai-dblp ai-3x fa-fw w3-margin-right w3-large w3-text-teal"></i>dblp</a></p> -->			  
+	<p><a href="https://www.researchgate.net/profile/Supriya_Chanda" target="_blank"><i class="ai ai-researchgate ai-3x fa-fw w3-margin-right w3-large w3-text-teal"></i>Research Gate</a></p>
+	<p><a href="https://www.linkedin.com/in/supriyachandacs" target="_blank"><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i>Linkedin</a></p>
+	<p><a href="https://" target="_blank"><i class="fa fa-github  fa-fw w3-margin-right w3-large w3-text-teal"></i>github</a></p>
+   <p><a href="https://www.facebook.com/supriya.chanda.5" target="_blank"><i class="fa fa-facebook-square fa-fw w3-margin-right w3-large w3-text-teal"></i>Facebook</a></p>
+   <p><a href="https://twitter.com/suplife24" target="_blank"><i class="fa fa-twitter  fa-fw w3-margin-right w3-large w3-text-teal"></i>Twitter</a></p>
+   <!--<p><a href="https://www.instagram.com/sup_life24" target="_blank"><i class="fa fa-instagram  fa-fw w3-margin-right w3-large w3-text-teal"></i>Instagram</a></p> -->
+   <!-- <p><a href="https://publons.com/author/650906/tribikram-pradhan#profile" target="_blank"><i class="ai ai-publons ai-3x fa-fw w3-margin-right w3-large w3-text-teal"></i>publons</a></p> -->
+   <!-- <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+91-947-119-1533</p> -->
+  </div>
+</div>
+                    <!-- End Left Column -->
+                </div>
+		    
+	<div class="w3-twothird">
+		<!------------------------------------------Publication Section---------------------------------------------->
+		<div class="w3-container w3-card w3-white w3-margin-bottom">
+			<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>PUBLICATIONS</h2>
+			<b>Workshop Papers</b>
+			<div class="w3-container">
+				<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020</h6>
+				<p>Anita Saroj, <b>Supriya Chanda</b> and Sukomal Pal <i>IRlab@IITV at SemEval-2020 Task 12: Multilingual Offensive Language Identification in Social Media Using SVM </i>
+					Proceedings of the Fourteenth Workshop on Semantic Evaluation(SemEval) 2020, 2020 </p>	
+				<p><b>Supriya Chanda</b>, Eshita Nandy and Sukomal Pal <i>IRLab@ IITBHU at WNUT-2020 Task 2: Identification of informative COVID-19 English Tweets using BERT </i>,
+					Proceedings of the Sixth Workshop on Noisy User-generated Text (W-NUT 2020), 2020 </p>	
+			</div>
+		</div>
+		<!------------------------------------------------------------Award Section---------------------------------------------->
+		<div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>ACHIEVEMENTS</h2>
+                        <div class="w3-container">
+				<b> TECHNICAL </b>
+				<h5 class="w3-opacity"><b>Qualified GATE two times</b></h5>
+				<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2016 and 2018 </h6>
+				<hr>
+                        </div>
+		</div>
+            
+
+
+                    <!-------------------------------------------------------------------Reseach Work Section---------------------------------------------->
+                    
+                    <!--<div class="w3-container w3-card w3-white w3-margin-bottom">                    <!-------------------------------------------------------------------Publication3----------------------------------------------
+                  
+                        <!-------------------------------------------------------------------/Publication3----------------------------------------------
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>RESEARCH WORKS</h2> 
+                     <!-------------------------------------------------------------------Reseach Work1---------------------------------------------->   
+                        <!--<div class="w3-container">
+                            <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                            <hr>
+                        </div>
+                    <!-------------------------------------------------------------------/Reseach Work1----------------------------------------------> 
+                    <!-------------------------------------------------------------------Reseach Work2----------------------------------------------> 
+                        <!--<div class="w3-container">
+                            <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+                            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                            <hr>
+                        </div>
+                    <!-------------------------------------------------------------------/Reseach Work3----------------------------------------------> 
+                        <!--<div class="w3-container">
+                            <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+                        </div>
+                    <!-------------------------------------------------------------------/Reseach Work3----------------------------------------------> 
+                    <!--</div>
+                    <!-------------------------------------------------------------------/Research Work Section---------------------------------------------->
+
+
+
+
+
+
+
+                    <!-------------------------------------------------------------------Education Section---------------------------------------------->
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>EDUCATION</h2>
+                        <!-------------------------------------------------------------------Education-1----------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Indian Institute of Technology (Banaras Hindu University), Varanasi</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                            <p>Ph.D.</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Education-1----------------------------------------------->
+                        <!-------------------------------------------------------------------Education-2----------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>University of Hyderabad, Hyderabad</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2018</h6>
+                            <p>M.Tech. in Computer Science</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Education-2----------------------------------------------->
+                        <!-------------------------------------------------------------------Education-3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Pondicherry University, Pondicherry</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2016</h6>
+                            <p>M.Sc. in Computer Science</p><br>
+                        </div>
+						<div class="w3-container">
+                            <h5 class="w3-opacity"><b>Midnapore College, West Bengal</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2014</h6>
+                            <p>B.Sc. in Computer Science</p><br>
+                        </div>
+                        <!-------------------------------------------------------------------/Education-3---------------------------------------------->
+                    </div>
+                    <!-------------------------------------------------------------------/Education Section---------------------------------------------->
+
+                    <!-- End Right Column -->
+                </div>
+
+                <!-- End Grid -->
+            </div>
+
+            <!-- End Page Container -->
+        </div>
+    </div>
+    <!-------------------------------------------------------------------Footer----------------------------------------------->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="wow shake" data-wow-delay="0.4s">
+                        <div class="page-scroll marginbot-30">
+                            <a href="tpradhan.html#top" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+                        </div>
+                    </div>
+                    <p>&copy; 2018-19 | <a href="https://www.iitbhu.ac.in/" style="color:#f8f8f8;">Indian Institute of Technology (Banaras Hindu University), Varanasi.</a> All Rights Reserved.</p>                                              <!----iit bhu website link------------------------------------->
+                    <div class="credits">
+                        <!--
+              All the links in the footer should remain intact. 
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Squadfree
+            -->
+                        <a href="https://www.iitbhu.ac.in/dept/cse">Department of Computer Science and Engineering IIT-BHU</a>   <!---------------------Dept of cse-iit-bhu link----->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------------------------------------------------------------------/Footer----------------------------------------------->
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <!--<script src="contactform/contactform.js"></script>-->
+
+</body>
+
+</html>

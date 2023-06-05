@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IR Lab @ IIT-BHU</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <!-- latest jQuery direct from google's CDN -->
+    <script type="text/javascript" src="js/modernizr.custom.96161.js"></script>
+    <script type="text/javascript" src="js/responsive-nav.js"></script>
+    <script type="text/javascript" src="js/z.jquery.min.js"></script>
+    <!-- teaching js -->
+    <script type="text/javascript" src="js/z.jquery.min.js"></script>
+    <!-- latest jQuery direct from google's CDN -->
+    <script type="text/javascript" src="js/zjquery-ui.min.js"></script>
+    <!-- teaching js -->
+    <script src="js/modernizr.custom.96161.js"></script>
+    <!-- All JavaScript at the bottom, except for Modernizr / Respond. Modernizr ena
+
+  <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+    <link href="css/zurich.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/portfolio1.css">
+    <link rel='stylesheet' href='css/portfolio2.css'>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <!-- teaching css -->
+    <!--link href="css/zresponsive-nav.css" rel="stylesheet"-->
+
+
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'onv2jgw',
+                    scriptTimeout: 3000
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = '//use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
+
+    <script type="text/javascript">
+        // BUG orientation portrait/lanscape IOS //
+        if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+            var viewportmeta = document.querySelector('meta[name="viewport"]');
+            if (viewportmeta) {
+                viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+                document.addEventListener('orientationchange', function() {
+                    viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1';
+                }, false);
+            }
+        };
+
+        // Enable Responsive Video Resize  http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+        $(function() {
+            var $allVideos = $("iframe[src^='http://player.vimeo.com'], iframe[src^='http://www.youtube.com'], object, embed"),
+                $fluidEl = $("div.video");
+            $allVideos.each(function() {
+                $(this)
+                    // jQuery .data does not work on object/embed elements
+                    .attr('data-aspectRatio', this.height / this.width)
+                    .removeAttr('height')
+                    .removeAttr('width');
+            });
+            $(window).resize(function() {
+                var newWidth = $fluidEl.width();
+                $allVideos.each(function() {
+                    var $el = $(this);
+                    $el
+                        .width(newWidth)
+                        .height(newWidth * $el.attr('data-aspectRatio'));
+                });
+            }).resize();
+        });
+
+    </script>
+
+</head>
+
+
+
+
+
+<!------------------------------------------------------------------------NAVIGATION BAR------------------------------------------------------------------->
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="load"></div>
+    </div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top " role="navigation">
+        <!--------------IR LAB LOGO --------------------------------
+        <div style="padding-left: 50px; padding-top:10px"><a href="index.html#intro"><img src="img/logoir.png" style="z-index:1; float:left; max-width:125px; max-height:39px; width:auto; height:auto;  filter: alpha(opacity=50);"></a></div>   
+      <!-------------/IR LAB LOGO -------------------------------->
+        <div class="container">
+
+            <div class="navbar-header page-scroll">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+
+                    <h1 style="margin: 0 0 30px;
+text-transform: uppercase;
+font-family: Montserrat,sans-serif;
+font-weight: 700;
+letter-spacing: 1px;
+">IR LAB </h1>
+
+                </a>
+            </div>
+
+            <!-- Navigation Bar ---->
+ 
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!------------------------------------------------------/Navigation Bar---------------------------------------------------------------------------------------------->
+
+    <!-- Section: services -->
+    <section id="publication" class="home-section text-center bg-gray">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2 id="top">PORTFOLIO</h2>
+                                <!---------------------------------------PORTFOLIO HEADING AT THE TOP------------------------------------>
+                                <i class="fa fa-2x fa-angle-down"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="portfolio">
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+
+                <!-- Left Column -->
+                <div class="w3-third">
+
+                    <div class="w3-white w3-text-grey w3-card-4">
+                        <div class="w3-display-container">
+                            <img src="img/Tribikram_Pradhan.jpg" style="width:100%" alt="Avatar">
+                            <!---------------------------------MEMBER's IMAGE------------------------------------->
+                            <div class="w3-display-bottomleft w3-container w3-text-black">
+                                <!--<h2 style="color:aliceblue">Mr. Tribikram Pradhan</h2>--->
+                                <!-----------------------------------MEMBER's NAME------------------------------------>
+                            </div>
+                        </div>
+                        <div class="w3-container">
+                            <p><b style="font-size:16px">Tribikram Pradhan</b></p><!-----------------------------------MEMBER's NAME------------------------------------>
+                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Research Scholar</p>    <!------MEMBER's POSITION-------------------->
+                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Deogarh, Orissa, India</p>       <!--------CURRENT LOCATION------------------>
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>tpradhan.rs.cse16@itbhu.ac.in</p> <!----------Official Mail ID---------------->
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>tribikram14@gmail.com</p>  <!-----------Personal Mail ID--------------->
+                            <!--<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(+91) 876 563 1236</p>         <!------------Contact number---------------->
+                            <hr>
+				
+  
+
+                            <!-------------------------------------------------------------------------------  -------------->
+
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>About</b></p>
+                            <!---------------------About (Introduction)-------------------------------------------------------------------------------->
+                            <p> 
+                                I am Tribikram Pradhan, a Ph.D student in the Department of Computer Science and Engineering, IIT (BHU), Varanasi. I am doing my research under the guidance of Dr. Sukomal Pal at the Information retrieval lab. <br>
+                                <b> Area of Intrest:-</b> Recommender System, Social Network Analysis, Natural Language Processing and Machine Learning <br>
+                                <b> Courses Handled:-</b> Design and analysis of algorithms, Data Mining and Data ware Housing, Database System, Problem solving using computers, Software Engineering.<br>
+                                <b>Research Description:-</b>
+
+                                My current research work explores hybrid recommendation including collaborative filtering, content based filtering, semantic aware and context aware recommender system including . To investigate these problems, i am generally interested in topic oriented community detection, link prediction, learning heterogeneous bibliographic information network through citation ans co-citation analysis, question answering, summarization and other problems which can be posed as NLP and sequence to sequence tasks. 
+                            </p>
+
+                            <!-----------------------About (Introduction)------------------------------------------------------------------------->                  
+                             
+                            <!-------------------------------------Skills of the member------------------------------------------------------
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                            <p>Programming(PYTHON/JAVA/C++)</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+                            </div>
+                            <p>Data Analysis Tools(R/SPSS)</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+                                    <div class="w3-center w3-text-white">80%</div>
+                                </div>
+                            </div>
+
+                            <!----<p>Illustrator</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+                            </div>
+                            <p>Media</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+                            </div>
+                            <------------------>
+                            <!------------------------
+                            <br>
+                            
+
+                            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                            <p>English</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+                            </div>
+                            <p>Spanish</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+                            </div>
+                            <p>German</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+                            </div>
+                            <br>
+                            <-------------------------------------------------->
+                        </div>
+                    </div>
+					        <div class="w3-white w3-text-grey w3-card-4" style="margin-top:16px">
+                        <div class="w3-container">
+                            <p><a href="https://scholar.google.co.in/citations?user=UBrLgeMAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-3x fa-fw w3-margin-right w3-large w3-text-teal"></i>Google Scholar</a></p> 
+			    <p><a href="https://www.researchgate.net/profile/Tribikram_Pradhan" target="_blank"><i class="ai ai-researchgate ai-3x fa-fw w3-margin-right w3-large w3-text-teal"></i>Research Gate</a></p> 
+                           <p><a href="https://dblp.uni-trier.de/pers/hd/p/Pradhan:Tribikram" target="_blank"><i class="ai ai-dblp ai-3x fa-fw w3-margin-right w3-large w3-text-teal"></i>dblp</a></p> 
+			     <p><a href="https://www.linkedin.com/in/tribikram-pradhan-39a67290" target="_blank"><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i>Linkedin</a></p>       <!--------CURRENT LOCATION------------------>
+                            <p><a href="https://github.com/riteshiitbhu17" target="_blank"><i class="fa fa-github  fa-fw w3-margin-right w3-large w3-text-teal"></i>github</a></p> <!----------Official Mail ID---------------->
+                            <p><a href="https://publons.com/author/650906/tribikram-pradhan#profile" target="_blank"><i class="ai ai-publons ai-3x fa-fw w3-margin-right w3-large w3-text-teal"></i>publons</a></p>  <!-----------Personal Mail ID--------------->
+                            <!----<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+91-947-119-1533</p>-->         <!------------Contact number---------------->
+                            
+
+            
+                        </div>
+
+  
+              
+                        
+</div>
+                    <!-- End Left Column -->
+                </div>
+
+                <!-- Right Column -->
+                <div class="w3-twothird">
+                    <!-------------------------------------------------------------------Publication Section---------------------------------------------->
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>PUBLICATIONS</h2>  <!----heading Publication-->
+                        <!-------------------------------------------------------------------Publication1---------------------------------------------->
+                        <b> JOURNALS </b>
+
+                        <div class="w3-container">
+			
+			<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020</h6>
+
+			<p><b>T Pradhan</b>, Sukomal Pal, <i>A multi-level fusion based decision support system for academic collaborator recommendation</i>, Knowledge-Based Systems, February 2020 </p>	
+	
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019</h6>
+
+			<p><b>Tribikram Pradhan</b>, Sukomal Pal, <i>A hybrid personalized scholarly venue recommender system integrating social network analysis and contextual similarity</i>, Future Generation Computer Systems, November 2019 </p>
+				
+                        <p><b>Tribikram Pradhan</b>, Sukomal Pal, <i>CNAVER: A Content and Network-based Academic VEnue Recommender system</i>, Knowledge-Based Systems, October 2019 </p>
+                        
+			    </div>
+                        
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>A framework design for logical synthesis engine</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013</h6>
+                            <p> International Journal of Engineering and Technology (IJET) <b>(Indexed in Scopus)</b></p>
+                            <p>AUTHORS:Tribikram Pradhan, Pramod Kumar, Anil N S and Amit Bakshi,</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication1---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication2---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>A Solution For Network Life Time Problem Using Content Based Energy Efficient Routing Algorithm</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013</h6>
+                            <p> International Journal Of Engineering And Technology (IJET)<b>(Indexed in Scopus)</b></p>
+                            <p>AUTHORS:Tribikram Pradhan, Ajit Kumar Sahu And Pramod Kumar</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication2--------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Enhancement of Turing machine to universal Turing machine and its JFLAP simulation</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>December-January,2015</h6>
+                            <p>International Journal of Hybrid Information Technology (IJHIT), Volume 8 Issue 1  <b>(Indexed in EI Compendex)</b></p>
+                            <p>AUTHORS:Tribikram Pradhan</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Implementation of Machine Part Cell Formation Algorithm in Cellular Manufacturing Technology Using Neural Networks</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+                            <p>International Journal of Hybrid Information Technology (IJHIT) <b>(Indexed in EI Compendex)</b> </p>
+                            <p>AUTHORS:Tribikram Pradhan, Satya Ranjan Mishra</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>AVL and Binary Search Tree based hybrid chaining model to enhance search speed in hashing</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+                            <p>International Journal of Hybrid Information Technology (IJHIT) <b>(Indexed in EI Compendex)</b></p>
+                            <p>AUTHORS:Tribikram Pradhan, Harsh Anand, Akshay Saxena, Satya Ranjan Mishra</p>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                        <b> CONFERENCES </b>
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>A computational approach of Data Smoothening and Prediction of Diabetes Dataset</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+                            <p>The Third International Symposium on Women in Computing and Informatics <b>(Indexed in: ACM Digital Library, Scopus, springer, DBLP). </b></p>
+                            <p>AUTHORS:Shivani Jakhmola, Tribikram Pradhan</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>A Rule mining Using hybrid Approaches of Rough Set Theory, Genetic algorithm and Boolen Algebra</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+                            <p>Proceedings of the second International Conference on Emerging Research in Computing, Information, Communication and Applications, ERCICA<b>(ELSEVIER Proceedings) </b></p>
+                            <p>AUTHORS:Tribikram Pradhan, Harsh Anand, Akul Goel</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>An Error Detection and Correction Technique Based on Graceful Code for Data Transfer</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+                            <p>Proceedings of the second International Conference on Emerging Research in Computing, Information, Communication and Applications, ERCICA<b>(ELSEVIER Proceedings) </b></p>
+                            <p>AUTHORS:Tribikram Pradhan, Ankit Yadav, Santosh S. Patil</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Solving the 0-1 Knapsack Problem Using Genetic Algorithm and Rough Set Theory</b></h5>
+                            <!---<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>--->
+                            <p>International Conference on Advanced Communication Control and Computing Technologies-ICACCCT<b>(Scopus, IEEE Digital Explorer) </b></p>
+                            <p>AUTHORS:Tribikram Pradhan, Akash Israni, Manish Sharma </p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Optimizing land use classification using decision tree approaches</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014</h6>
+                            <p>International Conference on Data Mining and Intelligent Computing-ICDMIC<b>(Scopus, IEEE Digital Explorer) </b></p>
+                            <p>AUTHORS:Tribikram Pradhan, Vaibhav Walia,  Rohini Kapoor, Dr. Sameer Saran </p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b> An effective way to achieve Excellence in Research based learning Using Association Rules</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014</h6>
+                            <p>International Conference on Data Mining and Intelligent Computing-ICDMIC<b>(Scopus, IEEE Digital Explorer) </b></p>
+                            <p>AUTHORS:Tribikram Pradhan, Satya Ranjan Mishra, Veerendra Kumar Jainn </p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b> A New Approach of Controlled Binning for Data Smoothening</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+                            <p>Michael Faraday IET International Summit (MFIIS-2015)<b>(IET Digital Library, IEEE Digital Explorer).  </b></p>
+                            <p>AUTHORS: Shivani Jakhmola, Tribikram Pradhan </p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>A Novel Approach For Performance Analysis And Optimal Selection Of Players In Indian Premier League Auction</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+                            <p>Proceedings of Third International Conference on Emerging Research in Computing, Information, Communication and Applications (ERCICA-15)<b>(Indexed in: Scopus, Springer and DBLP)</b></p>
+                            <p>AUTHORS:Mayank Khandelwal, Jayant Prakash, Tribikram Pradhan</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Evaluation of IPL Teams and Players using Association, Correlation and Classification Rules</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+                            <p>Proceedings of Third International Conference on Emerging Research in Computing, Information, Communication and Applications (ERCICA-15)<b> (Indexed in: IEEE Digital Explore)  </b></p>
+                            <p>AUTHORS:Jayant Prakash, Mayank Khandelwal, Tribikram Pradhan</p><hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Application of Data Mining Techniques on Heart Disease Prediction: A survey</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+                            <p>International Conference on Computer Communication and Control (ICCCC 2015)<b>(Indexed in: Scopus, Springer and DBLP)</b></p>
+                            <p>AUTHORS: Ritika Chadda, Subhankar Mayank, Tribikram Pradhan</p>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+
+                    </div>
+                      <!-------------------------------------------------------------------/Publication Section---------------------------------------------->
+		  <!-------------------------------------------------------------------Awards Section---------------------------------------------->
+		   
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>ACHIEVEMENTS</h2>
+                        <!-------------------------------------------------------------------Award-1---------------------------------------------->
+                        <div class="w3-container">
+				<b> TECHNICAL </b>
+                            <h5 class="w3-opacity"><b>Qualified GATE three times</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2011, 2012 and 2016 </h6>
+                             <hr>
+                                                
+                        </div>
+                        <!-------------------------------------------------------------------/Award-1---------------------------------------------->
+                        <!-------------------------------------------------------------------Award-2---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Merit scholarship in 1st and 3rd semester of M.Tech software technology. </b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2012,2013</h6>
+                            
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Award-2---------------------------------------------->
+                        <!-------------------------------------------------------------------Award-3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b> Qualified National Eligibility Test (NET) for Assistant Professor</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2016</h6>
+                            
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Award-3---------------------------------------------->
+                        <!-------------------------------------------------------------------Award-4---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Best PAPER Award </b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2012</h6>
+                            <p>4th international Conference on science, engineering and technology (SET) Organized by VIT.<br>
+                            <b>Paper Title:-</b>Enhancement of Turing Machine to Universal Turing Machine to Recursive Enumerable Language using J-Flap Simulation. </p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Award-4---------------------------------------------->
+                        <!-------------------------------------------------------------------Award-4---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Runner up prize in Institute Day</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2018</h6>
+                            <p>In poster presentation on topic "SNAVER : A social network analysis based scholarly venue recommender system."<br>
+                            <!--<b>Paper Title:-</b>Enhancement of Turing Machine to Universal Turing Machine to Recursive Enumerable Language using J-Flap Simulation. </p>-->
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Award-4---------------------------------------------->
+                          <!-------------------------------------------------------------------Award-4---------------------------------------------->
+                        <b>   NON TECHNICAL</b>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b> Gold  Medal in Manipal University Staff Swimming Free Styles </b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2016</h6>
+                            <br>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Award-4---------------------------------------------->
+                              <!-------------------------------------------------------------------/Award-4---------------------------------------------->
+                              <div class="w3-container">
+                            <h5 class="w3-opacity"><b> Silver Medal in Manipal University Staff  Swimming Back Stroke & Butterfly styles</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2016</h6>
+                           <br>
+				      <hr>     
+                        </div>
+                        <!-------------------------------------------------------------------/Award-4---------------------------------------------->
+				        <div class="w3-container">
+                            <h5 class="w3-opacity"><b> Bronze Medal in Manipal University Staff Swimming Relay Race Styles</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2016</h6>
+                            <br>      
+                    </div>
+                            
+                    </div>
+            
+                    <!-------------------------------------------------------------------/Awards Section---------------------------------------------->
+
+
+
+                    <!-------------------------------------------------------------------Reseach Work Section---------------------------------------------->
+                    
+                    <!--<div class="w3-container w3-card w3-white w3-margin-bottom">                    <!-------------------------------------------------------------------Publication3----------------------------------------------
+                  
+                        <!-------------------------------------------------------------------/Publication3----------------------------------------------
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>RESEARCH WORKS</h2> 
+                     <!-------------------------------------------------------------------Reseach Work1---------------------------------------------->   
+                        <!--<div class="w3-container">
+                            <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                            <hr>
+                        </div>
+                    <!-------------------------------------------------------------------/Reseach Work1----------------------------------------------> 
+                    <!-------------------------------------------------------------------Reseach Work2----------------------------------------------> 
+                        <!--<div class="w3-container">
+                            <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+                            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                            <hr>
+                        </div>
+                    <!-------------------------------------------------------------------/Reseach Work3----------------------------------------------> 
+                        <!--<div class="w3-container">
+                            <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+                        </div>
+                    <!-------------------------------------------------------------------/Reseach Work3----------------------------------------------> 
+                    <!--</div>
+                    <!-------------------------------------------------------------------/Research Work Section---------------------------------------------->
+
+
+
+
+
+
+
+                    <!-------------------------------------------------------------------Education Section---------------------------------------------->
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>EDUCATION</h2>
+                        <!-------------------------------------------------------------------Education-1----------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>IIT (BHU), Varanasi</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                            <p>Ph.D.</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Education-1----------------------------------------------->
+                        <!-------------------------------------------------------------------Education-2----------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>VIT University, Vellore</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - 2013</h6>
+                            <p>M.Tech.</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Education-2----------------------------------------------->
+                        <!-------------------------------------------------------------------Education-3---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>BPUT, Rourkela</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2007 - 2011</h6>
+                            <p>B.Tech.</p><br>
+                        </div>
+                        <!-------------------------------------------------------------------/Education-3---------------------------------------------->
+                    </div>
+                    <!-------------------------------------------------------------------/Education Section---------------------------------------------->
+
+                    <!-- End Right Column -->
+                </div>
+
+                <!-- End Grid -->
+            </div>
+
+            <!-- End Page Container -->
+        </div>
+    </div>
+    <!-------------------------------------------------------------------Footer----------------------------------------------->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="wow shake" data-wow-delay="0.4s">
+                        <div class="page-scroll marginbot-30">
+                            <a href="tpradhan.html#top" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+                        </div>
+                    </div>
+                    <p>&copy; 2018-19 | <a href="https://www.iitbhu.ac.in/" style="color:#f8f8f8;">Indian Institute of Technology (Banaras Hindu University), Varanasi.</a> All Rights Reserved.</p>                                              <!----iit bhu website link------------------------------------->
+                    <div class="credits">
+                        <!--
+              All the links in the footer should remain intact. 
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Squadfree
+            -->
+                        <a href="https://www.iitbhu.ac.in/dept/cse">Department of Computer Science and Engineering IIT-BHU</a>   <!---------------------Dept of cse-iit-bhu link----->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------------------------------------------------------------------/Footer----------------------------------------------->
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <!--<script src="contactform/contactform.js"></script>-->
+
+</body>
+
+</html>

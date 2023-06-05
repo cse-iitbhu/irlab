@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IR Lab @ IIT-BHU</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <!-- latest jQuery direct from google's CDN -->
+    <script type="text/javascript" src="js/modernizr.custom.96161.js"></script>
+    <script type="text/javascript" src="js/responsive-nav.js"></script>
+    <script type="text/javascript" src="js/z.jquery.min.js"></script>
+    <!-- teaching js -->
+    <script type="text/javascript" src="js/z.jquery.min.js"></script>
+    <!-- latest jQuery direct from google's CDN -->
+    <script type="text/javascript" src="js/zjquery-ui.min.js"></script>
+    <!-- teaching js -->
+    <script src="js/modernizr.custom.96161.js"></script>
+    <!-- All JavaScript at the bottom, except for Modernizr / Respond. Modernizr ena
+
+  <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+    <link href="css/zurich.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/portfolio1.css">
+    <link rel='stylesheet' href='css/portfolio2.css'>
+    <!-- teaching css -->
+    <!--link href="css/zresponsive-nav.css" rel="stylesheet"-->
+
+
+
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'onv2jgw',
+                    scriptTimeout: 3000
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = '//use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
+
+    <script type="text/javascript">
+        // BUG orientation portrait/lanscape IOS //
+        if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+            var viewportmeta = document.querySelector('meta[name="viewport"]');
+            if (viewportmeta) {
+                viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+                document.addEventListener('orientationchange', function() {
+                    viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1';
+                }, false);
+            }
+        };
+
+        // Enable Responsive Video Resize  http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+        $(function() {
+            var $allVideos = $("iframe[src^='http://player.vimeo.com'], iframe[src^='http://www.youtube.com'], object, embed"),
+                $fluidEl = $("div.video");
+            $allVideos.each(function() {
+                $(this)
+                    // jQuery .data does not work on object/embed elements
+                    .attr('data-aspectRatio', this.height / this.width)
+                    .removeAttr('height')
+                    .removeAttr('width');
+            });
+            $(window).resize(function() {
+                var newWidth = $fluidEl.width();
+                $allVideos.each(function() {
+                    var $el = $(this);
+                    $el
+                        .width(newWidth)
+                        .height(newWidth * $el.attr('data-aspectRatio'));
+                });
+            }).resize();
+        });
+
+    </script>
+
+</head>
+
+
+
+
+
+<!------------------------------------------------------------------------NAVIGATION BAR------------------------------------------------------------------->
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="load"></div>
+    </div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top " role="navigation">
+        <!--------------IR LAB LOGO --------------------------------
+        <div style="padding-left: 50px; padding-top:10px"><a href="index.html#intro"><img src="img/logoir.png" style="z-index:1; float:left; max-width:125px; max-height:39px; width:auto; height:auto;  filter: alpha(opacity=50);"></a></div>   
+      <!-------------/IR LAB LOGO -------------------------------->
+        <div class="container">
+
+            <div class="navbar-header page-scroll">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+
+                    <h1 style="margin: 0 0 30px;
+text-transform: uppercase;
+font-family: Montserrat,sans-serif;
+font-weight: 700;
+letter-spacing: 1px;
+">IR LAB </h1>
+
+                </a>
+            </div>
+
+            <!-- Navigation Bar ---->
+           
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!------------------------------------------------------/Navigation Bar---------------------------------------------------------------------------------------------->
+
+    <!-- Section: services -->
+    <section id="publication" class="home-section text-center bg-gray">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2 id="top">PORTFOLIO</h2>
+                                <!---------------------------------------PORTFOLIO HEADING AT THE TOP------------------------------------>
+                                <i class="fa fa-2x fa-angle-down"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="portfolio">
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+
+                <!-- Left Column -->
+                <div class="w3-third">
+
+                    <div class="w3-white w3-text-grey w3-card-4">
+                        <div class="w3-display-container">
+                            <img src="img/siba.jpg" style="width:100%" alt="Avatar"><!---------------------------------MEMBER's IMAGE------------------------------------->
+                            
+                            <div class="w3-display-bottomleft w3-container w3-text-black">
+                                <!---<h2 style="color:aliceblue">Mr. Siba Sankar Sahu</h2>--><!-----------------------------------MEMBER's NAME------------------------------------>
+                                
+                            </div>
+                        </div>
+                        <div class="w3-container">
+                            <p><b style="font-size:16px">Siba Sankar Sahu</b></p><!-----------------------------------MEMBER's NAME------------------------------------>
+                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Research Scholar</p>    <!------MEMBER's POSITION-------------------->
+                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Varanasi, U.P., India</p>       <!--------CURRENT LOCATION------------------>
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>sibasankarsahu.rs.cse17@itbhu.ac.in</p> <!----------Official Mail ID---------------->
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>siba.sankar222@gmail.com</p>  <!-----------Personal Mail ID--------------->
+                            <!--<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(+91) 979 309 6369</p>         <!------------Contact number---------------->
+                            <hr>
+
+                            <!-------------------------------------------------------------------------------  -------------->
+
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>About</b></p>
+                            <!---------------------About (Introduction)-------------------------------------------------------------------------------->
+                            <p> I am Siba Sankar Sahu, a PhD student in the Department of Computer Science and Engineering, IIT (BHU), Varanasi. I am doing my research under the guidance of Dr. Sukomal Pal at the Information retrieval lab. I am broadly interested in Text Retrieval, Deep learning, Natural language Processing and Machine Learning.
+                                <br> Currently I am working on a project Titled as <b>“Building a Sanskrit Text Collection for Information Retrieval”</b> under project Varanasi.
+                            </p>
+
+                            <!-----------------------About (Introduction)------------------------------------------------------------------------->                  
+                             
+                            <!-------------------------------------Skills of the member------------------------------------------------------
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                            <p>Programming(PYTHON/JAVA/C++)</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+                            </div>
+                            <p>Data Analysis Tools(R/SPSS)</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+                                    <div class="w3-center w3-text-white">80%</div>
+                                </div>
+                            </div>
+
+                            <!----<p>Illustrator</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+                            </div>
+                            <p>Media</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+                            </div>
+                            <------------------>
+                            <!------------------------
+                            <br>
+                            
+
+                            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                            <p>English</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+                            </div>
+                            <p>Spanish</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+                            </div>
+                            <p>German</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+                            </div>
+                            <br>
+                            <-------------------------------------------------->
+                        </div>
+                    </div><br>
+                    <!-- End Left Column -->
+                </div>
+
+                <!-- Right Column -->
+                <div class="w3-twothird">
+                    <!-------------------------------------------------------------------Publication Section---------------------------------------------->
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>CONFERENCE / WORKSHOP ATTENDED</h2>  <!----heading Publication-->
+                        <!-------------------------------------------------------------------Publication1---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>(FIRE) 2017</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h6>
+                            <p> Conference Forum for Information retrieval evaluation @ IISC Bengaluru</p>
+                            
+                            <br>
+                        </div>
+                       
+                    </div>
+                      <!-------------------------------------------------------------------/Publication Section---------------------------------------------->
+
+
+
+                    <!------------------------------------------------------------------Achievement Section---------------------------------------------->
+                    
+                 <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>ACHIEVEMENTS</h2>
+                     <!-------------------------------------------------------------------Reseach Work1---------------------------------------------->   
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Qualified GATE FOUR TIMES</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014, 2015, 2016, 2017</h6>
+                            <hr>
+                        </div>
+                    <!-------------------------------------------------------------------/Achievement----------------------------------------------> 
+                    <!-------------------------------------------------------------------Achievement---------------------------------------------> 
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>QUALIFIED NATIONAL ELIGIBILITY TEST (NET) FOR ASSISTANT PROFESSOR</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Jan 2015</h6>
+                            
+                            <br>
+                        </div>
+                
+                    </div>
+                    <!-------------------------------------------------------------------/Achievement Section---------------------------------------------->
+                    
+                      <!-------------------------------------------------------------------Experience Section---------------------------------------------->
+
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>EXPERIENCE</h2>
+                        <!-------------------------------------------------------------------Experience---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Faculty Member</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - May 2017</h6>
+                            <p>Working as Adhoc faculty at NIT Andhra Pradesh </p>
+                            <br>
+                        </div>
+                        <!-------------------------------------------------------------------/Experience---------------------------------------------->
+                    </div>
+
+
+
+
+
+
+
+                    <!-------------------------------------------------------------------Education Section---------------------------------------------->
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>EDUCATION</h2>
+                        <!-------------------------------------------------------------------Education-1----------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>IIT (BHU), Varanasi</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2017 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                            <p>Ph.D.</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Education-1----------------------------------------------->
+                        <!-------------------------------------------------------------------Education-2----------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>IIT (ISM) DHANBAD</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014-2016</h6>
+                            <p>M.Tech.</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Education-2----------------------------------------------->
+                        <!-------------------------------------------------------------------Education-2----------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Government College of Engineering, Kalahandi  under BPUT Odisha</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009-2013</h6>
+                            <p>B.Tech.</p>
+                            <!--<hr>-->
+                        </div>
+                        <!-------------------------------------------------------------------/Education-2----------------------------------------------->
+                        
+                    </div>
+                    <!-------------------------------------------------------------------/Education Section---------------------------------------------->
+
+                    <!-- End Right Column -->
+                </div>
+
+                <!-- End Grid -->
+            </div>
+
+            <!-- End Page Container -->
+        </div>
+    </div>
+    <!-------------------------------------------------------------------Footer----------------------------------------------->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="wow shake" data-wow-delay="0.4s">
+                        <div class="page-scroll marginbot-30">
+                            <a href="siba.html#top" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+                        </div>
+                    </div>
+                    <p>&copy; 2018-19 | <a href="https://www.iitbhu.ac.in/" style="color:#f8f8f8;">Indian Institute of Technology (Banaras Hindu University), Varanasi.</a> All Rights Reserved.</p>                                              <!----iit bhu website link------------------------------------->
+                    <div class="credits">
+                        <!--
+              All the links in the footer should remain intact. 
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Squadfree
+            -->
+                        <a href="https://www.iitbhu.ac.in/dept/cse">Department of Computer Science and Engineering IIT-BHU</a>   <!---------------------Dept of cse-iit-bhu link----->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------------------------------------------------------------------/Footer----------------------------------------------->
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <!--<script src="contactform/contactform.js"></script>-->
+
+</body>
+
+</html>
