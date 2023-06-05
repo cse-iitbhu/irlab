@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IR Lab @ IIT-BHU</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <!-- latest jQuery direct from google's CDN -->
+    <script type="text/javascript" src="js/modernizr.custom.96161.js"></script>
+    <script type="text/javascript" src="js/responsive-nav.js"></script>
+    <script type="text/javascript" src="js/z.jquery.min.js"></script>
+    <!-- teaching js -->
+    <script type="text/javascript" src="js/z.jquery.min.js"></script>
+    <!-- latest jQuery direct from google's CDN -->
+    <script type="text/javascript" src="js/zjquery-ui.min.js"></script>
+    <!-- teaching js -->
+    <script src="js/modernizr.custom.96161.js"></script>
+    <!-- All JavaScript at the bottom, except for Modernizr / Respond. Modernizr ena
+
+  <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+    <link href="css/zurich.css" rel="stylesheet" type="text/css">
+	         <link rel="stylesheet" href="css/pubstyle.css">
+        <link rel="stylesheet" href="css/tabstyle.css">
+    <!-- teaching css -->
+    <!--link href="css/zresponsive-nav.css" rel="stylesheet"-->
+    <link href="css/cssbox.css" rel="stylesheet">
+
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'onv2jgw',
+                    scriptTimeout: 3000
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = '//use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
+
+    <script type="text/javascript">
+        // BUG orientation portrait/lanscape IOS //
+        if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+            var viewportmeta = document.querySelector('meta[name="viewport"]');
+            if (viewportmeta) {
+                viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+                document.addEventListener('orientationchange', function() {
+                    viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1';
+                }, false);
+            }
+        };
+
+        // Enable Responsive Video Resize  http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+        $(function() {
+            var $allVideos = $("iframe[src^='http://player.vimeo.com'], iframe[src^='http://www.youtube.com'], object, embed"),
+                $fluidEl = $("div.video");
+            $allVideos.each(function() {
+                $(this)
+                    // jQuery .data does not work on object/embed elements
+                    .attr('data-aspectRatio', this.height / this.width)
+                    .removeAttr('height')
+                    .removeAttr('width');
+            });
+            $(window).resize(function() {
+                var newWidth = $fluidEl.width();
+                $allVideos.each(function() {
+                    var $el = $(this);
+                    $el
+                        .width(newWidth)
+                        .height(newWidth * $el.attr('data-aspectRatio'));
+                });
+            }).resize();
+        });
+
+    </script>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="load"></div>
+    </div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top " role="navigation">
+        <!--------------IR LAB LOGO --------------------------------
+        <div style="padding-left: 50px; padding-top:10px"><a href="index.html#intro"><img src="img/logoir.png" style="z-index:1; float:left; max-width:125px; max-height:39px; width:auto; height:auto;  filter: alpha(opacity=50);"></a></div>   
+      <!-------------/IR LAB LOGO -------------------------------->
+        <div class="container">
+
+            <div class="navbar-header page-scroll">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+
+                    <h1>IR LAB </h1>
+
+                </a>
+            </div>
+
+            <!-- Navigation Bar ---->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#intro">Home</a></li>
+                    <li><a href="#members">Members</a></li>
+                    <!--<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ongoing.html">Ongoing Projects</a></li>
+                            <li><a href="phd.html">Ph.D. Research Area</a></li>
+                        </ul>
+                    </li>-->
+                    <li><a href="#ongoing_project">Ongoing Projects</a></li>
+                    <li><a href="#phd_area">Ph.D. Research Area</a></li>
+                    <li><a href="#publication">Publications</a></li>
+                    <li><a href="#achievement">Achievements</a></li>    
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#teaching">Teachings</a></li>
+                    <li><a href="#news">News<img src="img/new1.gif" alt="new" height="20" width="30"></a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Section: intro -->
+    <section id="intro" class="intro">
+
+        <div class="slogan" style="visibility:hidden">
+            <h2 style="color:cornflowerblue; font-size:200%">WELCOME TO INFORMATION RETRIEVAL LAB</h2>
+            <h4 style="color:deepskyblue; font-size:110%">DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING IIT (BHU)</h4>
+        </div>
+        <div class="page-scroll">
+            <a href="#members" class="btn btn-circle">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+
+        </div>
+
+</section>
+    <!-- /Section: intro -->
+
+
+
+
+
+
+
+
+
+    <!-----------------------------Section: members------------------------------------------------->
+    <section id="members" class="home-section text-center">
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2>MEMBERS</h2>
+                                <i class="fa fa-2x fa-angle-down"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!----------------------------------------------------------------------------------------------------------------------->
+        <div class="container">
+            <!-- about cards row break for space. Each row is hardcoded to have 5 cards-->
+
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-5">
+                    <hr class="marginbot-50">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href="spal.html">
+                                    <h5>Dr. Sukomal Pal</h5>
+                                    <p class="subtitle">Associate Professor</p>
+                                    <div class="avatar"> <img src="img/spalsir.jpg" alt="" class="img-responsive img-circle" />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href="pradeepika.html">
+                                    <h5>Dr. Pradeepika Verma</h5>
+                                    <p class="subtitle">Post-Doctoral Fellow</p>
+                                    <div class="avatar"> <img src="img/pradeepika_pic.jpg" alt="" class="img-responsive img-circle" />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!--------------------------------------------/Member-1----------------------------------------------------------->
+
+                <!-------------------------------------------Member-2------------------------------------------------------------->
+                
+                <!--------------------------------------------/Member-2----------------------------------------------------------->
+                <!--------------------------------------------Member-3----------------------------------------------------------->
+                <!-- <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="0.8s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href="tpradhan.html">
+                                    <h5>Mr. Tribikram Pradhan</h5>
+                                    <p class="subtitle">Research Scholar</p>
+                                    <div class="avatar"><img src="img/Tribikram_Pradhan.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!--------------------------------------------/Member-3----------------------------------------------------------->
+                <!--------------------------------------------Member-4----------------------------------------------------------->
+                <!-- <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href="siba.html">
+                                    <h5>Mr. Siba Sankar Sahu</h5>
+                                    <p class="subtitle">Research Scholar</p>
+                                    <div class="avatar"><img src="img/siba.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href=sushil.html>
+                                    <h5>Mr. Sushil Kulkarni</h5>
+                                    <p class="subtitle">Research Scholar</p>
+                                    <div class="avatar"><img src="img/sushil.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!--------------------------------------------/Member-4----------------------------------------------------------->
+                <!--------------------------------------------Member-5----------------------------------------------------------->
+                <!--<div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href="anurag.html">
+                                    <h5>Mr. Anurag Banerjee</h5>
+                                    <p class="subtitle">Research Scholar</p>
+                                    <div class="avatar"> <img src="img/anurag.jpg" alt="" class="img-responsive img-circle" />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <!--------------------------------------------/Member-5----------------------------------------------------------->
+
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-5">
+                        <!--<hr class="marginbot-50">-->
+                        <br/>
+                    </div>
+                </div>
+                <!--<div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href=sushil.html>
+                                    <h5>Mr. Sushil Kulkarni</h5>
+                                    <p class="subtitle">Research Scholar</p>
+                                    <div class="avatar"><img src="img/sushil.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+                <!--<div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href=akanksha.html>
+                                    <h5>Ms. Akanksha Mishra</h5>
+                                    <p class="subtitle">Research Scholar</p>
+                                    <div class="avatar"><img src="img/akanksha1.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href="anita.html">
+                                    <h5>Ms. Anita Saroj</h5>
+                                    <p class="subtitle">Research Scholar</p>
+                                    <div class="avatar"><img src="img/anita.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href="siba.html">
+                                    <h5>Mr. Siba Sankar Sahu</h5>
+                                    <p class="subtitle">Research Scholar</p>
+                                    <div class="avatar"><img src="img/siba.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href=sushil.html>
+                                    <h5>Mr. Sushil Kulkarni</h5>
+                                    <p class="subtitle">Research Scholar</p>
+                                    <div class="avatar"><img src="img/sushil.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href=supriya.html>
+                                    <h5>Mr. Supriya Chanda</h5>
+                                    <p class="subtitle">Research Scholar</p>
+                                    <div class="avatar"><img src="img/supriya.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-5">
+                    <!--<hr class="marginbot-50">-->
+                    <br/>
+                </div>
+            </div>
+                
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href=shivam.html>
+                                    <h5>Mr. Shivam Solanki</h5>
+                                    <p class="subtitle">M.Tech</p>
+                                    <div class="avatar"><img src="img/shivamsolanki.jpeg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href=amit.html>
+                                    <h5>Mr. Amit Yadav</h5>
+                                    <p class="subtitle">M.Tech</p>
+                                    <div class="avatar"><img src="img/amit.jpeg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!---------------------------------------------------Addition------------------------------------>
+            <h3>PREVIOUS MEMBERS</h3>
+            <hr>
+            <div class="row">
+                <!-------------------------------------Member-1------------------------------------------------------------->
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href="https://scholar.google.co.in/citations?user=80Bcnq8AAAAJ&hl=en&oi=ao" target="_blank">
+                                    <h5>Mr. Ribhav Soni</h5>
+                                    <p class="subtitle">Received IDD in 2018</p>
+                                    <div class="avatar"> <img src="img/ribhav.jpg" alt="" class="img-responsive img-circle" />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="0.8s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href="tpradhan.html">
+                                    <h5>Dr. Tribikram Pradhan</h5>
+                                    <p class="subtitle">Received PhD in 2020</p>
+                                    <!--<p class="subtitle">Assistant Professor in Department of Information and Communication Technology, Manipal Institute of Technology (MAHE)</p> -->
+                                    <div class="avatar"><img src="img/Tribikram_Pradhan.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href="pradeepika.html">
+                                    <h5>Dr. Pradeepika Verma</h5>
+                                    <p class="subtitle">Completed PDF in 2022</p>
+                                    <div class="avatar"> <img src="img/pradeepika_pic.jpg" alt="" class="img-responsive img-circle" />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href="anita.html">
+                                    <h5>Ms. Anita Saroj</h5>
+                                    <p class="subtitle">Received PhD in 2022</p>
+                                    <div class="avatar"><img src="img/anita.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href="anurag.html">
+                                    <h5>Mr. Anurag Banerjee</h5>
+                                    <p class="subtitle">Research Scholar</p>
+                                    <div class="avatar"> <img src="img/anurag.jpg" alt="" class="img-responsive img-circle" />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="1s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <a href=akanksha.html>
+                                    <h5>Ms. Akanksha Mishra</h5>
+                                    <p class="subtitle">Research Scholar</p>
+                                    <div class="avatar"><img src="img/akanksha1.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    <!---------------------------------------------------------------/Section:Members------------------------------------------------------------------>
+
+
+
+
+
+
+<!---------------------------------------------------------------/Section:Ongoing Projects------------------------------------------------------------->
+<section id="ongoing_project" class="home-section text-center bg-gray">
+        <div class="heading-about">
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2 id="top">ONGOING PROJECTS</h2>
+                                <i class="fa fa-2x fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    <!---------------------------------------------------------------------->
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+    <div class="container"><!--"content">-->
+
+    	<h3 class="columnheadline">2021</h3>               <!---------------------------------Year----------------------------> 
+        <div class="columns3">           <!---------------------------------Row - 1-------------------------------------------------------------> 
+            <div class="grid">
+                <h6><a class="a-text-ext" target="blank_" href="#">Tansliteration-based projects and Android App development</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span>Supriya Chanda, Kenny Patel, Podili Varshitha, Rajat Singh </li>
+            		<li><span>SUPERVISOR:-</span> Dr. Sukomal Pal </li>
+            		<li><span>TYPE:-</span>Exploratory Project </li>
+                    <li>Download the App from<a href='https://play.google.com/store/apps/details?id=com.irlab.kids_magazine&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a></li>
+                </ul>
+            </div>
+        </div>
+
+    	<h3 class="columnheadline">2019</h3>               <!---------------------------------Year----------------------------> 
+        <div class="columns3">           <!---------------------------------Row - 1-------------------------------------------------------------> 
+            <div class="grid">
+                <h6><a class="a-text-ext" target="blank_" href="#">Expert Identification using Deep Learning</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span>Tribikram Pradhan, Anmol Agrawal, Akshat Chanchal, Anushka Agrawal</li>
+            		<li><span>SUPERVISOR:-</span> Dr. Sukomal Pal </li>
+            		<li><span>TYPE:-</span>Summer Internship Project </li>
+                    <!--<li><span>published</span> In <span class="italic">Conference on Neural Information Processing Systems (NIPS)</span>, 2017</li>-->
+                </ul>
+            </div>
+            <div class="grid">
+                <h6><a class="a-text-ext" target="blank_" href="#">Paper-Reviewer assignment using Soocial N/W analysis and Topic Modelling.</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span>Tribikram Pradhan, Suchit Sahoo, Utkrash Singh</li>
+                    <li><span>SUPERVISOR:-</span> Dr. Sukomal Pal </li>
+            		<li><span>TYPE:-</span>IR Course Project </li>
+                </ul>
+            </div>
+            <div class="grid">
+                <h6><a class="a-text-ext" target="blank_" href="#">Collacorator Recomendation using Re-inforcement Learning</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span>Tribikram Pradhan, Rohit, Chetan</li>
+            		<li><span>SUPERVISOR:-</span> Dr. Sukomal Pal </li>
+            		<li><span>TYPE:-</span>Summer Internship Project</li>
+                    <!--<li><span>published</span> In <span class="italic">Conference on Neural Information Processing Systems (NIPS)</span>, 2017</li>-->
+                </ul>
+            </div>
+            <div class="grid">
+                <h6><a class="a-text-ext" target="blank_" href="#"r>Tansliteration-based projects and Android App development</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span>Supriya Chanda, Abhishek Singh, Saurabh Yadav, Aditya Chandra Mandal</li>
+                    <li><span>SUPERVISOR:-</span> Dr. Sukomal Pal </li>
+            		<li><span>TYPE:-</span>Summer Internship Project</li>
+                </ul>
+            </div>
+            <div class="grid">
+                <h6><a class="a-text-ext" target="blank_" href="#">Effect of Stopwords in Bengali, Gujrati, Marathi Text Collection.</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span>Siba Sankar Sahoo, Sandeep Kumar, Mrinali Kumari</li>
+            		<li><span>SUPERVISOR:-</span> Dr. Sukomal Pal </li>
+            		<li><span>TYPE:-</span>Summer Internship Project </li>
+                    <!--<li><span>published</span> In <span class="italic">Conference on Neural Information Processing Systems (NIPS)</span>, 2017</li>-->
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="columnheadline">2018</h3>        <!---------------------------------Year----------------------------> 
+        <div class=columns3>                         <!---------------------------------Row - 1-------------------------------------------------------------> 
+
+            <!---------------------------------------------Research-1------------------------------------------------------------------------------------->
+            <div class="grid">
+                <h6><a class="a-text-ext" target="blank_" href="">FIRE-2018(EVENT TRACK-IL)</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span> Anita Saroj, Satyam Shubham, Anurag Banerjee</li>
+            <li><span>SUPERVISOR:-</span> Dr. Sukomal Pal </li>
+            <li><span>TYPE:-</span> Internship Project/Shared Task </li>
+                    <!--<li><span>published</span> In <span class="italic">ACM Transaction on Information Systems (TOIS)</span>, 2018</li>-->
+                </ul>
+            </div>
+           <!---------------------------------------------/Research-1------------------------------------------------------------------------------------->
+            <div class="grid">  <!--------------RESEARCH-2------->
+                <h6><a class="a-text-ext" target="blank_" href="">FIRE 2018 IRMIDIS Track</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span> Harshit Mehrotra, Anurag Banerjee</li>
+            <li><span>SUPERVISOR:-</span> Dr. Sukomal Pal </li>
+            <li><span>TYPE:-</span>Shared Task </li>
+                    <!--<li><span>published</span> In <span class="italic">ACM Transaction on Information Systems (TOIS)</span>, 2018</li>-->
+                </ul>
+            </div> <!------------/RESEARCH-2----------->
+        <div class="grid">  <!----------RESEARCH-3------>
+                <h6><a class="a-text-ext" target="blank_" href="">Citation Recommendation without Author Supervision.</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span>Tribikram Pradhan, Sandeep Pulavarthi, Vatsal Aggarwal</li>
+            <li><span>SUPERVISOR:-</span> Dr. Sukomal Pal </li>
+            <li><span>TYPE:-</span>Internship Project </li>
+                    <!--<li><span>published</span> In <span class="italic">ACM Transaction on Information Systems (TOIS)</span>, 2018</li>-->
+                </ul>
+            </div><!------------/RESEARCH-3----------->
+
+                            <div class="grid">  <!----------RESEARCH-4------>
+                <h6><a class="a-text-ext" target="blank_" href="">Scientific Collaboratoar Recommendation System using Deep Learning and natural Language Processing.</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span>Tribikram Pradhan, Shivank Pathak</li>
+            <li><span>SUPERVISOR:-</span> Dr. Sukomal Pal </li>
+            <li><span>TYPE:-</span>Internship Project </li>
+                    <!--<li><span>published</span> In <span class="italic">ACM Transaction on Information Systems (TOIS)</span>, 2018</li>-->
+                </ul>
+            </div><!------------/RESEARCH-4----------->
+        <div class="grid">  <!----------RESEARCH-5------>
+                <h6><a class="a-text-ext" target="blank_" href="">TREC 2018 Incident Streams TRACK</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span> Harshit Mehrotra, Anurag Banerjee</li>
+            <li><span>SUPERVISOR:-</span> Dr. Sukomal Pal </li>
+            <li><span>TYPE:-</span>Shared Task </li>
+                    <!--<li><span>published</span> In <span class="italic">ACM Transaction on Information Systems (TOIS)</span>, 2018</li>-->
+                </ul>
+            </div><!------------/RESEARCH-5----------->
+            <div class="grid">  <!--------------RESEARCH-6------->
+                <h6><a class="a-text-ext" target="blank_" href="displayData.html">Building a Sanskrit Text Collection for Information Retrieval</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span> Siba Sankar Sahu</li>
+            <li><span>SUPERVISOR:-</span>Dr. Sukomal Pal </li>
+            <li><span>TYPE:-</span>Part of Project Varanasi </li>
+                    <!--<li><span>published</span> In <span class="italic">ACM Transaction on Information Systems (TOIS)</span>, 2018</li>-->
+                </ul>
+            </div> <!------------/RESEARCH-6----------->
+        </div>
+        <!-- end of columns3 -->
+
+        <!--<h3 class="columnheadline">2017</h3>-->                <!---------------------------------Year----------------------------> 
+        <div class="columns3" style="visibility:hidden">           <!---------------------------------Row - 1-------------------------------------------------------------> 
+            <!---------------------------------------------Research-1------------------------------------------------------------------------------------->
+            <div class="grid">
+                <h6><a class="a-text-ext" target="blank_" href="#"></a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>MEMBERS:-</span> ANITA SAROJ, ANURAG BANERJEE, SATYAM SHUBHAM</li>
+            <li><span>SUPERVISOR:-</span> Dr. Sukomal Pal </li>
+                    <!---<li><span>published</span> In <span class="italic">Conference on Neural Information Processing Systems (NIPS)</span>, 2017</li>-->
+                </ul>
+            </div>
+            <!---------------------------------------------/Research-1------------------------------------------------------------------------------------->
+
+            <!---------------------------------------------Research-2------------------------------------------------------------------------------------->
+            <div class="grid">
+                <h6><a class="a-text-ext" target="blank_" href="#">Fully Character-Level Neural Machine Translation without Explicit Segmentation</a></h6>
+                <ul class="span-smallbold">
+                    <!-- (gives every first span in a list-item the class .smallbold) -->
+                    <li><span>authors</span> J. Lee, K. Cho and T. Hofmann</li>
+                    <li><span>published</span> In <span class="italic">Transactions of the Association for Computational Linguistics (TACL)</span>, 2017</li>
+                </ul>
+            </div>
+           <!---------------------------------------------/Research-2------------------------------------------------------------------------------------->
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+ <!---------------------------------------------------------------/Section:PhD Research areas------------------------------------->
+<section id="phd_area" class="home-section text-center bg-gray">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2>PH.D RESEARCH AREAS</h2>
+                                <i class="fa fa-2x fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    <div class="teach-section">
+        <div class="container">
+            <div class="responsivetable">
+                <!-- to make large tables scrollable in mobile view, put them in a div class "responsivetable" -->
+                
+                <table>
+                    <tbody>
+                        <!-------------------------------------I PhD Publication------------------------------------------------------>
+                        <tr>
+                            <td>
+                                <h4><a href="anita.html"> Anita Saroj</a></h4>         <!------Name will be linked to the member's portfolio page----->
+                            </td>
+                            <td >Social Media, Disaster Management, Social Media with e-Governance, Information Retrieval</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4><a href="tpradhan.html">Tribikram Pradhan</a></h4>              <!------Name will be linked to the member's portfolio page----->
+                            </td>
+                            <td >Recommender system,Information Retrieval,Social Network Analysis, Machine Learning, Genetic Algorithm</td>
+                            <!-----------<td style="width:25%">Course Catalogue Info</td>---->      <!----To give more than one publication by same phd scholar just specify the widtha nd add this <td> code------->
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4><a href="siba.html">Siba Sankar Sahu</a></h4>              <!------Name will be linked to the member's portfolio page----->
+                            </td>
+                            <td >Sanskrit Text Processing, Information Retrieval, Machine Learning, Natural Language Processing</td>
+                            <!-----------<td style="width:25%">Course Catalogue Info</td>---->      <!----To give more than one publication by same phd scholar just specify the widtha nd add this <td> code------->
+                        </tr>
+                        <!--<tr>
+                            <td>
+                                <h4><a href="akanksha.html">Akanksha Mishra</a></h4>
+                            </td>
+                            <td >Disaster Management, Social Media analysis, Information Retrieval</td>
+                            <td style="width:25%">Course Catalogue Info</td>
+                        </tr> -->
+                        <tr>
+                            <td>
+                                <h4><a href="Sushil.html">Sushil Kulkarni</a></h4>              <!------Name will be linked to the member's portfolio page----->
+                            </td>
+                            <td >Spoken Document Retrieval, Information Retrieval</td>
+                            <!-----------<td style="width:25%">Course Catalogue Info</td>---->      <!----To give more than one publication by same phd scholar just specify the widtha nd add this <td> code------->
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4><a href="Supriya.html">Supriya Chanda</a></h4>              <!------Name will be linked to the member's portfolio page----->
+                            </td>
+                            <td >Information Retrieval, Natural Language Processing, Transliteration, Code Mixing</td>
+                        </tr>
+                         <!-------------------------------------/II PhD Publication------------------------------------------------------>
+                    </tbody>
+                </table>
+                <!------------------------------------------------------------------------------------------------------------->
+            
+            </div>
+        </div>
+        <!-- end of content -->
+        
+    </div>
+
+
+
+
+
+
+
+
+    <!------------------------------------------------------------------Section:Publication------------------------------>
+<section id="publication" class="home-section text-center bg-gray">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2>Our PUBLICATIONS</h2>
+                                <i class="fa fa-2x fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------------------------------------------------------------>
+     <div class="content">
+    <ul class="tabs" role="tablist">
+    <li>
+    <input type="radio" name="tabs" id="tab1" checked />
+<!--
+        <label for="tab1" 
+               role="tab" 
+               aria-selected="true" 
+               aria-controls="panel1" 
+               tabindex="0">2018</label>
+-->
+        <div id="tab-content1" 
+             class="tab-content" 
+             role="tabpanel" 
+             aria-labelledby="description" 
+             aria-hidden="false">
+        <table width="100%">
+                      <col style="width:40%">
+                      <col style="width:15%">
+                      <col style="width:25%">
+                      <col style="width:8%">
+                      <col style="width:12%">
+                      
+      <thead>
+        <tr>
+          <th>TITLE</th>
+          <th>AUTHOR(S)</th>
+          <th>PUBLISHED AT</th>
+
+          <th>TYPE</th>
+          <th>LINK <a href="publication.html" target="_blank">Click Here</a> For full list</th>
+
+        </tr>
+    <thead>
+    <tbody>
+        <!--<tr >
+            <th>
+                <br>
+                <h3 style="font-weight: 300; margin: 0 0 30px; letter-spacing: 1px; font-family: Montserrat, sans-serif">2019</h3>
+            </th>
+            <th></th><th></th><th></th><th></th>
+        </tr> -->
+	<tr>
+            <td> Building a text retrieval system for the Sanskrit language: Exploring indexing, stemming, and searching issues </td>
+            <td> S S Sahu and S Pal</td>
+            <td>Computer Speech & Language</td>
+            <td>Journal</td>
+            <td><img src="img/new1.gif" alt="new" height="20" width="30"></td>
+        </tr>
+	<tr>
+            <td> E-Governance through social media: An Analysis on the use of Facebook and Twitter by Indian Government </td>
+            <td> A Saroj and S Pal</td>
+            <td>Electronic Government</td>
+            <td>Journal</td>
+            <td><img src="img/new1.gif" alt="new" height="20" width="30"></td>
+        </tr>
+	<tr>
+            <td> An approach for extractive text summarization using fuzzy evolutionary and clustering algorithms </td>
+            <td>P Verma, A Verma, S Pal</td>
+            <td>Applied Soft Computing</td>
+            <td>Journal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td> A fusion of variants of sentence scoring methods and collaborative word rankings for document summarization </td>
+            <td>P Verma, A Verma, S Pal</td>
+            <td>Expert Systems</td>
+            <td>Journal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td> Effect of stopwords in Indian language IR </td>
+            <td>S Sahu and S Pal</td>
+            <td>Sādhanā</td>
+            <td>Journal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>A Multi-stage Classification Framework for Disaster-Specific Tweets</td>
+            <td> Harshit Mehrotra, Akanksha Mishra and Sukomal Pal </td>
+            <td>SN Computer Science</td>
+            <td>Journal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Query Expansion for Tansliterated Text Retrieval</td>
+            <td>D K Prabhakar, S Pal, C Kumar</td>
+            <td>Transactions on Asian and Low-Resource Language Information Processing (TALLIP)</td>
+            <td>Journal</td>
+            <td></td>
+        </tr>
+        
+    	<!-- <tr>
+    		<td>Use of social media in Crisis Management: A Survey</td>
+    		<td>A Saroj, S Pal</td>
+    		<td>IJDRR</td>
+    		<td>Journal</td>
+    		<td><img src="img/new1.gif" alt="new" height="20" width="30"></td>
+    	</tr>
+    	<tr>
+    		<td>A multi-level fusion based decision support system for academic collaborator recommendation</td>
+    		<td>T Pradhan, S Pal</td>
+    		<td>Knowledge-Based Systems</td>
+    		<td>Journal</td>
+    		<td><img src="img/new1.gif" alt="new" height="20" width="30"></td>
+    	</tr>
+    	<tr>
+            <td>A hybrid personalized scholarly venue recommender system integrating social network analysis and contextual similarity</td>
+            <td>T Pradhan, S Pal</td>
+            <td>Future Generation Computer Systems</td>
+            <td>Journal</td>
+            <td><img src="img/new1.gif" alt="new" height="20" width="30"></td>
+        </tr>
+        <tr>
+            <td>A Comparative Analysis on Hindi and English Extractive Text Summarization</td>
+            <td>P Verma, S Pal, H Om</td>
+            <td>ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP)</td>
+            <td>Journal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Text summarization from legal documents: a survey</td>
+            <td>A Kanapala, S Pal, R Pamula</td>
+            <td>Artificial Intelligence Review 51(3): 371-402 (2019)</td>
+            <td>Journal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>IRLab@IITBHU at HASOC 2019: Traditional Machine Learning for Hate Speech and Offensive Content Identification</td>
+            <td>A Saroj, R K Mundotiya, S Pal</td>
+            <td>FIRE (HASOC) 2019</td>
+            <td>Conference</td>
+            <td><img src="img/new1.gif" alt="new" height="20" width="30"></td>
+        </tr>
+        <tr>
+            <td>Machine transliteration and transliterated text retrieval: a survey</td>
+            <td>DK Prabhakar, S Pal</td>
+            <td>Sādhanā</td>
+            <td>Journal</td>
+            <td></td>
+        </tr> -->
+        <!--<tr>
+            <td>IIT (BHU)@ IECSIL-FIRE-2018: Language Independent Automatic Framework for Entity Extraction in Indian Languages</td>
+            <td>A Mishra, RK Mundotiya, S Pal</td>
+            <td>CEUR Workshop Proceedings</td>
+            <td>Workshop Proceedings</td>
+            <td><a href="http://ceur-ws.org/Vol-2266/T3-4.pdf" target="_blank">Download</a></td>
+        </tr>
+        <tr>
+            <td>IIT BHU at FIRE 2018 IRMiDis Track - Obtaining Factual Tweets during Natural Disasters.</td>
+            <td>H Mehrotra, S Pal</td>
+            <td>CEUR Workshop Proceedings</td>
+            <td>Workshop Proceedings</td>
+            <td><a href="http://ceur-ws.org/Vol-2266/T1-5.pdf" target="_blank">Download</a></td>
+        </tr>
+        <tr>
+            <td>Rule based Event Extraction System from Newswires and Social Media Text in Indian Languages (EventXtract-IL) for English and Hindi Data.</td>
+            <td>A Saroj, S Pal</td>
+            <td>CEUR Workshop Proceedings</td>
+            <td>Workshop Proceedings</td>
+            <td><a href="http://ceur-ws.org/Vol-2266/T5-3.pdf" target="_blank">Download</a></td>
+        </tr> 
+        <tr>
+            <td>Gold Standard Creation for Microblog Retrieval: Challenges of Completeness in IRMiDis </td>
+            <td>R. Soni, S. Pal</td>
+            <td>Companion of the The Web Conference 2018 on The Web Conference 2018, 1639-1642</td>
+            <td>Workshop Proceedings</td>
+            <td><a href="https://www.cse.iitk.ac.in/users/kripa/smerp2018/SMERP2018-Soni.pdf" target="_blank">Download</a></td>
+        </tr>
+        <tr>
+            <td>IIT-BHU In TREC 2018 Incidents Stream Track.</td>
+            <td>H Mehrotra, S Pal</td>
+            <td>TREC 2018</td>
+            <td>Workshop Proceedings</td>
+            <td><a href="https://trec.nist.gov/pubs/trec27/papers/IIT-BHU-IS.pdf" target="_blank">Download</a></td>
+        </tr>
+	    
+        <tr >
+            <th>
+                <br>
+                <h3 style="font-weight: 300; margin: 0 0 30px; letter-spacing: 1px; font-family: Montserrat, sans-serif">2017</h3>
+            </th>
+            <th></th><th></th><th></th><th></th>
+        </tr>
+        <tr>
+            <td>IIT BHU at FIRE 2017 IRMiDis Track-Fully Automatic Approaches to Information Retrieval</td>
+            <td>H. Mehrotra, R. Soni, S. Pal </td>
+            <td>CEUR Workshop Proceedings</td>
+            <td>Workshop Proceedings</td>
+            <td><a href="http://ceur-ws.org/Vol-2036/T2-10.pdf" target="_blank">Download</a></td>
+        </tr>
+        <tr>
+            <td>Microblog Retrieval for Disaster Relief: How To Create Ground Truths?</td>
+            <td> Ribhav Soni, Sukomal Pal</td>
+            <td>SMERP@ ECIR</td>
+            <td>Workshop Proceedings</td>
+            <td><a href="http://ceur-ws.org/Vol-1832/SMERP_2017_peer_review_paper_6.pdf" target="_blank">Download</a></td>
+        </tr>
+        <tr >
+            <th>
+                <br>
+                <h3 style="font-weight: 300; margin: 0 0 30px; letter-spacing: 1px; font-family: Montserrat, sans-serif">2016</h3>
+            </th>
+            <th></th><th></th><th></th><th></th>
+        </tr>
+        <tr>
+            <td>IIT BHU at FIRE 2016 Microblog Track: A Semi-automatic Microblog Retrieval System.</td>
+            <td>Ribhav Soni, Sukomal Pal </td>
+            <td>FIRE (Working Notes)</td>
+            <td>Working Notes</td>
+            <td><a href="http://ceur-ws.org/Vol-1737/T2-5.pdf" target="_blank">Download</a></td>
+        </tr>
+	<tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="publication.html" target="_blank">Click Here</a> For full list</td>
+        </tr>-->
+    </tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+
+
+
+
+
+
+<!-------------------------------------------Section: achievement-------------------------------------------->
+  <section id="achievement" class="home-section text-center bg-gray">
+        <div class="s_data">
+            <div class="heading-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                <div class="section-heading">
+                                    <h2 id="top">ACHIEVEMENTS</h2>
+                                    <i class="fa fa-2x fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    <!-------------------------------------------------------------------------------------------------------------->
+    <div class="container">
+        <div id="blog" style="display: block; position: static; visibility: visible;" class="active">
+            <div class="columns3">
+                <section class="blog col-md-12 bottom_30">
+                    
+                    <div id="grid-blog" class="row cbp cbp-caption-active cbp-caption-pushTop cbp-ready" style="height: inherit ;">
+                        <div class="cbp-wrapper-outer">
+                            <div class="cbp-wrapper">
+                                <!---------------------------------------------------------------------------i.achievement ------------------------------>
+                                <div class="cbp-item" style="width: 272px; left: 0px; top: 0px;">
+                                    <div class="cbp-item-wrapper">
+                                        <a href="" class="blog-box">
+                                            <div class="blog-img">
+                                                <!---<img src="img/" alt="">To add image in the postcard-->
+                                            </div>
+                                            <div class="blog-box-info">
+                                                <span class="category">Institute Day</span>
+                                                <h2 class="title">MR. TRIBIKRAM PRADHAN</h2>
+                                                <p class="little-text">Runner up prize in Poster Presentation on topic "SNAVER : A social network analysis based scholarly venue recommender system."</p>
+                                                <span class="date">Feb 2018</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------------ii.achievement --------------------------->
+                                <div class="cbp-item" style="width: 272px; left: 272px; top: 0px;">
+                                    <div class="cbp-item-wrapper" style="visibility:hidden;"><!--remove style="visibility:hidden" and then perform changes-->
+                                        <a href="#" class="blog-box" >
+                                               <div class="blog-img">
+                                                <!---<img src="img/" alt="">To add image in the postcard-->
+                                            </div>
+                                            <div class="blog-box-info">
+                                                <span class="category">Institute Day</span>
+                                                <h2 class="title">MR. TRIBIKRAM PRADHAN</h2>
+                                                <p class="little-text">Runner up prize in Poster Presentation on topic "SNAVER : A social network analysis based scholarly venue recommender system."</p>
+                                                <span class="date">Feb 2018</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-----------------------------------------------------------------iii.achievement--------------------------------------------->
+                                <div class="cbp-item" style="width: 272px; left: 544px; top: 0px;">
+                                    <div class="cbp-item-wrapper" style="visibility:hidden;"><!--remove style="visibility:hidden" and then perform changes-->
+                                        <a href="#" class="blog-box">
+                                                                          <div class="blog-img">
+                                                <!---<img src="img/" alt="">To add image in the postcard-->
+                                            </div>
+                                            <div class="blog-box-info">
+                                                <span class="category">Institute Day</span>
+                                                <h2 class="title">MR. TRIBIKRAM PRADHAN</h2>
+                                                <p class="little-text">Runner up prize in Poster Presentation on topic "SNAVER : A social network analysis based scholarly venue recommender system."</p>
+                                                <span class="date">Feb 2018</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-------------------------------------------------------------------------iv. achievenment ------------------------------------->
+                                <div class="cbp-item" style="width: 272px; left: 0px; top: 365px;">
+                                    <div class="cbp-item-wrapper" style="visibility:hidden"><!--remove style="visibility:hidden" and then perform changes-->
+                                        <a href="#" class="blog-box" >
+                                                                  <div class="blog-img">
+                                                <!---<img src="img/" alt="">To add image in the postcard-->
+                                            </div>
+                                            <div class="blog-box-info" style="visibility:hidden"><!--remove style="visibility:hidden" and then perform changes--> 
+                                                <span class="category"><!--Event Name--></span>
+                                                <h2 class="title"><!--Winner's Name--></h2>
+                                                <p class="little-text"><!--A short description of prize won--></p>
+                                                <span class="date"><!--Event date--></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                              <!-------------------------------------------------------------------------v. achievenment ------------------------------------->
+                                <div class="cbp-item" style="width: 272px; left: 544px; top: 383px;">
+                                    <div class="cbp-item-wrapper"style="visibility:hidden"><!--remove style="visibility:hidden" and then perform changes-->
+                                        <a href="#" class="blog-box">
+                                                         <div class="blog-img">
+                                                <!---<img src="img/" alt="">To add image in the postcard-->
+                                            </div>
+                                            <div class="blog-box-info" style="visibility:hidden"><!--remove style="visibility:hidden" and then perform changes--> 
+                                                <span class="category"><!--Event Name--></span>
+                                                <h2 class="title"><!--Winner's Name--></h2>
+                                                <p class="little-text"><!--A short description of prize won--></p>
+                                                <span class="date"><!--Event date--></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-------------------------------------------------------------------------vi. achievenment ------------------------------------->
+                                <div class="cbp-item" style="width: 272px; left: 272px; top: 421px;">
+                                    <div class="cbp-item-wrapper"style="visibility:hidden"><!--remove style="visibility:hidden" and then perform changes-->
+                                        <a href="#" class="blog-box">
+                                                         <div class="blog-img">
+                                                <!---<img src="img/" alt="">To add image in the postcard-->
+                                            </div>
+                                            <div class="blog-box-info" style="visibility:hidden"><!--remove style="visibility:hidden" and then perform changes--> 
+                                                <span class="category"><!--Event Name--></span>
+                                                <h2 class="title"><!--Winner's Name--></h2>
+                                                <p class="little-text"><!--A short description of prize won--></p>
+                                                <span class="date"><!--Event date--></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-------------------------------------------------------------------------/achievenment ------------------------------------->
+                                <!-------------------------------------------------------------------------vii. achievenment ------------------------------------->
+                                <div class="cbp-item" style="width: 272px; left: 272px; top: 421px;">
+                                    <div class="cbp-item-wrapper">
+                                        <a href="#" class="blog-box" style="visibility:hidden"><!--remove style="visibility:hidden" and then perform changes-->
+                                            <div class="blog-img">
+                                                <!---<img src="img/" alt="">To add image in the postcard-->
+                                            </div>
+                                            <div class="blog-box-info" style="visibility:hidden"><!--remove style="visibility:hidden" and then perform changes--> 
+                                                <span class="category"><!--Event Name--></span>
+                                                <h2 class="title"><!--Winner's Name--></h2>
+                                                <p class="little-text"><!--A short description of prize won--></p>
+                                                <span class="date"><!--Event date--></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-------------------------------------------------------------------------/achievenment ------------------------------------->
+                                <!-------------------------------------------------------------------------viii. achievenment ------------------------------------->
+                                <div class="cbp-item" style="width: 272px; left: 272px; top: 421px;">
+                                    <div class="cbp-item-wrapper" style="visibility:hidden"><!--remove style="visibility:hidden" and then perform changes-->
+                                        <a href="#" class="blog-box">
+                                                          <div class="blog-img">
+                                                <!---<img src="img/" alt="">To add image in the postcard-->
+                                            </div>
+                                            <div class="blog-box-info" style="visibility:hidden"><!--remove style="visibility:hidden" and then perform changes--> 
+                                                <span class="category"><!--Event Name--></span>
+                                                <h2 class="title"><!--Winner's Name--></h2>
+                                                <p class="little-text"><!--A short description of prize won--></p>
+                                                <span class="date"><!--Event date--></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-------------------------------------------------------------------------/achievenment ------------------------------------->
+                                <!-------------------------------------------------------------------------ix. achievenment ------------------------------------->
+                                <div class="cbp-item" style="width: 272px; left: 272px; top: 421px;">
+                                    <div class="cbp-item-wrapper" style="visibility:hidden"><!--remove style="visibility:hidden" and then perform changes-->
+                                        <a href="#" class="blog-box">
+                                                               <div class="blog-img">
+                                                <!---<img src="img/" alt="">To add image in the postcard-->
+                                            </div>
+                                            <div class="blog-box-info" style="visibility:hidden"><!--remove style="visibility:hidden" and then perform changes--> 
+                                                <span class="category"><!--Event Name--></span>
+                                                <h2 class="title"><!--Winner's Name--></h2>
+                                                <p class="little-text"><!--A short description of prize won--></p>
+                                                <span class="date"><!--Event date--></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-------------------------------------------------------------------------/achievenment ------------------------------------->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<section id="gallery" class="home-section text-center bg-gray">
+        <div class="s_data">
+            <div class="heading-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                <div class="section-heading">
+                                    <h2 id="top">GALLERY</h2>
+                                    <i class="fa fa-2x fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------Content in gallery section------------------------------------------------------------------------------------------------->
+     <div class="container">
+        <ul>
+            <li>
+            	<h5 style="margin: 0 0 0 0;">Information Retrieval Lab</h5>
+                <hr>
+                <div class="cssbox">
+                    <a id="image1" href="#image1">
+               			<img class="cssbox_thumb" src="img/lab.jpg" width="160" height="100" style="padding-left: 45px;">  <!------image-1----for thumbnail-->
+        				<span class="cssbox_full">
+							<img src="img/lab.jpg">               <!------image-1---full size image--->
+        				</span>
+      				</a>
+      				<a class="cssbox_close" href="#void"></a>
+      				<a id="image12" href="#image12">
+               			<img class="cssbox_thumb" src="img/lab1.jpg" width="160" height="100" style="padding-left: 45px;">  <!------image-1----for thumbnail-->
+        				<span class="cssbox_full">
+							<img src="img/lab1.jpg">               <!------image-1---full size image--->
+        				</span>
+      				</a>
+      				<a class="cssbox_close" href="#void"></a>
+      				<a id="image13" href="#image13">
+               			<img class="cssbox_thumb" src="img/lab2.jpg" width="160" height="100" style="padding-left: 45px;">  <!------image-1----for thumbnail-->
+        				<span class="cssbox_full">
+							<img src="img/lab2.jpg">               <!------image-1---full size image--->
+        				</span>
+      				</a>
+      				<a class="cssbox_close" href="#void"></a>
+      				<a id="image14" href="#image14">
+               			<img class="cssbox_thumb" src="img/lab3.jpg" width="160" height="100" style="padding-left: 45px;">  <!------image-1----for thumbnail-->
+        				<span class="cssbox_full">
+							<img src="img/lab3.jpg">               <!------image-1---full size image--->
+        				</span>
+      				</a>
+                    <a class="cssbox_close" href="#void"></a>
+                </div>
+            </li>
+        </ul>
+        <h3 class="columnheadline">2020</h3>
+        <ul>
+            <li>
+                <h5 style="margin: 0 0 0 0;">Convocation @Dr. Tribikram Pradhan</h5>
+                <hr>
+                <div class="cssbox">
+                    <a id="image4" href="#image4">
+                        <img class="cssbox_thumb" src="img/Dr_T_Pradhan_1.jpg" width="160" height="100" style="padding-left: 45px;">  <!------image-1----for thumbnail-->
+                        <span class="cssbox_full">
+                            <img src="img/Dr_T_Pradhan_1.jpg">               <!------image-1---full size image--->
+                        </span>
+                    </a>
+                    <a class="cssbox_close" href="#void"></a>
+                    <a id="image41" href="#image41">
+                        <img class="cssbox_thumb" src="img/Dr_T_Pradhan_2.jpg" width="160" height="100" style="padding-left: 45px;">  <!------image-1----for thumbnail-->
+                        <span class="cssbox_full">
+                            <img src="img/Dr_T_Pradhan_2.jpg">               <!------image-1---full size image--->
+                        </span>
+                    </a>
+                    <a class="cssbox_close" href="#void"></a>
+                </div>
+            </li>
+        </ul>
+     	<h3 class="columnheadline">2019</h3>
+        <ul>
+            <li>
+            	<h5 style="margin: 0 0 0 0;">Data Science Workshop</h5>
+            	<hr>
+                <div class="cssbox">
+                    <a id="image2" href="#image2">
+               			<img class="cssbox_thumb" src="img/datascience.jpg" width="160" height="100" style="padding-left: 45px;">  <!------image-1----for thumbnail-->
+        				<span class="cssbox_full">
+							<img src="img/datascience.jpg">               <!------image-1---full size image--->
+        				</span>
+      				</a>
+      				<a class="cssbox_close" href="#void"></a>
+      				<a id="image21" href="#image21">
+               			<img class="cssbox_thumb" src="img/datascience1.jpg" width="160" height="100" style="padding-left: 45px;">  <!------image-1----for thumbnail-->
+        				<span class="cssbox_full">
+							<img src="img/datascience1.jpg">               <!------image-1---full size image--->
+        				</span>
+      				</a>
+                    <a class="cssbox_close" href="#void"></a>
+                    <a id="image22" href="#image22">
+               			<img class="cssbox_thumb" src="img/datascience2.jpg" width="160" height="100" style="padding-left: 45px;">  <!------image-1----for thumbnail-->
+        				<span class="cssbox_full">
+							<img src="img/datascience2.jpg">               <!------image-1---full size image--->
+        				</span>
+      				</a>
+                    <a class="cssbox_close" href="#void"></a>
+                </div>
+            </li>
+            <br>
+            <li>
+            	<h5 style="margin: 0 0 0 0;">Talk by Prof. Arbin Kumar Dey on Deep Learning (LSTM)</h5>
+            	<hr>
+                <div class="cssbox">
+                    <a id="image3" href="#image3">
+               			<img class="cssbox_thumb" src="img/IITG.jpg" width="160" height="100" style="padding-left: 45px;">  <!------image-1----for thumbnail-->
+        				<span class="cssbox_full">
+							<img src="img/IITG.jpg">               <!------image-1---full size image--->
+        				</span>
+      				</a>
+      				<a class="cssbox_close" href="#void"></a>
+                </div>
+            </li>
+        </ul>
+        <h3 class="columnheadline">2018</h3>
+        <ul>
+            <li>
+            	<h5 style="margin: 0 0 0 0;">Teachers Day Outing at CCD</h5>
+				<hr>
+				<div class="cssbox" >
+            		<a id="image6" href="#image6">
+						<img class="cssbox_thumb" src="img/teachersday.jpg" width="160" height="100" style="padding-left: 45px;">
+        				<span class="cssbox_full">
+          					<img src="img/teachersday.jpg">
+ 						</span>
+      				</a>
+            		<a class="cssbox_close" href="#void"></a>
+        		</div>
+            </li>
+        </ul>
+        <h3 class="columnheadline">2017</h3>
+        <ul>
+            <li>
+                <h5 style="margin: 0 0 0 0;">Dr. Thomas Mandl's visit</h5>
+                <hr>
+                <div class="cssbox" style="padding-top: 2px">
+                    <a id="image7" href="#image7">
+						<img class="cssbox_thumb" src="img/th_01.jpg" width="160" height="100" style="padding-left: 45px;">
+        				<span class="cssbox_full">
+        					<img src="img/th_01.jpg">
+        				</span>
+					</a>
+                    <a class="cssbox_close" href="#void"></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+	    <!------------------------------------------------------------------- /Section: teaching --------------------------------------------------------->
+    <section id="teaching" class="home-section text-center bg-gray">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2>TEACHING</h2>
+                                <i class="fa fa-2x fa-angle-down"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="teach-section">
+        <div class="container">
+
+            <div class="responsivetable">
+                <!-- to make large tables scrollable in mobile view, put them in a div class "responsivetable" -->
+                <h3> Odd Semester</h3>
+                <!-------------------------------------------------SEMESTER IN WHICH THE SUBJECT WAS TAKEN UP------------------------->
+                <table>
+                    <tbody>
+                        <!---------------------------------------------------SUBJECT-1---------------------------------------------------------------------->
+                        <tr>
+                            <td>
+                                <h4>Compilers</h4>
+                            </td>
+                            <td style="width:25%"><a class="a-ext" href="https://classroom.google.com/u/0/c/NzAxMzk0NTY5NFpa">Course Catalogue Info</a></td>
+                            <td style="width:25%"><a class="a-int" href="https://classroom.google.com/u/0/c/NzAxMzk0NTY5NFpa">Lecture Details</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!------------------------------------------------------------------------------------------------------------------------------------->
+
+                <h3> Even Semester</h3>
+                <!-------------------------------------------------SEMESTER IN WHICH THE SUBJECT WAS TAKEN UP------------------------->
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4>Information Retrieval</h4>
+                            </td>
+                            <td style="width:25%"><a class="a-ext" href="https://classroom.google.com/u/0/c/NDUwNDc2MTQ1MjMx">Course Catalogue Info</a></td>
+                            <td style="width:25%"><a class="a-int" href="https://classroom.google.com/u/0/c/NDUwNDc2MTQ1MjMx">Lecture Details</a></td>
+                        </tr>
+                        <!--------------------------------------------------------------------------------------------------------------------------------------->
+                    </tbody>
+                </table>
+            </div>
+            <!-----------------------------------------div with hidden visibility is added to set the width------------------------------------------------------->
+            <div class="spacetaker" style="visibility: hidden">
+                <div class="responsivetable">
+                    <!-- to make large tables scrollable in mobile view, put them in a div class "responsivetable" -->
+                    <h3> Odd Semester</h3>
+                    <!-------------------------------------------------YEAR IN WHICH THE SUBJECT WAS TAKEN UP------------------------->
+                    <table>
+                        <tbody>
+                            <!---------------------------------------------------SUBJECT-1---------------------------------------------------------------------->
+                            <tr>
+                                <td>
+                                    <h4>Compilers</h4>
+                                </td>
+                                <td style="width:25%"><a class="a-ext" href="https://classroom.google.com/u/0/c/NzAxMzk0NTY5NFpa">Course Catalogue Info</a></td>
+                                <td style="width:25%"><a class="a-int" href="https://classroom.google.com/u/0/c/NzAxMzk0NTY5NFpa">Lecture Details</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <h3> Even Semester</h3>
+                    <!-------------------------------------------------YEAR IN WHICH THE SUBJECT WAS TAKEN UP------------------------->
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4>Information Retrieval</h4>
+                                </td>
+                                <td style="width:25%"><a class="a-ext" href="">Course Catalogue Info</a></td>
+                                <td style="width:25%"><a class="a-int" href="">Lecture Details</a></td>
+                            </tr>
+                            <!--------------------------------------------------------------------------------------------------------------------------------------->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!----------------------------------------------------------------------------------------------------------------------------------------------------->
+            </div>
+            <!-----end of spacetaker----->
+        </div>
+        <!-- end of content -->
+
+    </div>
+
+    
+<!--------------------------------------------------------------------Section:   News------------------------------------------------------------------------------>
+<section id="news" class="home-section text-center bg-gray">
+    <div class="heading-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="wow bounceInDown" data-wow-delay="0.4s">
+                        <div class="section-heading">
+                            <h2>OPPORTUNITIES / NEWS</h2>
+                            <i class="fa fa-2x fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="container"><!--"content">-->
+
+    	<!--<h3 class="columnheadline">2021</h3> 
+        <div class=columns3> 
+            <div class="grid">
+                <h6><a class="a-text-ext" href="">Call for Android / iOS App Development Internship 2021</a> <img src="img/new1.gif" alt="new" height="20" width="30"> </h6>
+                <ul class="span-smallbold">
+                    <li><span>ELIGIBILITY:-</span>
+                        <span class="italic">
+                            <ul>
+                                <li>II/III year B.TECH/B.E. student</li>
+                                <li>Good Academic Performance</li>
+                            </ul>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+        <h3 class="columnheadline">2022</h3>
+        <div class="columns3"> 
+            <div class="grid">
+                <h6><a class="a-text-ext" href='https://www.iitbhu.ac.in/sites/default/files/institute/2022/projects/project_jra_cse_collecting.pdf'>Advertisement for a Junior Research Assistant (JRA)</a> </h6>
+                <ul class="span-smallbold">
+                    <li><span>Project Title:</span>Development of a Disaster Response System for Collecting & Disseminating Information through Social Media Text Processing</li>
+                    <li><span>Name of the Post:</span>Junior Research Assistan</li>
+                    <li><span>Duration of project:</span>3 years</li>
+                    <li><span>Essential Qualifications:</span>
+                    	<span class="italic">
+                            <ul>
+                                <li>1. Applicants to JRA should be Indian nationals and residents of U. P.</li>
+                                <li>2. The candidates should possess B.E. / B. Tech or M.E./ M.Tech with first class in Computer Science or equivalent</li>
+                                <li>The upper Age Limit is 28 Years as on 1st April 2022. (relaxable for 5 years for SC/ST/Physically Handicapped/Female candidates)</li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li><span>Desirable Qualifications:-</span> 
+                        <span class="italic">
+                            <ul>
+                                <li>1. Candidates with strong programming skills, academic credentials and knowledge in machine learning and deep learning will be preferred</li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>[<a href='https://www.iitbhu.ac.in/sites/default/files/institute/2022/projects/project_jra_cse_collecting.pdf'>Click Here for Advertisement</a>][<a href='https://www.iitbhu.ac.in/sites/default/files/institute/2022/projects/application_form_cse.odt'>Application Form</a>]</li>
+                </ul>
+            </div>
+            <div class="grid">
+                <h6><a class="a-text-ext" href="">Call for Android / iOS App Development Internship 2021</a> <img src="img/new1.gif" alt="new" height="20" width="30"> </h6>
+                <ul class="span-smallbold">
+                    <li><span>ELIGIBILITY:-</span>
+                        <span class="italic">
+                            <ul>
+                                <li>II/III year B.TECH/B.E. student</li>
+                                <li>Good Academic Performance</li>
+                            </ul>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="columnheadline">2020</h3>        <!---------------------------------Year----------------------------> 
+        <div class=columns3> 
+            <div class="grid">
+                <h6><a class="a-text-ext" href='./files/SPal-ASCON-9months-advt.pdf'><s>Advertisement for Senior Research Fellow in sponsored project</a></s></h6>
+                <ul class="span-smallbold">
+                    <li><span>Project Title:</span> Development of text-based matching algorithms for bartering software </li>
+                    <li><span>Name of the Post:</span> Senior Research Fellow @ Rs. 35000.00 per month + HRA as admissible to Varanasi​ . </li>
+                    <li><span>Duration of project:</span> 9 months or end of the project tenure whichever is earlier </li>
+                    <li><span>Essential Qualifications:</span> M. Tech or equivalent in CSE / IT with good results throughout </li>
+                    <li><span>Desirable Qualifications:-</span> 
+                        <span class="italic">
+                            <ul>
+                                <li>1. NET/JRFcleared /PhD submitted in CS/IT</li>
+                                <li>2. Experience in research in the domain of recommender systems as demonstrated by publications</li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>[<a href='./files/SPal-ASCON-9months-advt.pdf'>Click Here for Advertisement</a>]</li>
+                </ul>
+            </div>
+            <div class="grid">
+                <h6><a class="a-text-ext" href='./files/SPal-ASCON-9months-advt.pdf'><s>Advertisement for Program Developer in sponsored project</a></s></h6>
+                <ul class="span-smallbold">
+                    <li><span>Project Title:</span> Development of text-based matching algorithms for bartering software </li>
+                    <li><span>Name of the Post:</span> Program Developer @ Rs. 25000.00 per month + HRA as admissible to Varanasi​. </li>
+                    <li><span>Duration of project:</span> 9 months or end of the project tenure whichever is earlier </li>
+                    <li><span>Essential Qualifications:</span> B. Tech (or MTech) or equivalent in CSE / IT with good results throughout </li>
+                    <li><span>Desirable Qualifications:-</span> 
+                        <span class="italic">
+                            <ul>
+                                <li>1. Experience in programming and developing softwares</li>
+                                <li>2. Working knowledge in recommender systems</li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>[<a href='./files/SPal-ASCON-9months-advt.pdf'>Click Here for Advertisement</a>]</li>
+                </ul>
+            </div>
+            <!-- <div class="grid">
+                <h6><a class="a-text-ext" href="">Talk on Machine Learning: "Magic of LSTM - Some spatio temporal feature extraction</a></h6>
+                <ul class="span-smallbold">
+                    <li><span>SPEAKER:-</span>Dr. Arabin K Dey</li>
+                    <li>Associate Professor, Department of Mathematics, IIT Guwahati</li>
+                    <li><span>DATE:-</span>07-03-2019</li>
+                </ul>
+            </div>
+
+
+            <div class="grid">
+                <h6><a class="a-text-ext " href="">Android App Development INTERNSHIP 2021</a></h6>
+                <ul class="span-smallbold">
+                    <li><span>OPENING DATE</span> 25th Feb 2019</li>
+                    <li><span>ELIGIBILITY:-</span>
+                        <span class="italic">
+                            <ul>
+                                <li>II/III year B.TECH/B.E. </li>
+                                <li> Good Academic Performance</li>
+                                <li>Proven Research/Project Performance (Optional)</li>
+                            </ul>
+                            <li><span>DURATION:-</span> 2 Months(May - July)</li>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid">
+                <h6><a class="a-text-ext " href="">WINTER INTERNSHIP 2019</a></h6>
+                <ul class="span-smallbold">
+                    <li><span>OPENING DATE</span> 15th August 2019</li>
+                    <li><span>ELIGIBILITY:-</span>
+                        <span class="italic">
+                            <ul>
+                                <li>II/III year B.TECH/B.E. </li>
+                                <li> Good Academic Performance</li>
+                                <li>Proven Research/Project Performance (Optional)</li>
+                            </ul>
+                            <li><span>DURATION:-</span> 1 Month (Dec - Jan)</li>
+                        </span>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-------------------------------------------------------------------------------------/opportunities section----------------------------------------------->
+
+
+    <!-----------------------------------------------------------------------Section: contact------------------------------------------------------------------->
+    <section id="contact" class="home-section text-center">
+        <div class="heading-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2>Get in touch</h2>
+                                <i class="fa fa-2x fa-angle-down"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-5">
+                    <hr class="marginbot-50">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="widget-contact">
+                        <h5>ADDRESS</h5>
+                        <address><i class="fa fa-map-marker"></i>
+					  		<strong>TF-01, Information Retrieval Lab</strong><br>
+					  		Dept. of Computer Science and Engineering<br>
+					  		Indian Institute of Technology (Banaras Hindu University)<br/>
+	                        Varanasi - 221005 <br/>
+	                        Uttar Pradesh, India<br>
+					  		<!--<abbr title="Phone">P:</abbr> (+91) 947-119-1533----------------If we want to add a phone number in future----->
+						</address>
+                        <address>
+				  			<i class="fa fa-envelope"></i>
+				  			<strong>Email</strong><br>
+				  			<a href="mailto:#">spal.cse@iitbhu.ac.in</a>
+						</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- --------------------------------------------------Section: footer------------------------------------------------------------------------------------------------->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="wow shake" data-wow-delay="0.4s">
+                        <div class="page-scroll marginbot-30">
+                            <a href="#intro" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+                        </div>
+                    </div>
+                    <p>&copy; 2018-19 | <a href="https://www.iitbhu.ac.in/" style="color:#f8f8f8;">Indian Institute of Technology (Banaras Hindu University), Varanasi.</a> All Rights Reserved.</p>
+                    <!---------------------------------iit-bhu link-------------------------------->
+                    <div class="credits">
+                        <!--
+              All the links in the footer should remain intact. 
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Squadfree
+            -->
+                        <a href="https://www.iitbhu.ac.in/dept/cse">Department of Computer Science and Engineering IIT-BHU</a>
+                        <!---------------cse dept iit bhu link---------->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------------------------------------------------------------------/Footer----------------------------------------------------------------------------------------->
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <!--<script src="contactform/contactform.js"></script>-->
+
+</body>
+
+</html>
