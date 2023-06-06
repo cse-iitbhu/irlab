@@ -9,7 +9,6 @@ import IITG from "../assets/IITG.jpg"
 import finalphd1 from "../assets/finalphd1.jpg"
 import finalphd2 from "../assets/finalphd2.jpg"
 import th_01 from "../assets/th_01.jpg"
-import teachersday from "../assets/teachersday.jpg"
 import datascience from "../assets/datascience.jpg"
 import datascience1 from "../assets/datascience1.jpg"
 import datascience2 from "../assets/datascience2.jpg"
@@ -66,22 +65,12 @@ export const Gallery = () => {
       image: IITG,
       caption: "TALK BY PROF. ARBIN KUMAR DEY ON DEEP LEARNING (LSTM) "
     },
-    // {
-    //   image: teachersday,
-    //   caption: "TEACHERS DAY OUTING AT CCD "
-    // },
+    
     {
       image: th_01,
       caption: "DR. THOMAS MANDL'S VISIT"
     },
-    {
-      image: finalphd1,
-      caption: "FINAL PhD SUBMISSION BY MRS. ANITA SAROJ"
-    },
-    {
-      image: finalphd2,
-      caption: "DR. THOMAS MANDL'S VISIT"
-    },
+    
   ]
   const captionStyle = {
     fontSize: '2em',
@@ -112,7 +101,6 @@ export const Gallery = () => {
           dots={true}
           pauseIconColor="white"
           pauseIconSize="40px"
-          // slideBackgroundColor="darkgrey"
           slideImageFit="cover"
           thumbnails={true}
           thumbnailWidth="100px"
