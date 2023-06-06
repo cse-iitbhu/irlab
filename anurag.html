@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IR Lab @ IIT-BHU</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <!-- latest jQuery direct from google's CDN -->
+    <script type="text/javascript" src="js/modernizr.custom.96161.js"></script>
+    <script type="text/javascript" src="js/responsive-nav.js"></script>
+    <script type="text/javascript" src="js/z.jquery.min.js"></script>
+    <!-- teaching js -->
+    <script type="text/javascript" src="js/z.jquery.min.js"></script>
+    <!-- latest jQuery direct from google's CDN -->
+    <script type="text/javascript" src="js/zjquery-ui.min.js"></script>
+    <!-- teaching js -->
+    <script src="js/modernizr.custom.96161.js"></script>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <!-- All JavaScript at the bottom, except for Modernizr / Respond. Modernizr ena
+
+  <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+    <link href="css/zurich.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/portfolio1.css">
+    <link rel='stylesheet' href='css/portfolio2.css'>
+    <!-- teaching css -->
+    <!--link href="css/zresponsive-nav.css" rel="stylesheet"-->
+
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'onv2jgw',
+                    scriptTimeout: 3000
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = '//use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <script type="text/javascript">
+        // BUG orientation portrait/lanscape IOS //
+        if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+            var viewportmeta = document.querySelector('meta[name="viewport"]');
+            if (viewportmeta) {
+                viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+                document.addEventListener('orientationchange', function() {
+                    viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1';
+                }, false);
+            }
+        };
+
+        // Enable Responsive Video Resize  http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+        $(function() {
+            var $allVideos = $("iframe[src^='http://player.vimeo.com'], iframe[src^='http://www.youtube.com'], object, embed"),
+                $fluidEl = $("div.video");
+            $allVideos.each(function() {
+                $(this)
+                    // jQuery .data does not work on object/embed elements
+                    .attr('data-aspectRatio', this.height / this.width)
+                    .removeAttr('height')
+                    .removeAttr('width');
+            });
+            $(window).resize(function() {
+                var newWidth = $fluidEl.width();
+                $allVideos.each(function() {
+                    var $el = $(this);
+                    $el
+                        .width(newWidth)
+                        .height(newWidth * $el.attr('data-aspectRatio'));
+                });
+            }).resize();
+        });
+    </script>
+
+</head>
+
+
+
+
+
+<!------------------------------------------------------------------------NAVIGATION BAR------------------------------------------------------------------->
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="load"></div>
+    </div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top " role="navigation">
+        <!--------------IR LAB LOGO --------------------------------
+        <div style="padding-left: 50px; padding-top:10px"><a href="index.html#intro"><img src="img/logoir.png" style="z-index:1; float:left; max-width:125px; max-height:39px; width:auto; height:auto;  filter: alpha(opacity=50);"></a></div>   
+      <!-------------/IR LAB LOGO -------------------------------->
+        <div class="container">
+
+            <div class="navbar-header page-scroll">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+
+                    <h1 style="margin: 0 0 30px;
+text-transform: uppercase;
+font-family: Montserrat,sans-serif;
+font-weight: 700;
+letter-spacing: 1px;
+">IR LAB </h1>
+
+                </a>
+            </div>
+
+            <!-- Navigation Bar ---->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html#intro">Home</a></li>
+                    <li><a href="index.html#members">Members</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+   			   <li><a href="ongoing.html">Ongoing Projects</a></li>
+                            <!--<li><a href="completed.html">Completed Projects</a></li>-->  <!--Completed Projects Dropdown-->
+                            <!--<li><a href="data.html">Data</a></li>-->  <!--Data Dropdown-->
+                            <li><a href="phd.html">PhD Research</a></li>
+			     <!--<li><a href="postdoc.html">PostDoc Research</a></li>--> <!--PostDoc Dropdown-->
+
+
+                        </ul>
+                    </li>
+                    <li><a href="index.html#publication">Publications</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Announcements<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="achievement.html">Achievements</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                        <li><a href="index.html#teaching">Teachings</a></li>
+                        <li><a href="index.html#opportunities">Opportunities</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!------------------------------------------------------/Navigation Bar---------------------------------------------------------------------------------------------->
+
+    <!-- Section: services -->
+    <section id="publication" class="home-section text-center bg-gray">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2 id="top">PORTFOLIO</h2>
+                                <!---------------------------------------PORTFOLIO HEADING AT THE TOP------------------------------------>
+                                <i class="fa fa-2x fa-angle-down"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="portfolio">
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+
+                <!-- Left Column -->
+                <div class="w3-third">
+
+                    <div class="w3-white w3-text-grey w3-card-4">
+                        <div class="w3-display-container">
+                            <img src="img/anurag.jpg" style="width:100%" alt="Avatar">
+                            <!---------------------------------MEMBER's IMAGE------------------------------------->
+
+                            <div class="w3-display-bottomleft w3-container w3-text-black">
+                                <!--<h2 style="color:aliceblue">Mr. Anurag banerjee</h2>-->
+                                <!-----------------------------------MEMBER's NAME------------------------------------>
+
+                            </div>
+                        </div>
+                        <div class="w3-container">
+                            <p><b style="font-size:16px">Anurag Banerjee</b></p>
+                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Research Scholar</p>
+                            <!------MEMBER's POSITION-------------------->
+                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Varanasi, U.P., India</p>
+                            <!--------CURRENT LOCATION------------------>
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>anuragbanerjee.rs.cse17@itbhu.ac.in</p>
+                            <!----------Official Mail ID---------------->
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>anu.bane.geu@gmail.com</p>
+                            <!-----------Personal Mail ID--------------->
+                            <!--<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(+91) 000 000 0000</p>
+                            <!------------Contact number---------------->
+                            <hr>
+
+                            <!-------------------------------------------------------------------------------  -------------->
+
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>About</b></p>
+                            <!---------------------About (Introduction)-------------------------------------------------------------------------------->
+                            <p>I like to attend to details. This may hamper my ability to meet deadlines, but then, I am a perfectionist! :)<br> To look for knowledge and search for new solutions to problems, entice me. Drop an email to know more !
+                            </p>
+
+                            <!-----------------------About (Introduction)------------------------------------------------------------------------->
+
+                            <!-------------------------------------Skills of the member------------------------------------------------------
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                            <p>Programming(PYTHON/JAVA/C++)</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+                            </div>
+                            <p>Data Analysis Tools(R/SPSS)</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+                                    <div class="w3-center w3-text-white">80%</div>
+                                </div>
+                            </div>
+
+                            <!----<p>Illustrator</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+                            </div>
+                            <p>Media</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+                            </div>
+                            <------------------>
+                            <!------------------------
+                            <br>
+                            
+
+                            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                            <p>English</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+                            </div>
+                            <p>Spanish</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+                            </div>
+                            <p>German</p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+                            </div>
+                            <br>
+                            <-------------------------------------------------->
+                        </div>
+                    </div>
+                    <!-- End Left Column -->
+                <div class="w3-white w3-text-grey w3-card-4 " style="margin-top:16px" >
+                        <div class="w3-container" >
+<p><a href="https://www.researchgate.net/profile/Anurag_Banerjee" target="_blank"><i class="ai ai-researchgate ai-3x fa-fw w3-margin-right w3-large w3-text-teal"></i>Research Gate</a></p>
+ <p><a href="https://www.linkedin.com/in/banehavoc/" target="_blank"><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i>Linkedin</a></p>
+  <p><a href="https://github.com/anubane" target="_blank"><i class="fa fa-github  fa-fw w3-margin-right w3-large w3-text-teal"></i>github</a></p> 
+</div>
+</div>
+		    </div>
+
+                <!-- Right Column -->
+                <div class="w3-twothird">
+                    <!-------------------------------------------------------------------Publication Section---------------------------------------------->
+                    <!--<div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>PUBLICATIONS</h2>
+                        <!----heading Publication-->
+                        <!-------------------------------------------------------------------Publication1---------------------------------------------->
+                        <!--<div class="w3-container">
+                            <h5 class="w3-opacity"><b>JOURNAL:Evaluating the INEX Focused Task Evaluation Process</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>JAN 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                            <p>PUBLISHED AT:Journal of the American Society for Information Science and Technology.</p>
+                            <p>AUTHORS:Sukomal Pal, Mandar Mitra, Jaap Kamps:</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication1---------------------------------------------->
+                        <!-------------------------------------------------------------------Publication2---------------------------------------------->
+                        <!--<div class="w3-container">
+                            <h5 class="w3-opacity"><b>JOURNAL: The FIRE 2008 Evaluation Exercise</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>JAN 2006 - SEPT 2010</h6>
+                            <p>PUBLISHED AT:ACM Transactions on Asian Language Information Processing, Volume 9, Issue 3.</p>
+                            <p>AUTHORS:Prasenjit Majumder, Mandar Mitra, Dipasree Pal, Ayan Bandyopadhyay, Samaresh Maiti, Sukomal Pal, Deboshree Modak, Sucharita Sanyal</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication2--------------------------------------------->
+                        <!-------------------------------------------------------------------Publication3---------------------------------------------->
+                        <!--<div class="w3-container">
+                            <h5 class="w3-opacity"><b>JOURNAL:Association against Dissociation: some pragmatic considerations for Frequent Itemset generation under Fixed and Variable Thresholds</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2002 - DEC 2005</h6>
+                            <p>PUBLISHED AT:ACM SIGKDD Explorations, Volume 7, Issue 2, pp. 151-159. </p>
+                            <p> AUTHORS: S.Pal, A.Bagchi</p><br>
+                        </div>
+                        <!-------------------------------------------------------------------/Publication3---------------------------------------------->
+                    <!--</div>
+                    <!-------------------------------------------------------------------/Publication Section---------------------------------------------->
+
+
+
+                    <!-------------------------------------------------------------------Reseach Work Section---------------------------------------------->
+
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>RESEARCH WORK</h2>
+                        <!-------------------------------------------------------------------Reseach Work1---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>FIRE 2018 IRMiDis Track</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                            <p>Text classification and comparison problem</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Reseach Work1---------------------------------------------->
+                        <!-------------------------------------------------------------------Reseach Work2---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>TREC IS 2018</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                            <p>The Incident Streams' Track at TREC 2018. This is an ontology based classification problem</p>
+                            <!--<hr>-->
+                        </div>
+
+                    </div>
+                    <!-------------------------------------------------------------------/Research Work Section---------------------------------------------->
+                    
+                    
+                    <!-------------------------------------------------------------------Work Experience Section---------------------------------------------->
+
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>WORK EXPERIENCE</h2>
+                        <!-------------------------------------------------------------------Reseach Work1---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Programmer Analyst</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2014 - Dec 2015</h6>
+                            <p>Employer: Cognizant Technology Solutions India Pvt. Ltd. (Chennai Location)<br>
+                               Role: L3 Web Development Support for an overseas client in the Insurance Domain</p>
+                            <!--<hr>-->
+                        </div>
+                        <!-------------------------------------------------------------------/Reseach Work1---------------------------------------------->
+                        
+
+                    </div>
+                    <!-------------------------------------------------------------------/Work Experience Section---------------------------------------------->
+                    
+
+
+                    <!-------------------------------------------------------------------Awards Section---------------------------------------------->
+
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>HONORS / AWARDS / ACHIEVEMENTS</h2>
+                        <!-------------------------------------------------------------------Award-1---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>GATE Qualified</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018, 2017, 2014</h6>
+				<p><span>2018: AIR 2410 &nbsp&nbsp&nbsp out of 107893 test takers</span><br>
+			           <span>2017: AIR 520 &nbsp&nbsp&nbsp out of 96878 test takers</span><br>
+			 	   <span>2014: AIR 6102 &nbsp&nbsp&nbsp out of 155190 test takers</span><br>
+					<br>
+				   <i><a href="https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering" target="_blank">What is G.A.T.E. ?</a></i>
+				</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Award-1---------------------------------------------->
+                        <!-------------------------------------------------------------------Award-2---------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Silver Medal</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014</h6>
+                            <p>For B.Tech. degree, earned 2nd rank in Department of CSE, GEU, Dehradun</p>
+
+                        </div>
+                        <!-------------------------------------------------------------------/Award-2---------------------------------------------->
+                    </div>
+                    <!-------------------------------------------------------------------/Awards Section---------------------------------------------->
+
+
+
+
+                    <!-------------------------------------------------------------------Education Section---------------------------------------------->
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>EDUCATION</h2>
+                        <!-------------------------------------------------------------------Education-1----------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>IIT (BHU), Varanasi</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2017 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                            <p>Ph. D.</p>
+                            <hr>
+                        </div>
+                        <!-------------------------------------------------------------------/Education-1----------------------------------------------->
+                        <!-------------------------------------------------------------------Education-2----------------------------------------------->
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>GEU, Dehradun</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2014</h6>
+                            <p>B. Tech. (CSE)</p>
+                            <!--<hr>-->
+                        </div>
+                        <!-------------------------------------------------------------------/Education-2----------------------------------------------->
+
+                    </div>
+                    <!-------------------------------------------------------------------/Education Section---------------------------------------------->
+
+                    <!-- End Right Column -->
+                </div>
+
+                <!-- End Grid -->
+            </div>
+
+            <!-- End Page Container -->
+        </div>
+    </div>
+    <!-------------------------------------------------------------------Footer----------------------------------------------->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="wow shake" data-wow-delay="0.4s">
+                        <div class="page-scroll marginbot-30">
+                            <a href="anurag.html#top" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+                        </div>
+                    </div>
+                    <p>&copy; 2018-19 | <a href="https://www.iitbhu.ac.in/" style="color:#f8f8f8;">Indian Institute of Technology (Banaras Hindu University), Varanasi.</a> All Rights Reserved.</p>
+                    <!----iit bhu website link------------------------------------->
+                    <div class="credits">
+                        <!--
+              All the links in the footer should remain intact. 
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Squadfree
+            -->
+                        <a href="https://www.iitbhu.ac.in/dept/cse">Department of Computer Science and Engineering IIT-BHU</a>
+                        <!---------------------Dept of cse-iit-bhu link----->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------------------------------------------------------------------/Footer----------------------------------------------->
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <!--<script src="contactform/contactform.js"></script>-->
+
+</body>
+
+</html>
