@@ -9,6 +9,8 @@
   
 }
 
+
+
 .popup-content {
   margin: auto;
   background: rgb(255, 255, 255);
@@ -435,6 +437,10 @@
 .contact-main{
   padding-left: 2%;
   padding-right: 2%;
+}
+.events{
+  margin-right: 2px;
+  margin-top: 2px;
 }
 } 
 
