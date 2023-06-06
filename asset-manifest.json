@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/irlab/static/css/main.b36a0857.css",
-    "main.js": "/irlab/static/js/main.da1b74ae.js",
+    "main.js": "/irlab/static/js/main.0d219bf7.js",
     "static/media/finalphd1.jpg": "/irlab/static/media/finalphd1.1a8c26aa0df60d70b874.jpg",
     "static/media/datascience2.jpg": "/irlab/static/media/datascience2.c32f9ab5d884e655fcbb.jpg",
     "static/media/finalphd2.jpg": "/irlab/static/media/finalphd2.ffd0485b6342cba0d599.jpg",
@@ -19,7 +19,6 @@
     "static/media/pp9.jpg": "/irlab/static/media/pp9.7ad6a28334b65d7a91ea.jpg",
     "static/media/pp8.jpg": "/irlab/static/media/pp8.948bc5b40e043dbc4a81.jpg",
     "static/media/pp2.jpg": "/irlab/static/media/pp2.c17248364d4cfc4efb0f.jpg",
-    "static/media/teachersday.jpg": "/irlab/static/media/teachersday.c5f544b29f40fe4d947a.jpg",
     "static/media/p3.jpg": "/irlab/static/media/p3.9d1679045b4ef2632bbe.jpg",
     "static/media/backg.jpg": "/irlab/static/media/backg.e1b292ef1ff2603c23b6.jpg",
     "static/media/pp6.jpg": "/irlab/static/media/pp6.e4f4750ee6c97b258411.jpg",
@@ -41,10 +40,10 @@
     "static/media/Tribikram_Pradhan.jpg": "/irlab/static/media/Tribikram_Pradhan.c6e5f7279c26f6a31ef2.jpg",
     "index.html": "/irlab/index.html",
     "main.b36a0857.css.map": "/irlab/static/css/main.b36a0857.css.map",
-    "main.da1b74ae.js.map": "/irlab/static/js/main.da1b74ae.js.map"
+    "main.0d219bf7.js.map": "/irlab/static/js/main.0d219bf7.js.map"
   },
   "entrypoints": [
     "static/css/main.b36a0857.css",
-    "static/js/main.da1b74ae.js"
+    "static/js/main.0d219bf7.js"
   ]
 }
