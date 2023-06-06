@@ -1,4 +1,5 @@
 import React from 'react'
+import AOS from "aos"
 const tableData = [
   {
     "title": "Development of an Information Access System for Heritage and Contemporary Sanskrit Text",
@@ -39,6 +40,10 @@ const tableData = [
 
 
 export const Projects = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return ( <div className='font-serif' data-aos="zoom-in" >
   {/* <div className='heading py-[4%] text-center text-[250%] tracking-widest bg-[#f8f8f8]  text-[#666666]'>PROJECTS</div> */}
   <div className='projects-div mx-[8%] py-[1%] my-[2%] '>

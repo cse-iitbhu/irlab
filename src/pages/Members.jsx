@@ -77,7 +77,7 @@ const current = [
     display: true,
     desg: "M Tech Student",
     url: "amit.html",
-    email: "shivamsolanki.cse21@iitbhu.ac.in"
+    email: "amityadav.cse22@itbhu.ac.in"
   },
 
 ]
@@ -89,8 +89,7 @@ export const Members = () => {
   }, [])
   return (
     <div className='font-serif'>
-      {/* <img src={back} className='w-full' alt="" /> */}
-      {/* <div className='heading py-[2%] text-center text-[250%] tracking-widest bg-[#f8f8f8]  text-[#666666]' >MEMBERS</div> */}
+     
       <div className='my-[01%] py-[1%] mx-[12%] flex flex-col justify-center items-start bg-sky-100 rounded-2xl' >
         <div className='text-4xl member-heading  border-b-2 border-cyan-900 w-full text-center pb-[2%] font-sans tracking-wider font-bold text-cyan-900'   >Faculty</div>
         <div className='member-fac-card flex flex-col w-full items-center justify-center px-[12%] my-[1%]' >
