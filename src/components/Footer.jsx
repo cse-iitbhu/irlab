@@ -8,10 +8,10 @@ export const Footer = () => {
     return (
         <div className='flex flex-col bg-[#67b0d1] text-white px-[3%] py-[2%]'>
             
-            <div className='flex  my-[2%]'>
+            <div className='footer flex  my-[2%]'>
                 <div className='w-full '>
                     <div className='footer-heading font-mono  text-[120%] font-bold'>Research Groups</div>
-                    <div className='flex mt-[2%]  flex-wrap w-[90%]'>
+                    <div className='flex mt-[2%] footer-divv flex-wrap w-[99%]'>
                         <a  className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800   ' href="https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/informationretrieval/" target='__blank' >University of Glasgow</a>
                         <a  className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800   ' href="https://www.lti.cs.cmu.edu/" target='__blank' >LTI, CMU</a>
                         <a  className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800   ' href="https://nlp.stanford.edu/" target='__blank' >Stanford</a>
@@ -19,7 +19,7 @@ export const Footer = () => {
                 </div>
                 <div className='w-full '>
                     <div className='footer-heading font-mono  text-[120%] font-bold'>Conference</div>
-                    <div className='flex mt-[2%]  flex-wrap w-[90%] '>
+                    <div className='flex mt-[2%] footer-divv flex-wrap w-[99%] '>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://trec.nist.gov/">TREC</a>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://www.kdd.org/">KDD</a>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://www.wsdm-conference.org/">WSDM</a>
@@ -29,14 +29,14 @@ export const Footer = () => {
                 </div>
                 <div className='w-full '>
                     <div className='footer-heading font-mono text-[120%] font-bold'>Software Resources</div>
-                    <div className='flex  mt-[2%] flex-wrap w-[90%]'>
+                    <div className='flex  mt-[2%] footer-divv flex-wrap w-[99%]'>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="http://terrier.org/">Terrier</a>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="http://www.lemurproject.org/">Lemur</a>
                     </div>
                 </div>
                 <div className='w-full '>
                 <div className='footer-heading font-mono text-[120%] font-bold'>Miscellaneous </div>
-                    <div className='flex  mt-[2%] flex-wrap w-[90%]'>
+                    <div className='flex  mt-[2%] footer-divv flex-wrap w-[99%]'>
                         <a target="__blank" className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://nlp.stanford.edu/IR-book/information-retrieval-book.html">Introduction to IR</a>
                         
                     </div>

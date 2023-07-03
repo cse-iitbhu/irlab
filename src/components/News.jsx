@@ -59,10 +59,10 @@ export const News = () => {
                       <span className=' text-gray-400 mr-[2%]'>
                       <TfiAnnouncement className='events mem-icon mr-2 mt-2 ' size={"1rem"} />
                       </span>
-                      <span>
+                      <a target='_blank' rel='noreferrer' href="mailto:spal.cse@iitbhu.ac.in" >
 
                       {item.name}
-                      </span>
+                      </a>
                       </li>
                   )
                 })

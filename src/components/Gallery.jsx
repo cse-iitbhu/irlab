@@ -85,7 +85,7 @@ export const Gallery = () => {
   },[])
   return (
     <div  className='font-serif ' data-aos-duration="1200" data-aos="zoom-in">
-      <div className='heading py-[2%] text-center text-[250%] tracking-widest bg-[#f8f8f8]  text-[#666666]'>GALLERY</div>
+      {/* <div className='heading py-[2%] text-center text-[250%] tracking-widest bg-[#f8f8f8]  text-[#666666]'>GALLERY</div> */}
       <div className='px-[8%] font-bold' >
         <Carousel
           data={data}

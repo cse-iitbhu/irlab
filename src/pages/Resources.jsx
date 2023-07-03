@@ -4,12 +4,14 @@ import { ResourceCard } from '../components/ResourceCard'
 import playstore from "../assets/playstore.png"
 import parental from "../assets/parental.webp"
 import factcheck from "../assets/factcheck.webp"
+import { useEffect } from 'react'
 
 const apps = [
     {
         title: "PARENTAL KID MAGAZINE",
-        members: "Supriya Chanda, Kenny Patel, Podili Varshitha, Rajat Singh",
+        members: "Kenny Patel, Rajat Pratap Singh, Podili Varshitha, Abhay Saxena, Abhay Singh, Sudhanshu Ranjan",
         supervisor: "Dr. Sukomal Pal",
+        guidance: "Supriya Chanda",
         desc: "Tansliteration - based projects and android app development",
         type: "Exploratory Project",
         image: playstore,
@@ -19,24 +21,29 @@ const apps = [
     {
         title: "FACT-O-PEDIA",
         image: playstore,
-        members: "Mr. Vicky Kumar Nayak and Mr. Hitesh Kumar",
+        members: "Vicky Kumar Nayak, Hitesh Kumar, Manas Jayaswal",
         supervisor: "Dr. Sukomal Pal",
+        guidance: "Dr. Sukomal Pal",
         desc: "People get to know the facts about the news they doubt to be correct or not. The fact-checks are retrieved from the Top Fact-checking websites that use their excellent methodology for fact checking. ",
         type: "Exploratory Project",
         logo: factcheck,
         url: "https://play.google.com/store/apps/details?id=com.exploratory.fact_o_pedia"
     },
+    
 
 
 
 ]
 
 export const Resources = () => {
+    useEffect(()=>{
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    },[])
     return (
         <div className='font-serif'>
             {/* <img src={back} className='w-full' alt="" /> */}
             {/* <div className='heading py-[2%] text-center text-[250%] tracking-widest bg-[#f8f8f8]  text-[#666666]'>RESOURCES</div> */}
-            <div className='resource my-[0%] py-[2%] mx-[12%] flex justify-center items-center'>
+            <div className='resource my-[0%] py-[2%] mx-[8%] flex justify-center items-center'>
                 <div className='flex flex-col w-full'>
                     <div className='mb-[1%]'>
                         <div className='teaching-heading py-[2%] text-center tracking-wider text-[150%] font-bold bg-gray-200 px-[2%] rounded-xl text-gray-700'>Apps Developed</div>
@@ -44,8 +51,8 @@ export const Resources = () => {
                             {
                                 apps.map((item) => {
                                     return (
-                                        <div className='resource-card  flex w-[30%] justify-between  ' >
-                                            <ResourceCard title={item.title} logo={item.logo} desc={item.desc} image={item.image} url={item.url} type={item.type} supervisor={item.supervisor} members={item.members} />
+                                        <div className='resource-card  flex w-[33%] justify-between  ' >
+                                            <ResourceCard title={item.title} logo={item.logo} guidance={item.guidance} desc={item.desc} image={item.image} url={item.url} type={item.type} supervisor={item.supervisor} members={item.members} />
                                         </div>
                                     )
 

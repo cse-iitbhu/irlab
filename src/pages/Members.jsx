@@ -16,6 +16,8 @@ import 'aos/dist/aos.css'
 import { SiGooglescholar } from "react-icons/si"
 import { SiResearchgate } from 'react-icons/si'
 import { IoMdSchool } from 'react-icons/io'
+
+
 const faculty = [
   {
     name: "Dr. Sukomal Pal",
@@ -55,7 +57,7 @@ const current = [
     image: supriya,
     display: true,
     desg: "Research Scholar",
-    url: "supriya.html",
+    url: "https://supriyachanda.github.io/profile/",
     email: "supriyachanda.rs.cse18@itbhu.ac.in",
     google: "https://scholar.google.com/citations?user=wB9WetAAAAAJ&hl=en",
     researchgate: "https://www.researchgate.net/profile/Supriya-Chanda",
@@ -85,6 +87,7 @@ const current = [
 
 export const Members = () => {
   useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
     AOS.init()
   }, [])
   return (

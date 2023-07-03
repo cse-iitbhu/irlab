@@ -15,13 +15,17 @@ export const ResourceCard = (props) => {
             </div>
             <div className='resource-desc text-left mt-[2%] '>
                 {props.desc}</div>
-            <div className='resource-mem text-left mt-[2%] '>
-                <span className='font-bold'>Members: </span>
-                {props.members}</div>
             <div className='resource-sup mt-[2%] '>
                 <span className='font-bold  text-left'>Supervisor: </span>
                 {props.supervisor}
             </div>
+            <div className='resource-sup mt-[2%] '>
+                <span className='font-bold  text-left'>Guidance: </span>
+                {props.guidance}
+            </div>
+            <div className='resource-mem text-left mt-[2%] '>
+                <span className='font-bold'>Members: </span>
+                {props.members}</div>
             <div className='resource-type mt-[2%] '>
                 <span className='font-bold  text-left'>Type: </span>
                 {props.type}

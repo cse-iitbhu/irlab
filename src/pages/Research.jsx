@@ -78,6 +78,9 @@ const research=[
 
 
 export const Research = () => {
+  useEffect(()=>{
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  },[])
   
   return (<div className='font-serif' >
     {/* <img src={back} className='w-full ' alt="" /> */}

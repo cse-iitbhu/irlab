@@ -3,7 +3,11 @@ import back from "../assets/backg-logo.jpg"
 import { ImLocation } from "react-icons/im"
 import { AiOutlineMail } from "react-icons/ai"
 import Iframe from 'react-iframe'
+import { useEffect } from 'react'
 export const Contactus = () => {
+  useEffect(()=>{
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  },[])
   return (
     <div className='font-serif text-[#666666]' >
       <div className='contact-main px-[8%] my-[4%] flex  justify-between' >
@@ -33,8 +37,9 @@ export const Contactus = () => {
               <div className='contact-heading ml-[2%] text-[120%]'>
                 Email
               </div>
+              
             </div>
-            <div className='flex  items-center'><a href="mailto:#" className='contact-text ml-[5%] text-[#67b0d1]'>spal.cse@iitbhu.ac.in</a></div>
+            <div className='flex  items-center'><a href="mailto:spal.cse@iitbhu.ac.in" className='contact-text ml-[5%] text-[#67b0d1]'>spal.cse@iitbhu.ac.in</a></div>
           </div>
         </div>
         <div className='w-1/2 flex justify-center items-center '>
