@@ -64,6 +64,14 @@ export const Resources = () => {
                         <div className='teaching-heading text-center py-[2%] tracking-wider text-[150%] font-bold bg-gray-200 px-[2%] rounded-s text-gray-700'>Other</div>
                         <div className=' border-4'>
                         <div className='flex justify-between px-[4%] py-[2%] teaching-content border-[1px] text-[120%]' >
+                            <div className=' flex  ' data-aos="fade-up" data-aos-duration="1200">"Operating Systems" book by Dr. Sukomal Pal at AICTE e-Kumbh </div>
+                            <div className='flex ' data-aos="fade-up" data-aos-duration="1200">
+                                <a target='__blank' className='hover:underline text-[#67b0d1]' href="https://ekumbh.aicte-india.org/allbook.php">
+                                    Link
+                                </a>
+                            </div>
+                        </div>
+                        <div className='flex justify-between px-[4%] py-[2%] teaching-content border-[1px] text-[120%]' >
                             <div className=' flex  ' data-aos="fade-up" data-aos-duration="1200">Language Independent Stemmer</div>
                             <div className='flex ' data-aos="fade-up" data-aos-duration="1200">
                                 <a target='__blank' className='hover:underline text-[#67b0d1]' href="https://github.com/cse-iitbhu/Language_Independent_Stemmer">
