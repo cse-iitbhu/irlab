@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+ import React, {useEffect} from 'react'
 import { FiArrowUpCircle } from "react-icons/fi"
 import AOS from 'aos'
 

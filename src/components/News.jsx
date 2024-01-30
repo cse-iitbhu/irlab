@@ -4,10 +4,6 @@ import { TfiAnnouncement } from 'react-icons/tfi'
 
 const news = [
   {
-    name: 'Our paper "The effect of stopword removal on Information Retrieval for Code-Mixed data obtained via social media" is accepted to SN Computer Science.',
-    year: "May, 2023",
-  },
-  {
     name: 'One paper is accepted to ACL 2023.',
     year: "May, 2023",
   },

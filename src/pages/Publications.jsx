@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import back from "../assets/backg-logo.jpg"
 import { BsCalendar2Date } from 'react-icons/bs'
 import { MdContentCopy, MdPersonOutline } from 'react-icons/md'
 import AOS from 'aos'
@@ -12,6 +11,56 @@ import Popup from 'reactjs-popup';
 import copy from "copy-to-clipboard";
 
 const data = [
+  {
+     name: "A beginner level easy, short and fun-filled trip to learn Operating Systems - meant for UG CS students. With lot of MCQs for GATE and other competitive examinations and links for further in-depth study.",
+     desc: "Operating Systems ",
+     category: "Books",
+     authors: "Dr. Sukomal Pal",
+     year: "2023",
+     link: "https://ekumbh.aicte-india.org/book.php",
+     bibtex: "",
+     // code: "",
+     shortform: "EG 2023",
+        
+  },
+   {
+  name: " Sentiment analysis of such interactions can help us analyze the general public psychology during the pandemic.",
+  desc: "   Sentiment analysis on Hindi tweets during COVID-19 pandemic",
+  category: "Journal",
+  authors: "Anita Saroj, Akash Thakur, Sukomal Pal",
+  year: "2023",
+  link: " http://doi.org/10.1111/coin.12622",
+  bibtex: "",
+  // code: "",
+  shortform: "EG 2023",
+     
+},
+{
+  name: "Springer Nature Computer Science ",
+  desc: " The effect of stopword removal on Information Retrieval for Code-Mixed data obtained via social media  ",
+  category: "Journal",
+  authors: "Supriya Chanda, Sukomal Pal",
+  year: "2023",
+  link: " https://link.springer.com/article/10.1007/s42979-023-01942-7",
+  bibtex: "",
+  // code: "",
+  shortform: "SNCS 2023",
+     
+},
+
+{
+  name: "Springer Nature Computer Science ",
+  desc: " Effect of stopwords and stemming techniques in Urdu IR ",
+  category: "Journal",
+  authors: "Siba Sankar Sahu, Sukomal Pal",
+  year: "2023",
+  link: " https://link.springer.com/article/10.1007/s12046-021-01731-z",
+  bibtex: "",
+  // code: "",
+  shortform: "SNCS 2023",
+     
+},
+
   {
     name: "Computer Speech & Language 2023",
     desc: "Building a text retrieval system for the Sanskrit language: Exploring indexing, stemming, and searching issues",
@@ -406,6 +455,15 @@ export const Publications = () => {
           <button onClick={() => setFilter(data)} className='publ-heading  w-1/5 text-[145%] font-bold tracking-wider font-serif rounded-xl py-[1%]'>
             All Publications
           </button>
+          <div className='w-1/5 hover:animate-pulse flex justify-center items-center'>
+            {/* <div className='category mr-1 bg-green-900 flex-shrink-0 rounded-full w-4 h-4'>
+            </div> */}
+            <div>
+              <button onClick={() => handleFilter("Books")} className='publ-heading border-2 border-green-700  text-[145%] font-bold  font-serif    text-green-700 rounded-xl hover:text-white hover:bg-green-700 justify-center items-center px-[10%] py-[2%]'>
+                Books
+              </button>
+            </div>
+          </div>
           <div className='w-1/5 hover:animate-pulse flex justify-center items-center'>
             {/* <div className='category mr-1 bg-rose-900 flex-shrink-0 rounded-full w-4 h-4'>
             </div> */}

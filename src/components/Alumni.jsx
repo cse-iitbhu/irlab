@@ -4,6 +4,7 @@ import ribhav from "../assets/ribhav.jpg"
 import anita from "../assets/anita.jpg"
 import tribikram from "../assets/Tribikram_Pradhan.jpg"
 import pradeepika from "../assets/pradeepika_pic.jpg"
+import shivamsolanki from "../assets/shivamsolanki.jpeg"
 
 const alumni=[
     {
@@ -38,6 +39,14 @@ const alumni=[
         year:"Completed PDF in 2022"
     },
     {
+        name:"Mr. Shivam Solanki ",
+        url:"shivam.html",
+        image:shivamsolanki,
+        desg:"M.Tech",
+        email:"shivamsolanki.cse21@iitbhu.ac.in",
+        year:"Completed M.Tech in 2023"
+    },
+    {
         name:"Ms. Anita Saroj",
         url:"anita.html",
         image:anita,
@@ -48,6 +57,7 @@ const alumni=[
         researchgate:"https://www.researchgate.net/profile/Anita-Saroj",
         email:"anitas.rs.cse16@itbhu.ac.in"
     },
+    
 ]
 
 export const Alumni = () => {

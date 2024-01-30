@@ -1,12 +1,22 @@
 import React from 'react'
-import back from "../assets/backg-logo.jpg"
 import { ResourceCard } from '../components/ResourceCard'
+import book from "../assets/book.jpg"
 import playstore from "../assets/playstore.png"
 import parental from "../assets/parental.webp"
-import factcheck from "../assets/factcheck.webp"
+import factcheck from "../assets/factcheck.webp" 
 import { useEffect } from 'react'
 
 const apps = [
+    {
+        title: "OPERATING SYSTEMS",
+        author: "Dr. Sukomal Pal",
+        desc: "A beginner level easy, short and fun-filled trip to learn Operating Systems - meant for UG CS students. With lot of MCQs for GATE and other competitive examinations and links for further in-depth study.",
+        type: "Book",
+        image: book.jpg,
+        logo: book,
+        url: "https://ekumbh.aicte-india.org/allbook.php"
+
+    },
     {
         title: "PARENTAL KID MAGAZINE",
         members: "Kenny Patel, Rajat Pratap Singh, Podili Varshitha, Abhay Saxena, Abhay Singh, Sudhanshu Ranjan",
@@ -31,9 +41,8 @@ const apps = [
     },
     
 
-
-
 ]
+
 
 export const Resources = () => {
     useEffect(()=>{
@@ -46,13 +55,13 @@ export const Resources = () => {
             <div className='resource my-[0%] py-[2%] mx-[8%] flex justify-center items-center'>
                 <div className='flex flex-col w-full'>
                     <div className='mb-[1%]'>
-                        <div className='teaching-heading py-[2%] text-center tracking-wider text-[150%] font-bold bg-gray-200 px-[2%] rounded-xl text-gray-700'>Apps Developed</div>
+                        <div className='teaching-heading py-[2%] text-center tracking-wider text-[150%] font-bold bg-gray-200 px-[2%] rounded-xl text-gray-700'>Books Written/Apps Developed</div>
                         <div className='resource-main flex flex-wrap py-[1%] justify-center'>
                             {
                                 apps.map((item) => {
                                     return (
                                         <div className='resource-card  flex w-[33%] justify-between  ' >
-                                            <ResourceCard title={item.title} logo={item.logo} guidance={item.guidance} desc={item.desc} image={item.image} url={item.url} type={item.type} supervisor={item.supervisor} members={item.members} />
+                                        <ResourceCard title={item.title} author={item.author} logo={item.logo} guidance={item.guidance} desc={item.desc} image={item.image} url={item.url} type={item.type} supervisor={item.supervisor} members={item.members} />
                                         </div>
                                     )
 

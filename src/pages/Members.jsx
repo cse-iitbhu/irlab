@@ -5,11 +5,10 @@ import siba from "../assets/siba.jpg"
 import supriya from "../assets/supriya.jpg"
 import dplb from "../assets/dplb.png"
 import amit from "../assets/amit.jpeg"
-import shivamsolanki from "../assets/shivamsolanki.jpeg"
+import akhilesh from "../assets/akhilesh.jpg"
 import sushil from "../assets/sushil.jpg"
 import { ResearchCard } from '../components/ResearchCard'
 import { Alumni } from '../components/Alumni'
-import back from "../assets/backg-logo.jpg"
 import { AiOutlineMail } from 'react-icons/ai'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -66,20 +65,20 @@ const current = [
     twitter: "https://twitter.com/suplife24"
   },
   {
-    name: "Mr. Shivam Solanki",
-    image: shivamsolanki,
-    display: true,
-    url: "shivam.html",
-    desg: "M Tech Student",
-    email: "shivamsolanki.cse21@iitbhu.ac.in"
-  },
-  {
     name: "Mr. Amit Yadav",
     image: amit,
     display: true,
-    desg: "M Tech Student",
+    desg: "M.Tech Student",
     url: "amit.html",
     email: "amityadav.cse22@itbhu.ac.in"
+  },
+  {
+    name: "Mr.Akhilesh Yadav",
+    image: akhilesh,
+    display: true,
+    desg: "Project Staff",
+    url: "akhilesh.html",
+    email: "akkiyadaw55@gmail.com"
   },
 
 ]
