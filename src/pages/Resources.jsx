@@ -26,7 +26,7 @@ const apps = [
         guidance: "Supriya Chanda",
         desc: "Tansliteration - based projects and iOS app development",
         type: "Exploratory Project",
-        image: oip,
+        image: oip.jpg,
         logo: img,
         url: "https://apps.apple.com/in/app/parental-kids-magazine/id6499124926"
 
