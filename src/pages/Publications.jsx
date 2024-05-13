@@ -12,6 +12,49 @@ import copy from "copy-to-clipboard";
 
 const data = [
   {
+    name: "TREC 2023 ",
+    desc: "Facts Summarization at the TREC 2023: IIT(BHU) in CrisisFACTs Track",
+    category: "Conference",
+    authors: "Amit Yadav, Sukomal Pal",
+    year: "2023",
+    link: "https://trec.nist.gov/pubs/trec32/papers/IRLAB_IIT_BHU.F.pdf",
+    bibtex: " ",
+    // code: "",
+    shortform: " FSTCFT 2023",
+  },
+  {
+    name: "Multimedia Tools and Applications",
+    desc: "Water chicken swarm optimization-based deep segmental neural network for spoken term detection using bayesian filtering  ",
+    category: "Journal",
+    authors: "Sushil Venkatesh Kulkarni, Sukomal Pal",
+    year: "2024",
+    link: "https://link.springer.com/article/10.1007/s11042-023-18047-1",
+    bibtex: "",
+    // code: "",
+  },
+  {
+    name: "Multimedia Tools and Applications",
+    desc: "Ensemble-based domain adaptation on social media posts for irony detection  ",
+    category: "Journal",
+    authors: "Anita Saroj, Sukomal Pal",
+    year: "2024",
+    link: "https://link.springer.com/article/10.1007/s11042-023-16180-5",
+    bibtex: "",
+    // code: "",
+  },
+  {
+    name: "ACM Transactions on Asian and Low-Resource Language Information Processing.",
+    desc: "A Study on Corpus-based Stopword Lists in Indian Language IR",
+    category: "Journal",
+    authors: "Siba Sankar Sahu, Sukomal Pal",
+    year: "2024",
+    link: "https://dl.acm.org/doi/full/10.1145/3606262",
+    bibtex: "",
+    // code: "",
+    shortform: " 2024",
+
+  },
+  {
      name: "A beginner level easy, short and fun-filled trip to learn Operating Systems - meant for UG CS students. With lot of MCQs for GATE and other competitive examinations and links for further in-depth study.",
      desc: "Operating Systems ",
      category: "Books",
@@ -192,16 +235,6 @@ const data = [
     shortform: "TALLIP 2021",
   },
   {
-    name: "FIRE (Working Notes)",
-    desc: "IRLab@ IITBHU@ Dravidian-CodeMix-FIRE2020: Sentiment Analysis for Dravidian Languages in Code-Mixed Text.",
-    category: "Conference",
-    authors: "Supriya Chanda, Sukomal Pal",
-    year: "2020",
-    link: "https://www.researchgate.net/profile/Supriya-Chanda/publication/350312817_IRLabIITBHUDravidian-CodeMix-FIRE2020_Sentiment_Analysis_for_Dravidian_Languages_in_Code-Mixed_Text/links/6059899d299bf1736760a88e/IRLabIITBHUDravidian-CodeMix-FIRE2020-Sentiment-Analysis-for-Dravidian-Languages-in-Code-Mixed-Text.pdf",
-    bibtex: "",
-
-  },
-  {
     name: "Expert Systems with Applications 2020",
     desc: "A proactive decision support system for reviewer recommendation in academia",
     category: "Journal",
@@ -212,6 +245,16 @@ const data = [
     // code: "",
     shortform: "ESA 2020",
   },
+    {
+      name: "FIRE (Working Notes)",
+      desc: "IRLab@ IITBHU@ Dravidian-CodeMix-FIRE2020: Sentiment Analysis for Dravidian Languages in Code-Mixed Text.",
+      category: "Workshop",
+      authors: "Supriya Chanda, Sacchit Sheth, Sukomal Pal ",
+      year: "2020",
+      link: "https://www.researchgate.net/profile/Supriya-Chanda/publication/350312817_IRLabIITBHUDravidian-CodeMix-FIRE2020_Sentiment_Analysis_for_Dravidian_Languages_in_Code-Mixed_Text/links/6059899d299bf1736760a88e/IRLabIITBHUDravidian-CodeMix-FIRE2020-Sentiment-Analysis-for-Dravidian-Languages-in-Code-Mixed-Text.pdf",
+      bibtex: "",
+  
+    },
   {
     name: "Proceedings of the Fourteenth Workshop on Semantic Evaluation(SemEval) 2020",
     desc: "IRlab@IITV at SemEval-2020 Task 12: Multilingual Offensive Language Identification in Social Media Using SVM",

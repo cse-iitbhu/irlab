@@ -4,13 +4,14 @@ import { TfiAnnouncement } from 'react-icons/tfi'
 
 const news = [
   {
-    name: 'One paper is accepted to ACL 2023.',
-    year: "May, 2023",
+    name: 'Our paper, Towards Safer Online Spaces: Deep Learning for Hate Speech Detection in Code-Mixed Social Media Conversations has been accepted at the DHOW 2024 Workshop, WebSci 24.',
+    year: "April, 2024",
   },
   {
-    name: 'Our paper  "Effect of stopwords and stemming techniques in Urdu IR" is accepted to SN Computer Science.',
-    year: "May, 2023",
+    name: 'A book chapter accepted titled "Hate content identification in code-mixed social media data" CRC Press, Taylor & Francis Group.',
+    year: " 2024",
   },
+ 
 ]
 
 const events=[

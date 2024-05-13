@@ -14,6 +14,10 @@ import datascience1 from "../assets/datascience1.jpg"
 import datascience2 from "../assets/datascience2.jpg"
 import Dr_T_Pradhan_1 from "../assets/Dr_T_Pradhan_1.jpg"
 import Dr_T_Pradhan_2 from "../assets/Dr_T_Pradhan_2.jpg"
+import teachday from "../assets/teachday.jpg"
+import convocation from "../assets/convocation.jpg"
+
+
 
 export const Gallery = () => {
   const data = [
@@ -71,6 +75,17 @@ export const Gallery = () => {
       caption: "DR. THOMAS MANDL'S VISIT"
     },
     
+    {
+      image: teachday,
+      caption: "Teacher's Day Celebration 23."
+    },
+    {
+      image: convocation,
+      caption: "Convocation with M.Tech, IID & Ph.D Students."
+    },
+
+
+
   ]
   const captionStyle = {
     fontSize: '2em',
@@ -87,6 +102,7 @@ export const Gallery = () => {
     <div  className='font-serif ' data-aos-duration="1200" data-aos="zoom-in">
       {/* <div className='heading py-[2%] text-center text-[250%] tracking-widest bg-[#f8f8f8]  text-[#666666]'>GALLERY</div> */}
       <div className='px-[8%] font-bold' >
+        
         <Carousel
           data={data}
           time={3000}

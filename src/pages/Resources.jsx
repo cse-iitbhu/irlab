@@ -4,6 +4,8 @@ import book from "../assets/book.jpg"
 import playstore from "../assets/playstore.png"
 import parental from "../assets/parental.webp"
 import factcheck from "../assets/factcheck.webp" 
+import img from "../assets/img.png"
+import oip from "../assets/oip.jpg"
 import { useEffect } from 'react'
 
 const apps = [
@@ -19,6 +21,18 @@ const apps = [
     },
     {
         title: "PARENTAL KID MAGAZINE",
+        members: "Shankar nath, Rahul Jambulkar, Sandeep Sarkar",
+        supervisor: "Dr. Sukomal Pal",
+        guidance: "Supriya Chanda",
+        desc: "Tansliteration - based projects and iOS app development",
+        type: "Exploratory Project",
+        image: oip,
+        logo: img,
+        url: "https://apps.apple.com/in/app/parental-kids-magazine/id6499124926"
+
+    },
+    {
+        title: "PARENTAL KID MAGAZINE",
         members: "Kenny Patel, Rajat Pratap Singh, Podili Varshitha, Abhay Saxena, Abhay Singh, Sudhanshu Ranjan",
         supervisor: "Dr. Sukomal Pal",
         guidance: "Supriya Chanda",
@@ -27,9 +41,10 @@ const apps = [
         image: playstore,
         logo: parental,
         url: "https://play.google.com/store/apps/details?id=com.irlab.kids_magazine"
+
     },
     {
-        title: "FACT-O-PEDIA",
+        title: "FACT-o-PEDIA",
         image: playstore,
         members: "Vicky Kumar Nayak, Hitesh Kumar, Manas Jayaswal",
         supervisor: "Dr. Sukomal Pal",
@@ -37,7 +52,7 @@ const apps = [
         desc: "People get to know the facts about the news they doubt to be correct or not. The fact-checks are retrieved from the Top Fact-checking websites that use their excellent methodology for fact checking. ",
         type: "Exploratory Project",
         logo: factcheck,
-        url: "https://play.google.com/store/apps/details?id=com.exploratory.fact_o_pedia"
+        url: "https://play.google.com/store/apps/details?id=com.explo.fact_o_pedia&pcampaignid=web_share"
     },
     
 
@@ -76,7 +91,7 @@ export const Resources = () => {
                             <div className=' flex  ' data-aos="fade-up" data-aos-duration="1200">"Operating Systems" book by Dr. Sukomal Pal at AICTE e-Kumbh </div>
                             <div className='flex ' data-aos="fade-up" data-aos-duration="1200">
                                 <a target='__blank' className='hover:underline text-[#67b0d1]' href="https://ekumbh.aicte-india.org/allbook.php">
-                                    Link
+                                Link
                                 </a>
                             </div>
                         </div>
