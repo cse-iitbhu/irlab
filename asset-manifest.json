@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/irlab/static/css/main.d4554da0.css",
-    "main.js": "/irlab/static/js/main.a012c05e.js",
+    "main.js": "/irlab/static/js/main.2ccb1744.js",
     "static/media/finalphd1.jpg": "/irlab/static/media/finalphd1.1a8c26aa0df60d70b874.jpg",
     "static/media/datascience2.jpg": "/irlab/static/media/datascience2.c32f9ab5d884e655fcbb.jpg",
     "static/media/finalphd2.jpg": "/irlab/static/media/finalphd2.ffd0485b6342cba0d599.jpg",
@@ -18,11 +18,14 @@
     "static/media/pp1.jpg": "/irlab/static/media/pp1.6183863c4db4e6d174e9.jpg",
     "static/media/pp9.jpg": "/irlab/static/media/pp9.7ad6a28334b65d7a91ea.jpg",
     "static/media/book.jpg": "/irlab/static/media/book.d190e8579ae032032286.jpg",
+    "static/media/convocation.jpg": "/irlab/static/media/convocation.378eed940b8c9b4c7175.jpg",
     "static/media/pp8.jpg": "/irlab/static/media/pp8.948bc5b40e043dbc4a81.jpg",
     "static/media/pp2.jpg": "/irlab/static/media/pp2.c17248364d4cfc4efb0f.jpg",
     "static/media/p3.jpg": "/irlab/static/media/p3.9d1679045b4ef2632bbe.jpg",
+    "static/media/img.png": "/irlab/static/media/img.496169982eb3b0ed4d17.png",
     "static/media/pp6.jpg": "/irlab/static/media/pp6.e4f4750ee6c97b258411.jpg",
     "static/media/amit.jpeg": "/irlab/static/media/amit.fc7f05a2fb011f569e56.jpeg",
+    "static/media/teachday.jpg": "/irlab/static/media/teachday.cc17f777ed49d497a171.jpg",
     "static/media/akhilesh.jpg": "/irlab/static/media/akhilesh.de4f9a6ca1d101c305fb.jpg",
     "static/media/supriya.jpg": "/irlab/static/media/supriya.c245630acd0661ea702c.jpg",
     "static/media/shivamsolanki.jpeg": "/irlab/static/media/shivamsolanki.b0bd06a3f418bdcf9cd9.jpeg",
@@ -39,12 +42,13 @@
     "static/media/factcheck.webp": "/irlab/static/media/factcheck.2d9c0896013721408908.webp",
     "static/media/spalsir.jpg": "/irlab/static/media/spalsir.93d072defd9f9c2a7760.jpg",
     "static/media/Tribikram_Pradhan.jpg": "/irlab/static/media/Tribikram_Pradhan.c6e5f7279c26f6a31ef2.jpg",
+    "static/media/oip.jpg": "/irlab/static/media/oip.4458977403d877f4c90d.jpg",
     "index.html": "/irlab/index.html",
     "main.d4554da0.css.map": "/irlab/static/css/main.d4554da0.css.map",
-    "main.a012c05e.js.map": "/irlab/static/js/main.a012c05e.js.map"
+    "main.2ccb1744.js.map": "/irlab/static/js/main.2ccb1744.js.map"
   },
   "entrypoints": [
     "static/css/main.d4554da0.css",
-    "static/js/main.a012c05e.js"
+    "static/js/main.2ccb1744.js"
   ]
 }
