@@ -12,24 +12,13 @@ import copy from "copy-to-clipboard";
 
 const data = [
   {
-    name: "TREC 2023 ",
-    desc: "Facts Summarization at the TREC 2023: IIT(BHU) in CrisisFACTs Track",
-    category: "Conference",
-    authors: "Amit Yadav, Sukomal Pal",
-    year: "2023",
-    link: "https://trec.nist.gov/pubs/trec32/papers/IRLAB_IIT_BHU.F.pdf",
-    bibtex: " ",
-    // code: "",
-    shortform: " FSTCFT 2023",
-  },
-  {
     name: "Multimedia Tools and Applications",
     desc: "Water chicken swarm optimization-based deep segmental neural network for spoken term detection using bayesian filtering  ",
     category: "Journal",
     authors: "Sushil Venkatesh Kulkarni, Sukomal Pal",
     year: "2024",
     link: "https://link.springer.com/article/10.1007/s11042-023-18047-1",
-    bibtex: "",
+    bibtex: "@article{DBLP:journals/mta/KulkarniP24,\nauthor       = {Sushil Venkatesh Kulkarni and\n                Sukomal Pal},\ntitle        = {Water chicken swarm optimization-based deep segmental neural network for spoken term detection using bayesian filtering},\njournal      = {Multim. Tools Appl.},\nvolume       = {83},\nnumber       = {30},\npages        = {74711--74737},\nyear         = {2024},\nurl          = {https://doi.org/10.1007/s11042-023-18047-1},\ndoi          = {10.1007/S11042-023-18047-1},\ntimestamp    = {Tue, 10 Sep 2024 15:24:52 +0200},\nbiburl       = {https://dblp.org/rec/journals/mta/KulkarniP24.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
     // code: "",
   },
   {
@@ -53,6 +42,17 @@ const data = [
     // code: "",
     shortform: " 2024",
 
+  },
+  {
+    name: "TREC 2023 ",
+    desc: "Facts Summarization at the TREC 2023: IIT(BHU) in CrisisFACTs Track",
+    category: "Conference",
+    authors: "Amit Yadav, Sukomal Pal",
+    year: "2023",
+    link: "https://trec.nist.gov/pubs/trec32/papers/IRLAB_IIT_BHU.F.pdf",
+    bibtex: " ",
+    // code: "",
+    shortform: " FSTCFT 2023",
   },
   {
      name: "A beginner level easy, short and fun-filled trip to learn Operating Systems - meant for UG CS students. With lot of MCQs for GATE and other competitive examinations and links for further in-depth study.",
@@ -406,7 +406,7 @@ const data = [
     authors: "Akanksha Mishra, Sukomal Pal",
     year: "2019",
     link: "https://ceur-ws.org/Vol-2517/T3-22.pdf",
-    bibtex: "@inproceedings{DBLP:conf/fire/MishraP19,\nauthor       = {Akanksha Mishra and\n                Sukomal Pal},\neditor       = {Parth Mehta and\n                Paolo Rosso and\n                Prasenjit Majumder and\n                Mandar Mitra},\ntitle        = {{IIT} Varanasi at {HASOC} 2019: Hate Speech and Offensive Content\n                Identification in Indo-European Languages},\nbooktitle    = {Working Notes of {FIRE} 2019 - Forum for Information Retrieval Evaluation,\n                Kolkata, India, December 12-15, 2019},\nseries       = {{CEUR} Workshop Proceedings},\nvolume       = {2517},\npages        = {344--351},\npublisher    = {CEUR-WS.org},\nyear         = {2019},\nurl          = {https://ceur-ws.org/Vol-2517/T3-22.pdf},\ntimestamp    = {Fri, 10 Mar 2023 16:22:30 +0100},\nbiburl       = {https://dblp.org/rec/conf/fire/MishraP19.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
+    bibtex: "@inproceedings{DBLP:conf/fire/MishraP19,\nauthor       = {Akanksha Mishra and Sukomal Pal},\neditor       = {Parth Mehta and Paolo Rosso and Prasenjit Majumder and Mandar Mitra},\ntitle        = {{IIT} Varanasi at {HASOC} 2019: Hate Speech and Offensive Content\n                Identification in Indo-European Languages},\nbooktitle    = {Working Notes of {FIRE} 2019 - Forum for Information Retrieval Evaluation,\n                Kolkata, India, December 12-15, 2019},\nseries       = {{CEUR} Workshop Proceedings},\nvolume       = {2517},\npages        = {344--351},\npublisher    = {CEUR-WS.org},\nyear         = {2019},\nurl          = {https://ceur-ws.org/Vol-2517/T3-22.pdf},\ntimestamp    = {Fri, 10 Mar 2023 16:22:30 +0100},\nbiburl       = {https://dblp.org/rec/conf/fire/MishraP19.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
     // code: "",
     shortform: "FIRE 2019",
   },
@@ -417,7 +417,7 @@ const data = [
     authors: "Akanksha Mishra, Sukomal Pal",
     year: "2019",
     link: "https://ceur-ws.org/Vol-2517/T5-4.pdf",
-    bibtex: "@inproceedings{DBLP:conf/fire/MishraP19a,\nauthor       = {Akanksha Mishra and\n                Sukomal Pal},\neditor       = {Parth Mehta and\n                Paolo Rosso and\n                Prasenjit Majumder and\n                Mandar Mitra},\ntitle        = {{IIT-BHU} at {CIQ} 2019: Classification of Insincere Questions},\nbooktitle    = {Working Notes of {FIRE} 2019 - Forum for Information Retrieval Evaluation,\n                Kolkata, India, December 12-15, 2019},\nseries       = {{CEUR} Workshop Proceedings},\nvolume       = {2517},\npages        = {468--472},\npublisher    = {CEUR-WS.org},\nyear         = {2019},\nurl          = {https://ceur-ws.org/Vol-2517/T5-4.pdf},\ntimestamp    = {Fri, 10 Mar 2023 16:22:30 +0100},\nbiburl       = {https://dblp.org/rec/conf/fire/MishraP19a.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
+    bibtex: "@inproceedings{DBLP:conf/fire/MishraP19a,\nauthor       = {Akanksha Mishra and Sukomal Pal},\neditor       = {Parth Mehta and Paolo Rosso and Prasenjit Majumder and Mandar Mitra},\ntitle        = {{IIT-BHU} at {CIQ} 2019: Classification of Insincere Questions},\nbooktitle    = {Working Notes of {FIRE} 2019 - Forum for Information Retrieval Evaluation,\n                Kolkata, India, December 12-15, 2019},\nseries       = {{CEUR} Workshop Proceedings},\nvolume       = {2517},\npages        = {468--472},\npublisher    = {CEUR-WS.org},\nyear         = {2019},\nurl          = {https://ceur-ws.org/Vol-2517/T5-4.pdf},\ntimestamp    = {Fri, 10 Mar 2023 16:22:30 +0100},\nbiburl       = {https://dblp.org/rec/conf/fire/MishraP19a.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
     // code: "",
     shortform: "FIRE 2019",
   },
@@ -428,7 +428,7 @@ const data = [
     authors: "Anita Saroj, Rajesh Kumar Mundotiya, Sukomal Pal",
     year: "2019",
     link: "https://ceur-ws.org/Vol-2517/T3-17.pdf",
-    bibtex: "@inproceedings{DBLP:conf/fire/SarojMP19,\nauthor       = {Anita Saroj and\n                Rajesh Kumar Mundotiya and\n                Sukomal Pal},\neditor       = {Parth Mehta and\n                Paolo Rosso and\n                Prasenjit Majumder and\n                Mandar Mitra},\ntitle        = {IRLab@IITBHU at {HASOC} 2019: Traditional Machine Learning for Hate\n                Speech and Offensive Content Identification},\nbooktitle    = {Working Notes of {FIRE} 2019 - Forum for Information Retrieval Evaluation,\n                Kolkata, India, December 12-15, 2019},\nseries       = {{CEUR} Workshop Proceedings},\nvolume       = {2517},\npages        = {308--314},\npublisher    = {CEUR-WS.org},\nyear         = {2019},\nurl          = {https://ceur-ws.org/Vol-2517/T3-17.pdf},\ntimestamp    = {Fri, 10 Mar 2023 16:22:29 +0100},\nbiburl       = {https://dblp.org/rec/conf/fire/SarojMP19.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
+    bibtex: "@inproceedings{DBLP:conf/fire/SarojMP19,\nauthor       = {Anita Saroj and Rajesh Kumar Mundotiya and Sukomal Pal},\neditor       = {Parth Mehta and Paolo Rosso and Prasenjit Majumder and Mandar Mitra},\ntitle        = {IRLab@IITBHU at {HASOC} 2019: Traditional Machine Learning for Hate\n                Speech and Offensive Content Identification},\nbooktitle    = {Working Notes of {FIRE} 2019 - Forum for Information Retrieval Evaluation,\n                Kolkata, India, December 12-15, 2019},\nseries       = {{CEUR} Workshop Proceedings},\nvolume       = {2517},\npages        = {308--314},\npublisher    = {CEUR-WS.org},\nyear         = {2019},\nurl          = {https://ceur-ws.org/Vol-2517/T3-17.pdf},\ntimestamp    = {Fri, 10 Mar 2023 16:22:29 +0100},\nbiburl       = {https://dblp.org/rec/conf/fire/SarojMP19.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
     // code: "",
     shortform: "FIRE 2019",
   },
@@ -450,7 +450,7 @@ const data = [
     authors: "Ribhav Soni, Sukomal Pal",
     year: "2018",
     link: "https://dl.acm.org/doi/abs/10.1145/3184558.3191622",
-    bibtex: "@inproceedings{DBLP:conf/www/SoniP18,\nauthor       = {Ribhav Soni and\n                Sukomal Pal},\neditor       = {Pierre{-}Antoine Champin and\n                Fabien Gandon and\n                Mounia Lalmas and\n                Panagiotis G. Ipeirotis},\ntitle        = {Gold Standard Creation for Microblog Retrieval: Challenges of Completeness\n                in IRMiDis 2017},\nbooktitle    = {Companion of the The Web Conference 2018 on The Web Conference 2018,\n                {WWW} 2018, Lyon , France, April 23-27, 2018},\npages        = {1639--1642},\npublisher    = {{ACM}},\nyear         = {2018},\nurl          = {https://doi.org/10.1145/3184558.3191622},\ndoi          = {10.1145/3184558.3191622},\ntimestamp    = {Fri, 16 Apr 2021 10:04:12 +0200},\nbiburl       = {https://dblp.org/rec/conf/www/SoniP18.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
+    bibtex: "@inproceedings{DBLP:conf/www/SoniP18,\nauthor       = {Ribhav Soni and Sukomal Pal},\neditor       = {Pierre{-}Antoine Champin and Fabien Gandon and Mounia Lalmas and Panagiotis G. Ipeirotis},\ntitle        = {Gold Standard Creation for Microblog Retrieval: Challenges of Completeness\n                in IRMiDis 2017},\nbooktitle    = {Companion of the The Web Conference 2018 on The Web Conference 2018,\n                {WWW} 2018, Lyon , France, April 23-27, 2018},\npages        = {1639--1642},\npublisher    = {{ACM}},\nyear         = {2018},\nurl          = {https://doi.org/10.1145/3184558.3191622},\ndoi          = {10.1145/3184558.3191622},\ntimestamp    = {Fri, 16 Apr 2021 10:04:12 +0200},\nbiburl       = {https://dblp.org/rec/conf/www/SoniP18.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
     // code: "",
     shortform: "WWW 2018",
   },
@@ -472,7 +472,7 @@ const data = [
     authors: "Harshit Mehrotra, Sukomal Pal",
     year: "2018",
     link: "https://ceur-ws.org/Vol-2266/T1-5.pdf",
-    bibtex: "@inproceedings{DBLP:conf/fire/MehrotraP18,\nauthor       = {Harshit Mehrotra and\n                Sukomal Pal},\neditor       = {Parth Mehta and\n                Paolo Rosso and\n                Prasenjit Majumder and\n                Mandar Mitra},\ntitle        = {{IIT} {BHU} at {FIRE} 2018 IRMiDis Track - Obtaining Factual Tweets\n                during Natural Disasters},\nbooktitle    = {Working Notes of {FIRE} 2018 - Forum for Information Retrieval Evaluation,\n                Gandhinagar, India, December 6-9, 2018},\nseries       = {{CEUR} Workshop Proceedings},\nvolume       = {2266},\npages        = {24--27},\npublisher    = {CEUR-WS.org},\nyear         = {2018},\nurl          = {https://ceur-ws.org/Vol-2266/T1-5.pdf},\ntimestamp    = {Fri, 10 Mar 2023 16:22:29 +0100},\nbiburl       = {https://dblp.org/rec/conf/fire/MehrotraP18.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
+    bibtex: "@inproceedings{DBLP:conf/fire/MehrotraP18,\nauthor       = {Harshit Mehrotra and Sukomal Pal},\neditor       = {Parth Mehta and Paolo Rosso and Prasenjit Majumder and Mandar Mitra},\ntitle        = {{IIT} {BHU} at {FIRE} 2018 IRMiDis Track - Obtaining Factual Tweets during Natural Disasters},\nbooktitle    = {Working Notes of {FIRE} 2018 - Forum for Information Retrieval Evaluation,\n                Gandhinagar, India, December 6-9, 2018},\nseries       = {{CEUR} Workshop Proceedings},\nvolume       = {2266},\npages        = {24--27},\npublisher    = {CEUR-WS.org},\nyear         = {2018},\nurl          = {https://ceur-ws.org/Vol-2266/T1-5.pdf},\ntimestamp    = {Fri, 10 Mar 2023 16:22:29 +0100},\nbiburl       = {https://dblp.org/rec/conf/fire/MehrotraP18.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
     // code: "",
     shortform: "FIRE 2018",
   },
@@ -539,7 +539,7 @@ export const Publications = () => {
           {
             filter.map((item) => {
               return (
-                <div key={item.id} data-aos="fade-up" data-aos-duration="1000" className={`publ-card rounded-2xl flex justify-start my-[1.5%] py-[1%]  tracking-wide ${item.category === 'Journal' && 'bg-rose-100'}  ${item.category === 'Conference' && 'bg-amber-100'}  ${item.category === 'Workshop' && 'bg-cyan-100'} `}>
+                <div key={item.id} data-aos="fade-up" data-aos-duration="1000" className={`publ-card rounded-2xl flex justify-start my-[1.5%] py-[1%]  tracking-wide ${item.category === 'Books' && 'bg-green-100'} ${item.category === 'Journal' && 'bg-rose-100'}  ${item.category === 'Conference' && 'bg-amber-100'}  ${item.category === 'Workshop' && 'bg-cyan-100'} `}>
                   <div className='px-[2%]'>
                     <div>
                       <div className='publ-desc text-[130%] font-sans my-[1%] font-bold text-black '>

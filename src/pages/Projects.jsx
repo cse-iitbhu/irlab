@@ -18,21 +18,21 @@ const tableData = [
   {
     "title": "National Post-Doctoral Fellowship (N-PDF)",
     "role": "Mentor",
-    "status": "2021-23 (complete)",
+    "status": "2021-23 (completed)",
     "funding": "INR 21,31,200.00",
     "fundingAgency": "SERB, GoI"
   },
   {
     "title": "Development of Text-based Matching Algorithms for Bartering Software",
     "role": "Principal Investigator (PI)",
-    "status": "May 2020 - May 21 (Completed)",
+    "status": "2020-21 (completed)",
     "funding": "INR 11,62,500.00",
     "fundingAgency": "ASCONSOFTECH"
   },
   {
     "title": "Optimization of Capacity Utilization of Draglines deployed in NCL through Big Data Analytics",
     "role": "Co-PI",
-    "status": "2020-23 (Ongoing)",
+    "status": "2020-23 (completed)",
     "funding": "INR 83,97,000.00",
     "fundingAgency": "NCL, Coal India Ltd"
   }

@@ -2,10 +2,10 @@ import React from 'react'
 import { ResourceCard } from '../components/ResourceCard'
 import book from "../assets/book.jpg"
 import playstore from "../assets/playstore.png"
-import parental from "../assets/parental.webp"
+import appstore from "../assets/appstore.png"
+import download from "../assets/download.png"
 import factcheck from "../assets/factcheck.webp" 
 import img from "../assets/img.png"
-import oip from "../assets/oip.jpg"
 import { useEffect } from 'react'
 
 const apps = [
@@ -14,22 +14,9 @@ const apps = [
         author: "Dr. Sukomal Pal",
         desc: "A beginner level easy, short and fun-filled trip to learn Operating Systems - meant for UG CS students. With lot of MCQs for GATE and other competitive examinations and links for further in-depth study.",
         type: "Book",
-        image: book.jpg,
+        image: download,
         logo: book,
-        url: "https://ekumbh.aicte-india.org/allbook.php"
-
-    },
-    {
-        title: "PARENTAL KID MAGAZINE",
-        members: "Shankar nath, Rahul Jambulkar, Sandeep Sarkar",
-        supervisor: "Dr. Sukomal Pal",
-        guidance: "Supriya Chanda",
-        desc: "Tansliteration - based projects and iOS app development",
-        type: "Exploratory Project",
-        image: oip.jpg,
-        logo: img,
-        url: "https://apps.apple.com/in/app/parental-kids-magazine/id6499124926"
-
+        url: "/files/operatingSystemBook.pdf"
     },
     {
         title: "PARENTAL KID MAGAZINE",
@@ -39,9 +26,10 @@ const apps = [
         desc: "Tansliteration - based projects and android app development",
         type: "Exploratory Project",
         image: playstore,
-        logo: parental,
-        url: "https://play.google.com/store/apps/details?id=com.irlab.kids_magazine"
-
+        logo: img,
+        url: "https://play.google.com/store/apps/details?id=com.irlab.kids_magazine",
+        appstore: appstore,
+        appleUrl: "https://apps.apple.com/in/app/parental-kids-magazine/id6499124926"
     },
     {
         title: "FACT-o-PEDIA",
@@ -76,7 +64,7 @@ export const Resources = () => {
                                 apps.map((item) => {
                                     return (
                                         <div className='resource-card  flex w-[33%] justify-between  ' >
-                                        <ResourceCard title={item.title} author={item.author} logo={item.logo} guidance={item.guidance} desc={item.desc} image={item.image} url={item.url} type={item.type} supervisor={item.supervisor} members={item.members} />
+                                        <ResourceCard title={item.title} author={item.author} logo={item.logo} guidance={item.guidance} desc={item.desc} image={item.image} url={item.url} appstore={item.appstore} appleUrl={item.appleUrl} type={item.type} supervisor={item.supervisor} members={item.members} />
                                         </div>
                                     )
 
@@ -87,14 +75,6 @@ export const Resources = () => {
                     <div>
                         <div className='teaching-heading text-center py-[2%] tracking-wider text-[150%] font-bold bg-gray-200 px-[2%] rounded-s text-gray-700'>Other</div>
                         <div className=' border-4'>
-                        <div className='flex justify-between px-[4%] py-[2%] teaching-content border-[1px] text-[120%]' >
-                            <div className=' flex  ' data-aos="fade-up" data-aos-duration="1200">"Operating Systems" book by Dr. Sukomal Pal at AICTE e-Kumbh </div>
-                            <div className='flex ' data-aos="fade-up" data-aos-duration="1200">
-                                <a target='__blank' className='hover:underline text-[#67b0d1]' href="https://ekumbh.aicte-india.org/allbook.php">
-                                Link
-                                </a>
-                            </div>
-                        </div>
                         <div className='flex justify-between px-[4%] py-[2%] teaching-content border-[1px] text-[120%]' >
                             <div className=' flex  ' data-aos="fade-up" data-aos-duration="1200">Language Independent Stemmer</div>
                             <div className='flex ' data-aos="fade-up" data-aos-duration="1200">
@@ -115,14 +95,6 @@ export const Resources = () => {
                             <div className=' flex  ' data-aos="fade-up" data-aos-duration="1200">Sanskrit Text Collection</div>
                             <div className=' flex ' data-aos="fade-up" data-aos-duration="1200">
                                 <a target='__blank' className='hover:underline text-[#67b0d1]' href="https://github.com/cse-iitbhu/Sanskrit-Text-Collection">
-                                    Link
-                                </a>
-                            </div>
-                        </div>
-                        <div className='flex justify-between px-[4%]  py-[2%] teaching-content border-[1px] text-[120%]' >
-                            <div className=' flex  ' data-aos="fade-up" data-aos-duration="1200"> iOS Kids Magazine</div>
-                            <div className=' flex ' data-aos="fade-up" data-aos-duration="1200">
-                                <a target='__blank' className='hover:underline text-[#67b0d1]' href="https://github.com/cse-iitbhu/iOS-Kids-Magazine">
                                     Link
                                 </a>
                             </div>

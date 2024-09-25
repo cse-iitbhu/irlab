@@ -54,9 +54,18 @@ export const ResourceCard = (props) => {
         <span className='font-bold  text-left'>Type: </span>
         {props.type}
       </div>
-      <a href={props.url} target='__blank' rel="noopener noreferrer">
-        <img src={props.image} alt="Link" className='' />
-      </a>
+      <div className='resource-img mt-[2%] flex justify-center items-center h-[100px]'>
+        <a href={props.url} target='__blank' rel="noopener noreferrer" download>
+          <img src={props.image} alt="Link" className="w-[250px] h-[100px] object-contain" />
+        </a>
+      </div>
+      {props.appleUrl && (
+        <div className='resource-appImg mt-[2%] flex justify-center items-center h-[100px]'>
+          <a href={props.appleUrl} target='__blank' rel="noopener noreferrer">
+            <img src={props.appstore} alt="Link" className="w-[250px] h-[100px] object-contain" />
+          </a>
+        </div>
+      )}
     </div>
   );
 };
