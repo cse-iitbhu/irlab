@@ -28,7 +28,7 @@ const data = [
     authors: "Anita Saroj, Sukomal Pal",
     year: "2024",
     link: "https://link.springer.com/article/10.1007/s11042-023-16180-5",
-    bibtex: "",
+    bibtex: "@article{DBLP:journals/mta/SarojP24,\nauthor       = {Anita Saroj and\n                  Sukomal Pal},\ntitle        = {Ensemble-based domain adaptation on social media posts for irony detection},\njournal      = {Multim. Tools Appl.},\nvolume       = {83},\nnumber       = {8},\npages        = {23249--23268},\nyear         = {2024},\nurl          = {https://doi.org/10.1007/s11042-023-16180-5},\ndoi          = {10.1007/S11042-023-16180-5},\ntimestamp    = {Fri, 01 Mar 2024 15:53:55 +0100},\nbiburl       = {https://dblp.org/rec/journals/mta/SarojP24.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
     // code: "",
   },
   {
@@ -38,7 +38,7 @@ const data = [
     authors: "Siba Sankar Sahu, Sukomal Pal",
     year: "2024",
     link: "https://dl.acm.org/doi/full/10.1145/3606262",
-    bibtex: "",
+    bibtex: "@article{DBLP:journals/talip/SahuP23,\nauthor       = {Siba Sankar Sahu and\n                  Sukomal Pal},\ntitle        = {A Study on Corpus-based Stopword Lists in Indian Language {IR}},\njournal      = {{ACM} Trans. Asian Low Resour. Lang. Inf. Process.},\nvolume       = {22},\nnumber       = {7},\npages        = {202:1--202:22},\nyear         = {2023},\nurl          = {https://doi.org/10.1145/3606262},\ndoi          = {10.1145/3606262},\ntimestamp    = {Fri, 18 Aug 2023 08:46:35 +0200},\nbiburl       = {https://dblp.org/rec/journals/talip/SahuP23.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
     // code: "",
     shortform: " 2024",
 
@@ -50,7 +50,7 @@ const data = [
     authors: "Amit Yadav, Sukomal Pal",
     year: "2023",
     link: "https://trec.nist.gov/pubs/trec32/papers/IRLAB_IIT_BHU.F.pdf",
-    bibtex: " ",
+    bibtex: "",
     // code: "",
     shortform: " FSTCFT 2023",
   },
@@ -73,7 +73,7 @@ const data = [
   authors: "Anita Saroj, Akash Thakur, Sukomal Pal",
   year: "2023",
   link: " http://doi.org/10.1111/coin.12622",
-  bibtex: "",
+  bibtex: "@article{DBLP:journals/ci/SarojTP24,\nauthor       = {Anita Saroj and\n                  Akash Thakur and\n                  Sukomal Pal},\ntitle        = {Sentiment analysis on Hindi tweets during {COVID-19} pandemic},\njournal      = {Comput. Intell.},\nvolume       = {40},\nnumber       = {1},\nyear         = {2024},\nurl          = {https://doi.org/10.1111/coin.12622},\ndoi          = {10.1111/COIN.12622},\ntimestamp    = {Mon, 18 Mar 2024 21:25:14 +0100},\nbiburl       = {https://dblp.org/rec/journals/ci/SarojTP24.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
   // code: "",
   shortform: "EG 2023",
      
@@ -85,7 +85,7 @@ const data = [
   authors: "Supriya Chanda, Sukomal Pal",
   year: "2023",
   link: " https://link.springer.com/article/10.1007/s42979-023-01942-7",
-  bibtex: "",
+  bibtex: "@article{DBLP:journals/sncs/ChandaP23,\nauthor       = {Supriya Chanda and\n                  Sukomal Pal},\ntitle        = {The Effect of Stopword Removal on Information Retrieval for Code-Mixed Data Obtained Via Social Media},\njournal      = {{SN} Comput. Sci.},\nvolume       = {4},\nnumber       = {5},\npages        = {494},\nyear         = {2023},\nurl          = {https://doi.org/10.1007/s42979-023-01942-7},\ndoi          = {10.1007/S42979-023-01942-7},\ntimestamp    = {Sun, 24 Sep 2023 15:45:25 +0200},\nbiburl       = {https://dblp.org/rec/journals/sncs/ChandaP23.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
   // code: "",
   shortform: "SNCS 2023",
      
@@ -98,7 +98,7 @@ const data = [
   authors: "Siba Sankar Sahu, Sukomal Pal",
   year: "2023",
   link: " https://link.springer.com/article/10.1007/s12046-021-01731-z",
-  bibtex: "",
+  bibtex: "@article{DBLP:journals/sncs/SahuDPR23,\nauthor       = {Siba Sankar Sahu and\n                  Debrup Dutta and\n                  Sukomal Pal and\n                  Imran Rasheed},\ntitle        = {Effect of Stopwords and Stemming Techniques in Urdu {IR}},\njournal      = {{SN} Comput. Sci.},\nvolume       = {4},\nnumber       = {5},\npages        = {547},\nyear         = {2023},\nurl          = {https://doi.org/10.1007/s42979-023-01953-4},\ndoi          = {10.1007/S42979-023-01953-4},\ntimestamp    = {Sun, 24 Sep 2023 15:45:25 +0200},\nbiburl       = {https://dblp.org/rec/journals/sncs/SahuDPR23.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
   // code: "",
   shortform: "SNCS 2023",
      
@@ -111,7 +111,7 @@ const data = [
     authors: "Siba Sankar Sahu, Sukomal Pal",
     year: "2023",
     link: "https://www.sciencedirect.com/science/article/pii/S0885230823000372?casa_token=KVwHxQqYom4AAAAA:sWwIkxA_1FURxhTeh9PTNIMaiCs3cLM2wJFKfR8EFhpcg9iz7-6uTdWHEX6uRArYOdYnwiiPZZhW",
-    bibtex: "@article{SAHU2023101518,\ntitle = {Building a text retrieval system for the Sanskrit language: Exploring indexing, stemming, and searching issues},\njournal = {Computer Speech & Language},\nvolume = {81},\npages = {101518},\nyear = {2023},\nissn = {0885-2308},\ndoi = {https://doi.org/10.1016/j.csl.2023.101518},\nurl = {https://www.sciencedirect.com/science/article/pii/S0885230823000372},\nauthor = {Siba Sankar Sahu and Sukomal Pal},\nkeywords = {Sanskrit language, Text collection construction, Stemming, Evaluation},\nabstract = {Stemming is an important pre-processing step in the text analysis domains such as text mining, text summarization and information retrieval (IR). In this study, we build a Sanskrit text collection and explore different indexing, stemming and searching strategies in Sanskrit. We also propose two stemmers: a ‘light’ and an ‘aggressive’ and evaluate their effectiveness in the text analysis task. The performance of the stemmers is evaluated in two ways: a direct and an indirect IR-based evaluation. In direct evaluation, we found that the stemmers are effective. In indirect evaluation, we apply different retrieval models such as BM25, TF–IDF, Divergence from Randomness (DFR) based and language models. The proposed stemmers are compared with GRAS stemmer, language-independent indexing (trunc-n) and no stemming approach. Among different stemming methods, aggressive stemmers provide the best performance. Hiemstra language model outperforms other retrieval models we experimented with. In statistical analysis, we found that the proposed stemming approaches produce significantly better results than the no-stemming approach.}\n}",
+    bibtex: "@article{DBLP:journals/csl/SahuP23,\nauthor       = {Siba Sankar Sahu and\n                  Sukomal Pal},\ntitle        = {Building a text retrieval system for the Sanskrit language: Exploringindexing, stemming, and searching issues},\njournal      = {Comput. Speech Lang.},\nvolume       = {81},\npages        = {101518},\nyear         = {2023},\nurl          = {https://doi.org/10.1016/j.csl.2023.101518},\ndoi          = {10.1016/J.CSL.2023.101518},\ntimestamp    = {Fri, 07 Jul 2023 23:31:55 +0200},\nbiburl       = {https://dblp.org/rec/journals/csl/SahuP23.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
     // code: "",
     shortform: "CSL 2023",
 
@@ -135,7 +135,7 @@ const data = [
     authors: "Supriya Chanda, Sacchit Sheth, Sukomal Pal ",
     year: "2022",
     link: "https://ceur-ws.org/Vol-3395/T7-3.pdf",
-    bibtex: "",
+    bibtex: "@inproceedings{DBLP:conf/fire/ChandaSP22,\nauthor       = {Supriya Chanda and Sacchit D. Sheth and Sukomal Pal},\neditor       = {Kripabandhu Ghosh and Thomas Mandl and Prasenjit Majumder and Mandar Mitra},\ntitle        = {Coarse and Fine-Grained Conversational Hate Speech and Offensive Content Identification in Code-Mixed Languages using Fine-Tuned Multilingual Embedding},\nbooktitle    = {Working Notes of {FIRE} 2022 - Forum for Information Retrieval Evaluation,Kolkata, India, December 9-13, 2022},\nseries       = {{CEUR} Workshop Proceedings},\nvolume       = {3395},\npages        = {502--512},\npublisher    = {CEUR-WS.org},\nyear         = {2022},\nurl          = {https://ceur-ws.org/Vol-3395/T7-3.pdf},\ntimestamp    = {Thu, 20 Jul 2023 16:45:52 +0200},\nbiburl       = {https://dblp.org/rec/conf/fire/ChandaSP22.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
 
   },
   {
@@ -145,7 +145,7 @@ const data = [
     authors: "Supriya Chanda, Anshika Mishra, Sukomal Pal  ",
     year: "2022",
     link: "https://ceur-ws.org/Vol-3395/T2-12.pdf",
-    bibtex: "",
+    bibtex: "@inproceedings{DBLP:conf/fire/ChandaMP22,\nauthor       = {Supriya Chanda and Anshika Mishra and Sukomal Pal},\neditor       = {Kripabandhu Ghosh and Thomas Mandl and Prasenjit Majumder and Mandar Mitra},\ntitle        = {Sentiment Analysis and Homophobia detection of Code-Mixed Dravidian Languages leveraging pre-trained model and word-level language tag},\nbooktitle    = {Working Notes of {FIRE} 2022 - Forum for Information Retrieval Evaluation, Kolkata, India, December 9-13, 2022},\nseries       = {{CEUR} Workshop Proceedings},\nvolume       = {3395},\npages        = {184--195},\npublisher    = {CEUR-WS.org},\nyear         = {2022},\nurl          = {https://ceur-ws.org/Vol-3395/T2-12.pdf},\ntimestamp    = {Thu, 20 Jul 2023 16:45:52 +0200},\nbiburl       = {https://dblp.org/rec/conf/fire/ChandaMP22.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
 
   },
   {
@@ -177,7 +177,7 @@ const data = [
     authors: "Siba Sankar Sahu and Sukomal Pal",
     year: "2022",
     link: "https://link.springer.com/article/10.1007/s12046-021-01731-z",
-    // bibtex: "",
+    bibtex: "@article{Sahu2022,\nauthor={Sahu, Siba Sankar\nand Pal, Sukomal},\ntitle={Effect of stopwords in Indian language IR},\njournal={S{\={a}}dhan{\={a}}},\nyear={2022},\nmonth={Jan},\nday={10},\nvolume={47},\nnumber={1},\npages={17},\nabstract={We explore and evaluate the effect of stopwords in retrieval performance of different Indian languages such as Marathi, Bengali, Gujarati and Sanskrit. The issue was investigated from three viewpoints. Is there any impact of non-corpus-based stopword removal on chosen Indian languages (if yes, to what extent)? Can we recommend, based on experiment, a number of stopwords for chosen Indian languages that are good enough from retrieval point of view? Is there any relationship of stopwords with average document length from retrieval perspective? It is observed that the stopword removal generally improves mean average precision (MAP) significantly compared with the case when it is not done. For each language, different lengths of the stopword list are explored and evaluated that lead to suggesting its optimal length. We also study the effect of stopwords on retrieval performance over document length. The effect of stopwords is generally found to be quite low in short documents compared with their long counterparts across the four Indian languages.},\nissn={0973-7677},\ndoi={10.1007/s12046-021-01731-z},\nurl={https://doi.org/10.1007/s12046-021-01731-z}\n}",
     // code: "",
     shortform: "Sādhanā 2022",
   },
@@ -209,7 +209,7 @@ const data = [
     authors: "Supriya Chanda, S Ujjwal, Shayak Das, Sukomal Pal",
     year: "2021",
     link: "https://ceur-ws.org/Vol-3159/T1-44.pdf",
-    bibtex: "",
+    bibtex: "@inproceedings{DBLP:conf/fire/ChandaUDP21,\nauthor       = {Supriya Chanda and S. Ujjwal and Shayak Das and Sukomal Pal},\neditor       = {Parth Mehta and Thomas Mandl and Prasenjit Majumder and Mandar Mitra},\ntitle        = {Fine-tuning Pre-Trained Transformer based model for Hate Speech and Offensive Content Identification in English Indo-Aryan and Code-Mixed (English-Hindi) languages},\nbooktitle    = {Working Notes of {FIRE} 2021 - Forum for Information Retrieval Evaluation,Gandhinagar, India, December 13-17, 2021},\nseries       = {{CEUR} Workshop Proceedings},\nvolume       = {3159},\npages        = {446--458},\npublisher    = {CEUR-WS.org},\nyear         = {2021},\nurl          = {https://ceur-ws.org/Vol-3159/T1-44.pdf},\ntimestamp    = {Fri, 10 Mar 2023 16:22:30 +0100},\nbiburl       = {https://dblp.org/rec/conf/fire/ChandaUDP21.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
 
   },
   {

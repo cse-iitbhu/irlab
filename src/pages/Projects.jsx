@@ -3,14 +3,14 @@ import AOS from "aos"
 const tableData = [
   {
     "title": "Development of an Information Access System for Heritage and Contemporary Sanskrit Text",
-    "role": "PI",
+    "role": "Principal Investigator",
     "status": "2023-26 (approved in 2022)",
     "funding": "INR 25,00,000.00",
     "fundingAgency": "CSU, Govt of India"
   },
   {
     "title": "Development of a Disaster Response System for Collecting and Disseminating Information through Social Media Text Processing",
-    "role": "PI",
+    "role": "Principal Investigator",
     "status": "2023-26 (ongoing)",
     "funding": "INR 07,94,000.00",
     "fundingAgency": "UP CST, Govt of UP"
@@ -24,14 +24,14 @@ const tableData = [
   },
   {
     "title": "Development of Text-based Matching Algorithms for Bartering Software",
-    "role": "Principal Investigator (PI)",
+    "role": "Principal Investigator",
     "status": "2020-21 (completed)",
     "funding": "INR 11,62,500.00",
     "fundingAgency": "ASCONSOFTECH"
   },
   {
     "title": "Optimization of Capacity Utilization of Draglines deployed in NCL through Big Data Analytics",
-    "role": "Co-PI",
+    "role": "Co-Principal Investigator",
     "status": "2020-23 (completed)",
     "funding": "INR 83,97,000.00",
     "fundingAgency": "NCL, Coal India Ltd"
