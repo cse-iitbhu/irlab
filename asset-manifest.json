@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/irlab/static/css/main.db15acf8.css",
-    "main.js": "/irlab/static/js/main.77cd46f8.js",
+    "main.js": "/irlab/static/js/main.59415a71.js",
     "static/media/finalphd1.jpg": "/irlab/static/media/finalphd1.1a8c26aa0df60d70b874.jpg",
     "static/media/datascience2.jpg": "/irlab/static/media/datascience2.c32f9ab5d884e655fcbb.jpg",
     "static/media/finalphd2.jpg": "/irlab/static/media/finalphd2.ffd0485b6342cba0d599.jpg",
@@ -46,10 +46,10 @@
     "static/media/Tribikram_Pradhan.jpg": "/irlab/static/media/Tribikram_Pradhan.c6e5f7279c26f6a31ef2.jpg",
     "index.html": "/irlab/index.html",
     "main.db15acf8.css.map": "/irlab/static/css/main.db15acf8.css.map",
-    "main.77cd46f8.js.map": "/irlab/static/js/main.77cd46f8.js.map"
+    "main.59415a71.js.map": "/irlab/static/js/main.59415a71.js.map"
   },
   "entrypoints": [
     "static/css/main.db15acf8.css",
-    "static/js/main.77cd46f8.js"
+    "static/js/main.59415a71.js"
   ]
 }
