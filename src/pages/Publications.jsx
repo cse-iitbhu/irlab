@@ -12,6 +12,15 @@ import copy from "copy-to-clipboard";
 
 const data = [
   {
+    name: "Websci Companion '24: Companion Publication of the 16th ACM Web Science Conference",
+    desc: "Towards Safer Online Spaces: Deep Learning for Hate Speech Detection in Code-Mixed Social Media Conversations",
+    category: "Conference",
+    authors: "Supriya Chanda, Abhishek Dhaka and Sukomal Pal",
+    year: "2024",
+    link: "https://dl.acm.org/doi/pdf/10.1145/3630744.3663610",
+    bibtex: "@inproceedings{DBLP:conf/websci/ChandaDP24,\nauthor       = {Supriya Chanda and                  \nAbhishek Dhaka and                  \nSukomal Pal},\ntitle        = {Towards Safer Online Spaces: Deep Learning for Hate Speech Detection in Code-Mixed Social Media Conversations},\nbooktitle    = {Companion Publication of the 16th {ACM} Web Science Conference, WebSci Companion 2024, Stuttgart, Germany, May 21-24, 2024},\npages        = {103--109},\npublisher    = {{ACM}},\nyear         = {2024},\nurl          = {https://doi.org/10.1145/3630744.3663610},\ndoi          = {10.1145/3630744.3663610},\ntimestamp    = {Tue, 18 Jun 2024 09:24:11 +0200},\nbiburl       = {https://dblp.org/rec/conf/websci/ChandaDP24.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
+  },
+  {
     name: "Multimedia Tools and Applications",
     desc: "Water chicken swarm optimization-based deep segmental neural network for spoken term detection using bayesian filtering  ",
     category: "Journal",
@@ -36,7 +45,7 @@ const data = [
     desc: "A Study on Corpus-based Stopword Lists in Indian Language IR",
     category: "Journal",
     authors: "Siba Sankar Sahu, Sukomal Pal",
-    year: "2024",
+    year: "2023",
     link: "https://dl.acm.org/doi/full/10.1145/3606262",
     bibtex: "@article{DBLP:journals/talip/SahuP23,\nauthor       = {Siba Sankar Sahu and\n                  Sukomal Pal},\ntitle        = {A Study on Corpus-based Stopword Lists in Indian Language {IR}},\njournal      = {{ACM} Trans. Asian Low Resour. Lang. Inf. Process.},\nvolume       = {22},\nnumber       = {7},\npages        = {202:1--202:22},\nyear         = {2023},\nurl          = {https://doi.org/10.1145/3606262},\ndoi          = {10.1145/3606262},\ntimestamp    = {Fri, 18 Aug 2023 08:46:35 +0200},\nbiburl       = {https://dblp.org/rec/journals/talip/SahuP23.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
     // code: "",

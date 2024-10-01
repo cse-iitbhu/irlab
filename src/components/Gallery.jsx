@@ -23,11 +23,11 @@ export const Gallery = () => {
   const data = [
     {
       image: finalphd1,
-      caption: "FINAL PhD SUBMISSION BY MRS. ANITA SAROJ"
+      caption: "FINAL Ph.D SUBMISSION BY MRS. ANITA SAROJ"
     },
     {
       image: finalphd2,
-      caption: "FINAL PhD SUBMISSION BY MRS. ANITA SAROJ"
+      caption: "FINAL Ph.D SUBMISSION BY MRS. ANITA SAROJ"
     },
     {
       image: lab,
@@ -77,11 +77,11 @@ export const Gallery = () => {
     
     {
       image: teachday,
-      caption: "Teacher's Day Celebration 23."
+      caption: "Teachers' Day Celebration, 2023."
     },
     {
       image: convocation,
-      caption: "Convocation with M.Tech, IID & Ph.D Students."
+      caption: "Convocation with M.Tech, IDD & Ph.D Students."
     },
 
 
