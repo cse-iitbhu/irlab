@@ -4,7 +4,8 @@ import book from "../assets/book.jpg"
 import playstore from "../assets/playstore.png"
 import appstore from "../assets/appstore.png"
 import download from "../assets/download.png"
-import factcheck from "../assets/factcheck.webp" 
+import factcheck from "../assets/factcheck.webp"
+import operatingSystem from "../assets/operatingSystemBook.pdf" 
 import img from "../assets/img.png"
 import { useEffect } from 'react'
 
@@ -16,7 +17,7 @@ const apps = [
         type: "Book",
         image: download,
         logo: book,
-        url: "/files/operatingSystemBook.pdf"
+        url: operatingSystem
     },
     {
         title: "PARENTAL KID MAGAZINE",
