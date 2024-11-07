@@ -1,6 +1,8 @@
- import React, {useEffect} from 'react'
+import React, {useEffect} from 'react'
 import { FiArrowUpCircle } from "react-icons/fi"
 import AOS from 'aos'
+import twitter from "../assets/twitter.png"
+import linkedin from "../assets/linkedin-logo.png"
 
 export const Footer = () => {
     
@@ -48,6 +50,14 @@ export const Footer = () => {
                 <div className='text-center'>
                     <p className='footer-text '> &copy; 2023-24 | <a href="https://www.iitbhu.ac.in/" target='__blank' >Indian Institute of Technology (Banaras Hindu University), Varanasi.</a> All Rights Reserved.</p>
                     <a className='footer-text ' href="https://www.iitbhu.ac.in/dept/cse" target='__blank' >Department of Computer Science and Engineering IIT-BHU</a>
+                    <div className='flex justify-center items-center space-x-2 mt-2'>
+                        <a className='footer-text' href='https://www.linkedin.com/company/irel-information-retrieval-lab-iit-bhu-varanasi/' target='__blank'>
+                            <img src={linkedin} className='items-center' class="u-max-full-width" border="0" alt="Twitter" width="20" height="20"/>
+                        </a>
+                        <a className='footer-text' href='https://x.com/IReL_iitbhu' target='__blank'>
+                            <img src={twitter} className='items-center' class="u-max-full-width" border="0" alt="Twitter" width="20" height="20"/>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

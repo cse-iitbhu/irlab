@@ -4,6 +4,8 @@ import { ImLocation } from "react-icons/im"
 import { AiOutlineMail } from "react-icons/ai"
 import Iframe from 'react-iframe'
 import { useEffect } from 'react'
+import twitter from "../assets/twitter.png"
+import linkedin from "../assets/linkedin-logo.png"
 export const Contactus = () => {
   useEffect(()=>{
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -40,6 +42,19 @@ export const Contactus = () => {
               
             </div>
             <div className='flex  items-center'><a href="mailto:spal.cse@iitbhu.ac.in" className='contact-text ml-[5%] text-[#67b0d1]'>spal.cse@iitbhu.ac.in</a></div>
+          </div>
+          <div className='my-[4%]'>
+            <div className='flex items-center text-[#000000]'>
+              <div className='contact-heading ml-[2%] text-[120%]'>
+                Follow us on:
+              </div>
+              <a href='https://x.com/IReL_iitbhu' target="__blank" rel="noopener noreferrer">
+                <img src={twitter} className='ml-2' alt="Twitter" width="20" height="20"/>
+              </a>
+              <a href='https://www.linkedin.com/company/irel-information-retrieval-lab-iit-bhu-varanasi/' target='__blank' rel="noopener noreferrer">
+                <img src={linkedin} className='ml-2' alt="Twitter" width="20" height="20"/>
+              </a>
+            </div>
           </div>
         </div>
         <div className='w-1/2 flex justify-center items-center '>

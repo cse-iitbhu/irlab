@@ -11,6 +11,7 @@ import p7 from "../assets/p7.jpg"
 import p8 from "../assets/pp8.jpg"
 import p9 from "../assets/pp9.jpg"
 import p10 from "../assets/pp10.jpg"
+import p11 from "../assets/pp11.jpeg"
 
 
 const research=[
@@ -73,6 +74,12 @@ const research=[
     image:p10,
     desc:"A product recommendation system is a technology or software application that analyzes user preferences, behavior, and historical data to provide personalized recommendations for products or services.  ",
     members:"Mr. Shivam Solanki",
+  },
+  {
+    title:"Group Fairness in Information Retrieval",
+    image:p11,
+    desc:"Group fairness in Information Retrieval(IR) focuses on reducing biases to ensure equitable representation of diverse groups in search results, by creating fairer ranking models.",
+    members:"Mr. Narendra Kumar",
   },
 ]
 
