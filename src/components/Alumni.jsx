@@ -13,7 +13,7 @@ const alumni = [
     name: "Dr. Supriya Chanda",
     year: "2024",
     desg: "Research Scholar",
-    thesis: "Code-Mixed Information Retrieval",
+    thesis: "Text Processing on Code-Mixed Social Media Data",
     profileUrl: "https://www.linkedin.com/in/supriyachandacs/" 
   },
   {
@@ -52,6 +52,13 @@ const alumni = [
     year: "2024",
     thesis: "Advancing Hindi Text Summarization: Named Entity Recognition and Content Augmentation Strategies",
     profileUrl: "https://www.linkedin.com/in/100maygupta/" 
+  },
+  {
+    name: "Mr. Pranav Nair",
+    desg: "IDD",
+    year: "2023",
+    thesis: "",
+    profileUrl: "https://www.linkedin.com/in/pranav-nair-222506172/" 
   },
   {
     name: "Mr. Ribhav Soni",

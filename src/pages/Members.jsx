@@ -6,6 +6,8 @@ import krishna from "../assets/krishna.jpeg"
 import arjun from "../assets/arjun.jpg"
 import narendra from "../assets/narendra.jpeg"
 import yamini from "../assets/yamini.jpeg"
+import abhijeet from "../assets/abhijeet.jpeg"
+import abhinay from "../assets/abhinay.jpeg"
 import sushil from "../assets/sushil.jpg"
 import { Alumni } from '../components/Alumni'
 import { AiOutlineMail } from 'react-icons/ai'
@@ -68,6 +70,22 @@ const current = [
     url: "https://www.linkedin.com/in/yamini-jha-968078248/",
     display: true,
     email: "yamini.jha.cse@iitbhu.ac.in"
+  },
+  {
+    name: "Mr. Abhijeet Panihar",
+    image: abhijeet,
+    desg: "IDD",
+    url: "https://www.linkedin.com/in/abhijeet-panihar-046792284/",
+    display: true,
+    email: "abhijeet.panihar.cse20@itbhu.ac.in"
+  },
+  {
+    name: "Mr. K Abhinay Paul",
+    image: abhinay,
+    desg: "IDD",
+    url: "https://www.linkedin.com/in/abhinay-paul-316a13203/",
+    display: true,
+    email: "kabhinay.paul.cse20@itbhu.ac.in"
   },
   {
     name: "Mr. Akhilesh Yadav",

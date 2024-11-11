@@ -10,7 +10,7 @@ export const Navbar = () => {
     <div className='w-full header bg-[#67b0d1] text-white font-[Montserrat] z-[999999] sticky top-0 right-0 left-0'>
       <div className=' main-navbar  flex justify-between items-center  p-[1%] '>
         <div className=' left min-w-max'>
-          <NavLink to="" className=""><h1 className='nav-heading text-[120%] font-bold tracking-widest text-[#666666] font-sans '>IReL</h1></NavLink>
+          <NavLink to="" className=""><h1 className='nav-heading text-[180%] font-bold tracking-widest text-[#000000] font-sans '>IReL</h1></NavLink>
         </div>
         <div className='right w-full list flex justify-end text-xl tracking-wider'>
           <NavLink to="members" className="px-[0.75%] py-[1%] ml-[1%] text-right"><div className='hover:text-sky-900'>Members</div></NavLink>

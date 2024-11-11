@@ -12,6 +12,9 @@ import p8 from "../assets/pp8.jpg"
 import p9 from "../assets/pp9.jpg"
 import p10 from "../assets/pp10.jpg"
 import p11 from "../assets/pp11.jpeg"
+import p12 from "../assets/pp12.avif"
+import p13 from "../assets/pp13.jpg"
+import p14 from "../assets/pp14.jpg"
 
 
 const research=[
@@ -80,6 +83,24 @@ const research=[
     image:p11,
     desc:"Group fairness in Information Retrieval(IR) focuses on reducing biases to ensure equitable representation of diverse groups in search results, by creating fairer ranking models.",
     members:"Mr. Narendra Kumar",
+  },
+  {
+    title:"Untargeted attacks on federated recommendation systems",
+    image:p12,
+    desc:"An untargeted attack on a federated recommendation system involves manipulating the system's training process to degrade recommendation accuracy without targeting specific users or items. This reduces the overall effectiveness of the recommendations and compromises system performance.",
+    members:"Ms. Yamini Jha",
+  },
+  {
+    title:"Sarcasm Detection & Sentimental Analysis on Code-Mixed Data",
+    image:p13,
+    desc:"This study focuses on using a Dravidian code-mixed dataset for sentiment analysis and sarcasm detection in Tamil-English, Malayalam-English, and Kannada-English language pairs. Sarcasm detection involves binary classification for Tamil-English and Kannada-English.",
+    members:"Mr. K Abhinay Paul",
+  },
+  {
+    title:"Explainable IR for Recommender Systems",
+    image:p14,
+    desc:"Our work on Explainable Information Retrieval (IR) for recommender systems explores methods that provide transparent reasoning behind recommendations which enhances user understanding, makes recommendations more transparent, and promotes fairness in personalization..",
+    members:"Mr. Abhijeet Panihar",
   },
 ]
 
