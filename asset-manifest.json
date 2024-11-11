@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/irlab/static/css/main.7247a258.css",
-    "main.js": "/irlab/static/js/main.ffa522e1.js",
+    "main.css": "/irlab/static/css/main.d1421863.css",
+    "main.js": "/irlab/static/js/main.81f347de.js",
     "static/media/operatingSystemBook.pdf": "/irlab/static/media/operatingSystemBook.e03ac78cc0a759328f57.pdf",
     "static/media/finalphd1.jpg": "/irlab/static/media/finalphd1.1a8c26aa0df60d70b874.jpg",
     "static/media/datascience2.jpg": "/irlab/static/media/datascience2.c32f9ab5d884e655fcbb.jpg",
@@ -30,6 +30,7 @@
     "static/media/teachday.jpg": "/irlab/static/media/teachday.cc17f777ed49d497a171.jpg",
     "static/media/akhilesh.jpg": "/irlab/static/media/akhilesh.de4f9a6ca1d101c305fb.jpg",
     "static/media/pp11.jpeg": "/irlab/static/media/pp11.363832fb753930cdbe46.jpeg",
+    "static/media/abhinay.jpeg": "/irlab/static/media/abhinay.3690d03794034c12ec7e.jpeg",
     "static/media/yamini.jpeg": "/irlab/static/media/yamini.d95503bcb6e6bb7c8b72.jpeg",
     "static/media/IITG.jpg": "/irlab/static/media/IITG.50f60261d07e78d9d0e7.jpg",
     "static/media/Dr_T_Pradhan_2.jpg": "/irlab/static/media/Dr_T_Pradhan_2.25364d1849ee53d224af.jpg",
@@ -38,17 +39,21 @@
     "static/media/th_01.jpg": "/irlab/static/media/th_01.d7fd790f161328cc6ac9.jpg",
     "static/media/Dr_T_Pradhan_1.jpg": "/irlab/static/media/Dr_T_Pradhan_1.cb3e57d570d3ce2b5bf6.jpg",
     "static/media/krishna.jpeg": "/irlab/static/media/krishna.2b34cdb9cae67e96407c.jpeg",
+    "static/media/pp13.jpg": "/irlab/static/media/pp13.18421219f2734e751fbe.jpg",
     "static/media/appstore.png": "/irlab/static/media/appstore.5f649e9884c007fcd059.png",
+    "static/media/pp14.jpg": "/irlab/static/media/pp14.a997f5d137317120a55a.jpg",
     "static/media/playstore.png": "/irlab/static/media/playstore.efbb8fd307b3a426c523.png",
+    "static/media/pp12.avif": "/irlab/static/media/pp12.e1532a8c51e332dc8119.avif",
+    "static/media/abhijeet.jpeg": "/irlab/static/media/abhijeet.018e633b707a167ab3d8.jpeg",
     "static/media/factcheck.webp": "/irlab/static/media/factcheck.2d9c0896013721408908.webp",
     "static/media/arjun.jpg": "/irlab/static/media/arjun.e7c56fb862e44d4458bb.jpg",
     "static/media/spalsir.jpg": "/irlab/static/media/spalsir.93d072defd9f9c2a7760.jpg",
     "index.html": "/irlab/index.html",
-    "main.7247a258.css.map": "/irlab/static/css/main.7247a258.css.map",
-    "main.ffa522e1.js.map": "/irlab/static/js/main.ffa522e1.js.map"
+    "main.d1421863.css.map": "/irlab/static/css/main.d1421863.css.map",
+    "main.81f347de.js.map": "/irlab/static/js/main.81f347de.js.map"
   },
   "entrypoints": [
-    "static/css/main.7247a258.css",
-    "static/js/main.ffa522e1.js"
+    "static/css/main.d1421863.css",
+    "static/js/main.81f347de.js"
   ]
 }
