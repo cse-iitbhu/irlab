@@ -2,8 +2,14 @@ import React, { useEffect, useState } from 'react'
 
 const data=[
   {
-    name:"Compiler",
+    name:"Information Retrieval",
     current:true,
+    year:"2025",
+    url:"https://classroom.google.com/u/3/c/NzQzMjE4OTgyMDAw",
+  },
+  {
+    name:"Compiler",
+    current:false,
     year:"2024",
     url:"https://classroom.google.com/u/1/c/NjkxNjExMDg3NzY1",
   },

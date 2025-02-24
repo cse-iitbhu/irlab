@@ -61,7 +61,7 @@ const current = [
     desg: "IDD",
     url: "https://www.linkedin.com/in/narendra-kumar-3b30791a7/",
     display: true,
-    email: "narendra.kumar.cse@iitbhu.ac.in"
+    email: "narendra.kumar.cse20@iitbhu.ac.in"
   },
   {
     name: "Ms. Yamini Jha",
@@ -69,7 +69,7 @@ const current = [
     desg: "IDD",
     url: "https://www.linkedin.com/in/yamini-jha-968078248/",
     display: true,
-    email: "yamini.jha.cse@iitbhu.ac.in"
+    email: "yamini.jha.cse20@iitbhu.ac.in"
   },
   {
     name: "Mr. Abhijeet Panihar",
