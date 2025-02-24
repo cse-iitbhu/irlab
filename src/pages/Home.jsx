@@ -3,7 +3,6 @@ import { News } from '../components/News'
 import { Achievements } from '../components/Achievements'
 import { Gallery } from '../components/Gallery'
 import b from "../assets/backg-logo.jpg"
-import { Teachings } from '../components/Teachings'
 import AOS from "aos"
 
 export const Home = () => {

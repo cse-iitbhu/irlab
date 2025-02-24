@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import back from "../assets/backg-logo.jpg"
 import { Rtopics } from '../components/Rtopics'
 import p1 from "../assets/pp1.jpg"
 import p2 from "../assets/pp2.jpg"

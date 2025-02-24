@@ -1,6 +1,4 @@
-import React, {useEffect} from 'react'
-import { FiArrowUpCircle } from "react-icons/fi"
-import AOS from 'aos'
+import React from 'react'
 import twitter from "../assets/twitter.png"
 import linkedin from "../assets/linkedin-logo.png"
 
@@ -25,7 +23,7 @@ export const Footer = () => {
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://trec.nist.gov/">TREC</a>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://www.kdd.org/">KDD</a>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://www.wsdm-conference.org/">WSDM</a>
-                        <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="http://fire.irsi.res.in/fire/2023/home">FIRE</a>
+                        <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="http://fire.irsi.org.in/">FIRE</a>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://cods-comad.in/">Cods-COMAD</a>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://indoml.in/">IndoML</a>                    
                     </div>

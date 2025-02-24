@@ -1,5 +1,4 @@
 import React from 'react'
-import back from "../assets/backg-logo.jpg"
 import { ImLocation } from "react-icons/im"
 import { AiOutlineMail } from "react-icons/ai"
 import Iframe from 'react-iframe'

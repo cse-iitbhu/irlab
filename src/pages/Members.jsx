@@ -142,7 +142,7 @@ export const Members = () => {
                   {item.dplb && (
                     <div className='flex flex-shrink-0 justify-center mx-[20%] items-center'>
                       <a href={item.dplb} target='__blank'>
-                        <img src={dplb} className="w-5 mem-icon hover:scale-150" />
+                        <img src={dplb} alt='' className="w-5 mem-icon hover:scale-150" />
                       </a>
                     </div>
                   )}

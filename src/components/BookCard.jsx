@@ -11,7 +11,7 @@ export const BookCard = (props) => {
             <div className='book-title my-[3%] text-[110%] text-[#67b0d1] font-bold tracking-wider'> 
             {props.title}</div>
             <div>
-                <img src={props.logo} />
+                <img src={props.logo} alt="" />
             </div>
             <div className='book-desc text-left mt-[2%] '>
                 {props.desc}</div>
