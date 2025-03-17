@@ -4,6 +4,10 @@ import { TfiAnnouncement } from 'react-icons/tfi'
 
 const news = [
   {
+    name: 'The 17th meeting of Forum of Information Retrieval Evaluation(FIRE-2025) to be organized by Information Retrieval Lab(IReL), IIT(BHU)',
+    year: "17-20 December, 2025",
+  },
+  {
     name: 'Our paper, Towards Safer Online Spaces: Deep Learning for Hate Speech Detection in Code-Mixed Social Media Conversations has been accepted at the DHOW 2024 Workshop, WebSci 24.',
     year: "April, 2024",
   },
@@ -16,9 +20,11 @@ const news = [
 
 const events=[
   {
+    name:"Call for Tracks at FIRE, 2025",
+  },
+  {
     name:"Apply for Android Development",
   },
-  
 ]
 
 export const News = () => {
@@ -46,24 +52,22 @@ export const News = () => {
             </ul>
           </div>
         </div>
-        <div className='bg-gray-200  news-right  w-1/4 flex justify-center '>
-        <div className='py-[2%] mx-[2%] border-[1%] '>
-            <ul className=' text-[120%] px-[2%]  list-inside w-full ' >
-              {
-                events.map((item) => {
-                  return (
-                    <li className='news-li text-[#676767]   flex py-[0.5%] my-[1%] '>
-                      <span className=' text-gray-400 mr-[2%]'>
-                      <TfiAnnouncement className='events mem-icon mr-2 mt-2 ' size={"1rem"} />
-                      </span>
-                      <a target='_blank' rel='noreferrer' href="mailto:spal.cse@iitbhu.ac.in" >
-
+        <div className='bg-gray-200 news-right w-1/4 flex justify-center'>
+          <div className='py-[2%] mx-[2%] border-[1%]'>
+            <ul className='text-[120%] px-[2%] list-inside w-full'>
+             {events.map((item) => {
+               const isCallForTracks = item.name === "Call for Tracks at FIRE, 2025";
+                return (
+                  <li key={item.name} className='news-li text-[#676767] flex py-[0.5%] my-[1%]'>
+                    <span className='text-gray-400 mr-[2%]'>
+                      <TfiAnnouncement className='events mem-icon mr-2 mt-2' size={"1rem"} />
+                    </span>
+                    <a target='_blank' rel='noreferrer' href={isCallForTracks ? "fire.irsi.org.in" : "mailto:spal.cse@iitbhu.ac.in"}>
                       {item.name}
-                      </a>
-                      </li>
-                  )
-                })
-              }
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

@@ -16,11 +16,16 @@ import Dr_T_Pradhan_1 from "../assets/Dr_T_Pradhan_1.jpg"
 import Dr_T_Pradhan_2 from "../assets/Dr_T_Pradhan_2.jpg"
 import teachday from "../assets/teachday.jpg"
 import convocation from "../assets/convocation.jpg"
+import fire from "../assets/FIRE.jpeg"
 
 
 
 export const Gallery = () => {
   const data = [
+    {
+      image: fire,
+      caption: ""
+    },
     {
       image: finalphd1,
       caption: "FINAL Ph.D SUBMISSION BY MRS. ANITA SAROJ"
