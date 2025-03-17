@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/irlab/static/css/main.d1421863.css",
-    "main.js": "/irlab/static/js/main.2c48c619.js",
+    "main.js": "/irlab/static/js/main.64a294af.js",
     "static/media/finalphd1.jpg": "/irlab/static/media/finalphd1.1a8c26aa0df60d70b874.jpg",
     "static/media/datascience2.jpg": "/irlab/static/media/datascience2.c32f9ab5d884e655fcbb.jpg",
     "static/media/finalphd2.jpg": "/irlab/static/media/finalphd2.ffd0485b6342cba0d599.jpg",
@@ -25,6 +25,7 @@
     "static/media/p3.jpg": "/irlab/static/media/p3.9d1679045b4ef2632bbe.jpg",
     "static/media/img.png": "/irlab/static/media/img.d3fd1181a749a49913f7.png",
     "static/media/pp6.jpg": "/irlab/static/media/pp6.e4f4750ee6c97b258411.jpg",
+    "static/media/FIRE.jpeg": "/irlab/static/media/FIRE.9e6e1c34ed3f615d28ff.jpeg",
     "static/media/teachday.jpg": "/irlab/static/media/teachday.cc17f777ed49d497a171.jpg",
     "static/media/akhilesh.jpg": "/irlab/static/media/akhilesh.de4f9a6ca1d101c305fb.jpg",
     "static/media/pp11.jpeg": "/irlab/static/media/pp11.363832fb753930cdbe46.jpeg",
@@ -49,10 +50,10 @@
     "static/media/download.png": "/irlab/static/media/download.2db0768c5cd33d22bd9a.png",
     "index.html": "/irlab/index.html",
     "main.d1421863.css.map": "/irlab/static/css/main.d1421863.css.map",
-    "main.2c48c619.js.map": "/irlab/static/js/main.2c48c619.js.map"
+    "main.64a294af.js.map": "/irlab/static/js/main.64a294af.js.map"
   },
   "entrypoints": [
     "static/css/main.d1421863.css",
-    "static/js/main.2c48c619.js"
+    "static/js/main.64a294af.js"
   ]
 }
