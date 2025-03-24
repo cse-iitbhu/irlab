@@ -24,6 +24,8 @@ export const Footer = () => {
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://www.kdd.org/">KDD</a>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://www.wsdm-conference.org/">WSDM</a>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="http://fire.irsi.org.in/">FIRE</a>
+                        <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://www.elra.info/elra-events/lrec/">LREC</a>
+                        <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://coling2025.org/">COLING</a>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://cods-comad.in/">Cods-COMAD</a>
                         <a target='__blank' className='footer-link hvr-shutter-out-horizontal border-2 p-[2%] m-[2%] hover:text-sky-800  ' href="https://indoml.in/">IndoML</a>                    
                     </div>

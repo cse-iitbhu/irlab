@@ -99,6 +99,30 @@ export const Resources = () => {
                                 </a>
                             </div>
                         </div>
+                        <div className='flex justify-between px-[4%]  py-[2%] teaching-content border-[1px]  text-[120%]'>
+                            <div className=' flex  ' data-aos="fade-up" data-aos-duration="1200">IR Datasets</div>
+                            <div className=' flex ' data-aos="fade-up" data-aos-duration="1200">
+                                <a target='__blank' className='hover:underline text-[#67b0d1]' href="https://ir-datasets.com/">
+                                    Link
+                                </a>
+                            </div>
+                        </div>
+                        <div className='flex justify-between px-[4%]  py-[2%] teaching-content border-[1px]  text-[120%]'>
+                            <div className=' flex  ' data-aos="fade-up" data-aos-duration="1200">HuggingFace Datasets</div>
+                            <div className=' flex ' data-aos="fade-up" data-aos-duration="1200">
+                                <a target='__blank' className='hover:underline text-[#67b0d1]' href="https://huggingface.co/datasets">
+                                    Link
+                                </a>
+                            </div>
+                        </div>
+                        <div className='flex justify-between px-[4%]  py-[2%] teaching-content border-[1px]  text-[120%]'>
+                            <div className=' flex  ' data-aos="fade-up" data-aos-duration="1200">Kaggle Datasets</div>
+                            <div className=' flex ' data-aos="fade-up" data-aos-duration="1200">
+                                <a target='__blank' className='hover:underline text-[#67b0d1]' href="https://www.kaggle.com/datasets">
+                                    Link
+                                </a>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
