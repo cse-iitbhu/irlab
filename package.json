@@ -12,6 +12,7 @@
     "flowbite": "^1.6.5",
     "flowbite-react": "^0.4.4",
     "framer-motion": "^10.12.16",
+    "lucide-react": "^0.524.0",
     "react": "^18.2.0",
     "react-carousel-minimal": "^1.4.1",
     "react-copy-to-clipboard": "^5.1.0",

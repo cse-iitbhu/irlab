@@ -11,6 +11,7 @@ import { Contactus } from './components/Contactus';
 import { Resources } from './pages/Resources';
 import { Book} from './pages/Book';
 import { Teaching } from './pages/Teaching';
+import { OSBook } from './pages/OSBook.tsx';
 
 
 
@@ -32,6 +33,7 @@ function App() {
         {/* <Route path='/teach' element={<Teaching/>}></Route> */}
         <Route path='/contact' element={<Contactus/>}></Route>
         <Route path='/publications' element={<Publications/>}></Route>
+        <Route path='/os-book' element={<OSBook />} />
       </Routes>
       <Footer/>
     </div>

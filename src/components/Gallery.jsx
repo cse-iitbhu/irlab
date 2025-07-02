@@ -17,6 +17,8 @@ import Dr_T_Pradhan_2 from "../assets/Dr_T_Pradhan_2.jpg"
 import teachday from "../assets/teachday.jpg"
 import convocation from "../assets/convocation.jpg"
 import fire from "../assets/FIRE.jpeg"
+import idd from "../assets/idd.jpeg"
+import pp1 from "../assets/irlab.jpeg"
 
 
 
@@ -25,6 +27,14 @@ export const Gallery = () => {
     {
       image: fire,
       caption: ""
+    },
+    {
+      image: idd,
+      caption: "IDD Graduates Thesis Submission"
+    },
+    {
+      image: pp1,
+      caption: "IReL Members"
     },
     {
       image: finalphd1,

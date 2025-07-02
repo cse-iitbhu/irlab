@@ -39,6 +39,34 @@ const alumni = [
     thesisUrl: "https://shodhganga.inflibnet.ac.in/handle/10603/435807",
     profileUrl: "https://www.linkedin.com/in/tribikram-pradhan-39a67290/" 
   },
+    {
+    name: "Mr. Abhijeet Panihar",
+    desg: "IDD",
+    profileUrl: "https://www.linkedin.com/in/abhijeet-panihar-046792284/",
+    year: "2025",
+    thesis: "Improving Explainable Knowledge-Graph Recommendations through Path Generalization and Relation-Aware Pruning"
+  },
+  {
+    name: "Mr. K Abhinay Paul",
+    desg: "IDD",
+    profileUrl: "https://www.linkedin.com/in/abhinay-paul-316a13203/",
+    year: "2025",
+    thesis: "Sentiment Analysis and Sarcasm Detection in Dravidian Code-Mixed Data"
+  },
+  {
+    name: "Mr. Narendra Kumar",
+    desg: "IDD",
+    profileUrl: "https://www.linkedin.com/in/narendra-kumar-3b30791a7/",
+    year: "2025",
+    thesis: "Fairness in Textual Information Retrieval Using Query Modification"
+  },
+  {
+    name: "Ms. Yamini Jha",
+    desg: "IDD",
+    profileUrl: "https://www.linkedin.com/in/yamini-jha-968078248/",
+    year: "2025",
+    thesis: "Adversarial Attacks on Federated Recommendation: An Untargeted Perspective"
+  },
   {
     name: "Mr. Arvind Agrawal",
     desg: "IDD",

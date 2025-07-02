@@ -7,6 +7,7 @@ import download from "../assets/download.png"
 import factcheck from "../assets/factcheck.webp"
 import img from "../assets/img.png"
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 const apps = [
     {
@@ -16,7 +17,7 @@ const apps = [
         type: "Book",
         image: download,
         logo: book,
-        url: "https://ekumbh.aicte-india.org/allbook.php"
+        url: "/os-book"
     },
     {
         title: "PARENTAL KID MAGAZINE",

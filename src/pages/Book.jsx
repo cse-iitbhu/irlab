@@ -10,7 +10,7 @@ const apps = [
         desc: "A beginner level easy, short and fun-filled trip to learn Operating Systems - meant for UG CS students. With lot of MCQs for GATE and other competitive examinations and links for further in-depth study.",
         type: "Book",
         image: book.jpg,
-        url: "https://ekumbh.aicte-india.org/allbook.php"
+        url: "https://ekumbh.aicte-india.org/book.php"
     },
    ]
 
@@ -46,8 +46,8 @@ export const Book = () => {
                         <div className='flex justify-between px-[4%] py-[2%] teaching-content border-[1px] text-[120%]' >
                             <div className=' flex  ' data-aos="fade-up" data-aos-duration="1200">"Operating Systems" book by Dr. Sukomal Pal at AICTE e-Kumbh </div>
                             <div className='flex ' data-aos="fade-up" data-aos-duration="1200">
-                                <a target='__blank' className='hover:underline text-[#67b0d1]' href="https://ekumbh.aicte-india.org/allbook.php">
-                                https://ekumbh.aicte-india.org/allbook.php
+                                <a target='__blank' className='hover:underline text-[#67b0d1]' href="https://ekumbh.aicte-india.org/book.php">
+                                https://ekumbh.aicte-india.org/book.php
                                 </a>
                             </div>
                         </div>

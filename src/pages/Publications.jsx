@@ -9,8 +9,18 @@ import { RiDoubleQuotesR } from 'react-icons/ri'
 import Popup from 'reactjs-popup';
 // import 'reactjs-popup/dist/index.css';
 import copy from "copy-to-clipboard";
+import { Link } from 'react-router-dom';
 
 const data = [
+  {
+    authors: "Sushil Kulkarni and Sukomal Pal",
+    year: "2024",
+    category: "Journal",
+    desc: "A Review on Language-Independent Search on Speech and its Applications",
+    name: "IEEE Access",
+    link: "https://www.researchgate.net/publication/387241766_A_Review_on_Language-Independent_Search_on_Speech_and_its_Applications",
+    bibtex: "@article{article,\nauthor = {Sushil Kulkarni and \nSukomal Pal},\nyear = {2024},\nmonth = {01},\npages = {1-1},\ntitle = {A Review on Language-Independent Search on Speech and its Applications},\nvolume = {PP},\njournal = {IEEE Access},\ndoi = {10.1109/ACCESS.2024.3520394}\n}"
+  },
   {
     name: "Websci Companion '24: Companion Publication of the 16th ACM Web Science Conference",
     desc: "Towards Safer Online Spaces: Deep Learning for Hate Speech Detection in Code-Mixed Social Media Conversations",
@@ -69,7 +79,7 @@ const data = [
      category: "Books",
      authors: "Dr. Sukomal Pal",
      year: "2023",
-     link: "https://ekumbh.aicte-india.org/book.php",
+     link: "/os-book",
      bibtex: "",
      // code: "",
      shortform: "EG 2023",
@@ -576,15 +586,27 @@ export const Publications = () => {
                             </div>
                           </div>
                           {item.link &&
-                            <a href={item.link} target='__blank' className='flex  space-x-1 publ-year justify-start items-center  transition ease-in-out hover:scale-110 '>
-                              <div>
-                                <AiOutlineLink className='mem-icon' size={"1.25rem"} />
-                              </div>
-                              <div className='pl-[2%] '>
-                                Link
-                              </div>
-                            </a>
-                          }
+  (item.link.startsWith('http') ? 
+    <a href={item.link} target='_blank' className='flex  space-x-1 publ-year justify-start items-center  transition ease-in-out hover:scale-110 '>
+      <div>
+        <AiOutlineLink className='mem-icon' size={"1.25rem"} />
+      </div>
+      <div className='pl-[2%] '>
+        Link
+      </div>
+    </a>
+    :
+    <Link to={item.link} className='flex  space-x-1 publ-year justify-start items-center  transition ease-in-out hover:scale-110 '>
+      <div>
+        <AiOutlineLink className='mem-icon' size={"1.25rem"} />
+      </div>
+      <div className='pl-[2%] '>
+        Link
+      </div>
+    </Link>
+  )
+}
+
                           {item.bibtex &&
                             <div className=''>
                               <Popup className='pop' trigger={
