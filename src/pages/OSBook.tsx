@@ -309,7 +309,7 @@ const faqs: FAQ[] = [
       <div className="flex justify-center items-start">
         <div className="w-full max-w-[225px]">
           <img 
-            src="/irlab/img/os book.jpg" 
+            src="/irlab/img/book.jpg" 
             alt="Operating Systems Book Cover" 
             className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
           />
