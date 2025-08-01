@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import book from "../assets/book.jpg"
 import { 
   Book, 
   Download, 
@@ -309,7 +310,7 @@ const faqs: FAQ[] = [
       <div className="flex justify-center items-start">
         <div className="w-full max-w-[225px]">
           <img 
-            src="/irlab/img/book.jpg" 
+            src={book}
             alt="Operating Systems Book Cover" 
             className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
           />
@@ -341,6 +342,7 @@ const faqs: FAQ[] = [
         {/* Table of Contents */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Table of Contents</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-3"><b>Note:</b> The download links provided here correspond to the presentation slides.</p>
           <div className="space-y-4">
             {filteredChapters.map((chapter) => (
               <div key={chapter.id} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
