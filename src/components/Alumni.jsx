@@ -14,22 +14,38 @@ const alumni = [
     year: "2024",
     desg: "Research Scholar",
     thesis: "Text Processing on Code-Mixed Social Media Data",
-    profileUrl: "https://www.linkedin.com/in/supriyachandacs/" 
+    profileUrl: "https://supriyachanda.github.io/",
+    thesisUrl: "https://shodhganga.inflibnet.ac.in/handle/10603/608610" 
   },
   {
     name: "Dr. Siba Sankar Sahu",
     year: "2024",
     desg: "Research Scholar",
     thesis: "Pre-processing tasks for Indian Language Information Retrieval",
-    profileUrl: "https://www.linkedin.com/in/siba-sankar-sahu-488449a7/" 
+    profileUrl: "https://www.linkedin.com/in/siba-sankar-sahu-488449a7/",
+    thesisUrl: "https://shodhganga.inflibnet.ac.in/handle/10603/609791" 
+  },
+  {
+    name: "Dr. Naina Yadav",
+    year: "2024",
+    desg: "Research Scholar",
+    thesis: "Design and Development of Some Approaches for Accurate and Diverse Music Recommender System",
+    profileUrl: "https://www.linkedin.com/in/dr-naina-yadav-9625b346/",
+    thesisUrl: "https://shodhganga.inflibnet.ac.in/handle/10603/539107" 
   },
   {
     name: "Dr. Anita Saroj",
-    year: "2022",
+    year: "2023",
     desg: "Research Scholar",
     thesis: "The Impact of Social Media Text: A study on e-Governance, Election and Disaster Management",
     thesisUrl: "https://shodhganga.inflibnet.ac.in/handle/10603/531861",
     profileUrl: "https://www.linkedin.com/in/dr-anita-saroj-27316697/" 
+  },
+    {
+    name: "Dr. Dinesh Prabhakar",
+    desg: "Research Scholar",
+    year: "2022",
+    thesis: "Informal Information Retrieval: Techniques and Evaluation"
   },
   {
     name: "Dr. Tribikram Pradhan",
@@ -38,6 +54,13 @@ const alumni = [
     thesis: "Multi objective Academic Recommender System",
     thesisUrl: "https://shodhganga.inflibnet.ac.in/handle/10603/435807",
     profileUrl: "https://www.linkedin.com/in/tribikram-pradhan-39a67290/" 
+  },
+  {
+    name: "Dr. Ambedkar Kanapala",
+    desg: "Research Scholar",
+    year: "2020",
+    thesis: "Legal Information Retrieval: Techniques and Evaluation",
+    thesisUrl: "https://shodhganga.inflibnet.ac.in/handle/10603/585585",
   },
     {
     name: "Mr. Abhijeet Panihar",
@@ -85,14 +108,48 @@ const alumni = [
     name: "Mr. Pranav Nair",
     desg: "IDD",
     year: "2023",
-    thesis: "",
+    thesis: "Domain Generalization in Abstractive Summarization",
+    profileUrl: "https://www.linkedin.com/in/pranav-nair-222506172/" 
+  },
+  {
+    name: "Mr. Manish Regar",
+    desg: "IDD",
+    year: "2023",
+    thesis: "A Study on Stemming Techniques in Indian Languages IR",
+    profileUrl: "https://www.linkedin.com/in/manish-regar-906057217/" 
+  },
+  {
+    name: "Mr. Dhruv Mahajan",
+    desg: "IDD",
+    year: "2022",
+    thesis: "A study on Commercial Recommender Systems" 
+  },
+  {
+    name: "Mr. Raghav Kabra",
+    desg: "IDD",
+    year: "2021",
+    thesis: "A Recommender System for online marketplace",
+    profileUrl: "https://www.linkedin.com/in/raghavkabra27/" 
+  },
+  {
+    name: "Mr. Chaitanya Bhatia",
+    desg: "IDD",
+    year: "2020",
+    thesis: "Design of Decision Support System for Peer Reviewed Conference/ Journal",
+    profileUrl: "https://www.linkedin.com/in/chaitanya-bhatia-b782a8118/" 
+  },
+  {
+    name: "Mr. Vinayaka Batwara",
+    desg: "IDD",
+    year: "2020",
+    thesis: "Consistency of Information Retrieval Systems in presence of Query Variations",
     profileUrl: "https://www.linkedin.com/in/pranav-nair-222506172/" 
   },
   {
     name: "Mr. Ribhav Soni",
     desg: "IDD",
     year: "2018",
-    thesis: "",
+    thesis: "Microblog Retrieval for Disaster Relief: Creating a Robust Gold Standard",
     profileUrl: "https://www.linkedin.com/in/ribhavsoni/" 
   },
   {
@@ -108,6 +165,90 @@ const alumni = [
     year: "2023",
     thesis: "Product Recommendation System",
     profileUrl: "https://www.linkedin.com/in/shivam-solanki-1b8696209/" 
+  },
+  {
+    name: "Ms. Sudha Sankar Prasad",
+    desg: "M.Tech",
+    year: "2016",
+    thesis: "Sentiment Classification: An Approach for Indian Language Tweets"
+  },
+  {
+    name: "Mr. Jitendra Prasad",
+    desg: "M.Tech",
+    year: "2016",
+    thesis: "An Approach for Temporal Query Intent Classification"
+  },
+  {
+    name: "Ms. Sushmita Annie",
+    desg: "M.Tech",
+    year: "2016",
+    thesis: "Legal Information Retrieval"
+  },
+  {
+    name: "Mr. Deep Biswas",
+    desg: "M.Tech",
+    year: "2016",
+    thesis: "Site Based Prediction of Hidden Attributes of Social Network Profiles"
+  },
+  {
+    name: "Mr. Shantanu Dubey",
+    desg: "M.Tech",
+    year: "2015",
+    thesis: "NER from Transliterated Text"
+  },
+    {
+    name: "Ms. Bharti Goel",
+    desg: "M.Tech",
+    year: "2015",
+    thesis: "Sentiment Detection"
+  },
+    {
+    name: "Ms. Akanchha Choubey",
+    desg: "M.Tech",
+    year: "2015",
+    thesis: "Social Spam Detection"
+  },
+    {
+    name: "Mr. Manajit Chakrabarty",
+    desg: "M.Tech",
+    year: "2014",
+    thesis: "Social Spam Detection"
+  },
+    {
+    name: "Mr. Rahul Pramanik",
+    desg: "M.Tech",
+    year: "2014",
+    thesis: "Effect of Negative Information on IR"
+  },
+    {
+    name: "Mr. Gopashree Panda",
+    desg: "M.Tech",
+    year: "2014",
+    thesis: "A Study on Named Entity Recognition"
+  },
+    {
+    name: "Mr. Robins Yadav",
+    desg: "M.Tech",
+    year: "2013",
+    thesis: "Enhancement of ISMStemmer"
+  },
+    {
+    name: "Mr. Avinash Yadav",
+    desg: "M.Tech",
+    year: "2013",
+    thesis: "Social Book Search" 
+  },
+    {
+    name: "Mr. Raktim Banerjee",
+    desg: "M.Tech",
+    year: "2012",
+    thesis: "Development of ISMStemmer"
+  },
+    {
+    name: "Ms. Preeti Tamrakar",
+    desg: "M.Tech",
+    year: "2012",
+    thesis: "On Snippet Retrieval" 
   }
 ];
 

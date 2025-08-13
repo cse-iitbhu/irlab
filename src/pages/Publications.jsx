@@ -12,6 +12,69 @@ import copy from "copy-to-clipboard";
 import { Link } from 'react-router-dom';
 
 const data = [
+{
+  authors: "Narendra Kumar, Arjun Mukherjee, Sukomal Pal and Thomas Mandl",
+  year: "2025",
+  category: "Conference",
+  desc: "IITUH18 at Fairweb-2: Investigating the Effect of the Query Modification on Fairness",
+  name: "Proceedings of NTCIR-18",
+  link: "https://research.nii.ac.jp/ntcir/workshop/OnlineProceedings18/pdf/ntcir/04-NTCIR18-FAIRWEB-KumarN.pdf",
+  bibtex: "@inproceedings{kumar2025iitu,\n" +
+          "  author = {Narendra Kumar and Arjun Mukherjee and Sukomal Pal and Thomas Mandl},\n" +
+          "  title = {IITUH18 at Fairweb-2: Investigating the Effect of the Query Modification on Fairness},\n" +
+          "  booktitle = {Proceedings of NTCIR-18},\n" +
+          "  year = {2025},\n" +
+          "  publisher = {National Institute of Informatics},\n" +
+          "  address = {Tokyo, Japan}\n" +
+          "}"
+},
+  {
+    authors: "Supriya Chanda and Sukomal Pal",
+    year: "2025",
+    category: "Book Chapters",
+    desc: "Hate Content Identification in Code-mixed Social Media Data",
+    name: "Text and Social Media Analytics for Fake News and Hate Speech Detection",
+    link: "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003409519-13/hate-content-identification-code-mixed-social-media-data-supriya-chanda-sukomal-pal",
+    bibtex: "@incollection{incollection,\nauthor = {Supriya Chanda and \nSukomal Pal},\nyear = {2024},\nmonth = {07},\npages = {225-247},\ntitle = {Hate Content Identification in Code-mixed Social Media Data},\nbooktitle = {Text and Social Media Analytics for Fake News and Hate Speech Detection},\npublisher = {Taylor \\& Francis},\ndoi = {10.1201/9781003409519-13}\n}"
+  },
+  {
+    authors: "Supriya Chanda, Anshika Mishra and Sukomal Pal",
+    year: "2024",
+    category: "Journal",
+    desc: "Sentiment analysis of code-mixed Dravidian languages leveraging pretrained model and word-level language tag",
+    name: "Natural Language Processing",
+    link: "https://www.cambridge.org/core/journals/natural-language-processing/article/sentiment-analysis-of-code-mixed-dravidian-languages-leveraging-pretrained-model-and-word-level-language-tag/024F7BA5EE3F5F29CDB20EC9AD79CCE5",
+    bibtex: "@article{chanda2024sentiment,\n" +
+            "  author = {Supriya Chanda and Anshika Mishra and Sukomal Pal},\n" +
+            "  title = {Sentiment analysis of code-mixed Dravidian languages leveraging pretrained model and word-level language tag},\n" +
+            "  journal = {Natural Language Processing},\n" +
+            "  year = {2024},\n" +
+            "  volume = {31},\n" +
+            "  number = {2},\n" +
+            "  pages = {477–499},\n" +
+            "  doi = {10.1017/nlp.2024.30},\n" +
+            "  month = {Sep}\n" +
+            "}"
+  },
+  {
+    authors: "Siba Sankar Sahu and Sukomal Pal",
+    year: "2025",
+    category: "Journal",
+    desc: "A case study on decompounding in Indian language IR",
+    name: "Natural Language Processing",
+    link: "https://www.cambridge.org/core/journals/natural-language-processing/article/a-case-study-on-decompounding-in-indian-language-ir/XXXX", // replace XXXX with actual article ID
+    bibtex: "@article{sahu2025decompounding,\n" +
+            "  author = {Siba Sankar Sahu and Sukomal Pal},\n" +
+            "  title = {A case study on decompounding in Indian language IR},\n" +
+            "  journal = {Natural Language Processing},\n" +
+            "  year = {2025},\n" +
+            "  volume = {31},\n" +
+            "  number = {2},\n" +
+            "  pages = {575--605},\n" +
+            "  doi = {10.1017/nlp.2025.xx},\n" + // replace with correct DOI
+            "  month = {Feb}\n" +
+            "}"
+  },
   {
     authors: "Sushil Kulkarni and Sukomal Pal",
     year: "2024",
@@ -20,6 +83,24 @@ const data = [
     name: "IEEE Access",
     link: "https://www.researchgate.net/publication/387241766_A_Review_on_Language-Independent_Search_on_Speech_and_its_Applications",
     bibtex: "@article{article,\nauthor = {Sushil Kulkarni and \nSukomal Pal},\nyear = {2024},\nmonth = {01},\npages = {1-1},\ntitle = {A Review on Language-Independent Search on Speech and its Applications},\nvolume = {PP},\njournal = {IEEE Access},\ndoi = {10.1109/ACCESS.2024.3520394}\n}"
+  },
+    {
+    authors: "Debasis Jana, Suprakash Gupta, Deepak Kumar and Sukomal Pal",
+    year: "2024",
+    category: "Journal",
+    desc: "Machine learning approach for studying the influencing factors affecting the operational reliability and remaining useful life",
+    name: "International Journal of Quality & Reliability Management",
+    link: "https://www.emerald.com/insight/content/doi/10.1108/ijqrm-11-2023-0345/full/html",
+    bibtex: "@article{jana2024machine,\n" +
+            "  author = {Debasis Jana and Suprakash Gupta and Deepak Kumar and Sukomal Pal},\n" +
+            "  title = {Machine learning approach for studying the influencing factors affecting the operational reliability and remaining useful life},\n" +
+            "  journal = {International Journal of Quality & Reliability Management},\n" +
+            "  year = {2024},\n" +
+            "  volume = {42},\n" +
+            "  number = {2},\n" +
+            "  pages = {734--751},\n" +
+            "  doi = {10.1108/ijqrm-11-2023-0345}\n" +
+            "}"
   },
   {
     name: "Websci Companion '24: Companion Publication of the 16th ACM Web Science Conference",
@@ -62,6 +143,24 @@ const data = [
     shortform: " 2024",
 
   },
+  {
+  authors: "N Yadav, S Pal and AK Singh",
+  year: "2024",
+  category: "Journal",
+  desc: "Diversified recommendation using implicit content node embedding in heterogeneous information network",
+  name: "Multimedia Tools and Applications",
+  link: "https://link.springer.com/article/10.1007/s11042-023-16135-w",
+  bibtex: "@article{yadav2024diversified,\n" +
+          "  author = {Naina Yadav and Sukomal Pal and Anil Kumar Singh},\n" +
+          "  title = {Diversified recommendation using implicit content node embedding in heterogeneous information network},\n" +
+          "  journal = {Multimedia Tools and Applications},\n" +
+          "  year = {2024},\n" +
+          "  volume = {83},\n" +
+          "  number = {7},\n" +
+          "  pages = {20605--20635},\n" +
+          "  doi = {10.1007/s11042-023-16135-w}\n" +
+          "}"
+},
   {
     name: "TREC 2023 ",
     desc: "Facts Summarization at the TREC 2023: IIT(BHU) in CrisisFACTs Track",
@@ -114,7 +213,7 @@ const data = [
   name: "Springer Nature Computer Science ",
   desc: " Effect of stopwords and stemming techniques in Urdu IR ",
   category: "Journal",
-  authors: "Siba Sankar Sahu, Sukomal Pal",
+  authors: "Siba Sankar Sahu, Debrup Dutta, Sukomal Pal and Imran Rasheed",
   year: "2023",
   link: " https://link.springer.com/article/10.1007/s12046-021-01731-z",
   bibtex: "@article{DBLP:journals/sncs/SahuDPR23,\nauthor       = {Siba Sankar Sahu and\n                  Debrup Dutta and\n                  Sukomal Pal and\n                  Imran Rasheed},\ntitle        = {Effect of Stopwords and Stemming Techniques in Urdu {IR}},\njournal      = {{SN} Comput. Sci.},\nvolume       = {4},\nnumber       = {5},\npages        = {547},\nyear         = {2023},\nurl          = {https://doi.org/10.1007/s42979-023-01953-4},\ndoi          = {10.1007/S42979-023-01953-4},\ntimestamp    = {Sun, 24 Sep 2023 15:45:25 +0200},\nbiburl       = {https://dblp.org/rec/journals/sncs/SahuDPR23.bib},\nbibsource    = {dblp computer science bibliography, https://dblp.org}\n}",
@@ -122,7 +221,6 @@ const data = [
   shortform: "SNCS 2023",
      
 },
-
   {
     name: "Computer Speech & Language 2023",
     desc: "Building a text retrieval system for the Sanskrit language: Exploring indexing, stemming, and searching issues",
@@ -211,6 +309,61 @@ const data = [
     // code: "",
     shortform: "SNCS 2022",
   },
+  {
+  authors: "A Kanapala, S Pal, S Dara and S Jannu",
+  year: "2022",
+  category: "Journal",
+  desc: "Applying an Information Retrieval Approach to Retrieve Relevant Articles in the Legal Domain",
+  name: "Annals of Data Science",
+  link: "https://doi.org/10.1007/s40745-022-00442-4",
+  bibtex: "@article{kanapala2022ir_legal_domain,\n" +
+          "  author = {Ambedkar Kanapala and Sukomal Pal and Suresh Dara and Srikanth Jannu},\n" +
+          "  title = {Applying an Information Retrieval Approach to Retrieve Relevant Articles in the Legal Domain},\n" +
+          "  journal = {Annals of Data Science},\n" +
+          "  year = {2022},\n" +
+          "  volume = {11},\n" +
+          "  number = {5},\n" +
+          "  pages = {1563--1580},\n" +
+          "  doi = {10.1007/s40745-022-00442-4},\n" +
+          "  month = {Oct}\n" +
+          "}"
+},
+{
+  authors: "N Yadav, S Pal, AK Singh and K Singh",
+  year: "2022",
+  category: "Journal",
+  desc: "Clus-DR: Cluster-based pretrained model for diverse recommendation generation",
+  name: "Journal of King Saud University – Computer and Information Sciences",
+  link: "https://doi.org/10.1016/j.jksuci.2022.02.010",
+  bibtex: "@article{yadav2022clusdr,\n" +
+          "  author = {Naina Yadav and Sukomal Pal and Anil Kumar Singh and Kartikey Singh},\n" +
+          "  title = {Clus-DR: Cluster-based pretrained model for diverse recommendation generation},\n" +
+          "  journal = {Journal of King Saud University – Computer and Information Sciences},\n" +
+          "  year = {2022},\n" +
+          "  volume = {34},\n" +
+          "  number = {8},\n" +
+          "  pages = {6385--6399},\n" +
+          "  doi = {10.1016/j.jksuci.2022.02.010}\n" +
+          "}"
+},
+{
+  authors: "N Yadav, A Kumar Singh and S Pal",
+  year: "2022",
+  category: "Journal",
+  desc: "Improved self-attentive Musical Instrument Digital Interface content-based music recommendation system",
+  name: "Computational Intelligence",
+  link: "https://onlinelibrary.wiley.com/doi/abs/10.1111/coin.12501",
+  bibtex: "@article{yadav2022musical_midi_recommendation,\n" +
+          "  author = {Naina Yadav and Anil Kumar Singh and Sukomal Pal},\n" +
+          "  title = {Improved self-attentive Musical Instrument Digital Interface content-based music recommendation system},\n" +
+          "  journal = {Computational Intelligence},\n" +
+          "  year = {2022},\n" +
+          "  volume = {38},\n" +
+          "  number = {4},\n" +
+          "  pages = {—},\n" +
+          "  doi = {10.1111/coin.12501}\n" +
+          "}"
+},
   {
     name: "Forum for Information Retrieval Evaluation (Working Notes)(FIRE), CEUR-WS. org",
     desc: "Is Meta Embedding better than pre-trained word embedding to perform Sentiment Analysis for Dravidian Languages in Code-Mixed Text?",
@@ -495,6 +648,103 @@ const data = [
     // code: "",
     shortform: "FIRE 2018",
   },
+      {
+     name: "Sub-document level Information Retrieval",
+     desc: "Sub-document level Information Retrieval: Retrieval and Evaluation",
+     category: "Books",
+     authors: "Sukomal Pal",
+     year: "2016",
+     link: "https://www.amazon.in/-/hi/Sukomal-Pal/dp/3659949698",
+     bibtex: "",
+     // code: "",
+     shortform: "EG 2016",
+        
+  },
+  {
+    authors: "Manajit Chakraborty, Sukomal Pal, Rahul Pramanik and Ravindranath Chowdhary",
+    year: "2016",
+    category: "Journal",
+    desc: "Recent Developments in Social Spam Detection and Combating Techniques: A Survey",
+    name: "Information Processing & Management",
+    link: "https://www.sciencedirect.com/science/article/pii/S0306457316300966",
+    bibtex: "@article{chakraborty2016social,\n" +
+            "  author = {Manajit Chakraborty and Sukomal Pal and Rahul Pramanik and Ravindranath Chowdhary},\n" +
+            "  title = {Recent Developments in Social Spam Detection and Combating Techniques: A Survey},\n" +
+            "  journal = {Information Processing & Management},\n" +
+            "  volume = {52},\n" +
+            "  number = {6},\n" +
+            "  pages = {10531073},\n" +
+            "  year = {2016},\n" +
+            "  publisher = {Elsevier},\n" +
+            "  note = {Awarded IP\\&M Best Paper - Honorable Mention 2016; Cited by 106 (Google Scholar)}\n" +
+            "}"
+  },
+  {
+  authors: "Sukomal Pal and Mandar Mitra",
+  year: "2011",
+  category: "Book Chapters",
+  desc: "XML Retrieval: A Survey",
+  name: "Internet Policies and Issues. Volume 8",
+  link: "https://d1wqtxts1xzle7.cloudfront.net/50461503/XML_Retrieval_A_Survey20161121-28479-14utytk-libre.pdf?1479755688=&response-content-disposition=inline%3B+filename%3DXML_Retrieval_A_Survey.pdf&Expires=1755085051&Signature=bC~A2kiLLonWFmAoGSNpJMikCUS3oRZQqusZiTcbLsTd8Og5zp4syPQhiBh0ONQCymYc4g~Ea755O~n9cLy8IWNYL4-DjUCXbE6m-n3I96zwhVPqso8tl7GYoAwlShJjpPTfvfTkQwgE0YHFQKIHS43FBWrNglOqiWzES6NYW~LJc~MB84ufwgmHyRTSknhDEPCJFxlyGeuyoL4FsXVqnGglc0zYzu4-O0mU8PTxQ5Hx8aLCAj2X02C3CnxTEASPFMbai0jSJfHhPCjrPLvQ3XU27jPADkpu3nTL1ac8TAbpjf5Dw4aqxUePoBl~fYLIXJFbSDiGMOf3Z-nE2aI6ag__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA",
+  bibtex: "@incollection{pal2011xml,\nauthor = {Sukomal Pal and \nMandar Mitra},\nyear = {2011},\ntitle = {XML Retrieval: A Survey},\nbooktitle = {Internet Policies and Issues, Volume 8},\npublisher = {Nova Science Publishers},\npages = {85-118}\n}"
+},
+  {
+    authors: "Sukomal Pal, Mandar Mitra and Jaap Kamps",
+    year: "2011",
+    category: "Journal",
+    desc: "Evaluation effort, reliability and reusability in XML retrieval",
+    name: "Journal of the American Society for Information Science and Technology",
+    link: "https://doi.org/10.1002/asi.21403",
+    bibtex: "@article{pal2011xml,\n" +
+            "  author = {Sukomal Pal and Mandar Mitra and Jaap Kamps},\n" +
+            "  title = {Evaluation effort, reliability and reusability in XML retrieval},\n" +
+            "  journal = {Journal of the American Society for Information Science and Technology},\n" +
+            "  volume = {62},\n" +
+            "  number = {2},\n" +
+            "  pages = {375--394},\n" +
+            "  year = {2011},\n" +
+            "  note = {Awarded the Best JASIST Paper Award 2012; Cited by 20 (Google Scholar)}\n" +
+            "}"
+  },
+  {
+    authors: "P. Majumder, M. Mitra, D. Pal, A. Bandyopadhyay, S. Maiti, S. Pal, D. Modak and S. Sanyal",
+    year: "2010",
+    category: "Journal",
+    desc: "The FIRE 2008 Evaluation Exercise",
+    name: "ACM Transactions on Asian Language Information Processing",
+    link: "https://doi.org/10.1145/1838745.1838747]",
+    bibtex: "@article{majumder2010fire,\n" +
+            "  author = {Prasenjit Majumder and Mandar Mitra and Dipasree Pal and Ayan Bandyopadhyay and Samaresh Maiti and Sukomal Pal and Deboshree Modak and Sucharita Sanyal},\n" +
+            "  title = {The FIRE 2008 Evaluation Exercise},\n" +
+            "  journal = {ACM Transactions on Asian Language Information Processing},\n" +
+            "  volume = {9},\n" +
+            "  number = {3},\n" +
+            "  articleno = {10},\n" +
+            "  year = {2010},\n" +
+            "  month = {Sep},\n" +
+            "  note = {Cited by 25 (Google Scholar)}\n" +
+            "}"
+  },
+  {
+    authors: "Sukomal Pal and Aditya Bagchi",
+    year: "2005",
+    category: "Journal",
+    desc: "Association against Dissociation: Some Pragmatic Considerations for Frequent Itemset Generation under Fixed and Variable Thresholds",
+    name: "ACM SIGKDD Explorations",
+    link: "https://doi.org/10.1145/1117454.1117479",
+    bibtex: "@article{pal2005association,\n" +
+            "  author = {Sukomal Pal and Aditya Bagchi},\n" +
+            "  title = {Association against Dissociation: Some Pragmatic Considerations for Frequent Itemset Generation under Fixed and Variable Thresholds},\n" +
+            "  journal = {ACM SIGKDD Explorations},\n" +
+            "  volume = {7},\n" +
+            "  number = {2},\n" +
+            "  pages = {151--159},\n" +
+            "  year = {2005},\n" +
+            "  month = {Dec},\n" +
+            "  note = {Cited by 21 (Google Scholar)}\n" +
+            "}"
+  }
+
 ]
 
 export const Publications = () => {
@@ -525,6 +775,19 @@ export const Publications = () => {
                 Books
               </button>
             </div>
+          </div>
+          <div className='w-1/5 hover:animate-pulse flex justify-center items-center'>
+            {/* <div className='category mr-1 bg-green-900 flex-shrink-0 rounded-full w-4 h-4'>
+            </div> */}
+          <div className='w-1/5 flex hover:animate-pulse justify-center items-center'>
+            {/* <div className='category mr-[2px] bg-cyan-500 flex-shrink-0 rounded-full w-4 h-4'>
+            </div> */}
+            <div>
+              <button onClick={() => handleFilter("Book Chapters")} className='publ-heading border-2 border-violet-500 text-[145%] font-bold tracking-wider font-serif  hover:animate-pulse  text-violet-500 hover:text-white hover:bg-violet-500 rounded-xl whitespace-nowrap flex justify-center items-center px-[5%] py-[2%]'>
+                Book Chapters
+              </button>
+            </div>
+          </div>
           </div>
           <div className='w-1/5 hover:animate-pulse flex justify-center items-center'>
             {/* <div className='category mr-1 bg-rose-900 flex-shrink-0 rounded-full w-4 h-4'>
@@ -558,7 +821,7 @@ export const Publications = () => {
           {
             filter.map((item) => {
               return (
-                <div key={item.id} data-aos="fade-up" data-aos-duration="1000" className={`publ-card rounded-2xl flex justify-start my-[1.5%] py-[1%]  tracking-wide ${item.category === 'Books' && 'bg-green-100'} ${item.category === 'Journal' && 'bg-rose-100'}  ${item.category === 'Conference' && 'bg-amber-100'}  ${item.category === 'Workshop' && 'bg-cyan-100'} `}>
+                <div key={item.id} data-aos="fade-up" data-aos-duration="1000" className={`publ-card rounded-2xl flex justify-start my-[1.5%] py-[1%]  tracking-wide ${item.category === 'Books' && 'bg-green-100'} ${item.category === 'Book Chapters' && 'bg-violet-100'} ${item.category === 'Journal' && 'bg-rose-100'}  ${item.category === 'Conference' && 'bg-amber-100'}  ${item.category === 'Workshop' && 'bg-cyan-100'} `}>
                   <div className='px-[2%]'>
                     <div>
                       <div className='publ-desc text-[130%] font-sans my-[1%] font-bold text-black '>

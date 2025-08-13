@@ -19,6 +19,7 @@ import convocation from "../assets/convocation.jpg"
 import fire from "../assets/FIRE.jpeg"
 import idd from "../assets/idd.jpeg"
 import pp1 from "../assets/irlab.jpeg"
+import osbook from "../assets/Capture.JPG"
 
 
 
@@ -27,6 +28,10 @@ export const Gallery = () => {
     {
       image: fire,
       caption: ""
+    },
+    {
+      image: osbook,
+      caption: "Operating Systems Book by Dr. Sukomal Pal"
     },
     {
       image: idd,

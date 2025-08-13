@@ -35,6 +35,41 @@ const tableData = [
     "status": "2020-23 (completed)",
     "funding": "INR 83,97,000.00",
     "fundingAgency": "NCL, Coal India Ltd"
+  },
+    {
+    "title": "Cross-Lingual Information Access",
+    "role": "Team Member",
+    "status": "2007-10 (completed)",
+    "funding": "Not known",
+    "fundingAgency": "Ministry of IT, GoI"
+  },
+  {
+    "title": "Development and Enhancement of CARES Job JAR System for GE Medical Systems, USA",
+    "role": "Module Leader",
+    "status": "Sep 2002- Jul 2003 (completed)",
+    "funding": "Not known",
+    "fundingAgency": "GE Medical Systems, USA"
+  },
+      {
+    "title": "Development and Enhancement of Scottish Equitable Life Assurance and Pensions Systems, UK",
+    "role": "Developer",
+    "status": "Feb 2001- Aug 2002 (completed)",
+    "funding": "Not known",
+    "fundingAgency": "Scottish Equitable, UK"
+  },
+      {
+    "title": "Design and Development of PayOrder (PO) Management Systems",
+    "role": "Developer",
+    "status": "Oct 2000- Jan 2001 (completed)",
+    "funding": "Not known",
+    "fundingAgency": "PostBank (AIPB), Netherlands"
+  },
+    {
+    "title": "Development of Banking Data Warehouse for the BILPA, Turkey",
+    "role": "Developer",
+    "status": "Jul 2000- Sep 2000 (completed)",
+    "funding": "Not known",
+    "fundingAgency": "BILPA, Turkey"
   }
 ];
 
