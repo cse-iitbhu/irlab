@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/irlab/static/css/main.21b30a33.css",
-    "main.js": "/irlab/static/js/main.01b554e1.js",
+    "main.css": "/irlab/static/css/main.50f27210.css",
+    "main.js": "/irlab/static/js/main.d499a229.js",
     "static/media/finalphd1.jpg": "/irlab/static/media/finalphd1.1a8c26aa0df60d70b874.jpg",
     "static/media/datascience2.jpg": "/irlab/static/media/datascience2.c32f9ab5d884e655fcbb.jpg",
     "static/media/finalphd2.jpg": "/irlab/static/media/finalphd2.ffd0485b6342cba0d599.jpg",
@@ -41,17 +41,18 @@
     "static/media/appstore.png": "/irlab/static/media/appstore.5f649e9884c007fcd059.png",
     "static/media/pp14.jpg": "/irlab/static/media/pp14.a997f5d137317120a55a.jpg",
     "static/media/playstore.png": "/irlab/static/media/playstore.efbb8fd307b3a426c523.png",
+    "static/media/Capture.JPG": "/irlab/static/media/Capture.a1128640cc54eaa253e9.JPG",
     "static/media/pp12.avif": "/irlab/static/media/pp12.e1532a8c51e332dc8119.avif",
     "static/media/factcheck.webp": "/irlab/static/media/factcheck.2d9c0896013721408908.webp",
     "static/media/arjun.jpg": "/irlab/static/media/arjun.e7c56fb862e44d4458bb.jpg",
     "static/media/spalsir.jpg": "/irlab/static/media/spalsir.93d072defd9f9c2a7760.jpg",
     "static/media/download.png": "/irlab/static/media/download.2db0768c5cd33d22bd9a.png",
     "index.html": "/irlab/index.html",
-    "main.21b30a33.css.map": "/irlab/static/css/main.21b30a33.css.map",
-    "main.01b554e1.js.map": "/irlab/static/js/main.01b554e1.js.map"
+    "main.50f27210.css.map": "/irlab/static/css/main.50f27210.css.map",
+    "main.d499a229.js.map": "/irlab/static/js/main.d499a229.js.map"
   },
   "entrypoints": [
-    "static/css/main.21b30a33.css",
-    "static/js/main.01b554e1.js"
+    "static/css/main.50f27210.css",
+    "static/js/main.d499a229.js"
   ]
 }
