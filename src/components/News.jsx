@@ -4,7 +4,19 @@ import { TfiAnnouncement } from 'react-icons/tfi'
 
 const news = [
   {
-    name: 'The 17th meeting of Forum of Information Retrieval Evaluation(FIRE-2025) to be organized by Information Retrieval Lab(IReL), IIT(BHU)',
+    name: (
+      <>
+        The 17th meeting of Forum of Information Retrieval Evaluation (FIRE-2025) to be organized by Information Retrieval Lab (IReL), IIT (BHU).&nbsp;
+        <a
+          href="http://fire.irsi.org.in"
+          target="_blank"
+          rel="noreferrer"
+          className="text-sky-500 hover:underline"
+        >
+          Visit the FIRE website
+        </a>
+      </>
+    ),
     year: "17-20 December, 2025",
   },
   {
@@ -20,7 +32,7 @@ const news = [
 
 const events=[
   {
-    name:"Call for Tracks at FIRE, 2025",
+    name:"Register for FIRE, 2025",
   },
   {
     name:"Apply for Android Development",
@@ -56,7 +68,7 @@ export const News = () => {
           <div className='py-[2%] mx-[2%] border-[1%]'>
             <ul className='text-[120%] px-[2%] list-inside w-full'>
              {events.map((item) => {
-               const isCallForTracks = item.name === "Call for Tracks at FIRE, 2025";
+               const isCallForTracks = item.name === "Register for FIRE, 2025";
                 return (
                   <li key={item.name} className='news-li text-[#676767] flex py-[0.5%] my-[1%]'>
                     <span className='text-gray-400 mr-[2%]'>

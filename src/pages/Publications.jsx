@@ -13,6 +13,191 @@ import { Link } from 'react-router-dom';
 
 const data = [
 {
+  authors: "Krishna Tewari and Sukomal Pal",
+  year: "2025",
+  category: "Conference",
+  desc: "Advancing Vision and Language in GI Diagnosis: Florence2 for Question Answering and Stable Diffusion for Image Synthesis",
+  name: "Working Notes of the Conference and Labs of the Evaluation Forum (CLEF 2025)",
+  link: "https://www.dei.unipd.it/~faggioli/temp/clef2025/paper_207.pdf",
+  bibtex: "@inproceedings{Tewari2025GI_VisionLanguage,\n" +
+  "  author = {Krishna Tewari and Sukomal Pal},\n" +
+  "  title = {Advancing Vision and Language in GI Diagnosis: Florence2 for Question Answering and Stable Diffusion for Image Synthesis},\n" +
+  "  booktitle = {Working Notes of CLEF 2025 – Conference and Labs of the Evaluation Forum},\n" +
+  "  year = {2025},\n" +
+  "  publisher = {CEUR Workshop Proceedings},\n" +
+  "  address = {Madrid, Spain},\n" +
+  "  url = {https://www.dei.unipd.it/~faggioli/temp/clef2025/paper_207.pdf},\n" +
+  "  abstract = {Recent advances in medical AI have underscored the importance of Visual Question Answering (VQA) and medical image generation. VQA systems enable automated reasoning over medical images using natural language queries, enhancing clinical interpretability. Meanwhile, generative models synthesize realistic medical images from textual descriptions, supporting data augmentation, simulation training, and rare case generation; particularly valuable in low-resource domains. In the ImageCLEFmed-MEDVQA-GI 2025 challenge, we address both subtasks: (1) closed-domain VQA and (2) medical image generation in the gastrointestinal (GI) domain. For VQA, we fine-tuned Florence2 on the Kvasir-VQA dataset. For image generation, we fine-tuned Stable Diffusion with LoRA using synthetic captions. Our results demonstrate high quality synthesis and strong VQA performance, showing promise for clinical image interpretation and dataset enrichment in low-resource GI healthcare.},\n" +
+  "}"
+},
+{
+  authors: "Supriya Chanda, Krishna Tewari, Arjun Mukherjee and Sukomal Pal",
+  year: "2024",
+  category: "Conference",
+  desc: "Leveraging ChatGPT and XLM-RoBERTa for Sarcasm Detection in Dravidian Code-Mixed Languages",
+  name: "Forum of Information Retrieval and Evaluation FIRE-2024",
+  link: "https://ceur-ws.org/Vol-4054/T4-14.pdf",
+  bibtex: "@inproceedings{Chanda2024SarcasmDravidian,\n" +
+  "  author = {Supriya Chanda and Krishna Tewari and Arjun Mukherjee and Sukomal Pal},\n" +
+  "  title = {Leveraging ChatGPT and XLM-RoBERTa for Sarcasm Detection in Dravidian Code-Mixed Languages},\n" +
+  "  booktitle = {Working Notes of the Forum for Information Retrieval Evaluation (FIRE) 2024},\n" +
+  "  year = {2024},\n" +
+  "  publisher = {CEUR Workshop Proceedings},\n" +
+  "  address = {Gandhinagar, India},\n" +
+  "  url = {https://ceur-ws.org/Vol-4054/T4-14.pdf},\n" +
+  "  abstract = {Sarcasm refers to a form of irony where what is meant is actually said in an opposite manner usually in a mocking or humorous form. We very often come across multiple sarcastic comments which are code-mixed in various social-media platforms. In order to obtain insights from the textual data available or encountered upon, we would need a system to identify the sentiments behind the text and detect sarcasm. In this paper, we present a solution submitted for the shared task titled ‘Sarcasm Identification of Dravidian Languages Tamil and Malayalam, which was organized by Dravidian CodeMix 2024 at the Forum for Information Retrieval Evaluation (FIRE) 2024. This paper explores an approach to sarcasm detection, leveraging the BERT (Bidirectional Encoder Representations from Transformers) and a supplementary layer of neural networks for precise classification into two distinct classes: sarcastic and non-sarcastic comments. It also uses ChatGPT for the same and performs a comparative study between GPT and BERT-based models. Our experiment demonstrates that our model effectively detects sarcastic comments, achieving an F1-score of 0.74 for both the Tamil-English and Malayalam-English code-mixed datasets, in contrast to GPT which achieved an F1-score of 0.64 for the above mentioned datasets. This score reflects a reasonable overall performance and places us at the third position in the ranking for Malayalam-English language pairs and at the first position in the ranking for Tamil-English language pairs.},\n" +
+  "}"
+},
+{
+  authors: "Krishna Tewari, Abhyudaya Verma and Sukomal Pal",
+  year: "2025",
+  category: "Conference",
+  desc: "IReL, IIT (BHU) at MEDIQA-MAGIC 2025: Tackling Multimodal Dermatology with CLIPSeg-Based Segmentation and BERT-Swin Question Answering",
+  name: "Working Notes of the Conference and Labs of the Evaluation Forum (CLEF 2025)",
+  link: "https://www.dei.unipd.it/~faggioli/temp/clef2025/paper_208.pdf",
+  bibtex: "@inproceedings{Tewari2025CLEF208,\n" +
+  "  author = {Krishna Tewari and Abhyudaya Verma and Sukomal Pal},\n" +
+  "  title = {IReL, IIT(BHU) at MEDIQA-MAGIC 2025: Tackling Multimodal Dermatology with CLIPSeg-Based Segmentation and BERT-Swin Question Answering},\n" +
+  "  booktitle = {Working Notes of CLEF 2025 — Conference and Labs of the Evaluation Forum},\n" +
+  "  year = {2025},\n" +
+  "  publisher = {CEUR Workshop Proceedings},\n" +
+  "  address = {Madrid, Spain},\n" +
+  "  url = {https://www.dei.unipd.it/~faggioli/temp/clef2025/paper_208.pdf},\n" +
+  "  abstract = {Advances in multimodal learning have the potential to significantly improve automated analysis of dermatological images by integrating visual and textual clinical information. In this work, we present IReL, IIT(BHU)’s system developed for the MEDIQA-MAGIC 2025 challenge, addressing two tasks: lesion segmentation and CVQA. For segmentation, we propose a CLIPSeg-based framework that combines clinical images with contextual prompts formed by consumer questions and clinician responses. Using frozen CLIP encoders and a fine-tuned transformer decoder, our system produces detailed lesion masks being among top performing team by achieving a Dice score of 0.741 and a Jaccard score of 0.588. These results demonstrate the effectiveness of prompt-guided vision-language models in generating clinically meaningful segmentation outputs. In the VQA task, we integrate Bio_ClinicalBERT and a Swin Transformer to encode textual and visual inputs, respectively. While the model underperformed (accuracy 0.1731), likely due to sub-optimal input alignment, it establishes a foundation for future enhancements. Our findings underscore the strength of vision-language fusion for dermatological segmentation and indicate that targeted improvements in multimodal alignment and input formatting could substantially improve VQA performance. Overall, this work highlights the promise of multimodal architectures in advancing intelligent clinical decision support.},\n" +
+  "}"
+},
+{
+  authors: "Saumay Gupta and Sukomal Pal",
+  year: "2025",
+  category: "Journal",
+  desc: "Advancing Hindi Text Summarization: Named Entity Recognition and Content Augmentation Strategies",
+  name: "ACM Transactions on Asian and Low-Resource Language Information Processing",
+  link: "https://dl.acm.org/doi/abs/10.1145/3770073",
+  bibtex: "@article{10.1145/3770073,\n" +
+  "  author = {Saumay Gupta and Sukomal Pal},\n" +
+  "  title = {Advancing Hindi Text Summarization: Named Entity Recognition and Content Augmentation Strategies},\n" +
+  "  journal = {ACM Transactions on Asian and Low-Resource Language Information Processing},\n" +
+  "  year = {2025},\n" +
+  "  month = {November},\n" +
+  "  publisher = {Association for Computing Machinery},\n" +
+  "  address = {New York, NY, USA},\n" +
+  "  issn = {2375-4699},\n" +
+  "  doi = {10.1145/3770073},\n" +
+  "  url = {https://doi.org/10.1145/3770073},\n" +
+  "  note = {Just Accepted},\n" +
+  "  keywords = {Hindi abstractive summarization, Focused Web Crawler, Named entity recognition},\n" +
+  "  abstract = {We explore advancements in Hindi text summarization, a critical area in natural language processing that aids in managing information overload. Despite a growing corpus of Hindi data, there’s a significant gap in practical summarization tools due to intricate linguistic features and limited resources compared to English. Previous works focused on extractive methods, but recent shifts towards abstractive approaches promise more natural and coherent summaries by understanding and paraphrasing content. Our research introduces novel methodologies, Named Entity-Aware Abstractive Text Summarization (NEA-ATS) and Query-Driven Content Augmentation for Summarization (QDCAS), aimed at enhancing accuracy and richness of Hindi summaries. NEA-ATS integrates Named Entity Recognition to prioritize crucial information, improving language model attention to critical details but occasionally disrupting context. While NEA-ATS shows some improvements, it occasionally disrupts text’s context, leading to only marginal gains in summary quality. Meanwhile, QDCAS addresses extrinsic hallucinations—common in state-of-the-art models—by augmenting source documents with relevant content through focused web crawling—a technique to selectively gather topic-specific web pages—broadening contextual understanding and refining outputs. Empirical results demonstrate effectiveness of QDCAS, showing marginal improvements in ROUGE and BERTScores over traditional language models. This work advances Hindi text summarization and explores content-rich strategies, potentially expanding to other languages and domains.}\n" +
+  "}"
+},
+{
+  authors: "Rahul Jambulkar, Aditya and Sukomal Pal",
+  year: "2025",
+  category: "Conference",
+  desc: "Arcturus at CheckThat! 2025: DeBERTa-v3-Base for Multilingual Subjectivity Detection in News Articles",
+  name: "Working Notes of the Conference and Labs of the Evaluation Forum (CLEF 2025)",
+  link: "https://www.dei.unipd.it/~faggioli/temp/clef2025/paper_77.pdf",
+  bibtex: "@inproceedings{jambulkar2025arcturus,\n" +
+  "  author = {Rahul Jambulkar and Aditya Aditya and Sukomal Pal},\n" +
+  "  title = {Arcturus at CheckThat! 2025: DeBERTa-v3-Base for Multilingual Subjectivity Detection in News Articles},\n" +
+  "  booktitle = {Working Notes of CLEF 2025 -- Conference and Labs of the Evaluation Forum},\n" +
+  "  year = {2025},\n" +
+  "  publisher = {CEUR Workshop Proceedings},\n" +
+  "  address = {Padua, Italy},\n" +
+  "  url = {https://www.dei.unipd.it/~faggioli/temp/clef2025/paper_77.pdf},\n" +
+  "  abstract = {This paper presents the Arcturus system submitted to the CheckThat! 2025 Lab task on Multilingual Subjectivity Detection in News Articles. We explore the use of DeBERTa-v3-Base transformer model fine-tuned for multilingual text classification. The system effectively distinguishes between subjective and objective news content across multiple languages. Our approach demonstrates strong performance with competitive F1-scores across test datasets, highlighting the robustness of DeBERTa-based architectures for multilingual subjectivity detection.}\n" +
+  "}"
+},
+{
+  authors: "Supriya Chanda and Sukomal Pal",
+  year: "2024",
+  category: "Conference",
+  desc: "Overview of the shared task on code-mixed information retrieval from social media data",
+  name: "Proceedings of the 16th Annual Meeting of the Forum for Information Retrieval Evaluation",
+  link: "https://dl.acm.org/doi/full/10.1145/3734947.3735670",
+  bibtex: "@inproceedings{10.1145/3734947.3735670,\n" +
+  "  author = {Supriya Chanda and Sukomal Pal},\n" +
+  "  title = {Overview of the shared task on code-mixed information retrieval from social media data},\n" +
+  "  booktitle = {Proceedings of the 16th Annual Meeting of the Forum for Information Retrieval Evaluation},\n" +
+  "  year = {2025},\n" +
+  "  pages = {29--31},\n" +
+  "  numpages = {3},\n" +
+  "  publisher = {Association for Computing Machinery},\n" +
+  "  address = {New York, NY, USA},\n" +
+  "  isbn = {9798400713187},\n" +
+  "  series = {FIRE '24},\n" +
+  "  url = {https://doi.org/10.1145/3734947.3735670},\n" +
+  "  doi = {10.1145/3734947.3735670},\n" +
+  "  keywords = {Code-Mixed, Bengali, English, Information Retrieval, Social Media},\n" +
+  "  abstract = {The rise of multilingual communication on social media platforms such as Facebook, Twitter, and WhatsApp presents a compelling challenge for information retrieval in code-mixed contexts within natural language processing. This paper provides an overview of the Code-Mixed Information Retrieval Shared Task, which is part of the FIRE-2024 conference. The main focus of this experiment was the evaluation of how relevant documents code-mixed from a corpus of Bengali-English comments were to be given for a set of code-mixed queries. Six teams showed interest in participating in the shared task; two teams provided their runs. This article describes the models used by the competing teams and their performance evaluated on the Mean Average Precision (MAP), a significant metric used for information retrieval tasks.}\n" +
+  "}"
+},
+{
+  authors: "Yamini Jha, Krishna Tewari and Sukomal Pal",
+  year: "2025",
+  category: "Conference",
+  desc: "HiDePCC: A Novel Dual-Pronged Untargeted Attack on Federated Recommendation via Gradient Perturbation and Cluster Crafting",
+  name: "Proceedings of the Nineteenth ACM Conference on Recommender Systems",
+  link: "https://dl.acm.org/doi/full/10.1145/3705328.3748041",
+  bibtex: "@inproceedings{10.1145/3705328.3748041,\n" +
+  "  author = {Yamini Jha and Krishna Tewari and Sukomal Pal},\n" +
+  "  title = {HiDePCC: A Novel Dual-Pronged Untargeted Attack on Federated Recommendation via Gradient Perturbation and Cluster Crafting},\n" +
+  "  booktitle = {Proceedings of the Nineteenth ACM Conference on Recommender Systems},\n" +
+  "  year = {2025},\n" +
+  "  pages = {610--614},\n" +
+  "  numpages = {5},\n" +
+  "  publisher = {Association for Computing Machinery},\n" +
+  "  address = {New York, NY, USA},\n" +
+  "  isbn = {9798400713644},\n" +
+  "  series = {RecSys '25},\n" +
+  "  url = {https://doi.org/10.1145/3705328.3748041},\n" +
+  "  doi = {10.1145/3705328.3748041},\n" +
+  "  keywords = {Federated Recommendation Systems, Federated Learning, Untargeted Attacks, Gradient perturbation, Hierarchical Clustering, Matrix Factorization, Security And Privacy},\n" +
+  "  abstract = {Federated recommender systems offer privacy benefits by decentralizing user data and preventing direct data sharing among clients. Although this architecture limits the effectiveness of traditional attack strategies, it remains susceptible to subtle adversarial attacks that can significantly degrade the accuracy of recommendations. To expose these vulnerabilities, we propose a novel untargeted attack (HiDePCC) that degrades overall system performance through a dual-pronged strategy combining adaptive gradient perturbation and hierarchical cluster-based embedding manipulation. We apply adaptive perturbations to item gradients during training and employ hierarchical clustering using several linkage methods to form coherent item clusters. Within these clusters, we converge item embeddings and manipulate boundary points to induce item misclassification. This causes the system to assign similar scores to clustered items and misrank them. We evaluated our attack on two benchmark datasets, MovieLens (with 0.5% and 1% malicious users) and Gowalla (1%), using Matrix Factorization as the base recommendation model and assessing the impact in various robust aggregation techniques. We also examined several permutations of configurations using hierarchical clustering, adaptive gradient perturbation and boundary points misclassification. Our results show that the complete setup outperforms existing state-of-the-art untargeted attacks, with performance drops for HR@5 ranging from 13.93% to 68.02% on MovieLens and ranging from 40.02% and 99.76% on Gowalla dataset. These findings reveal important vulnerabilities in federated recommendation systems.}\n" +
+  "}"
+},
+{
+  authors: "Supriya Chanda and Sukomal Pal",
+  year: "2025",
+  category: "Journal",
+  desc: "Word Level Language Identification from Social Media Code-Mixed Data Leveraging Transformer-Based Models",
+  name: "SN Computer Science",
+  link: "https://link.springer.com/article/10.1007/s42979-025-04377-4",
+  bibtex: "@article{Chanda2025,\n" +
+  "  author = {Supriya Chanda and Sukomal Pal},\n" +
+  "  title = {Word Level Language Identification from Social Media Code-Mixed Data Leveraging Transformer-Based Models},\n" +
+  "  journal = {SN Computer Science},\n" +
+  "  volume = {6},\n" +
+  "  number = {7},\n" +
+  "  pages = {844},\n" +
+  "  year = {2025},\n" +
+  "  doi = {10.1007/s42979-025-04377-4},\n" +
+  "  url = {https://doi.org/10.1007/s42979-025-04377-4},\n" +
+  "  issn = {2661-8907},\n" +
+  "  abstract = {Code-mixing is mixing of two or more languages in a statement or a conversation. Multilingual communities all over the world often use this on a regular basis, especially during communication in social media. People mix their mother tongue with other national and international languages, like English. While code-mixing in verbal communication is a serious problem, it is not either easy for written communication as well. In informal written communication, people use multiple languages without changing the script, i.e. words from two or more languages occur next to each other using a single script. For an intelligent system, automatic language identification in such scenarios is an essential task. Language identification is considered here as a token classification problem. Every word in a sentence receives a linguistic tag in a supervised setup. For this task, we leverage pre-trained Bidirectional Encoder Representations of Transformers (BERT) to obtain the contextual representations of sentences. We evaluate several combinations of deep learning models and input representations. Characters, sub-words, and their combination embeddings are primarily considered for CNN and LSTM-based models. Later, BERT with LSTM model is used. Through three different datasets: ICON_POS, ICON_SAIL, and LinCE, we conduct language identification (LID) task in Bengali-English (BN-EN), Hindi-English (HI-EN), and Spanish-English (ES-EN) code-mixed sentences. Our proposed method of the Bi-LSTM model on top of BERT neural representations of code-mixed data outperforms the existing state-of-the-art techniques in terms of F1-scores. For two datasets of Bengali-English language pairs, ICON_POS and ICON_SAIL, we observe performance gains of 8.12% and 4.23%, respectively. We demonstrate performance gains of 6.41%, 0.68%, and 7.83% for three datasets of Hindi-English language pairs ICON_POS, ICON_SAIL, and LinCE, respectively. We also show an improvement of 6.08% in language identification for the Spanish-English language pair in the LinCE dataset.}\n" +
+  "}"
+},
+{
+  authors: "Shraddha Jain, Rajeev Srivastava and Sukomal Pal",
+  year: "2025",
+  category: "Journal",
+  desc: "Automatic and Efficient Micro Univariate Convolutional Neural Network Framework for Multiple Neurological Disorders From EEG Signals",
+  name: "Smart Health",
+  link: "https://www.sciencedirect.com/science/article/pii/S2352648325000789",
+  bibtex: "@article{JAIN2025100617,\n" +
+  "  title = {Automatic and efficient micro univariate convolutional neural network framework for multiple neurological disorders from EEG signals},\n" +
+  "  author = {Shraddha Jain and Rajeev Srivastava and Sukomal Pal},\n" +
+  "  journal = {Smart Health},\n" +
+  "  volume = {38},\n" +
+  "  pages = {100617},\n" +
+  "  year = {2025},\n" +
+  "  issn = {2352-6483},\n" +
+  "  doi = {https://doi.org/10.1016/j.smhl.2025.100617},\n" +
+  "  url = {https://www.sciencedirect.com/science/article/pii/S2352648325000789},\n" +
+  "  keywords = {Alzheimer's disease, Classification, CNN, EEG signal, Epilepsy, Neurological disorders, Parkinson's disease},\n" +
+  "  abstract = {Objective: Neurological disorders affect millions globally, contributing to significant morbidity and mortality. This study proposes the μCNN framework for enhanced EEG data analysis to improve diagnosis and classification of multiple neurological disorders. Methods: The μCNN framework utilizes a unique 6-channel EEG spectrogram representation to extract key features from frequency and correlation components. The model uses convolutional layers, max-pooling, and batch normalization to classify disorders such as schizophrenia, Parkinson's, Alzheimer's, epilepsy, and stroke. Results: On a dataset of 15,600 EEG spectrograms, the μCNN achieved 98.42% accuracy, 98.4% sensitivity, and 99.61% specificity, outperforming ResNet50 and AlexNet in classification tasks. Conclusions: The μCNN framework accurately categorizes neurological disorders with superior diagnostic accuracy and system performance. Significance: This work advances EEG signal processing using deep learning, offering significant improvements in real-time diagnostic accuracy for a wide range of neurological disorders.}\n" +
+  "}"
+},
+{
   authors: "Narendra Kumar, Arjun Mukherjee, Sukomal Pal and Thomas Mandl",
   year: "2025",
   category: "Conference",
