@@ -47,6 +47,21 @@ const apps = [
 
 ]
 
+const sharedTasks = [
+    {
+        title: "Multilingual Story Illustration: Bridging Cultures through AI Artistry (MUSIA)",
+        desc: "MUSIA shared task organized under Forum for Information Retrieval Evaluation.",
+        url: "/musia",
+        internal: true
+    },
+    {
+        title: "Code-Mixed Information Retrieval (CMIR)",
+        desc: "CMIR shared task organized under Forum for Information Retrieval Evaluation.",
+        url: "https://cmir-iitbhu.github.io/cmir/",
+        internal: false
+    }
+];
+
 
 export const Resources = () => {
     useEffect(()=>{
@@ -73,6 +88,61 @@ export const Resources = () => {
                             }
                         </div>
                     </div>
+
+                    <div className='mb-[2%]'>
+                    <div className='teaching-heading py-[2%] text-center tracking-wider text-[150%] font-bold bg-gray-200 px-[2%] rounded-s text-gray-700'>
+                        Shared Tasks
+                    </div>
+
+                    <div className='border-4'>
+                        {
+                            sharedTasks.map((task, index) => (
+                                <div
+                                    key={index}
+                                    className='flex justify-between px-[4%] py-[2%] teaching-content border-[1px] text-[120%]'
+                                >
+                                    <div
+                                        className='flex flex-col'
+                                        data-aos="fade-up"
+                                        data-aos-duration="1200"
+                                    >
+                                        <div className='font-semibold'>
+                                            {task.title}
+                                        </div>
+                                        <div className='text-[85%] text-gray-600'>
+                                            {task.desc}
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        className='flex items-center'
+                                        data-aos="fade-up"
+                                        data-aos-duration="1200"
+                                    >
+                                        {task.internal ? (
+                                            <Link
+                                                to={task.url}
+                                                className='hover:underline text-[#67b0d1]'
+                                            >
+                                                Visit
+                                            </Link>
+                                        ) : (
+                                            <a
+                                                target='_blank'
+                                                rel='noreferrer'
+                                                className='hover:underline text-[#67b0d1]'
+                                                href={task.url}
+                                            >
+                                                Visit
+                                            </a>
+                                        )}
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+
                     <div>
                         <div className='teaching-heading text-center py-[2%] tracking-wider text-[150%] font-bold bg-gray-200 px-[2%] rounded-s text-gray-700'>Other</div>
                         <div className=' border-4'>

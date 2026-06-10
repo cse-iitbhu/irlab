@@ -12,6 +12,7 @@ import { Resources } from './pages/Resources';
 import { Book} from './pages/Book';
 import { Teaching } from './pages/Teaching';
 import { OSBook } from './pages/OSBook.tsx';
+import MUSIA from './pages/MUSIA.tsx';
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route path='/contact' element={<Contactus/>}></Route>
         <Route path='/publications' element={<Publications/>}></Route>
         <Route path='/os-book' element={<OSBook />} />
+        <Route path='/MUSIA' element={<MUSIA />} />
       </Routes>
       <Footer/>
     </div>
