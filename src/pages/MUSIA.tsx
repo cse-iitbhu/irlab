@@ -4,9 +4,9 @@ import { BsEnvelope } from "react-icons/bs";
 import krishna from "../assets/krishna.jpeg";
 import arjun from "../assets/arjun.jpg";
 import spal from "../assets/spalsir.jpg";
-import jasvindar from "../assets/jasvinder_sir.jpeg"
-import ishita from "../assets/ishita_maam.jpeg"
-import supriya from "../assets/supriya_chanda_sir.jpeg"
+import jasvindar from "../assets/jasvindar.jpg"
+import ishita from "../assets/ishita.png"
+import supriya from "../assets/supriya.jpg"
 import { Link,NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 

@@ -31,31 +31,6 @@ const Subtask1: React.FC = () => {
         </div>
       </section>
 
-      {/* FLOATING STATS */}
-      <section className="max-w-7xl mx-auto px-6 -mt-10 relative z-20">
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-2xl">
-            <div className="text-4xl font-bold text-blue-600">4</div>
-            <div className="text-slate-600 dark:text-slate-300 mt-2">
-              Languages
-            </div>
-          </div>
-
-          <div className="bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-2xl">
-            <div className="text-4xl font-bold text-purple-600">N</div>
-            <div className="text-slate-600 dark:text-slate-300 mt-2">
-              Generated Images
-            </div>
-          </div>
-
-          <div className="bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-2xl">
-            <div className="text-4xl font-bold text-emerald-600">3</div>
-            <div className="text-slate-600 dark:text-slate-300 mt-2">
-              Evaluation Metrics
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* MAIN CONTENT */}
       <section className="max-w-7xl mx-auto px-6 py-16">
