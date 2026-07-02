@@ -223,7 +223,7 @@ const Subtask2: React.FC = () => {
                   </a>
 
                   <a
-                    href="https://drive.google.com/file/d/1px0ulgmSK8SdqyzL_jeO06iCQPUsCFN2/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1bUoahhgCYfC-pWfK3CzIcG97vVnIAiwq/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between rounded-lg bg-white px-4 py-3 shadow-sm hover:shadow-md transition"
