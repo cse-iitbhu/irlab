@@ -189,79 +189,80 @@ const Subtask2: React.FC = () => {
             </div>
           </div>
 
-                    {/* DATASETS */}
-          <div className="rounded-2xl border border-gray-200 bg-white shadow-lg p-8 mt-12">
-            <div className="flex items-center justify-between mb-8">
-              <div>
-                <h3 className="text-3xl font-bold text-gray-900">
-                  📂 Datasets
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  Download the official datasets for the shared task.
-                </p>
-              </div>
-            </div>
+        {/* DATASETS */}
+<div className="rounded-2xl border border-slate-700 dark:bg-slate-800 shadow-lg p-8 mt-12">
+  <div className="flex items-center justify-between mb-8">
+    <div>
+      <h3 className="text-3xl font-bold dark:text-white">
+        📂 Datasets
+      </h3>
+      <p className="dark:text-slate-400 mt-2">
+        Download the official datasets for the shared task.
+      </p>
+    </div>
+  </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+  <div className="grid md:grid-cols-2 gap-8">
 
-              {/* Training */}
-              <div className="rounded-xl border border-blue-100 bg-blue-50 p-6">
-                <h4 className="text-xl font-semibold text-blue-900 mb-5">
-                  Training Data
-                </h4>
+    {/* Training */}
+    <div className="rounded-xl border border-slate-600 dark:bg-slate-700/40 p-6">
+      <h4 className="text-xl font-semibold dark:text-white mb-5">
+        Training Data
+      </h4>
 
-                <div className="space-y-3">
+      <div className="space-y-3">
 
-                  <a
-                    href="https://drive.google.com/file/d/1j19oKrJMqQZt14FVrexiS3KuU_oEyFkm/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between rounded-lg bg-white px-4 py-3 shadow-sm hover:shadow-md transition"
-                  >
-                    <span>English Stories</span>
-                    <span className="text-blue-600 font-medium">Download ↗</span>
-                  </a>
+        <a
+          href="https://drive.google.com/file/d/1j19oKrJMqQZt14FVrexiS3KuU_oEyFkm/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-between rounded-lg border border-slate-600 dark:bg-slate-800 px-4 py-3 transition-all duration-300 dark:hover:bg-slate-700 hover:border-blue-500 hover:shadow-lg"
+        >
+          <span className="dark:text-slate-200">English Stories</span>
+          <span className="dark:text-blue-400 font-medium">Download ↗</span>
+        </a>
 
-                  <a
-                    href="https://drive.google.com/file/d/1bUoahhgCYfC-pWfK3CzIcG97vVnIAiwq/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between rounded-lg bg-white px-4 py-3 shadow-sm hover:shadow-md transition"
-                  >
-                    <span>Hindi Stories</span>
-                    <span className="text-blue-600 font-medium">Download ↗</span>
-                  </a>
+        <a
+          href="https://drive.google.com/file/d/1bUoahhgCYfC-pWfK3CzIcG97vVnIAiwq/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-between rounded-lg border border-slate-600 dark:bg-slate-800 px-4 py-3 transition-all duration-300 dark:hover:bg-slate-700 hover:border-blue-500 hover:shadow-lg"
+        >
+          <span className="dark:text-slate-200">Hindi Stories</span>
+          <span className="dark:text-blue-400 font-medium">Download ↗</span>
+        </a>
 
-                  <a
-                    href="https://drive.google.com/file/d/1kHshDkoFPTdzDc6M6SM4BBnjy2ybujin/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between rounded-lg bg-white px-4 py-3 shadow-sm hover:shadow-md transition"
-                  >
-                    <span>Bengali Stories</span>
-                    <span className="text-blue-600 font-medium">Download ↗</span>
-                  </a>
+        <a
+          href="https://drive.google.com/file/d/1kHshDkoFPTdzDc6M6SM4BBnjy2ybujin/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-between rounded-lg border border-slate-600 dark:bg-slate-800 px-4 py-3 transition-all duration-300 dark:hover:bg-slate-700 hover:border-blue-500 hover:shadow-lg"
+        >
+          <span className="dark:text-slate-200">Bengali Stories</span>
+          <span className="dark:text-blue-400 font-medium">Download ↗</span>
+        </a>
 
-                </div>
-              </div>
+      </div>
+    </div>
 
-              {/* Test */}
-              <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
-                <h4 className="text-xl font-semibold text-gray-900 mb-5">
-                  Test Data
-                </h4>
+    {/* Test */}
+    <div className="rounded-xl border border-slate-600 dark:bg-slate-700/40 p-6">
+      <h4 className="text-xl font-semibold dark:text-white mb-5">
+        Test Data
+      </h4>
 
-                <div className="flex items-center justify-center h-48 rounded-lg border-2 border-dashed border-gray-300 bg-white">
-                  <div className="text-center">
-                    <p className="text-4xl mb-2">🔒</p>
-                    <p className="font-medium text-gray-700">
-                      To be released
-                    </p>
-                    <p className="text-sm text-gray-500 mt-1">
-                      The test set will be released soon.
-                    </p>
-                  </div>
-                </div>
+      <div className="flex items-center justify-center h-48 rounded-lg border-2 border-dashed border-slate-500 dark:bg-slate-800">
+        <div className="text-center">
+          <p className="text-4xl mb-2">🔒</p>
+          <p className="font-medium dark:text-white">
+            To be released
+          </p>
+          <p className="text-sm dark:text-slate-400 mt-1">
+            The test set will be released soon.
+          </p>
+        </div>
+      </div>
+    
 
               </div>
 

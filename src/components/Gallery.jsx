@@ -20,6 +20,18 @@ import fire from "../assets/FIRE.jpeg"
 import idd from "../assets/idd.jpeg"
 import pp1 from "../assets/irlab.jpeg"
 import osbook from "../assets/Capture.JPG"
+import lab15 from "../assets/LAB1 (1).jpeg"
+import lab22 from "../assets/LAB1 (2).jpeg"
+import lab33 from "../assets/LAB1 (3).jpeg"
+import lab4 from "../assets/LAB1 (4).jpeg"
+import lab5 from "../assets/LAB1 (5).jpeg"
+import lab6 from "../assets/LAB1 (6).jpeg"
+import lab7 from "../assets/LAB1 (7).jpeg"
+import lab8 from "../assets/LAB1 (8).jpeg"
+import lab9 from "../assets/LAB1 (9).jpeg"
+import lab10 from "../assets/LAB1 (10).jpeg"
+import lab11 from "../assets/LAB1 (11).jpeg"
+
 
 
 
@@ -33,15 +45,16 @@ export const Gallery = () => {
       image: osbook,
       caption: "Operating Systems Book by Dr. Sukomal Pal"
     },
-    {
+
+     {
       image: idd,
-      caption: "IDD Graduates Thesis Submission"
+      caption: "IDD Graduates Thesis Submission."
     },
     {
       image: pp1,
-      caption: "IReL Members"
+      caption: "IREL Members"
     },
-    {
+      {
       image: finalphd1,
       caption: "FINAL Ph.D SUBMISSION BY MRS. ANITA SAROJ"
     },
@@ -49,10 +62,13 @@ export const Gallery = () => {
       image: finalphd2,
       caption: "FINAL Ph.D SUBMISSION BY MRS. ANITA SAROJ"
     },
-    {
+
+     {
       image: lab,
-      caption: "INFORMATION RETRIEVAL LAB"
+      caption: "Information Retrieval Lab"
     },
+
+
     {
       image: lab1,
       caption: "INFORMATION RETRIEVAL LAB"
@@ -65,7 +81,7 @@ export const Gallery = () => {
       image: lab3,
       caption: "INFORMATION RETRIEVAL LAB"
     },
-    {
+       {
       image: Dr_T_Pradhan_1,
       caption: "CONVOCATION @DR. TRIBIKRAM PRADHAN"
     },
@@ -73,7 +89,8 @@ export const Gallery = () => {
       image: Dr_T_Pradhan_2,
       caption: "CONVOCATION @DR. TRIBIKRAM PRADHAN"
     },
-    {
+
+       {
       image: datascience,
       caption: "DATA SCIENCE WORKSHOP"
     },
@@ -85,11 +102,12 @@ export const Gallery = () => {
       image: datascience2,
       caption: "DATA SCIENCE WORKSHOP"
     },
-    {
+      {
       image: IITG,
       caption: "TALK BY PROF. ARBIN KUMAR DEY ON DEEP LEARNING (LSTM) "
     },
-    
+
+       
     {
       image: th_01,
       caption: "DR. THOMAS MANDL'S VISIT"
@@ -104,51 +122,122 @@ export const Gallery = () => {
       caption: "Convocation with M.Tech, IDD & Ph.D Students."
     },
 
+    {
+      image: lab15,
+      caption: "Teachers' Day Celebration, 2025."
+    },
+     {
+      image: lab22,
+      caption: "IR Lab at FIRE 2025."
+    },
+     {
+      image: lab33,
+      caption: "FINAL Ph.D SUBMISSION BY DR. SUSHIL KULKARNI."
+    },
+
+    {
+      image: lab4,
+      caption: "CONVOCATION @DR. SUPRIYA CHANDA"
+    },
+    {
+      image: lab5,
+      caption: "CONVOCATION @DR. SIBA SANKAR SAHU"
+    },
+    {
+      image: lab6,
+      caption: "CONVOCATION MR. AMIT YADAV (M.TECH) "
+    },
+    {
+      image: lab7,
+      caption: "IR Lab at RecSys, 2025"
+    },
+    {
+      image: lab8,
+      caption: "Current and Past Members at FIRE 2025"
+    },
+     {
+      image: lab9,
+      caption: "Successful FIRE 2025 Celebration"
+    },
+     {
+      image: lab10,
+      caption: "Keynote Speakers during FIRE 2025 Celebration"
+    },
+     {
+      image: lab11,
+      caption: "IR Lab at FIRE 2024"
+    },
+    
+ 
+ 
+  
+ 
+
+
+  
+    
+
 
 
   ]
+
   const captionStyle = {
-    fontSize: '2em',
-    fontWeight: 'bold',
-  }
+    fontSize: "20px",
+    fontWeight: "600",
+    color: "#fff",
+    background: "rgba(0,0,0,.55)",
+    padding: "12px 18px",
+    borderRadius: "8px",
+  };
+
   const slideNumberStyle = {
-    fontSize: '20px',
-    fontWeight: 'bold',
-  }
-  useEffect(()=>{
-    AOS.init()
-  },[])
+    fontSize: "18px",
+    fontWeight: "600",
+    color: "#fff",
+    background: "rgba(0,0,0,.6)",
+    borderRadius: "30px",
+    padding: "5px 12px",
+  };
+
   return (
-    <div  className='font-serif ' data-aos-duration="1200" data-aos="zoom-in">
-      {/* <div className='heading py-[2%] text-center text-[250%] tracking-widest bg-[#f8f8f8]  text-[#666666]'>GALLERY</div> */}
-      <div className='px-[8%] font-bold' >
-        
+    <section
+      className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-slate-950 py-14 px-4 transition-colors duration-300"
+      data-aos="fade-up"
+    >
+      
+     
+
+      {/* Carousel Card */}
+
+      <div className="max-w-6xl mx-auto bg-white dark:bg-slate-800 rounded-3xl shadow-2xl p-5 md:p-8">
         <Carousel
           data={data}
-          time={3000}
-          width="850px"
-          height="500px"
-          captionStyle={captionStyle}
-          radius="10px"
-          slideNumber={true}
-          slideNumberStyle={slideNumberStyle}
-          captionPosition="bottom"
+          time={3500}
+          width="100%"
+          height="550px"
+          radius="16px"
           automatic={true}
           dots={true}
+          slideNumber={true}
+          slideNumberStyle={slideNumberStyle}
+          captionStyle={captionStyle}
+          captionPosition="bottom"
           pauseIconColor="white"
-          pauseIconSize="40px"
-          slideImageFit="cover"
+          pauseIconSize="45px"
+         slideImageFit="contain"
           thumbnails={true}
-          thumbnailWidth="100px"
+          thumbnailWidth="110px"
           thumbnailHeight="75px"
           style={{
-            textAlign: "center",
-            maxWidth: "850px",
-            maxHeight: "600px",
-            margin: "40px auto",
+            width: "100%",
+            maxWidth: "1000px",
+            margin: "0 auto",
+            borderRadius: "16px",
+            overflow: "hidden",
+            boxShadow: "0 15px 35px rgba(0,0,0,0.25)",
           }}
         />
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};

@@ -11,16 +11,21 @@ export const Home = () => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   },[])
 
-  return (
+return (
+  <div className="bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-300">
+
     <div>
-          <div className=''>
-        <img src={b} alt="" data-aos-duration="1200" data-aos="fade-up" />
+      <img
+  src={b}
+  alt=""
+  className="w-full block dark:invert dark:contrast-125"
+/>
     </div>
-        <Gallery/>
-        <News/>
-        <Achievements/>
-        
-        
-    </div>
-  )
+
+    <Gallery />
+    <News />
+    <Achievements />
+
+  </div>
+)
 }

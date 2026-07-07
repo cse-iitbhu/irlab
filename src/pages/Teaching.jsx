@@ -8,13 +8,15 @@ export const Teaching = () => {
       AOS.init()
     }, [])
   
-    return ( <div className='font-serif' data-aos="zoom-in" >
-    {/* <div className='heading py-[4%] text-center text-[250%] tracking-widest bg-[#f8f8f8]  text-[#666666]'>PROJECTS</div> */}
-    <div className='projects-div mx-[8%] py-[1%] my-[2%] '>
-  
-            <Teachings/>
-              </div>
+ return (
+  <div
+    className='font-serif bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-300'
+    data-aos="zoom-in"
+  >
+    <div className='projects-div mx-[8%] py-[1%] my-[2%]'>
+      <Teachings />
     </div>
-    )
+  </div>
+)
   }
   

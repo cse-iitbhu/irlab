@@ -12,6 +12,83 @@ import copy from "copy-to-clipboard";
 import { Link } from 'react-router-dom';
 
 const data = [
+
+  {
+    authors: "Krishna Tewari, Supriya Chanda, Nirmit Patil, Sukomal Pal",
+    year: "2026",
+    category: "Conference",
+    desc: "MUSIA: Multilingual Story Illustration Corpus for Cross-Cultural Alignment and Generation",
+    name: "Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)",
+    link: "https://doi.org/10.63317/3pk9sab3nfuo",
+    bibtex: "@inproceedings{tewari-etal-2026-musia,\n" +
+            "  title = {{MUSIA}: Multilingual Story Illustration Corpus for Cross-Cultural Alignment and Generation},\n" +
+            "  author = {Krishna Tewari and Supriya Chanda and Nirmit Patil and Sukomal Pal},\n" +
+            "  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference ({LREC} 2026)},\n" +
+            "  month = {May},\n" +
+            "  year = {2026},\n" +
+            "  pages = {1914--1924},\n" +
+            "  address = {Palma, Mallorca, Spain},\n" +
+            "  publisher = {European Language Resources Association ({ELRA})},\n" +
+            "  editor = {Stelios Piperidis and N{\\'u}ria Bel and Henk van den Heuvel and Nancy Ide and Simon Krek and Antonio Toral},\n" +
+            "  doi = {10.63317/3pk9sab3nfuo}\n" +
+            "}"
+},
+  {
+  authors: "Shraddha Jain, Rajeev Srivastava and Sukomal Pal",
+  year: "2026",
+  category: "Journal",
+  desc: "Lightweight self-attention and deep gated neural network (LSA-DGNet) for multiple neurological disease detection",
+  name: "Computational Biology and Chemistry",
+  link: "https://doi.org/10.1016/j.compbiolchem.2025.108621",
+  bibtex: "@article{DBLP:journals/candc/JainSP26,\n" +
+  "  author = {Shraddha Jain and Rajeev Srivastava and Sukomal Pal},\n" +
+  "  title = {Lightweight self-attention and deep gated neural network (LSA-DGNet) for multiple neurological disease detection},\n" +
+  "  journal = {Comput. Biol. Chem.},\n" +
+  "  volume = {120},\n" +
+  "  pages = {108621},\n" +
+  "  year = {2026},\n" +
+  "  url = {https://doi.org/10.1016/j.compbiolchem.2025.108621},\n" +
+  "  doi = {10.1016/j.compbiolchem.2025.108621}\n" +
+  "}"
+},
+{
+  authors: "Krishna Tewari, Sharma Nandini Surendra, Divya Sharma and Sukomal Pal",
+  year: "2026",
+  category: "Conference",
+  desc: "Evaluating Semantic and Perceptual Alignment in Multilingual Story Visualization",
+  name: "Companion Proceedings of the 31st International Conference on Intelligent User Interfaces (IUI 2026)",
+  link: "https://doi.org/10.1145/3742414.3794743",
+  bibtex: "@inproceedings{DBLP:conf/iui/TewariS0P26,\n" +
+  "  author = {Krishna Tewari and Sharma Nandini Surendra and Divya Sharma and Sukomal Pal},\n" +
+  "  title = {Evaluating Semantic and Perceptual Alignment in Multilingual Story Visualization},\n" +
+  "  booktitle = {Companion Proceedings of the 31st International Conference on Intelligent User Interfaces, IUI 2026, Paphos, Cyprus, March 23-26, 2026},\n" +
+  "  pages = {34--38},\n" +
+  "  publisher = {ACM},\n" +
+  "  year = {2026},\n" +
+  "  url = {https://doi.org/10.1145/3742414.3794743},\n" +
+  "  doi = {10.1145/3742414.3794743}\n" +
+  "}"
+},
+
+{
+  authors: "Kripabandhu Ghosh, Thomas Mandl, Sukomal Pal, Srijoni Majumdar and Anirban Chakraborty (Editors)",
+  year: "2026",
+  category: "Workshop",
+  desc: "Working Notes of FIRE 2025 - Forum for Information Retrieval Evaluation",
+  name: "CEUR Workshop Proceedings, Vol. 4173",
+  link: "https://ceur-ws.org/Vol-4173",
+  bibtex: "@proceedings{DBLP:conf/fire/2025w,\n" +
+  "  editor = {Kripabandhu Ghosh and Thomas Mandl and Sukomal Pal and Srijoni Majumdar and Anirban Chakraborty},\n" +
+  "  title = {Working Notes of FIRE 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation (FIRE), Varanasi, India, December 17-20, 2025},\n" +
+  "  series = {CEUR Workshop Proceedings},\n" +
+  "  volume = {4173},\n" +
+  "  publisher = {CEUR-WS.org},\n" +
+  "  year = {2026},\n" +
+  "  url = {https://ceur-ws.org/Vol-4173},\n" +
+  "  urn = {urn:nbn:de:0074-4173-x}\n" +
+  "}"
+},
+
 {
   authors: "Krishna Tewari and Sukomal Pal",
   year: "2025",
@@ -260,6 +337,257 @@ const data = [
             "  month = {Feb}\n" +
             "}"
   },
+    {
+    authors: "Thomas Mandl and Koyel Ghosh and Sukomal Pal and Krishna Tewari",
+    year: "2025",
+    category: "Journal",
+    desc: "Report on the 17th Meeting of Forum for Information Retrieval Evaluation (FIRE)",
+    name: "SIGIR Forum",
+    link: "https://doi.org/10.1145/3799914.3799933", // 
+    bibtex: "@article{DBLP:journals/sigir/MandlGPT25,\n" +
+            "  author = {Thomas Mandl and Koyel Ghosh and Sukomal Pal and Krishna Tewari},\n" +
+            "  title = {Report on the 17th Meeting of Forum for Information Retrieval Evaluation {(FIRE)}},\n" +
+            "  journal = {{SIGIR} Forum},\n" +
+            "  year = {2025},\n" +
+            "  volume = {59},\n" +
+            "  number = {2},\n" +
+            "  pages = {1--8},\n" +
+            "  doi = {10.1145/3799914.3799933},\n" + // replace with correct DOI
+            "  month = {March}\n" +
+            "}"
+  },
+      {
+    authors: "Krishna Tewari, Anshita Malviya, Supriya Chanda, Arjun Mukherjee, Sukomal Pal",
+    year: "2025",
+    category: "Conference",
+    desc: "Overview of the Shared Task on Multilingual Story Illustration: Bridging Cultures through AI Artistry (MUSIA)",
+    name: "Proceedings of the 17th annual meeting of the Forum for Information Retrieval Evaluation, FIRE 2025",
+    link: "https://doi.org/10.1145/3777867.3778252", // 
+    bibtex: "@inproceedings{DBLP:conf/fire/TewariMCMP25,\n" +
+            "  author = {Krishna Tewari, Anshita Malviya, Supriya Chanda, Arjun Mukherjee, Sukomal Pal},\n" +
+            "  title = {Overview of the Shared Task on Multilingual Story Illustration: Bridging Cultures through {AI} Artistry {(MUSIA)}},\n" +
+            "  booktitle = {Proceedings of the 17th annual meeting of the Forum for Information Retrieval Evaluation, {FIRE} 2025},\n" +
+            "  year = {2025},\n" +
+            "  publisher = {{ACM}},\n" +
+            
+            "  address = {Varanasi,India}\n" +
+            "}"
+  },
+        {
+    authors: "Krishna Tewari, Supriya Chanda, Sukomal Pal",
+    year: "2025",
+    category: "Conference",
+    desc: "Overview of the CMIR Track at FIRE 2025: Code-Mixed Information Retrieval from Social Media Data",
+    name: "Proceedings of the 17th annual meeting of the Forum for Information Retrieval Evaluation, FIRE 2025",
+    link: "https://doi.org/10.1145/3777867.3778255", // 
+    bibtex: "@inproceedings{DBLP:conf/fire/TewariCP25,\n" +
+            "  author = {Krishna Tewari,  Supriya Chanda,  Sukomal Pal},\n" +
+            "  title = {Overview of the {CMIR} Track at {FIRE} 2025: Code-Mixed Information Retrieval from Social Media Data},\n" +
+            "  booktitle = {Proceedings of the 17th annual meeting of the Forum for Information Retrieval Evaluation, {FIRE} 2025},\n" +
+            "  year = {2025},\n" +
+            "  publisher = {{ACM}},\n" +
+            
+            "  address = {Varanasi,India}\n" +
+            "}"
+  },
+  {
+    authors: "Krishna Tewari, Anshita Malviya, Supriya Chanda, Arjun Mukherjee, Sukomal Pal",
+    year: "2025",
+    category: "Conference",
+    desc: "Findings of the Shared Task on Multilingual Story Illustration: Bridging Cultures through AI Artistry (MUSIA)",
+    name: "Working Notes of FIRE 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation (FIRE), Varanasi, India, December 17-20, 2025",
+    link: "https://ceur-ws.org/Vol-4173/T2-1.pdf",
+    bibtex: "@inproceedings{DBLP:conf/fire/TewariMCMP25a,\n" +
+            "  author = {Krishna Tewari and Anshita Malviya and Supriya Chanda and Arjun Mukherjee and Sukomal Pal},\n" +
+            "  editor = {Kripabandhu Ghosh and Thomas Mandl and Sukomal Pal and Srijoni Majumdar and Anirban Chakraborty},\n" +
+            "  title = {Findings of the Shared Task on Multilingual Story Illustration: Bridging Cultures through {AI} Artistry ({MUSIA})},\n" +
+            "  booktitle = {Working Notes of {FIRE} 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation ({FIRE}), Varanasi, India, December 17-20, 2025},\n" +
+            "  series = {{CEUR} Workshop Proceedings},\n" +
+            "  volume = {4173},\n" +
+            "  pages = {101--112},\n" +
+            "  publisher = {CEUR-WS.org},\n" +
+            "  year = {2025},\n" +
+            "  url = {https://ceur-ws.org/Vol-4173/T2-1.pdf}\n" +
+            "}"
+},
+{
+    authors: "Supriya Chanda, Krishna Tewari, Sukomal Pal",
+    year: "2025",
+    category: "Conference",
+    desc: "Findings of the Code-Mixed Information Retrieval from Social Media Data (CMIR) Shared Task at FIRE 2025",
+    name: "Working Notes of FIRE 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation (FIRE), Varanasi, India, December 17-20, 2025",
+    link: "https://ceur-ws.org/Vol-4173/T3-1.pdf",
+    bibtex: "@inproceedings{DBLP:conf/fire/ChandaTP25,\n" +
+            "  author = {Supriya Chanda and Krishna Tewari and Sukomal Pal},\n" +
+            "  editor = {Kripabandhu Ghosh and Thomas Mandl and Sukomal Pal and Srijoni Majumdar and Anirban Chakraborty},\n" +
+            "  title = {Findings of the Code-Mixed Information Retrieval from Social Media Data ({CMIR}) Shared Task at {FIRE} 2025},\n" +
+            "  booktitle = {Working Notes of {FIRE} 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation ({FIRE}), Varanasi, India, December 17-20, 2025},\n" +
+            "  series = {{CEUR} Workshop Proceedings},\n" +
+            "  volume = {4173},\n" +
+            "  pages = {144--152},\n" +
+            "  publisher = {CEUR-WS.org},\n" +
+            "  year = {2025},\n" +
+            "  url = {https://ceur-ws.org/Vol-4173/T3-1.pdf}\n" +
+            "}"
+},
+{
+    authors: "Krishna Tewari, Supriya Chanda, Aditya Namdeo, Sukomal Pal",
+    year: "2025",
+    category: "Conference",
+    desc: "SAViOR: Sentiment Sarcasm Abuse and Vulgarity in Online Realities (Memes)",
+    name: "Working Notes of {FIRE} 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation (FIRE), Varanasi, India, December 17-20, 2025",
+    link: "https://ceur-ws.org/Vol-4173/T9-16.pdf",
+    bibtex: "@inproceedings{DBLP:conf/fire/TewariCNP25,\n" +
+            "  author = {Krishna Tewari and Supriya Chanda and Aditya Namdeo and Sukomal Pal},\n" +
+            "  editor = {Kripabandhu Ghosh and Thomas Mandl and Sukomal Pal and Srijoni Majumdar and Anirban Chakraborty},\n" +
+            "  title = {{SAViOR}: Sentiment Sarcasm Abuse and Vulgarity in Online Realities (Memes)},\n" +
+            "  booktitle = {Working Notes of {FIRE} 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation ({FIRE}), Varanasi, India, December 17-20, 2025},\n" +
+            "  series = {{CEUR} Workshop Proceedings},\n" +
+            "  volume = {4173},\n" +
+            "  pages = {708--717},\n" +
+            "  publisher = {CEUR-WS.org},\n" +
+            "  year = {2025},\n" +
+            "  url = {https://ceur-ws.org/Vol-4173/T9-16.pdf}\n" +
+            "}"
+},
+{
+    authors: "Narendra Kumar, Arjun Mukherjee, Sukomal Pal, Thomas Mandl",
+    year: "2025",
+    category: "Conference",
+    desc: "IITUH18 at Fairweb-2: Investigating the Effect of the Query Modification on Fairness",
+    name: "Proceedings of the 18th NTCIR Conference on Evaluation of Information Access Technologies, NTCIR 2025",
+    link: "https://doi.org/10.20736/0002002033",
+    bibtex: "@inproceedings{DBLP:conf/ntcir/KumarMPM25,\n" +
+            "  author = {Narendra Kumar and Arjun Mukherjee and Sukomal Pal and Thomas Mandl},\n" +
+            "  editor = {Makoto P. Kato and Noriko Kando and Charles L. A. Clarke and Yiqun Liu},\n" +
+            "  title = {{IITUH18} at Fairweb-2: Investigating the Effect of the Query Modification on Fairness},\n" +
+            "  booktitle = {Proceedings of the 18th {NTCIR} Conference on Evaluation of Information Access Technologies, {NTCIR} 2025, Tokyo, Japan, June 10-13, 2025},\n" +
+            "  publisher = {National Institute of Informatics ({NII})},\n" +
+            "  year = {2025},\n" +
+            "  doi = {10.20736/0002002033},\n" +
+            "  url = {https://doi.org/10.20736/0002002033}\n" +
+            "}"
+},
+{
+    authors: "Yamini Jha, Krishna Tewari, Sukomal Pal",
+    year: "2025",
+    category: "Conference",
+    desc: "HiDePCC: A Novel Dual-Pronged Untargeted Attack on Federated Recommendation via Gradient Perturbation and Cluster Crafting",
+    name: "Proceedings of the Nineteenth ACM Conference on Recommender Systems, RecSys 2025",
+    link: "https://doi.org/10.1145/3705328.3748041",
+    bibtex: "@inproceedings{DBLP:conf/recsys/JhaTP25,\n" +
+            "  author = {Yamini Jha and Krishna Tewari and Sukomal Pal},\n" +
+            "  editor = {M{\\'{a}}ria Bielikov{\\'{a}} and Pavel Kord{\\'{\\i}}k and Markus Schedl and Marco de Gemmis and Sole Pera and Rodrigo Alves and Olivier Jeunen and Vito Ostuni},\n" +
+            "  title = {HiDePCC: {A} Novel Dual-Pronged Untargeted Attack on Federated Recommendation via Gradient Perturbation and Cluster Crafting},\n" +
+            "  booktitle = {Proceedings of the Nineteenth {ACM} Conference on Recommender Systems, RecSys 2025, Prague, Czech Republic, September 22-26, 2025},\n" +
+            "  pages = {610--614},\n" +
+            "  publisher = {{ACM}},\n" +
+            "  year = {2025},\n" +
+            "  doi = {10.1145/3705328.3748041},\n" +
+            "  url = {https://doi.org/10.1145/3705328.3748041}\n" +
+            "}"
+},
+{
+    authors: "Krishna Tewari, Supriya Chanda, K. Abhinay Paul",
+    year: "2025",
+    category: "Conference",
+    desc: "OffenSwitch: Decoding Toxicity in Dravidian Code-Mixing with Transformers",
+    name: "Working Notes of FIRE 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation (FIRE), Varanasi, India, December 17-20, 2025",
+    link: "https://ceur-ws.org/Vol-4173/T4-8.pdf",
+    bibtex: "@inproceedings{DBLP:conf/fire/TewariCP25a,\n" +
+            "  author = {Krishna Tewari and Supriya Chanda and K. Abhinay Paul},\n" +
+            "  editor = {Kripabandhu Ghosh and Thomas Mandl and Sukomal Pal and Srijoni Majumdar and Anirban Chakraborty},\n" +
+            "  title = {OffenSwitch: Decoding Toxicity in Dravidian Code-Mixing with Transformers},\n" +
+            "  booktitle = {Working Notes of {FIRE} 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation ({FIRE}), Varanasi, India, December 17-20, 2025},\n" +
+            "  series = {{CEUR} Workshop Proceedings},\n" +
+            "  volume = {4173},\n" +
+            "  pages = {286--292},\n" +
+            "  publisher = {CEUR-WS.org},\n" +
+            "  year = {2025},\n" +
+            "  url = {https://ceur-ws.org/Vol-4173/T4-8.pdf}\n" +
+            "}"
+},
+{
+    authors: "Krishna Tewari, Supriya Chanda, Riti Tripathi",
+    year: "2025",
+    category: "Conference",
+    desc: "MIRaCLE: Multilingual Information Retrieval with Cross-Lingual Embeddings for Mathematical Expressions",
+    name: "Working Notes of FIRE 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation (FIRE), Varanasi, India, December 17-20, 2025",
+    link: "https://ceur-ws.org/Vol-4173/T8-4.pdf",
+    bibtex: "@inproceedings{DBLP:conf/fire/TewariCT25,\n" +
+            "  author = {Krishna Tewari and Supriya Chanda and Riti Tripathi},\n" +
+            "  editor = {Kripabandhu Ghosh and Thomas Mandl and Sukomal Pal and Srijoni Majumdar and Anirban Chakraborty},\n" +
+            "  title = {MIRaCLE: Multilingual Information Retrieval with Cross-Lingual Embeddings for Mathematical Expressions},\n" +
+            "  booktitle = {Working Notes of {FIRE} 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation ({FIRE}), Varanasi, India, December 17-20, 2025},\n" +
+            "  series = {{CEUR} Workshop Proceedings},\n" +
+            "  volume = {4173},\n" +
+            "  pages = {524--534},\n" +
+            "  publisher = {CEUR-WS.org},\n" +
+            "  year = {2025},\n" +
+            "  url = {https://ceur-ws.org/Vol-4173/T8-4.pdf}\n" +
+            "}"
+},
+{
+    authors: "Asha Hegde, Sharal Coelho, Krishna Tewari",
+    year: "2025",
+    category: "Conference",
+    desc: "Exploring Crypto Narratives: Developing Approaches for Opinion Extraction and Question Answering in Social Media Text",
+    name: "Working Notes of FIRE 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation (FIRE), Varanasi, India, December 17-20, 2025",
+    link: "https://ceur-ws.org/Vol-4173/T10-5.pdf",
+    bibtex: "@inproceedings{DBLP:conf/fire/HegdeCT25,\n" +
+            "  author = {Asha Hegde and Sharal Coelho and Krishna Tewari},\n" +
+            "  editor = {Kripabandhu Ghosh and Thomas Mandl and Sukomal Pal and Srijoni Majumdar and Anirban Chakraborty},\n" +
+            "  title = {Exploring Crypto Narratives: Developing Approaches for Opinion Extraction and Question Answering in Social Media Text},\n" +
+            "  booktitle = {Working Notes of {FIRE} 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation ({FIRE}), Varanasi, India, December 17-20, 2025},\n" +
+            "  series = {{CEUR} Workshop Proceedings},\n" +
+            "  volume = {4173},\n" +
+            "  pages = {779--787},\n" +
+            "  publisher = {CEUR-WS.org},\n" +
+            "  year = {2025},\n" +
+            "  url = {https://ceur-ws.org/Vol-4173/T10-5.pdf}\n" +
+            "}"
+},
+{
+    authors: "Krishna Tewari, Supriya Chanda, Suhani Verma",
+    year: "2025",
+    category: "Conference",
+    desc: "GraMLID: GRU-Assisted Multilingual BERT for Word-Level Language Identification in Low-Resource Dravidian Texts",
+    name: "Working Notes of FIRE 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation (FIRE), Varanasi, India, December 17-20, 2025",
+    link: "https://ceur-ws.org/Vol-4173/T11-6.pdf",
+    bibtex: "@inproceedings{DBLP:conf/fire/TewariCV25,\n" +
+            "  author = {Krishna Tewari and Supriya Chanda and Suhani Verma},\n" +
+            "  editor = {Kripabandhu Ghosh and Thomas Mandl and Sukomal Pal and Srijoni Majumdar and Anirban Chakraborty},\n" +
+            "  title = {GraMLID: GRU-Assisted Multilingual {BERT} for Word-Level Language Identification in Low-Resource Dravidian Texts},\n" +
+            "  booktitle = {Working Notes of {FIRE} 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation ({FIRE}), Varanasi, India, December 17-20, 2025},\n" +
+            "  series = {{CEUR} Workshop Proceedings},\n" +
+            "  volume = {4173},\n" +
+            "  pages = {840--849},\n" +
+            "  publisher = {CEUR-WS.org},\n" +
+            "  year = {2025},\n" +
+            "  url = {https://ceur-ws.org/Vol-4173/T11-6.pdf}\n" +
+            "}"
+},
+{
+    authors: "Krishna Tewari, Supriya Chanda, Aarya Chaturvedi",
+    year: "2025",
+    category: "Conference",
+    desc: "TIRTHA: Tourism Information Retrieval and Text-based Hindi Answering",
+    name: "Working Notes of FIRE 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation (FIRE), Varanasi, India, December 17-20, 2025",
+    link: "https://ceur-ws.org/Vol-4173/T12-3.pdf",
+    bibtex: "@inproceedings{DBLP:conf/fire/TewariCC25,\n" +
+            "  author = {Krishna Tewari and Supriya Chanda and Aarya Chaturvedi},\n" +
+            "  editor = {Kripabandhu Ghosh and Thomas Mandl and Sukomal Pal and Srijoni Majumdar and Anirban Chakraborty},\n" +
+            "  title = {{TIRTHA:} Tourism Information Retrieval and Text-based Hindi Answering},\n" +
+            "  booktitle = {Working Notes of {FIRE} 2025 - Forum for Information Retrieval Evaluation, co-located with 17th Forum for Information Retrieval Evaluation ({FIRE}), Varanasi, India, December 17-20, 2025},\n" +
+            "  series = {{CEUR} Workshop Proceedings},\n" +
+            "  volume = {4173},\n" +
+            "  pages = {863--870},\n" +
+            "  publisher = {CEUR-WS.org},\n" +
+            "  year = {2025},\n" +
+            "  url = {https://ceur-ws.org/Vol-4173/T12-3.pdf}\n" +
+            "}"
+},
+
   {
     authors: "Sushil Kulkarni and Sukomal Pal",
     year: "2024",
@@ -933,32 +1261,212 @@ const data = [
 ]
 
 export const Publications = () => {
-  const [filter, setFilter] = useState(data)
+
+  const [filter, setFilter] = useState(data);
+  const [selectedPublication, setSelectedPublication] = useState(null);
+  const [selectedYear, setSelectedYear] = useState(null);
+  const [activeFilter, setActiveFilter] = useState("All");
 
   const handleFilter = (c) => {
-    const updatedData = data.filter(x => x.category === c)
-    setFilter(updatedData)
+    const updatedData = data.filter((x) => x.category === c);
+    setFilter(updatedData);
+  };
+
+useEffect(() => {
+  setFilter(data);
+
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+
+  AOS.init();
+}, []);
+  console.log("Total Publications:", data.length);
+
+const has2026 = data.filter(item => item.year === "2026");
+
+console.log("2026 Records:", has2026);
+
+const groupedByYear = filter.reduce((acc, item) => {
+  const year = String(item.year).trim();
+
+  if (!acc[year]) {
+    acc[year] = [];
   }
 
-  useEffect(() => {
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-    AOS.init()
-  }, [])
+  acc[year].push(item);
+  return acc;
+}, {});
+
+const sortedYears = Object.keys(groupedByYear).sort(
+  (a, b) => parseInt(b) - parseInt(a)
+);
+
+console.log("Sorted Years:", sortedYears);
+console.log("Grouped:", groupedByYear);
+
+data.forEach((item) => {
+  if (String(item.year).includes("2026")) {
+    console.log("FOUND:", item.year, typeof item.year);
+  }
+});
 
   return (
-    <div className='font-serif text-[#666666]' >
+   <div className='font-serif text-[#666666] dark:text-gray-300 bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-300'>
+    
       <div className='my-[01%] py-[1%] mx-[8%] flex flex-col'>
-        <div className='flex justify-between w-full pb-[2%] border-b-2'>
-          <button onClick={() => setFilter(data)} className='publ-heading  w-1/5 text-[145%] font-bold tracking-wider font-serif rounded-xl py-[1%]'>
-            All Publications
-          </button>
+
+
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+
+  <div className="bg-white dark:bg-gray-800
+rounded-xl
+p-4
+shadow-md
+text-center
+hover:-translate-y-1
+hover:shadow-2xl
+transition-all
+duration-300">
+    <h2 className="text-6xl font-bold text-sky-600">
+      {data.length}
+    </h2>
+    <p className="text-gray-600 dark:text-gray-300">
+      Publications
+    </p>
+  </div>
+
+  <div className="bg-white dark:bg-gray-800
+rounded-xl
+p-4
+shadow-md
+text-center
+hover:-translate-y-1
+hover:shadow-2xl
+transition-all
+duration-300">
+    <h2 className="text-6xl font-bold text-rose-600">
+      {data.filter(item => item.category === "Journal").length}
+    </h2>
+    <p className="text-gray-600 dark:text-gray-300">
+      Journals
+    </p>
+  </div>
+
+  <div className="bg-white dark:bg-gray-800
+rounded-xl
+p-4
+shadow-md
+text-center
+hover:-translate-y-1
+hover:shadow-2xl
+transition-all
+duration-300">
+    <h2 className="text-6xl font-bold text-amber-600">
+      {data.filter(item => item.category === "Conference").length}
+    </h2>
+    <p className="text-gray-600 dark:text-gray-300">
+      Conferences
+    </p>
+  </div>
+
+  <div className="bbg-white dark:bg-gray-800
+rounded-xl
+p-4
+shadow-md
+text-center
+hover:-translate-y-1
+hover:shadow-2xl
+transition-all
+duration-300">
+    <h2 className="text-6xl font-bold text-green-600">
+      {data.filter(item => item.category === "Books").length}
+    </h2>
+    <p className="text-gray-600 dark:text-gray-300">
+      Books
+    </p>
+  </div>
+
+   <div className="bg-white dark:bg-gray-800
+rounded-xl
+p-4
+shadow-md
+text-center
+hover:-translate-y-1
+hover:shadow-2xl
+transition-all
+duration-300">
+    <h2 className="text-6xl font-bold text-violet-600">
+      {data.filter(item => item.category === "Book Chapters").length}
+    </h2>
+    <p className="text-gray-600 dark:text-gray-300">
+      Book Chapters
+    </p>
+  </div>
+
+   <div className="bg-white dark:bg-gray-800
+rounded-xl
+p-4
+shadow-md
+text-center
+hover:-translate-y-1
+hover:shadow-2xl
+transition-all
+duration-300">
+    <h2 className="text-6xl font-bold text-cyan-600">
+      {data.filter(item => item.category === "Workshop").length}
+    </h2>
+    <p className="text-gray-600 dark:text-gray-300">
+      Workshops
+    </p>
+  </div>
+
+</div>
+        <div className='flex justify-between w-full pb-[2%] border-b-2 dark:border-gray-700'>
+<button
+  onClick={() => {
+    setFilter(data);
+    setActiveFilter("All");
+  }}
+  className={`
+    px-6 py-3
+rounded-xl border-2 transition-all duration-300
+
+    ${
+      activeFilter === "All"
+        ? "bg-gray-600 text-white border-gray-600"
+        : "text-gray-600 border-gray-500 hover:bg-gray-500 hover:text-white"
+    }
+  `}
+>
+  Publications
+</button>
           <div className='w-1/5 hover:animate-pulse flex justify-center items-center'>
             {/* <div className='category mr-1 bg-green-900 flex-shrink-0 rounded-full w-4 h-4'>
             </div> */}
             <div>
-              <button onClick={() => handleFilter("Books")} className='publ-heading border-2 border-green-700  text-[145%] font-bold  font-serif    text-green-700 rounded-xl hover:text-white hover:bg-green-700 justify-center items-center px-[10%] py-[2%]'>
-                Books
-              </button>
+            <button
+  onClick={() => {
+    handleFilter("Books");
+    setActiveFilter("Books");
+  }}
+  className={`
+    rounded-xl px-[10%] py-[2%]
+    border-2 font-bold text-[145%]
+    transition-all duration-300
+
+    ${
+      activeFilter === "Books"
+        ? "bg-green-700 text-white border-green-700"
+        : "text-green-700 border-green-700 hover:bg-green-700 hover:text-white"
+    }
+  `}
+>
+  Books
+</button>
             </div>
           </div>
           <div className='w-1/5 hover:animate-pulse flex justify-center items-center'>
@@ -968,9 +1476,26 @@ export const Publications = () => {
             {/* <div className='category mr-[2px] bg-cyan-500 flex-shrink-0 rounded-full w-4 h-4'>
             </div> */}
             <div>
-              <button onClick={() => handleFilter("Book Chapters")} className='publ-heading border-2 border-violet-500 text-[145%] font-bold tracking-wider font-serif  hover:animate-pulse  text-violet-500 hover:text-white hover:bg-violet-500 rounded-xl whitespace-nowrap flex justify-center items-center px-[5%] py-[2%]'>
-                Book Chapters
-              </button>
+            <button
+  onClick={() => {
+    handleFilter("Book Chapters");
+    setActiveFilter("Book Chapters");
+  }}
+  className={`
+    rounded-xl px-[5%] py-[2%]
+    border-2 font-bold tracking-wider text-[145%]
+    whitespace-nowrap
+    transition-all duration-300
+
+    ${
+      activeFilter === "Book Chapters"
+        ? "bg-violet-500 text-white border-violet-500"
+        : "text-violet-500 border-violet-500 hover:bg-violet-500 hover:text-white"
+    }
+  `}
+>
+  Book Chapters
+</button>
             </div>
           </div>
           </div>
@@ -978,125 +1503,249 @@ export const Publications = () => {
             {/* <div className='category mr-1 bg-rose-900 flex-shrink-0 rounded-full w-4 h-4'>
             </div> */}
             <div>
-              <button onClick={() => handleFilter("Journal")} className='publ-heading border-2 border-rose-700  text-[145%] font-bold  font-serif    text-rose-700 rounded-xl hover:text-white hover:bg-rose-700 justify-center items-center px-[10%] py-[2%]'>
-                Journals
-              </button>
+           <button
+  onClick={() => {
+    handleFilter("Journal");
+    setActiveFilter("Journal");
+  }}
+  className={`
+    rounded-xl px-[10%] py-[2%]
+    border-2 font-bold text-[145%]
+    transition-all duration-300
+
+    ${
+      activeFilter === "Journal"
+        ? "bg-rose-700 text-white border-rose-700"
+        : "text-rose-700 border-rose-700 hover:bg-rose-700 hover:text-white"
+    }
+  `}
+>
+  Journals
+</button>
             </div>
           </div>
           <div className='w-1/5 flex hover:animate-pulse justify-center items-center'>
             {/* <div className='category mr-[2px] bg-amber-500 flex-shrink-0 rounded-full w-4 h-4'>
             </div> */}
             <div>
-              <button onClick={() => handleFilter("Conference")} className='publ-heading border-2 border-amber-500 text-[145%] font-bold  font-serif  hover:animate-pulse  text-amber-500 rounded-xl hover:text-white hover:bg-amber-500 justify-center items-center px-[5%] py-[2%]'>
-                Conferences
-              </button>
+        <button
+  onClick={() => {
+    handleFilter("Conference");
+    setActiveFilter("Conference");
+  }}
+  className={`
+    rounded-xl px-[5%] py-[2%]
+    border-2 font-bold text-[145%]
+    transition-all duration-300
+
+    ${
+      activeFilter === "Conference"
+        ? "bg-amber-500 text-white border-amber-500"
+        : "text-amber-500 border-amber-500 hover:bg-amber-500 hover:text-white"
+    }
+  `}
+>
+  Conferences
+</button>
             </div>
           </div>
           <div className='w-1/5 flex hover:animate-pulse justify-center items-center'>
             {/* <div className='category mr-[2px] bg-cyan-500 flex-shrink-0 rounded-full w-4 h-4'>
             </div> */}
             <div>
-              <button onClick={() => handleFilter("Workshop")} className='publ-heading border-2 border-cyan-500 text-[145%] font-bold tracking-wider font-serif  hover:animate-pulse  text-cyan-500 hover:text-white hover:bg-cyan-500 rounded-xl justify-center items-center px-[5%] py-[2%]'>
-                Workshops
-              </button>
+             <button
+  onClick={() => {
+    handleFilter("Workshop");
+    setActiveFilter("Workshop");
+  }}
+  className={`
+    rounded-xl px-[5%] py-[2%]
+    border-2 font-bold tracking-wider text-[145%]
+    transition-all duration-300
+
+    ${
+      activeFilter === "Workshop"
+        ? "bg-cyan-500 text-white border-cyan-500"
+        : "text-cyan-500 border-cyan-500 hover:bg-cyan-500 hover:text-white"
+    }
+  `}
+>
+  Workshops
+</button>
             </div>
           </div>
         </div>
         <div>
-          {
-            filter.map((item) => {
-              return (
-                <div key={item.id} data-aos="fade-up" data-aos-duration="1000" className={`publ-card rounded-2xl flex justify-start my-[1.5%] py-[1%]  tracking-wide ${item.category === 'Books' && 'bg-green-100'} ${item.category === 'Book Chapters' && 'bg-violet-100'} ${item.category === 'Journal' && 'bg-rose-100'}  ${item.category === 'Conference' && 'bg-amber-100'}  ${item.category === 'Workshop' && 'bg-cyan-100'} `}>
-                  <div className='px-[2%]'>
-                    <div>
-                      <div className='publ-desc text-[130%] font-sans my-[1%] font-bold text-black '>
-                        {item.desc}
-                      </div>
-                      <div className='publ-name my-[1%] font-sans text-[110%]'>
-                        {item.name}
-                      </div>
-                      <div className='flex publ-div  mt-[6px] items-center  space-x-1'>
-                        <div className='publ-border flex justify-center items-center border-r-2 pr-[1%] border-[#666666]'>
-                          <span className=''>
-                            <MdPersonOutline className='mem-icon' size={"1.25rem"} />
-                          </span>
-                          <div className='publ-auth text-[120%]' style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                            {item.authors}
-                          </div>
-                        </div>
-                        <div className='publ-last flex space-x-3 items-center pl-[1%]'>
-                          <div className='flex publ-year justify-start items-center  space-x-1 transition ease-in-out hover:scale-110'>
-                            <div>
-                              <BsCalendar2Date className='mem-icon' size={"1.25rem"} />
-                            </div>
-                            <div className='pl-[2%] publ-icons'>
-                              {item.year}
-                            </div>
-                          </div>
-                          {item.link &&
-  (item.link.startsWith('http') ? 
-    <a href={item.link} target='_blank' className='flex  space-x-1 publ-year justify-start items-center  transition ease-in-out hover:scale-110 '>
-      <div>
-        <AiOutlineLink className='mem-icon' size={"1.25rem"} />
-      </div>
-      <div className='pl-[2%] '>
-        Link
-      </div>
-    </a>
-    :
-    <Link to={item.link} className='flex  space-x-1 publ-year justify-start items-center  transition ease-in-out hover:scale-110 '>
-      <div>
-        <AiOutlineLink className='mem-icon' size={"1.25rem"} />
-      </div>
-      <div className='pl-[2%] '>
-        Link
-      </div>
-    </Link>
-  )
-}
 
-                          {item.bibtex &&
-                            <div className=''>
-                              <Popup className='pop' trigger={
-                                <div className=' publ-year flex justify-center space-x-1 items-center transition ease-in-out hover:scale-110'>
-                                  <div><RiDoubleQuotesR className='mem-icon' size={"1.25rem"} /> </div>
-                                  <button className=''>Cite
-                                  </button>
-                                </div>
-                              } modal nested>{
-                                  close => (
-                                    <div className='modal break-words' >
-                                      <pre className='content my-[3%] mx-[3%] break-words'>
-                                        {item.bibtex}
-                                      </pre>
-                                      <div className='flex w-full justify-evenly my-[1%] items-center '>
-                                        <div className='flex  items-center justify-center p-[1%] font-bold border-2 tracking-wider hover:scale-110 tranistion ease-in-out text-[#666666]'>
-                                          <button className='    flex items-center justify-center w-full ' onClick={() => {
-                                            copy(item.bibtex)
-                                            alert("Copied to clipboard!")
-                                          }}>
-                                            <MdContentCopy className='mem-icon m-[2%]' size={'1.25rem'} />
-                                          </button>
-                                        </div>
-                                        <div className='flex  items-center justify-center p-[1%] font-bold border-2 hover:scale-110 tranistion ease-in-out tracking-wider  text-[#666666]'>
-                                          <button className=' flex items-center justify-center w-full ' onClick={() => close()}><IoMdClose className='mem-icon m-[2%]' size={'1.25rem'} /> </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  )
-                                }
 
-                              </Popup>
-                            </div>
-                          }
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )
-            })
-          }
+ <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3">
+
+  {sortedYears.map((year) => (
+
+    
+
+<div
+  key={year}
+  onClick={() => setSelectedYear(year)}
+  className={`bg-white dark:bg-gray-800 rounded-xl shadow-md p-4 border-t-4 cursor-pointer hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300
+
+  ${
+    filter.length === data.length
+      ? "border-gray-400"
+      : filter[0]?.category === "Books"
+      ? "border-green-500"
+      : filter[0]?.category === "Book Chapters"
+      ? "border-violet-500"
+      : filter[0]?.category === "Journal"
+      ? "border-rose-500"
+      : filter[0]?.category === "Conference"
+      ? "border-amber-500"
+      : filter[0]?.category === "Workshop"
+      ? "border-cyan-500"
+      : "border-gray-400"
+  }
+
+  ${
+    selectedYear === year
+      ? "ring-2 ring-sky-500"
+      : ""
+  }
+  `}
+>
+  <div className="flex justify-between items-center">
+    <span className="text-2xl font-bold">
+      {year}
+    </span>
+
+    <span className="bg-sky-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+      {groupedByYear[year].length}
+    </span>
+  </div>
+</div>
+    ))}
+
+</div>
+
+
+{selectedYear && (
+  <div
+    className="fixed inset-0 bg-black/60 flex items-center justify-center z-50"
+    onClick={() => setSelectedYear(null)}
+  >
+    <div
+      className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white w-[90%] md:w-[900px] max-h-[80vh] overflow-y-auto rounded-xl p-6"
+      onClick={(e) => e.stopPropagation()}
+    >
+
+      <h2 className="text-3xl font-bold text-rose-600 mb-6">
+        Publications {selectedYear}
+      </h2>
+
+      <div className="space-y-3">
+
+        {groupedByYear[selectedYear].map((item, idx) => (
+
+          <div
+            key={idx}
+            onClick={() => setSelectedPublication(item)}
+            className={`
+              p-4 rounded-lg cursor-pointer
+
+${item.category === "Books" && "bg-green-100 dark:bg-green-500/30"}
+${item.category === "Book Chapters" && "bg-violet-100 dark:bg-violet-600/30"}
+${item.category === "Journal" && "bg-rose-100 dark:bg-rose-500/30"}
+${item.category === "Conference" && "bg-amber-100 dark:bg-amber-600/30"}
+${item.category === "Workshop" && "bg-cyan-100 dark:bg-cyan-600/30"}
+            `}
+          >
+
+            <div className="font-semibold">
+              {item.desc}
+            </div>
+
+            <div className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+              {item.authors}
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+      <button
+        onClick={() => setSelectedYear(null)}
+        className="mt-5 bg-rose-600 text-white px-4 py-2 rounded hover:bg-rose-700 transition-all"
+      >
+        Close
+      </button>
+
+    </div>
+  </div>
+)}
+
+
+{selectedPublication && (
+  <div
+    className="fixed inset-0 bg-black/60 flex items-center justify-center z-50"
+    onClick={() => setSelectedPublication(null)}
+  >
+    <div
+      className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white w-[90%] md:w-[800px] max-h-[80vh] overflow-y-auto p-6 rounded-xl shadow-xl"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <h2 className="text-2xl font-bold text-rose-600 mb-4">
+        {selectedPublication.desc}
+      </h2>
+
+      <div className="space-y-3">
+
+        <p>
+          <b>Authors:</b> {selectedPublication.authors}
+        </p>
+
+        <p>
+          <b>Publication:</b> {selectedPublication.name}
+        </p>
+
+        <p>
+          <b>Year:</b> {selectedPublication.year}
+        </p>
+
+      {selectedPublication.link && (
+  <a
+    href={selectedPublication.link}
+    target="_blank"
+    rel="noreferrer"
+    className="
+      inline-block
+      mt-2
+      px-4 py-2
+      bg-sky-600
+      hover:bg-sky-700
+      text-white
+      rounded-lg
+      font-medium
+      transition-all duration-300
+    "
+  >
+    📄 View Publication
+  </a>
+)}
+
+      </div>
+
+      <button
+        onClick={() => setSelectedPublication(null)}
+        className="mt-6 bg-rose-600 text-white px-4 py-2 rounded hover:bg-rose-700 transition-all"
+      >
+        Close
+      </button>
+
+    </div>
+  </div>
+)}
+
         </div>
       </div>
     </div>

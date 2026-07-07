@@ -1,86 +1,131 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import AOS from "aos";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const ResourceCard = (props) => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  const [open, setOpen] = useState(false);
 
-  // Check if URL is internal (starts with "/" or doesn't contain "http")
-  const isInternalLink = props.url && (props.url.startsWith('/') || !props.url.includes('http'));
+  const isInternalLink =
+    props.url &&
+    (props.url.startsWith("/") || !props.url.includes("http"));
 
-  return (
+return (
+  <>
+    {/* Compact Card */}
     <div
-      data-aos="zoom-in"
-      data-aos-duration="1200"
-      className='resource-c  text-[#666666] flex flex-col border-2 justify-start mx-[5%] p-[5%] my-[10%] hover:shadow-[rgba(0,0,0,0.25)_0px_25px_50px_-12px] shadow-[rgba(0,0,0,0.09)_0px_2px_1px,rgba(0,0,0,0.09)_0px_4px_2px,rgba(0,0,0,0.09)_0px_8px_4px,rgba(0,0,0,0.09)_0px_16px_8px,rgba(0,0,0,0.09)_0px_32px_16px] '>
-      
-      <div className='resource-title my-[3%] text-[110%] text-[#67b0d1] font-bold tracking-wider'>
-        {props.title}
-      </div>
-      
-      <div>
-        <img src={props.logo} alt="Logo" />
-      </div>
-      
-      <div className='resource-desc text-left mt-[2%] '>
-        {props.desc}
-      </div>
+      onClick={() => setOpen(true)}
+      className="cursor-pointer bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+    >
+      <img
+        src={props.logo}
+        alt={props.title}
+        className="w-full h-64 object-contain rounded-lg mb-3 bg-white dark:bg-gray-700"
+      />
 
-      {props.supervisor && (
-        <div className='resource-sup mt-[2%] '>
-          <span className='font-bold  text-left'>Supervisor: </span>
-          {props.supervisor}
-        </div>
-      )}
+      <div className="p-4">
+        <h2 className="font-bold text-lg text-gray-800 dark:text-white line-clamp-2">
+          {props.title}
+        </h2>
 
-      {props.guidance && (
-        <div className='resource-sup mt-[2%] '>
-          <span className='font-bold  text-left'>Guidance: </span>
-          {props.guidance}
-        </div>
-      )}
-
-      {props.author && (
-        <div className='resource-sup mt-[2%] '>
-          <span className='font-bold  text-left'>Author: </span>
-          {props.author}
-        </div>
-      )}
-
-      {props.members && (
-        <div className='resource-mem text-left mt-[2%] '>
-          <span className='font-bold'>Members: </span>
-          {props.members}
-        </div>
-      )}
-
-      <div className='resource-type mt-[2%] '>
-        <span className='font-bold  text-left'>Type: </span>
-        {props.type}
+        <p className="text-sky-600 dark:text-sky-400 mt-2 text-sm">
+          {props.type}
+        </p>
       </div>
-      
-      <div className='resource-img mt-[2%] flex justify-center items-center h-[100px]'>
-        {isInternalLink ? (
-          <Link to={props.url}>
-            <img src={props.image} alt="Link" className="w-[250px] h-[100px] object-contain" />
-          </Link>
-        ) : (
-          <a href={props.url} target='_blank' rel="noopener noreferrer" download>
-            <img src={props.image} alt="Link" className="w-[250px] h-[100px] object-contain" />
-          </a>
-        )}
-      </div>
-      
-      {props.appleUrl && (
-        <div className='resource-appImg mt-[2%] flex justify-center items-center h-[100px]'>
-          <a href={props.appleUrl} target='_blank' rel="noopener noreferrer">
-            <img src={props.appstore} alt="Link" className="w-[250px] h-[100px] object-contain" />
-          </a>
-        </div>
-      )}
     </div>
-  );
+
+    {/* Popup */}
+    {open && (
+      <div
+        className="fixed inset-0 bg-black/60 flex justify-center items-start pt-24 z-50"
+        onClick={() => setOpen(false)}
+      >
+        <div
+          className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white w-[90%] md:w-[750px] max-h-[85vh] overflow-y-auto rounded-xl p-6 shadow-xl"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <img
+            src={props.logo}
+            alt={props.title}
+            className="w-full h-64 object-contain rounded-lg mb-3 bg-white dark:bg-gray-700"
+          />
+
+          <h2 className="text-3xl font-bold mb-4 text-sky-600 dark:text-sky-400">
+            {props.title}
+          </h2>
+
+          <p className="text-gray-700 dark:text-gray-300 mb-4">
+            {props.desc}
+          </p>
+
+          {props.author && (
+            <p className="mb-2 text-gray-700 dark:text-gray-300">
+              <b>Author:</b> {props.author}
+            </p>
+          )}
+
+          {props.supervisor && (
+            <p className="mb-2 text-gray-700 dark:text-gray-300">
+              <b>Supervisor:</b> {props.supervisor}
+            </p>
+          )}
+
+          {props.guidance && (
+            <p className="mb-2 text-gray-700 dark:text-gray-300">
+              <b>Guidance:</b> {props.guidance}
+            </p>
+          )}
+
+          {props.members && (
+            <p className="mb-2 text-gray-700 dark:text-gray-300">
+              <b>Members:</b> {props.members}
+            </p>
+          )}
+
+          <p className="mb-4 text-gray-700 dark:text-gray-300">
+            <b>Type:</b> {props.type}
+          </p>
+
+          <div className="flex gap-3 flex-wrap">
+
+            {isInternalLink ? (
+              <Link
+                to={props.url}
+                className="bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-lg transition-all"
+              >
+                Open Resource
+              </Link>
+            ) : (
+              <a
+                href={props.url}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-lg transition-all"
+              >
+                Open Resource
+              </a>
+            )}
+
+            {props.appleUrl && (
+              <a
+                href={props.appleUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-gray-700 hover:bg-gray-800 text-white px-4 py-2 rounded-lg transition-all"
+              >
+                App Store
+              </a>
+            )}
+
+            <button
+              onClick={() => setOpen(false)}
+              className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition-all"
+            >
+              Close
+            </button>
+
+          </div>
+        </div>
+      </div>
+    )}
+  </>
+);
 };

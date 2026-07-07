@@ -12,17 +12,17 @@ import { Resources } from './pages/Resources';
 import { Book} from './pages/Book';
 import { Teaching } from './pages/Teaching';
 import { OSBook } from './pages/OSBook.tsx';
-import MUSIA from './pages/MUSIA.tsx';
+import Musia from './pages/Musia.tsx';
+
 import Subtask1 from './pages/Subtask1.tsx';
 import Subtask2 from './pages/Subtask2.tsx';
 import Subtask3 from './pages/Subtask3.tsx';
 
 
-
 function App() {
   
   return (
-    <div className="">
+   <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
@@ -38,10 +38,12 @@ function App() {
         <Route path='/contact' element={<Contactus/>}></Route>
         <Route path='/publications' element={<Publications/>}></Route>
         <Route path='/os-book' element={<OSBook />} />
-        <Route path='/MUSIA' element={<MUSIA />} />
-        <Route path='/Subtask1' element={<Subtask1 />} />
-        <Route path='/Subtask2' element={<Subtask2 />} />
-        <Route path='/Subtask3' element={<Subtask3 />} />
+        <Route path="/musia" element={<Musia />} />
+        
+        
+        <Route path='/Subtask1' element={<Subtask1 />}/>
+        <Route path='/Subtask2' element={<Subtask2 />}/>
+        <Route path='/Subtask3' element={<Subtask3 />}/>
       </Routes>
       <Footer/>
     </div>

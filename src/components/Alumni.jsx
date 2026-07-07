@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-// Alumni data with profileUrl field for linking names
+
 const alumni = [
   {
     name: "Dr. Pradeepika Verma",
@@ -10,12 +10,27 @@ const alumni = [
     profileUrl: "https://www.linkedin.com/in/pradeepika-verma-b2295529/" 
   },
   {
+    name: "Mr. Akhilesh Yadav",
+    desg: "Project Staff",
+    year: "2026",
+    Project :"Development of a Disaster Response System for Collecting and Disseminating Information through Social Media Text Processing"
+
+  },
+  {
     name: "Dr. Supriya Chanda",
     year: "2024",
     desg: "Research Scholar",
     thesis: "Text Processing on Code-Mixed Social Media Data",
     profileUrl: "https://supriyachanda.github.io/",
     thesisUrl: "https://shodhganga.inflibnet.ac.in/handle/10603/608610" 
+  },
+  {
+    name: "Mr. Sushil Kulkarni",
+    year: "2026",
+    desg: "Research Scholar",
+    thesis: "A Study on Spoken Term Detection Using Text and Audio Based Deep Learning Techniques",
+    profileUrl: "",
+    thesisUrl: "" 
   },
   {
     name: "Dr. Siba Sankar Sahu",
@@ -62,6 +77,21 @@ const alumni = [
     thesis: "Legal Information Retrieval: Techniques and Evaluation",
     thesisUrl: "https://shodhganga.inflibnet.ac.in/handle/10603/585585",
   },
+  {
+    name: "Mr. Abhyudaya",
+    desg: "IDD",
+    profileUrl: "",
+    year: "2026",
+    thesis: "Long-Context Text Adaptation in CLIPSeg for Dermatological Image Segmentation"
+  },
+   {
+    name: "Mr. Manas Jayaswal",
+    desg: "IDD",
+    profileUrl: "",
+    year: "2026",
+    thesis: "Automated Verification of Numerical Claims in Textual Statements Using Evidence Reranking and Parameter-Efficient Fine-Tuning of Large Language Models"
+  },
+   
     {
     name: "Mr. Abhijeet Panihar",
     desg: "IDD",
@@ -82,6 +112,13 @@ const alumni = [
     profileUrl: "https://www.linkedin.com/in/narendra-kumar-3b30791a7/",
     year: "2025",
     thesis: "Fairness in Textual Information Retrieval Using Query Modification"
+  },
+  {
+    name: "Mr. Pranav Ajith",
+    desg: "IDD",
+    profileUrl: "",
+    year: "2026",
+    thesis: "Interview-Audio Based Mental Health Classification: An In-Depth Analysis"
   },
   {
     name: "Ms. Yamini Jha",
@@ -151,6 +188,13 @@ const alumni = [
     year: "2018",
     thesis: "Microblog Retrieval for Disaster Relief: Creating a Robust Gold Standard",
     profileUrl: "https://www.linkedin.com/in/ribhavsoni/" 
+  },
+   {
+    name: "Mr. Swapnil Khatuji Dupare",
+    desg: "M.Tech",
+    year: "2026",
+    thesis: "Transformer-Based Depression Detection from Clinical Conversation: Evaluation on Benchmark Dataset and Low-Resource Hindi Dataset Development",
+    profileUrl: "" 
   },
   {
     name: "Mr. Amit Yadav",
@@ -260,162 +304,193 @@ const extractYear = (yearStr) => {
 
 // Categorize and sort alumni by designation and year
 const categorizedAlumni = {
-  "Postdoctoral Researchers": alumni.filter(item => item.desg.toLowerCase().includes("post")).sort((a, b) => extractYear(b.year) - extractYear(a.year)),
-  "PhD Researchers": alumni.filter(item => item.desg.toLowerCase().includes("research scholar") || item.year.includes("PhD")).sort((a, b) => extractYear(b.year) - extractYear(a.year)),
-  "IDD Graduates": alumni.filter(item => item.desg.toLowerCase().includes("idd")).sort((a, b) => extractYear(b.year) - extractYear(a.year)),
-  "M.Tech Graduates": alumni.filter(item => item.desg.toLowerCase().includes("m.tech")).sort((a, b) => extractYear(b.year) - extractYear(a.year))
-};
+  "Postdoctoral Researchers": alumni.filter(item =>
+    item.desg.toLowerCase().includes("post")
+  ).sort((a, b) => extractYear(b.year) - extractYear(a.year)),
 
+  "PhD Researchers": alumni.filter(item =>
+    item.desg.toLowerCase().includes("research scholar") ||
+    item.year.includes("PhD")
+  ).sort((a, b) => extractYear(b.year) - extractYear(a.year)),
+
+  "Project Staff": alumni.filter(item =>
+    item.desg.toLowerCase().includes("project staff")
+  ).sort((a, b) => extractYear(b.year) - extractYear(a.year)),
+
+  "IDD Graduates": alumni.filter(item =>
+    item.desg.toLowerCase().includes("idd")
+  ).sort((a, b) => extractYear(b.year) - extractYear(a.year)),
+
+  "M.Tech Graduates": alumni.filter(item =>
+    item.desg.toLowerCase().includes("m.tech")
+  ).sort((a, b) => extractYear(b.year) - extractYear(a.year))
+};
 export const Alumni = () => {
-  return (
-    <div style={{ width: '100%', padding: '2% 10%', boxSizing: 'border-box' }}>
-      {/* Postdoctoral Researchers */}
-      <div style={{
-        backgroundColor: 'rgba(211, 211, 211, 0.4)', 
-        padding: '12px 20px',
-        borderRadius: '8px',
-        marginBottom: '15px',
-        textAlign: 'center',
-      }}>
-        <h2 style={{
-          color: '#03254c',
-          fontSize: '1.3rem',
-          fontWeight: 'bold',
-          margin: 0
-        }}>Postdoctoral Researchers</h2>
-      </div>
-      <ul style={{ paddingLeft: '0', listStyleType: 'none' }}>
-        {categorizedAlumni["Postdoctoral Researchers"].map((item, index) => (
-          <li key={item.name} style={{
-            marginBottom: '8px',
-            fontSize: '1rem',
-          }}>
-            <span>{index + 1}. </span>
-            {item.profileUrl 
-              ? <a href={item.profileUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none' }}
-                  onMouseOver={e => e.target.style.color = '#d9534f'} // Hover effect
-                  onMouseOut={e => e.target.style.color = 'black'}>
-                  <strong>{item.name}</strong>
-                </a> 
-              : <strong>{item.name}</strong>} 
-            ({item.year}) - 
-            {item.thesisUrl ? <a href={item.thesisUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none' }} 
-            onMouseOver={e => e.target.style.color = '#d9534f'} // Hover effect
-            onMouseOut={e => e.target.style.color = 'black'}>{item.thesis}</a> : item.thesis}
-          </li>
-        ))}
-      </ul>
+  const [openSection, setOpenSection] = useState(null);
+  const isDark = document.documentElement.classList.contains("dark");
 
-      {/* PhD Researchers */}
-      <div style={{
-        backgroundColor: 'rgba(211, 211, 211, 0.4)', // Soft green with slight transparency
-        padding: '12px 20px',
-        borderRadius: '8px',
-        marginBottom: '15px',
-        textAlign: 'center',
-      }}>
-        <h2 style={{
-          color: '#03254c',
-          fontSize: '1.3rem',
-          fontWeight: 'bold',
-          margin: 0
-        }}>PhD Researchers</h2>
-      </div>
-      <ul style={{ paddingLeft: '0', listStyleType: 'none' }}>
-        {categorizedAlumni["PhD Researchers"].map((item, index) => (
-          <li key={item.name} style={{
-            marginBottom: '8px',
-            fontSize: '1rem',
-          }}>
-            <span>{index + 1}. </span>
-            {item.profileUrl 
-              ? <a href={item.profileUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none' }}
-                  onMouseOver={e => e.target.style.color = '#d9534f'} // Hover effect
-                  onMouseOut={e => e.target.style.color = 'black'}>
-                  <strong>{item.name}</strong>
-                </a> 
-              : <strong>{item.name}</strong>} 
-            ({item.year}) - 
-            {item.thesisUrl ? <a href={item.thesisUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none' }} 
-            onMouseOver={e => e.target.style.color = '#d9534f'} // Hover effect
-            onMouseOut={e => e.target.style.color = 'black'}>{item.thesis}</a> : item.thesis}
-          </li>
-        ))}
-      </ul>
+return (
+  <div
+    style={{
+      width: "100%",
+      padding: "2% 10%",
+      boxSizing: "border-box",
+      color: isDark ? "#f3f4f6" : "#111827",
+    }}
+  >
+    {Object.entries(categorizedAlumni).map(([title, members]) => (
+      <div key={title} style={{ marginBottom: "20px" }}>
+        <div
+          onClick={() =>
+            setOpenSection(openSection === title ? null : title)
+          }
+          style={{
+            background: isDark ? "#374151" : "#eaf3f9",
+            padding: "20px",
+            borderRadius: "15px",
+            cursor: "pointer",
+            boxShadow: isDark
+              ? "0 4px 12px rgba(0,0,0,0.4)"
+              : "0 4px 12px rgba(0,0,0,0.1)",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <h2
+            style={{
+              margin: 0,
+              color: isDark ? "#FFFFFF" : "#03254c",
+            }}
+          >
+            {title} ({members.length})
+          </h2>
 
-      {/* IDD Graduates */}
-      <div style={{
-        backgroundColor: 'rgba(211, 211, 211, 0.4)', // Soft green with slight transparency
-        padding: '12px 20px',
-        borderRadius: '8px',
-        marginBottom: '15px',
-        textAlign: 'center',
-      }}>
-        <h2 style={{
-          color: '#03254c',
-          fontSize: '1.3rem',
-          fontWeight: 'bold',
-          margin: 0
-        }}>IDD Graduates</h2>
-      </div>
-      <ul style={{ paddingLeft: '0', listStyleType: 'none' }}>
-        {categorizedAlumni["IDD Graduates"].map((item, index) => (
-          <li key={item.name} style={{
-            marginBottom: '8px',
-            fontSize: '1rem',
-          }}>
-            <span>{index + 1}. </span>
-            {item.profileUrl 
-              ? <a href={item.profileUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none' }}
-                  onMouseOver={e => e.target.style.color = '#d9534f'} // Hover effect
-                  onMouseOut={e => e.target.style.color = 'black'}>
-                  <strong>{item.name}</strong>
-                </a> 
-              : <strong>{item.name}</strong>} 
-            ({item.year}) - 
-            {item.thesisUrl ? <a href={item.thesisUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none' }} 
-            onMouseOver={e => e.target.style.color = '#d9534f'} // Hover effect
-            onMouseOut={e => e.target.style.color = 'black'}>{item.thesis}</a> : item.thesis}
-          </li>
-        ))}
-      </ul>
+          <span>{openSection === title ? "▲" : "▼"}</span>
+        </div>
 
-      {/* M.Tech Graduates */}
-      <div style={{
-        backgroundColor: 'rgba(211, 211, 211, 0.4)', // Soft green with slight transparency
-        padding: '12px 20px',
-        borderRadius: '8px',
-        marginBottom: '15px',
-        textAlign: 'center',
-      }}>
-        <h2 style={{
-          color: '#03254c',
-          fontSize: '1.3rem',
-          fontWeight: 'bold',
-          margin: 0
-        }}>M.Tech Graduates</h2>
+        {openSection === title && (
+          <div style={{ marginTop: "15px" }}>
+            {members.map((item, index) => (
+              <div
+                key={item.name}
+                style={{
+                  background: isDark ? "#1f2937" : "white",
+                  padding: "18px",
+                  borderRadius: "12px",
+                  marginBottom: "12px",
+                  boxShadow: isDark
+                    ? "0 2px 8px rgba(0,0,0,0.4)"
+                    : "0 2px 8px rgba(0,0,0,0.08)",
+                  borderLeft: isDark
+                    ? "5px solid #60a5fa"
+                    : "5px solid #03254c",
+                }}
+              >
+                <h3
+                  style={{
+                    color: isDark ? "#f9fafb" : "#111827",
+                  }}
+                >
+                  {members.length - index}.{" "}
+                  {item.profileUrl ? (
+                    <a
+                      href={item.profileUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        color: "inherit",
+                        textDecoration: "none",
+                        transition: "color 0.3s ease",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.target.style.color = "red";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.target.style.color = "inherit";
+                      }}
+                    >
+                      {item.name}
+                    </a>
+                  ) : (
+                    item.name
+                  )}
+                  {item.year && ` (${item.year})`}
+                </h3>
+
+                {item.thesis && (
+                  <p
+                    style={{
+                      marginTop: "10px",
+                      lineHeight: "1.6",
+                      color: isDark ? "#d1d5db" : "#444",
+                    }}
+                  >
+                    <strong>Thesis:</strong>{" "}
+                    {item.thesisUrl ? (
+                     <a
+  href={item.thesisUrl}
+  target="_blank"
+  rel="noreferrer"
+  style={{
+    color: "inherit", 
+    textDecoration: "none",
+    transition: "color 0.3s ease",
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.color = "#2563eb"; 
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.color = "inherit"; 
+  }}
+>
+  {item.thesis}
+</a>
+                    ) : (
+                      item.thesis
+                    )}
+                  </p>
+                )}
+
+                {item.Project && (
+                  <p
+                    style={{
+                      marginTop: "10px",
+                      lineHeight: "1.6",
+                      color: isDark ? "#d1d5db" : "#444",
+                    }}
+                  >
+                    <strong>Project:</strong>{" "}
+                    {item.thesisUrl ? (
+                      <a
+  href={item.thesisUrl}
+  target="_blank"
+  rel="noreferrer"
+  style={{
+    color: "inherit", 
+    textDecoration: "none",
+    transition: "color 0.3s ease",
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.color = "#2563eb"; 
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.color = "inherit";
+  }}
+>
+  {item.Project}
+</a>
+                    ) : (
+                      item.Project
+                    )}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
-      <ul style={{ paddingLeft: '0', listStyleType: 'none' }}>
-        {categorizedAlumni["M.Tech Graduates"].map((item, index) => (
-          <li key={item.name} style={{
-            marginBottom: '8px',
-            fontSize: '1rem',
-          }}>
-            <span>{index + 1}. </span>
-            {item.profileUrl 
-              ? <a href={item.profileUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none' }}
-                  onMouseOver={e => e.target.style.color = '#d9534f'} // Hover effect
-                  onMouseOut={e => e.target.style.color = 'black'}>
-                  <strong>{item.name}</strong>
-                </a> 
-              : <strong>{item.name}</strong>} 
-            ({item.year}) - 
-            {item.thesisUrl ? <a href={item.thesisUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none' }} 
-            onMouseOver={e => e.target.style.color = '#d9534f'} // Hover effect
-            onMouseOut={e => e.target.style.color = 'black'}>{item.thesis}</a> : item.thesis}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
+    ))}
+  </div>
+);
+}

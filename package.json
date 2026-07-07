@@ -17,10 +17,10 @@
     "react-carousel-minimal": "^1.4.1",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0",
+    "react-icons": "^4.12.0",
     "react-iframe": "^1.8.5",
     "react-router-dom": "^6.11.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "reactjs-popup": "^2.0.5",
     "web-vitals": "^2.1.4",
     "wowjs": "^1.1.3"

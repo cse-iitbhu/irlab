@@ -383,7 +383,7 @@ const faqs: FAQ[] = [
                       className="flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
                     >
                       <Download className="h-4 w-4 mr-2" />
-                      Download
+                      Download Slides
                     </a>
                   </div>
                 </div>

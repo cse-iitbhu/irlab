@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CMIR</title>
+		<script src="./tailwindCSS.js"></script>
+	</head>
+	<body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+		<header class="h-[13rem] relative bg-[#eeeeee] group text-[#333333] flex flex-col items-center justify-center p-[48px] shadow-inner z-40 md:z-50 transition-all overflow-hidden">
+			<h1 class="text-[30px] md:text-[63px] transition-all duration-300">CMIR-2025</h1>
+			<p class="text-[14px] md:text-[21px] text-center transition-all duration-300">Code-Mixed Information Retrieval</p>
+		</header>
+		<div class="flex flex-col md:flex-row justify-between w-full p-5 gap-5 bg-white mb-0 md:mb-14">
+			<div class="w-full md:w-[15%] sticky top-3 h-14 md:h-fit bg-[#f2f2f2] shadow-xl rounded-xl border border-gray-200 z-50 md:z-40">
+				<p
+					onclick="(()=>{
+					const submenu = document.getElementById('submenu');
+					if(submenu.classList.contains('scale-y-0')){
+						submenu.classList.remove('scale-y-0');
+					}else{
+						submenu.classList.add('scale-y-0');
+					}
+				})()"
+					class="block md:hidden h-14 text-center py-4 text-[#078186] text-xl font-bold border-2 border-[#078186] rounded-lg cursor-pointer"
+				>
+					Overview
+				</p>
+				<div id="submenu" class="scale-y-0 md:scale-y-100 absolute top-16 md:top-0 border-2 border-[#078186] md:border-none md:relative shadow-xl md:shadow-none rounded-xl w-full flex flex-col px-[20px] md:py-[16px] gap-2 bg-[#f2f2f2] overflow-hidden transition-all origin-top">
+					<a href="index.html" class="bg-[#078186] text-white cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">Track Overview</a>
+					<a href="registration.html" class="cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">Registration</a>
+					<a href="important_dates.html" class="cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">Important dates</a>
+					<a href="organizers.html" class="cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">Organizers</a>
+					<a href="results.html" class="cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">Results</a>
+					<a href="dataset.html" class="cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">Datasets and Baseline Model</a>
+					<!--a href="https://hasocfire.github.io/hasoc/2023/results.html" class="cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">Results</a
+					
+					<a href="https://hasocfire.github.io/hasoc/2023/proceeding.html" class="cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">Proceedings</a>
+					
+					a href="https://hasocfire.github.io/hasoc/2023/reference.html" class="cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">Acknowledgment and Reference</a-->
+					
+					<!--<a target="_blank" href="https://hasocfire.github.io/hasoc/2022/index.html" class="cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">HASOC 2022</a>
+					<a target="_blank" href="https://hasocfire.github.io/hasoc/2021/index.html" class="cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">HASOC 2021</a>
+					<a target="_blank" href="https://hasocfire.github.io/hasoc/2020/index.html" class="cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">HASOC 2020</a>
+					<a target="_blank" href="https://hasocfire.github.io/hasoc/2019/index.html" class="cursor-pointer text-[14px] hover:text-[#078186] w-full hover:bg-[#eeeeee] py-[9px] px-[15px] rounded-lg transition-all duration-300">HASOC 2019</a>-->
+				</div>
+			</div>
+			<div class="w-full md:w-[85%] h-fit">
+				<div class="h-full w-full rounded-xl border border-gray-200 shadow-lg overflow-hidden">
+					<p class="bg-[#f2f2f2] p-[15px] text-xl text-[#078186] font-bold">Overview</p>
+					<p class="p-[15px] font-[16px] text-[#333]">
+						Code-mixing, the mixing of lexical items and grammatical features from multiple languages in a single sentence, is prevalent worldwide. With the rise of online social networking, many users converse in their native languages using foreign scripts. In India, people often use Roman script on social media. This is especially true for migrants who form online communities to share information and experiences relevant to their need.</p>
+					<p class="p-[15px] font-[16px] text-[#333]">
+						For example, Bengali speakers from West Bengal who migrate to cities like Delhi or Bangalore create groups like "Bengali in Delhi" on platforms such as Facebook and WhatsApp. They seek advice on various local issues, which became crucial during the COVID-19 pandemic for sharing experiences and navigating frequently changing government guidelines.</p>
+					<p class="p-[15px] font-[16px] text-[#333]">
+						These conversations typically involve code-mixed text, with users employing informal, colloquial language often transliterated into Roman script. This lack of standardization makes it difficult to identify and highlight relevant answers within these discussions, particularly for those seeking similar information later.</p>
+					<p class="p-[15px] font-[16px] text-[#333]">
+						Our task aims to develop a mechanism to pinpoint the most relevant answers from these code-mixed conversations. The focus is on Roman transliterated Bengali mixed with English language.</p>
+					<p class="p-[15px] font-[16px] text-[#333]">
+						To address this, we have collected and annotated a dataset of queries and documents from Facebook, creating query relevance files (QRels).
+					</p>
+				</div>
+				<div class="h-full w-full rounded-xl border border-gray-200 shadow-lg overflow-hidden">
+					<p class="bg-[#f2f2f2] p-[15px] text-xl text-[#078186] font-bold">Task</p>
+					<div class="px-4 pt-4">
+						<p class="p-[15px] font-[16px] text-[#333]">
+							Track participants will develop retrieval systems that return documents in a specific Bengali-English code-mixed language when given a query in the same code-mixed language. The retrieval process happens at the document level, with queries presented as natural language questions. Documents are considered relevant if they contain answers to these questions. More details about the training and test sets can be found in the Dataset section.
+						</p>
+						<!--<p class="py-[15px] font-[16px] text-[#333] font-bold">Note: Note: baseline model is just to give you a basic idea of our dir. structure and how one can classify context based data, there are no restrictions on any kind of experiments also please note this baseline model is only for task on Identification of Conversational Hate-Speech in Code-Mixed Languages(ICHCL) (Task-1 and Task 2)</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="fixed bottom-0 left-0 w-full -z-50 bg-[#eeeeee] flex justify-center items-center p-5">
+			<p class="text-[14px] text-[#333333]">Copyright © CMIR.IITBHU 2025</p>
+		</footer>
+	</body>
+</html>
