@@ -260,23 +260,67 @@ const Subtask1: React.FC = () => {
         Test Data
       </h4>
 
-      <div className="flex h-56 items-center justify-center rounded-lg border-2 border-dashed border-slate-500 dark:bg-slate-800">
+      <div className="space-y-4">
 
-        <div className="text-center">
+        <a
+          href="https://drive.google.com/file/d/1o7DovRNsGM8MwGtbFJSYas_SRb7jCsKs/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center justify-between rounded-lg border border-slate-600 dark:bg-slate-800 px-5 py-4 transition-all duration-300 hover:border-blue-500 dark:hover:bg-slate-700 hover:shadow-lg"
+        >
+          <span className="dark:text-slate-200">
+            English Stories
+          </span>
 
-          <div className="mb-3 text-5xl">
-            🔒
-          </div>
+          <span className="font-semibold dark:text-blue-400 group-hover:text-blue-300">
+            Download ↗
+          </span>
+        </a>
 
-          <h5 className="font-medium dark:text-white">
-            To be released
-          </h5>
+        <a
+          href="https://drive.google.com/file/d/1vk5ESZVUY6e74KK0chM8hKL4RXvyKkc0/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center justify-between rounded-lg border border-slate-600 dark:bg-slate-800 px-5 py-4 transition-all duration-300 hover:border-blue-500 dark:hover:bg-slate-700 hover:shadow-lg"
+        >
+          <span className="dark:text-slate-200">
+            Hindi Stories
+          </span>
 
-          <p className="text-sm dark:text-slate-400 mt-1">
-            The test set will be released soon.
-          </p>
+          <span className="font-semibold dark:text-blue-400 group-hover:text-blue-300">
+            Download ↗
+          </span>
+        </a>
 
-        </div>
+        <a
+          href="https://drive.google.com/file/d/1oCuuBLGFtCSvfxT1O9CYgPPybER4f3Kt/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center justify-between rounded-lg border border-slate-600 dark:bg-slate-800 px-5 py-4 transition-all duration-300 hover:border-blue-500 dark:hover:bg-slate-700 hover:shadow-lg"
+        >
+          <span className="dark:text-slate-200">
+            Bengali Stories
+          </span>
+
+          <span className="font-semibold dark:text-blue-400 group-hover:text-blue-300">
+            Download ↗
+          </span>
+        </a>
+
+        <a
+          href="https://drive.google.com/file/d/1irvR3AJ0ij1LIEAg3J1IiEkHlVarCGV0/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center justify-between rounded-lg border border-slate-600 dark:bg-slate-800 px-5 py-4 transition-all duration-300 hover:border-blue-500 dark:hover:bg-slate-700 hover:shadow-lg"
+        >
+          <span className="dark:text-slate-200">
+            Marathi Stories
+          </span>
+
+          <span className="font-semibold dark:text-blue-400 group-hover:text-blue-300">
+            Download ↗
+          </span>
+        </a>
 
       </div>
 
