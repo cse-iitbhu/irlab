@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from "react";
 import { NavLink } from 'react-router-dom'
 import { CgMenuRightAlt } from "react-icons/cg"
 
@@ -9,68 +9,158 @@ export const Navbar = () => {
   const [darkMode, setDarkMode] = useState(
   document.documentElement.classList.contains("dark")
 );
+useEffect(() => {
+  const savedTheme = localStorage.getItem("theme");
 
-  return (
-    <div className='w-full header bg-[#67b0d1] dark:bg-[#0f172a] text-white font-[Montserrat] z-[999999] sticky top-0 right-0 left-0 transition-colors duration-300 border-b dark:border-slate-700'>
+  if (savedTheme === "dark") {
+    document.documentElement.classList.add("dark");
+    setDarkMode(true);
+  } else {
+    document.documentElement.classList.remove("dark");
+    setDarkMode(false);
+  }
+}, []);
 
+return (
+  <header
+  className="
+    sticky top-0 z-[9999]
+    w-full
+    bg-[#67b0d1]
+    dark:bg-slate-900
+    border-b
+    border-sky-300
+    dark:border-slate-700
+    shadow-md
+    transition-all
+    duration-300
+  "
+>
+ <div
+  className="
+    max-w-7xl
+    mx-auto
+    h-16
+    px-4
+    sm:px-6
+    lg:px-8
+    flex
+    items-center
+    justify-between
+  "
+>
 
-      <div className='main-navbar flex justify-between items-center p-[1%]'>
+      {/* Logo */}
 
-        <div className='left min-w-max'>
-          <NavLink to="">
-<h1 className='nav-heading text-[180%] font-bold tracking-widest text-black dark:text-cyan-300 font-sans transition-colors duration-300'>
-              IReL
-            </h1>
-          </NavLink>
-        </div>
+      <NavLink
+        to="/"
+        className="flex items-center"
+      >
+        <h1
+          className="
+            text-2xl
+            sm:text-3xl
+            font-bold
+            tracking-widest
+            text-slate-900
+dark:text-cyan-300
+            transition-all
+          "
+        >
+          IReL
+        </h1>
+      </NavLink>
 
-                
+      {/* Desktop Menu */}
+
+      <div
+     className="
+hidden
+lg:flex
+items-center
+gap-5
+xl:gap-6
+text-[15px]
+font-medium
+text-black
+dark:text-gray-100
+"
+      >
    
 
-        <div className='right w-full list flex justify-end items-center text-xl tracking-wider'>
+      {/* Desktop Navigation */}
 
-                 <div className="relative group px-[0.75%] py-[1%] ml-[1%]">
+<NavLink
+  to="members"
+  className="transition-colors
+duration-300
+hover:text-blue-900
+dark:hover:text-cyan-300"
+>
+  Members
+</NavLink>
 
-         
+<NavLink
+  to="research"
+  className="transition-colors
+duration-300
+hover:text-blue-900
+dark:hover:text-cyan-300"
+>
+  Research
+</NavLink>
 
- 
+<NavLink
+  to="teach"
+  className="transition-colors
+duration-300
+hover:text-blue-900
+dark:hover:text-cyan-300"
+>
+  Teachings
+</NavLink>
 
+<NavLink
+  to="publications"
+  className="transition-colors
+duration-300
+hover:text-blue-900
+dark:hover:text-cyan-300"
+>
+  Publications
+</NavLink>
 
-            </div>
+<NavLink
+  to="projects"
+  className="transition-colors
+duration-300
+hover:text-blue-900
+dark:hover:text-cyan-300"
+>
+  Sp. Projects
+</NavLink>
 
-      
+<NavLink
+  to="resources"
+  className="transition-colors
+duration-300
+hover:text-blue-900
+dark:hover:text-cyan-300"
+>
+  Resources
+</NavLink>
 
+<NavLink
+  to="contact"
+  className="transition-colors
+duration-300
+hover:text-blue-900
+dark:hover:text-cyan-300"
+>
+  Contact
+</NavLink>
 
-
-          <NavLink to="members" className="px-[0.75%] py-[1%] ml-[1%]">
-            <div className='hover:text-sky-900 dark:hover:text-blue-300'>Members</div>
-          </NavLink>
-
-          <NavLink to="research" className="px-[0.75%] py-[1%] ml-[1%]">
-            <div className='hover:text-sky-900 dark:hover:text-blue-300'>Research</div>
-          </NavLink>
-
-          <NavLink to="teach" className="px-[0.75%] py-[1%] ml-[1%]">
-            <div className='hover:text-sky-900 dark:hover:text-blue-300'>Teachings</div>
-          </NavLink>
-
-          <NavLink to="publications" className="px-[0.75%] py-[1%] ml-[1%]">
-            <div className='hover:text-sky-900 dark:hover:text-blue-300'>Publications</div>
-          </NavLink>
-
-          <NavLink to="projects" className="px-[0.75%] py-[1%] ml-[1%]">
-            <div className='hover:text-sky-900 dark:hover:text-blue-300'>Sp. Projects</div>
-          </NavLink>
-
-          <NavLink to="resources" className="px-[0.75%] py-[1%] ml-[1%]">
-            <div className='hover:text-sky-900 dark:hover:text-blue-300'>Resources</div>
-          </NavLink>
-
-  
-
-          <NavLink to="contact" className="px-[0.75%] py-[1%] ml-[1%]">
-            <div className='hover:text-sky-900 dark:hover:text-blue-300'>Contact Us</div>
-          </NavLink>
+{/* Theme Button */}
 
 <button
   onClick={() => {
@@ -79,82 +169,277 @@ export const Navbar = () => {
       document.documentElement.classList.contains("dark")
     );
   }}
-  className="
-     ml-4 px-3 py-2 rounded-full
-  bg-white/20 hover:bg-white/30
-  dark:bg-slate-700 dark:hover:bg-slate-600
-  text-white
-  transition-all duration-300
-  "
+className="
+ml-2
+flex
+items-center
+justify-center
+w-10
+h-10
+rounded-full
+bg-white/20
+hover:bg-white/30
+dark:bg-slate-700
+dark:hover:bg-slate-600
+transition-all
+duration-300
+"
 >
   {darkMode ? (
-    <BsSunFill size={20} />
+    <BsSunFill size={18} />
   ) : (
-    <BsMoonStarsFill size={20} />
+    <BsMoonStarsFill size={18} />
   )}
 </button>
 
+</div>
 
-          <button
-            className='list-icon invisible'
-            onClick={() => setView(!view)}
-          >
-            <CgMenuRightAlt size={"30px"} />
-          </button>
+{/* Mobile Right Side */}
 
-        </div>
-      </div>
+<div
+className="
+flex
+lg:hidden
+items-center
+gap-2
+"
+>
 
-      {view && (
-        <div className='invisible dropdown py-[2%] px-[2%] text-s tracking-wider'>
+  {/* Theme */}
 
-          <NavLink to="members">
-            <div className='text-[60%]'>Members</div>
-          </NavLink>
+  <button
+    onClick={() => {
+      document.documentElement.classList.toggle("dark");
+      setDarkMode(
+        document.documentElement.classList.contains("dark")
+      );
+    }}
+ className="
+w-10
+h-10
+flex
+items-center
+justify-center
+rounded-full
+bg-white/20
+hover:bg-white/30
+dark:bg-slate-700
+dark:hover:bg-slate-600
+transition-all
+duration-300
+"
+  >
+    {darkMode ? (
+      <BsSunFill size={18} />
+    ) : (
+      <BsMoonStarsFill size={18} />
+    )}
+  </button>
 
-          <NavLink to="research">
-            <div className='text-[60%]'>Research</div>
-          </NavLink>
+  {/* Hamburger */}
 
-          <NavLink to="teach">
-            <div className='text-[60%]'>Teachings</div>
-          </NavLink>
+  <button
+    onClick={() => setView(!view)}
+   className="
+w-10
+h-10
+flex
+items-center
+justify-center
+rounded-lg
+hover:bg-white/20
+dark:hover:bg-slate-700
+transition-all
+duration-300
+"
+  >
+    <CgMenuRightAlt size={28} />
+  </button>
 
-          <NavLink to="publications">
-            <div className='text-[60%]'>Publications</div>
-          </NavLink>
+</div>
 
-          <NavLink to="projects">
-            <div className='text-[60%]'>Sp. Projects</div>
-          </NavLink>
+</div>
+      
+{/* ========================= */}
+{/* Mobile Dropdown */}
+{/* ========================= */}
 
-          <NavLink to="resources">
-            <div className='text-[60%]'>Resources</div>
-          </NavLink>
+{view && (
+  <div
+    className="
+      lg:hidden
+      bg-[#67b0d1]
+      dark:bg-slate-900
+      border-t
+      border-sky-300
+      dark:border-slate-700
+      shadow-xl
+      transition-all
+      duration-300
+    "
+  >
+    <div className="flex flex-col px-6 py-5 space-y-1">
 
-         <a 
-         href="https://cse-iitbhu.github.io/MUSIA/">
-  <div 
-  className='text-[60%]'>MUSIA
-  </div>
-</a>
+      <NavLink
+        to="members"
+        onClick={() => setView(false)}
+        className="
+block
+px-3
+py-3
+rounded-lg
+font-medium
+text-black
+dark:text-white
+hover:bg-white/20
+hover:text-blue-900
+dark:hover:bg-slate-800
+dark:hover:text-cyan-300
+transition-all
+duration-300
+"
+      >
+        Members
+      </NavLink>
 
-         <a 
-         href="https://cmir-iitbhu.github.io/cmir/">
-  <div 
-  className='text-[60%]'>CMIR
+      <NavLink
+        to="research"
+        onClick={() => setView(false)}
+        className="
+block
+px-3
+py-3
+rounded-lg
+font-medium
+text-black
+dark:text-white
+hover:bg-white/20
+hover:text-blue-900
+dark:hover:bg-slate-800
+dark:hover:text-cyan-300
+transition-all
+duration-300
+"
+      >
+        Research
+      </NavLink>
 
-  </div>
-</a>
+      <NavLink
+        to="teach"
+        onClick={() => setView(false)}
+        className="
+block
+px-3
+py-3
+rounded-lg
+font-medium
+text-black
+dark:text-white
+hover:bg-white/20
+hover:text-blue-900
+dark:hover:bg-slate-800
+dark:hover:text-cyan-300
+transition-all
+duration-300
+"
+      >
+        Teachings
+      </NavLink>
 
-          <NavLink to="contact">
-            <div className='text-[60%]'>Contact Us</div>
-          </NavLink>
-          
+      <NavLink
+        to="publications"
+        onClick={() => setView(false)}
+       className="
+block
+px-3
+py-3
+rounded-lg
+font-medium
+text-black
+dark:text-white
+hover:bg-white/20
+hover:text-blue-900
+dark:hover:bg-slate-800
+dark:hover:text-cyan-300
+transition-all
+duration-300
+"
+      >
+        Publications
+      </NavLink>
 
-        </div>
-      )}
+      <NavLink
+        to="projects"
+        onClick={() => setView(false)}
+        className="
+block
+px-3
+py-3
+rounded-lg
+font-medium
+text-black
+dark:text-white
+hover:bg-white/20
+hover:text-blue-900
+dark:hover:bg-slate-800
+dark:hover:text-cyan-300
+transition-all
+duration-300
+"
+      >
+        Sp. Projects
+      </NavLink>
+
+      <NavLink
+        to="resources"
+        onClick={() => setView(false)}
+       className="
+block
+px-3
+py-3
+rounded-lg
+font-medium
+text-black
+dark:text-white
+hover:bg-white/20
+hover:text-blue-900
+dark:hover:bg-slate-800
+dark:hover:text-cyan-300
+transition-all
+duration-300
+"
+      >
+        Resources
+      </NavLink>
+
+      <NavLink
+        to="contact"
+        onClick={() => setView(false)}
+        className="
+block
+px-3
+py-3
+rounded-lg
+font-medium
+text-black
+dark:text-white
+hover:bg-white/20
+hover:text-blue-900
+dark:hover:bg-slate-800
+dark:hover:text-cyan-300
+transition-all
+duration-300
+"
+      >
+        Contact Us
+      </NavLink>
 
     </div>
+  </div>
+)}
+
+</header>
+
+    
   )
 }

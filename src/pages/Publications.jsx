@@ -468,25 +468,7 @@ const data = [
             "  url = {https://doi.org/10.20736/0002002033}\n" +
             "}"
 },
-{
-    authors: "Yamini Jha, Krishna Tewari, Sukomal Pal",
-    year: "2025",
-    category: "Conference",
-    desc: "HiDePCC: A Novel Dual-Pronged Untargeted Attack on Federated Recommendation via Gradient Perturbation and Cluster Crafting",
-    name: "Proceedings of the Nineteenth ACM Conference on Recommender Systems, RecSys 2025",
-    link: "https://doi.org/10.1145/3705328.3748041",
-    bibtex: "@inproceedings{DBLP:conf/recsys/JhaTP25,\n" +
-            "  author = {Yamini Jha and Krishna Tewari and Sukomal Pal},\n" +
-            "  editor = {M{\\'{a}}ria Bielikov{\\'{a}} and Pavel Kord{\\'{\\i}}k and Markus Schedl and Marco de Gemmis and Sole Pera and Rodrigo Alves and Olivier Jeunen and Vito Ostuni},\n" +
-            "  title = {HiDePCC: {A} Novel Dual-Pronged Untargeted Attack on Federated Recommendation via Gradient Perturbation and Cluster Crafting},\n" +
-            "  booktitle = {Proceedings of the Nineteenth {ACM} Conference on Recommender Systems, RecSys 2025, Prague, Czech Republic, September 22-26, 2025},\n" +
-            "  pages = {610--614},\n" +
-            "  publisher = {{ACM}},\n" +
-            "  year = {2025},\n" +
-            "  doi = {10.1145/3705328.3748041},\n" +
-            "  url = {https://doi.org/10.1145/3705328.3748041}\n" +
-            "}"
-},
+
 {
     authors: "Krishna Tewari, Supriya Chanda, K. Abhinay Paul",
     year: "2025",
@@ -546,6 +528,55 @@ const data = [
             "  year = {2025},\n" +
             "  url = {https://ceur-ws.org/Vol-4173/T10-5.pdf}\n" +
             "}"
+},
+{
+  authors: "Nilendu Adhikary, Supriya Chanda, Sukomal Pal",
+  year: "2026",
+  category: "Conference",
+  desc: "JustGen@ LT-EDI 2026: Controlled Gender Inclusive and Bias-Aware Language Generation using LLMs",
+  name: "Proceedings of the Sixth Workshop on Language Technology for Equality, Diversity, Inclusion (LT-EDI 2026)",
+  link: "https://github.com/SupriyaChanda/gilg-ltedi-acl2026",
+  bibtex:
+    "@inproceedings{Adhikary2026JustGen,\n" +
+    "  author = {Nilendu Adhikary and Supriya Chanda and Sukomal Pal},\n" +
+    "  title = {JustGen@ LT-EDI 2026: Controlled Gender Inclusive and Bias-Aware Language Generation using LLMs},\n" +
+    "  booktitle = {Proceedings of the Sixth Workshop on Language Technology for Equality, Diversity, Inclusion (LT-EDI 2026)},\n" +
+    "  pages = {193--197},\n" +
+    "  year = {2026},\n" +
+    "  note = {Implementation code: https://github.com/SupriyaChanda/gilg-ltedi-acl2026}\n" +
+    "}"
+},
+{
+  authors: "Soumadip Majumder, Arjun Mukherjee, Krishna Tewari, Sanjaya Lenka, Sukomal Pal",
+  year: "2026",
+  category: "Conference",
+  desc: "IReLIIT (BHU) at SemEval-2026 Task 9: Detecting Multilingual, Multicultural and Multievent Online Polarization",
+  name: "Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026)",
+  link: "",
+  bibtex:
+    "@inproceedings{Majumder2026SemEval,\n" +
+    "  author = {Soumadip Majumder and Arjun Mukherjee and Krishna Tewari and Sanjaya Lenka and Sukomal Pal},\n" +
+    "  title = {IReLIIT (BHU) at SemEval-2026 Task 9: Detecting Multilingual, Multicultural and Multievent Online Polarization},\n" +
+    "  booktitle = {Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026)},\n" +
+    "  pages = {2354--2358},\n" +
+    "  year = {2026}\n" +
+    "}"
+},
+{
+  authors: "Anurag Balaji, Arjun Mukherjee, Krishna Tewari, Sukomal Pal",
+  year: "2026",
+  category: "Conference",
+  desc: "IReL_IIT (BHU)@ LTEDI 2026: Fine-Tuning Instruction-Tuned Transformers for Gender-Inclusive Rewriting and Counterfactual Bias Mitigation",
+  name: "Proceedings of the Sixth Workshop on Language Technology for Equality, Diversity, Inclusion (LT-EDI 2026)",
+  link: "",
+  bibtex:
+    "@inproceedings{Balaji2026LTEDI,\n" +
+    "  author = {Anurag Balaji and Arjun Mukherjee and Krishna Tewari and Sukomal Pal},\n" +
+    "  title = {IReL\\_IIT (BHU)@ LTEDI 2026: Fine-Tuning Instruction-Tuned Transformers for Gender-Inclusive Rewriting and Counterfactual Bias Mitigation},\n" +
+    "  booktitle = {Proceedings of the Sixth Workshop on Language Technology for Equality, Diversity, Inclusion (LT-EDI 2026)},\n" +
+    "  pages = {182--187},\n" +
+    "  year = {2026}\n" +
+    "}"
 },
 {
     authors: "Krishna Tewari, Supriya Chanda, Suhani Verma",
@@ -1313,357 +1344,767 @@ data.forEach((item) => {
   }
 });
 
-  return (
-   <div className='font-serif text-[#666666] dark:text-gray-300 bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-300'>
-    
-      <div className='my-[01%] py-[1%] mx-[8%] flex flex-col'>
+return (
+  <div
+    className="
+      font-serif
+      text-[#666666]
+      dark:text-gray-300
+      bg-gray-50
+      dark:bg-gray-900
+      min-h-screen
+      transition-colors
+      duration-300
+    "
+  >
+    <div
+      className="
+        w-full
+        max-w-7xl
+        mx-auto
+        px-4
+        sm:px-6
+        lg:px-8
+        py-6
+        flex
+        flex-col
+      "
+    >
 
+      {/* ============================= */}
+      {/* Statistics Cards */}
+      {/* ============================= */}
 
+      <div
+        className="
+          grid
+          grid-cols-2
+          sm:grid-cols-2
+          md:grid-cols-3
+          lg:grid-cols-6
+          gap-4
+          mb-8
+        "
+      >
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        {/* Publications */}
 
-  <div className="bg-white dark:bg-gray-800
-rounded-xl
-p-4
-shadow-md
-text-center
-hover:-translate-y-1
-hover:shadow-2xl
-transition-all
-duration-300">
-    <h2 className="text-6xl font-bold text-sky-600">
-      {data.length}
-    </h2>
-    <p className="text-gray-600 dark:text-gray-300">
-      Publications
-    </p>
-  </div>
+        <div
+          className="
+            bg-white
+            dark:bg-gray-800
+            rounded-2xl
+            p-5
+            shadow-md
+            hover:shadow-xl
+            hover:-translate-y-1
+            transition-all
+            duration-300
+            text-center
+          "
+        >
+          <h2
+            className="
+              text-3xl
+              sm:text-4xl
+              lg:text-5xl
+              font-bold
+              text-sky-600
+            "
+          >
+            {data.length}
+          </h2>
 
-  <div className="bg-white dark:bg-gray-800
-rounded-xl
-p-4
-shadow-md
-text-center
-hover:-translate-y-1
-hover:shadow-2xl
-transition-all
-duration-300">
-    <h2 className="text-6xl font-bold text-rose-600">
-      {data.filter(item => item.category === "Journal").length}
-    </h2>
-    <p className="text-gray-600 dark:text-gray-300">
-      Journals
-    </p>
-  </div>
+          <p
+            className="
+              mt-2
+              text-sm
+              sm:text-base
+              text-gray-600
+              dark:text-gray-300
+            "
+          >
+            Publications
+          </p>
+        </div>
 
-  <div className="bg-white dark:bg-gray-800
-rounded-xl
-p-4
-shadow-md
-text-center
-hover:-translate-y-1
-hover:shadow-2xl
-transition-all
-duration-300">
-    <h2 className="text-6xl font-bold text-amber-600">
-      {data.filter(item => item.category === "Conference").length}
-    </h2>
-    <p className="text-gray-600 dark:text-gray-300">
-      Conferences
-    </p>
-  </div>
+        {/* Journals */}
 
-  <div className="bbg-white dark:bg-gray-800
-rounded-xl
-p-4
-shadow-md
-text-center
-hover:-translate-y-1
-hover:shadow-2xl
-transition-all
-duration-300">
-    <h2 className="text-6xl font-bold text-green-600">
-      {data.filter(item => item.category === "Books").length}
-    </h2>
-    <p className="text-gray-600 dark:text-gray-300">
+        <div
+          className="
+            bg-white
+            dark:bg-gray-800
+            rounded-2xl
+            p-5
+            shadow-md
+            hover:shadow-xl
+            hover:-translate-y-1
+            transition-all
+            duration-300
+            text-center
+          "
+        >
+          <h2
+            className="
+              text-3xl
+              sm:text-4xl
+              lg:text-5xl
+              font-bold
+              text-rose-600
+            "
+          >
+            {
+              data.filter(
+                (item) => item.category === "Journal"
+              ).length
+            }
+          </h2>
+
+          <p
+            className="
+              mt-2
+              text-sm
+              sm:text-base
+              text-gray-600
+              dark:text-gray-300
+            "
+          >
+            Journals
+          </p>
+        </div>
+
+        {/* Conferences */}
+
+        <div
+          className="
+            bg-white
+            dark:bg-gray-800
+            rounded-2xl
+            p-5
+            shadow-md
+            hover:shadow-xl
+            hover:-translate-y-1
+            transition-all
+            duration-300
+            text-center
+          "
+        >
+          <h2
+            className="
+              text-3xl
+              sm:text-4xl
+              lg:text-5xl
+              font-bold
+              text-amber-600
+            "
+          >
+            {
+              data.filter(
+                (item) => item.category === "Conference"
+              ).length
+            }
+          </h2>
+
+          <p
+            className="
+              mt-2
+              text-sm
+              sm:text-base
+              text-gray-600
+              dark:text-gray-300
+            "
+          >
+            Conferences
+          </p>
+        </div>
+
+        {/* Books */}
+
+        <div
+          className="
+            bg-white
+            dark:bg-gray-800
+            rounded-2xl
+            p-5
+            shadow-md
+            hover:shadow-xl
+            hover:-translate-y-1
+            transition-all
+            duration-300
+            text-center
+          "
+        >
+          <h2
+            className="
+              text-3xl
+              sm:text-4xl
+              lg:text-5xl
+              font-bold
+              text-green-600
+            "
+          >
+            {
+              data.filter(
+                (item) => item.category === "Books"
+              ).length
+            }
+          </h2>
+
+          <p
+            className="
+              mt-2
+              text-sm
+              sm:text-base
+              text-gray-600
+              dark:text-gray-300
+            "
+          >
+            Books
+          </p>
+        </div>
+
+        {/* Book Chapters */}
+
+        <div
+          className="
+            bg-white
+            dark:bg-gray-800
+            rounded-2xl
+            p-5
+            shadow-md
+            hover:shadow-xl
+            hover:-translate-y-1
+            transition-all
+            duration-300
+            text-center
+          "
+        >
+          <h2
+            className="
+              text-3xl
+              sm:text-4xl
+              lg:text-5xl
+              font-bold
+              text-violet-600
+            "
+          >
+            {
+              data.filter(
+                (item) =>
+                  item.category === "Book Chapters"
+              ).length
+            }
+          </h2>
+
+          <p
+            className="
+              mt-2
+              text-sm
+              sm:text-base
+              text-gray-600
+              dark:text-gray-300
+            "
+          >
+            Book Chapters
+          </p>
+        </div>
+
+        {/* Workshops */}
+
+        <div
+          className="
+            bg-white
+            dark:bg-gray-800
+            rounded-2xl
+            p-5
+            shadow-md
+            hover:shadow-xl
+            hover:-translate-y-1
+            transition-all
+            duration-300
+            text-center
+          "
+        >
+          <h2
+            className="
+              text-3xl
+              sm:text-4xl
+              lg:text-5xl
+              font-bold
+              text-cyan-600
+            "
+          >
+            {
+              data.filter(
+                (item) => item.category === "Workshop"
+              ).length
+            }
+          </h2>
+
+          <p
+            className="
+              mt-2
+              text-sm
+              sm:text-base
+              text-gray-600
+              dark:text-gray-300
+            "
+          >
+            Workshops
+          </p>
+        </div>
+
+      </div>
+
+      {/* ============================= */}
+      {/* Filter Section Starts Here */}
+      {/* ============================= */}
+
+      <div
+        className="
+          border-b
+          border-gray-300
+          dark:border-gray-700
+          pb-6
+        "
+      >
+        <div
+  className="
+    flex
+    flex-wrap
+    gap-3
+    justify-center
+    lg:justify-between
+    items-center
+  "
+>
+
+  {/* Publications */}
+
+  <button
+    onClick={() => {
+      setFilter(data);
+      setActiveFilter("All");
+    }}
+    className={`
+      px-5
+      py-3
+      rounded-xl
+      border-2
+      font-semibold
+      text-sm
+      sm:text-base
+      transition-all
+      duration-300
+      whitespace-nowrap
+
+      ${
+        activeFilter === "All"
+          ? "bg-gray-600 text-white border-gray-600"
+          : "text-gray-600 border-gray-500 hover:bg-gray-500 hover:text-white"
+      }
+    `}
+  >
+    Publications
+  </button>
+
+  <div
+    className="
+      flex
+      flex-wrap
+      justify-center
+      gap-3
+      flex-1
+    "
+  >
+
+    {/* Books */}
+
+    <button
+      onClick={() => {
+        handleFilter("Books");
+        setActiveFilter("Books");
+      }}
+      className={`
+        px-5
+        py-3
+        rounded-xl
+        border-2
+        font-semibold
+        text-sm
+        sm:text-base
+        transition-all
+        duration-300
+        whitespace-nowrap
+
+        ${
+          activeFilter === "Books"
+            ? "bg-green-700 text-white border-green-700"
+            : "text-green-700 border-green-700 hover:bg-green-700 hover:text-white"
+        }
+      `}
+    >
       Books
-    </p>
-  </div>
+    </button>
 
-   <div className="bg-white dark:bg-gray-800
-rounded-xl
-p-4
-shadow-md
-text-center
-hover:-translate-y-1
-hover:shadow-2xl
-transition-all
-duration-300">
-    <h2 className="text-6xl font-bold text-violet-600">
-      {data.filter(item => item.category === "Book Chapters").length}
-    </h2>
-    <p className="text-gray-600 dark:text-gray-300">
+    {/* Book Chapters */}
+
+    <button
+      onClick={() => {
+        handleFilter("Book Chapters");
+        setActiveFilter("Book Chapters");
+      }}
+      className={`
+        px-5
+        py-3
+        rounded-xl
+        border-2
+        font-semibold
+        text-sm
+        sm:text-base
+        transition-all
+        duration-300
+        whitespace-nowrap
+
+        ${
+          activeFilter === "Book Chapters"
+            ? "bg-violet-500 text-white border-violet-500"
+            : "text-violet-500 border-violet-500 hover:bg-violet-500 hover:text-white"
+        }
+      `}
+    >
       Book Chapters
-    </p>
-  </div>
+    </button>
 
-   <div className="bg-white dark:bg-gray-800
-rounded-xl
-p-4
-shadow-md
-text-center
-hover:-translate-y-1
-hover:shadow-2xl
-transition-all
-duration-300">
-    <h2 className="text-6xl font-bold text-cyan-600">
-      {data.filter(item => item.category === "Workshop").length}
-    </h2>
-    <p className="text-gray-600 dark:text-gray-300">
+        {/* Journals */}
+
+    <button
+      onClick={() => {
+        handleFilter("Journal");
+        setActiveFilter("Journal");
+      }}
+      className={`
+        px-5
+        py-3
+        rounded-xl
+        border-2
+        font-semibold
+        text-sm
+        sm:text-base
+        transition-all
+        duration-300
+        whitespace-nowrap
+
+        ${
+          activeFilter === "Journal"
+            ? "bg-rose-700 text-white border-rose-700"
+            : "text-rose-700 border-rose-700 hover:bg-rose-700 hover:text-white"
+        }
+      `}
+    >
+      Journals
+    </button>
+
+    {/* Conferences */}
+
+    <button
+      onClick={() => {
+        handleFilter("Conference");
+        setActiveFilter("Conference");
+      }}
+      className={`
+        px-5
+        py-3
+        rounded-xl
+        border-2
+        font-semibold
+        text-sm
+        sm:text-base
+        transition-all
+        duration-300
+        whitespace-nowrap
+
+        ${
+          activeFilter === "Conference"
+            ? "bg-amber-500 text-white border-amber-500"
+            : "text-amber-500 border-amber-500 hover:bg-amber-500 hover:text-white"
+        }
+      `}
+    >
+      Conferences
+    </button>
+
+    {/* Workshops */}
+
+    <button
+      onClick={() => {
+        handleFilter("Workshop");
+        setActiveFilter("Workshop");
+      }}
+      className={`
+        px-5
+        py-3
+        rounded-xl
+        border-2
+        font-semibold
+        text-sm
+        sm:text-base
+        transition-all
+        duration-300
+        whitespace-nowrap
+
+        ${
+          activeFilter === "Workshop"
+            ? "bg-cyan-500 text-white border-cyan-500"
+            : "text-cyan-500 border-cyan-500 hover:bg-cyan-500 hover:text-white"
+        }
+      `}
+    >
       Workshops
-    </p>
+    </button>
+
   </div>
 
 </div>
-        <div className='flex justify-between w-full pb-[2%] border-b-2 dark:border-gray-700'>
-<button
-  onClick={() => {
-    setFilter(data);
-    setActiveFilter("All");
-  }}
-  className={`
-    px-6 py-3
-rounded-xl border-2 transition-all duration-300
 
-    ${
-      activeFilter === "All"
-        ? "bg-gray-600 text-white border-gray-600"
-        : "text-gray-600 border-gray-500 hover:bg-gray-500 hover:text-white"
-    }
-  `}
+</div>
+
+{/* =================================== */}
+{/* Years Grid Starts Here */}
+{/* =================================== */}
+
+<div className="mt-8">
+  
+<div
+  className="
+    grid
+    grid-cols-2
+    sm:grid-cols-3
+    md:grid-cols-4
+    lg:grid-cols-5
+    xl:grid-cols-6
+    2xl:grid-cols-7
+    gap-4
+  "
 >
-  Publications
-</button>
-          <div className='w-1/5 hover:animate-pulse flex justify-center items-center'>
-            {/* <div className='category mr-1 bg-green-900 flex-shrink-0 rounded-full w-4 h-4'>
-            </div> */}
-            <div>
-            <button
-  onClick={() => {
-    handleFilter("Books");
-    setActiveFilter("Books");
-  }}
-  className={`
-    rounded-xl px-[10%] py-[2%]
-    border-2 font-bold text-[145%]
-    transition-all duration-300
-
-    ${
-      activeFilter === "Books"
-        ? "bg-green-700 text-white border-green-700"
-        : "text-green-700 border-green-700 hover:bg-green-700 hover:text-white"
-    }
-  `}
->
-  Books
-</button>
-            </div>
-          </div>
-          <div className='w-1/5 hover:animate-pulse flex justify-center items-center'>
-            {/* <div className='category mr-1 bg-green-900 flex-shrink-0 rounded-full w-4 h-4'>
-            </div> */}
-          <div className='w-1/5 flex hover:animate-pulse justify-center items-center'>
-            {/* <div className='category mr-[2px] bg-cyan-500 flex-shrink-0 rounded-full w-4 h-4'>
-            </div> */}
-            <div>
-            <button
-  onClick={() => {
-    handleFilter("Book Chapters");
-    setActiveFilter("Book Chapters");
-  }}
-  className={`
-    rounded-xl px-[5%] py-[2%]
-    border-2 font-bold tracking-wider text-[145%]
-    whitespace-nowrap
-    transition-all duration-300
-
-    ${
-      activeFilter === "Book Chapters"
-        ? "bg-violet-500 text-white border-violet-500"
-        : "text-violet-500 border-violet-500 hover:bg-violet-500 hover:text-white"
-    }
-  `}
->
-  Book Chapters
-</button>
-            </div>
-          </div>
-          </div>
-          <div className='w-1/5 hover:animate-pulse flex justify-center items-center'>
-            {/* <div className='category mr-1 bg-rose-900 flex-shrink-0 rounded-full w-4 h-4'>
-            </div> */}
-            <div>
-           <button
-  onClick={() => {
-    handleFilter("Journal");
-    setActiveFilter("Journal");
-  }}
-  className={`
-    rounded-xl px-[10%] py-[2%]
-    border-2 font-bold text-[145%]
-    transition-all duration-300
-
-    ${
-      activeFilter === "Journal"
-        ? "bg-rose-700 text-white border-rose-700"
-        : "text-rose-700 border-rose-700 hover:bg-rose-700 hover:text-white"
-    }
-  `}
->
-  Journals
-</button>
-            </div>
-          </div>
-          <div className='w-1/5 flex hover:animate-pulse justify-center items-center'>
-            {/* <div className='category mr-[2px] bg-amber-500 flex-shrink-0 rounded-full w-4 h-4'>
-            </div> */}
-            <div>
-        <button
-  onClick={() => {
-    handleFilter("Conference");
-    setActiveFilter("Conference");
-  }}
-  className={`
-    rounded-xl px-[5%] py-[2%]
-    border-2 font-bold text-[145%]
-    transition-all duration-300
-
-    ${
-      activeFilter === "Conference"
-        ? "bg-amber-500 text-white border-amber-500"
-        : "text-amber-500 border-amber-500 hover:bg-amber-500 hover:text-white"
-    }
-  `}
->
-  Conferences
-</button>
-            </div>
-          </div>
-          <div className='w-1/5 flex hover:animate-pulse justify-center items-center'>
-            {/* <div className='category mr-[2px] bg-cyan-500 flex-shrink-0 rounded-full w-4 h-4'>
-            </div> */}
-            <div>
-             <button
-  onClick={() => {
-    handleFilter("Workshop");
-    setActiveFilter("Workshop");
-  }}
-  className={`
-    rounded-xl px-[5%] py-[2%]
-    border-2 font-bold tracking-wider text-[145%]
-    transition-all duration-300
-
-    ${
-      activeFilter === "Workshop"
-        ? "bg-cyan-500 text-white border-cyan-500"
-        : "text-cyan-500 border-cyan-500 hover:bg-cyan-500 hover:text-white"
-    }
-  `}
->
-  Workshops
-</button>
-            </div>
-          </div>
-        </div>
-        <div>
-
-
- <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3">
 
   {sortedYears.map((year) => (
 
-    
+    <div
+      key={year}
+      onClick={() => setSelectedYear(year)}
+      className={`
+        cursor-pointer
+        rounded-2xl
+        bg-white
+        dark:bg-gray-800
+        shadow-md
+        hover:shadow-2xl
+        hover:-translate-y-1
+        transition-all
+        duration-300
+        border-t-4
+        p-4
 
-<div
-  key={year}
-  onClick={() => setSelectedYear(year)}
-  className={`bg-white dark:bg-gray-800 rounded-xl shadow-md p-4 border-t-4 cursor-pointer hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300
+        ${
+          filter.length === data.length
+            ? "border-gray-400"
+            : filter[0]?.category === "Books"
+            ? "border-green-500"
+            : filter[0]?.category === "Book Chapters"
+            ? "border-violet-500"
+            : filter[0]?.category === "Journal"
+            ? "border-rose-500"
+            : filter[0]?.category === "Conference"
+            ? "border-amber-500"
+            : filter[0]?.category === "Workshop"
+            ? "border-cyan-500"
+            : "border-gray-400"
+        }
 
-  ${
-    filter.length === data.length
-      ? "border-gray-400"
-      : filter[0]?.category === "Books"
-      ? "border-green-500"
-      : filter[0]?.category === "Book Chapters"
-      ? "border-violet-500"
-      : filter[0]?.category === "Journal"
-      ? "border-rose-500"
-      : filter[0]?.category === "Conference"
-      ? "border-amber-500"
-      : filter[0]?.category === "Workshop"
-      ? "border-cyan-500"
-      : "border-gray-400"
-  }
+        ${
+          selectedYear === year
+            ? "ring-2 ring-sky-500"
+            : ""
+        }
+      `}
+    >
 
-  ${
-    selectedYear === year
-      ? "ring-2 ring-sky-500"
-      : ""
-  }
-  `}
->
-  <div className="flex justify-between items-center">
-    <span className="text-2xl font-bold">
-      {year}
-    </span>
+      <div
+        className="
+          flex
+          items-center
+          justify-between
+        "
+      >
 
-    <span className="bg-sky-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-      {groupedByYear[year].length}
-    </span>
+        <span
+          className="
+            text-xl
+            sm:text-2xl
+            font-bold
+            text-gray-800
+            dark:text-white
+          "
+        >
+          {year}
+        </span>
+
+        <span
+          className="
+            bg-sky-500
+            text-white
+            rounded-full
+            px-3
+            py-1
+            text-xs
+            sm:text-sm
+            font-semibold
+          "
+        >
+          {groupedByYear[year].length}
+        </span>
+
+      </div>
+
+    </div>
+
+  ))}
+
   </div>
-</div>
-    ))}
 
-</div>
-
+{/* ============================= */}
+{/* Year Modal */}
+{/* ============================= */}
 
 {selectedYear && (
   <div
-    className="fixed inset-0 bg-black/60 flex items-center justify-center z-50"
+    className="
+      fixed
+      inset-0
+      z-50
+      bg-black/60
+      flex
+      items-center
+      justify-center
+      p-4
+    "
     onClick={() => setSelectedYear(null)}
   >
     <div
-      className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white w-[90%] md:w-[900px] max-h-[80vh] overflow-y-auto rounded-xl p-6"
       onClick={(e) => e.stopPropagation()}
+      className="
+        w-full
+        max-w-4xl
+        max-h-[85vh]
+        overflow-y-auto
+        rounded-2xl
+        bg-white
+        dark:bg-gray-800
+        text-gray-800
+        dark:text-white
+        shadow-2xl
+        p-5
+        sm:p-6
+        lg:p-8
+      "
     >
 
-      <h2 className="text-3xl font-bold text-rose-600 mb-6">
-        Publications {selectedYear}
-      </h2>
+      <div
+        className="
+          flex
+          flex-col
+          sm:flex-row
+          sm:items-center
+          sm:justify-between
+          gap-3
+          mb-6
+        "
+      >
 
-      <div className="space-y-3">
+        <h2
+          className="
+            text-2xl
+            sm:text-3xl
+            font-bold
+            text-rose-600
+          "
+        >
+          Publications {selectedYear}
+        </h2>
 
-        {groupedByYear[selectedYear].map((item, idx) => (
+        <span
+          className="
+            self-start
+            sm:self-auto
+            bg-sky-500
+            text-white
+            px-4
+            py-2
+            rounded-full
+            text-sm
+            font-semibold
+          "
+        >
+          {groupedByYear[selectedYear].length} Records
+        </span>
+
+      </div>
+
+      <div className="space-y-4">
+
+                {groupedByYear[selectedYear].map((item, idx) => (
 
           <div
             key={idx}
             onClick={() => setSelectedPublication(item)}
             className={`
-              p-4 rounded-lg cursor-pointer
+              cursor-pointer
+              rounded-xl
+              p-4
+              transition-all
+              duration-300
+              hover:scale-[1.01]
+              hover:shadow-lg
 
-${item.category === "Books" && "bg-green-100 dark:bg-green-500/30"}
-${item.category === "Book Chapters" && "bg-violet-100 dark:bg-violet-600/30"}
-${item.category === "Journal" && "bg-rose-100 dark:bg-rose-500/30"}
-${item.category === "Conference" && "bg-amber-100 dark:bg-amber-600/30"}
-${item.category === "Workshop" && "bg-cyan-100 dark:bg-cyan-600/30"}
+              ${
+                item.category === "Books"
+                  ? "bg-green-100 dark:bg-green-500/20"
+                  : item.category === "Book Chapters"
+                  ? "bg-violet-100 dark:bg-violet-600/20"
+                  : item.category === "Journal"
+                  ? "bg-rose-100 dark:bg-rose-500/20"
+                  : item.category === "Conference"
+                  ? "bg-amber-100 dark:bg-amber-500/20"
+                  : item.category === "Workshop"
+                  ? "bg-cyan-100 dark:bg-cyan-500/20"
+                  : "bg-gray-100 dark:bg-gray-700"
+              }
             `}
           >
 
-            <div className="font-semibold">
+            <div
+              className="
+                text-base
+                sm:text-lg
+                font-semibold
+                leading-relaxed
+                break-words
+              "
+            >
               {item.desc}
             </div>
 
-            <div className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+            <div
+              className="
+                mt-2
+                text-sm
+                sm:text-base
+                text-gray-600
+                dark:text-gray-300
+                break-words
+              "
+            >
               {item.authors}
             </div>
 
@@ -1673,81 +2114,285 @@ ${item.category === "Workshop" && "bg-cyan-100 dark:bg-cyan-600/30"}
 
       </div>
 
-      <button
-        onClick={() => setSelectedYear(null)}
-        className="mt-5 bg-rose-600 text-white px-4 py-2 rounded hover:bg-rose-700 transition-all"
+      <div
+        className="
+          mt-8
+          flex
+          justify-end
+        "
       >
-        Close
-      </button>
+
+        <button
+          onClick={() => setSelectedYear(null)}
+          className="
+            px-6
+            py-3
+            rounded-xl
+            bg-rose-600
+            hover:bg-rose-700
+            text-white
+            font-semibold
+            transition-all
+            duration-300
+          "
+        >
+          Close
+        </button>
+
+      </div>
 
     </div>
+
   </div>
+
 )}
 
+{/* ========================================= */}
+{/* Publication Details Modal */}
+{/* ========================================= */}
 
 {selectedPublication && (
   <div
-    className="fixed inset-0 bg-black/60 flex items-center justify-center z-50"
+    className="
+      fixed
+      inset-0
+      z-50
+      bg-black/60
+      flex
+      items-center
+      justify-center
+      p-4
+    "
     onClick={() => setSelectedPublication(null)}
   >
     <div
-      className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white w-[90%] md:w-[800px] max-h-[80vh] overflow-y-auto p-6 rounded-xl shadow-xl"
       onClick={(e) => e.stopPropagation()}
+      className="
+        w-full
+        max-w-4xl
+        max-h-[85vh]
+        overflow-y-auto
+        rounded-2xl
+        bg-white
+        dark:bg-gray-800
+        shadow-2xl
+        p-5
+        sm:p-6
+        lg:p-8
+      "
     >
-      <h2 className="text-2xl font-bold text-rose-600 mb-4">
+
+      {/* Heading */}
+
+      <h2
+        className="
+          text-xl
+          sm:text-2xl
+          lg:text-3xl
+          font-bold
+          text-rose-600
+          leading-relaxed
+          break-words
+          mb-6
+        "
+      >
         {selectedPublication.desc}
       </h2>
 
-      <div className="space-y-3">
+      {/* Details */}
 
-        <p>
-          <b>Authors:</b> {selectedPublication.authors}
-        </p>
+      <div className="space-y-5">
 
-        <p>
-          <b>Publication:</b> {selectedPublication.name}
-        </p>
+        {/* Authors */}
 
-        <p>
-          <b>Year:</b> {selectedPublication.year}
-        </p>
+        <div>
 
-      {selectedPublication.link && (
-  <a
-    href={selectedPublication.link}
-    target="_blank"
-    rel="noreferrer"
-    className="
-      inline-block
-      mt-2
-      px-4 py-2
-      bg-sky-600
-      hover:bg-sky-700
-      text-white
-      rounded-lg
-      font-medium
-      transition-all duration-300
-    "
-  >
-    📄 View Publication
-  </a>
-)}
+          <h3
+            className="
+              text-sm
+              uppercase
+              tracking-wider
+              font-semibold
+              text-gray-500
+              dark:text-gray-400
+            "
+          >
+            Authors
+          </h3>
 
-      </div>
-
-      <button
-        onClick={() => setSelectedPublication(null)}
-        className="mt-6 bg-rose-600 text-white px-4 py-2 rounded hover:bg-rose-700 transition-all"
-      >
-        Close
-      </button>
-
-    </div>
-  </div>
-)}
+          <p
+            className="
+              mt-1
+              text-base
+              sm:text-lg
+              break-words
+              leading-relaxed
+            "
+          >
+            {selectedPublication.authors}
+          </p>
 
         </div>
+
+        {/* Publication */}
+
+        <div>
+
+          <h3
+            className="
+              text-sm
+              uppercase
+              tracking-wider
+              font-semibold
+              text-gray-500
+              dark:text-gray-400
+            "
+          >
+            Publication
+          </h3>
+
+          <p
+            className="
+              mt-1
+              text-base
+              sm:text-lg
+              break-words
+              leading-relaxed
+            "
+          >
+            {selectedPublication.name}
+          </p>
+
+        </div>
+
+        {/* Year */}
+
+        <div>
+
+          <h3
+            className="
+              text-sm
+              uppercase
+              tracking-wider
+              font-semibold
+              text-gray-500
+              dark:text-gray-400
+            "
+          >
+            Year
+          </h3>
+
+          <p
+            className="
+              mt-1
+              text-base
+              sm:text-lg
+              font-semibold
+            "
+          >
+            {selectedPublication.year}
+          </p>
+
+        </div>
+                {/* Publication Link */}
+
+        {selectedPublication.link && (
+          <div>
+
+            <h3
+              className="
+                text-sm
+                uppercase
+                tracking-wider
+                font-semibold
+                text-gray-500
+                dark:text-gray-400
+              "
+            >
+              Publication Link
+            </h3>
+
+            <a
+              href={selectedPublication.link}
+              target="_blank"
+              rel="noreferrer"
+              className="
+                inline-flex
+                items-center
+                justify-center
+                mt-3
+                px-5
+                py-3
+                rounded-xl
+                bg-sky-600
+                hover:bg-sky-700
+                text-white
+                font-semibold
+                transition-all
+                duration-300
+                break-all
+              "
+            >
+              📄 View Publication
+            </a>
+
+          </div>
+        )}
+
       </div>
+
+      {/* Footer */}
+
+      <div
+        className="
+          mt-8
+          flex
+          justify-end
+        "
+      >
+
+        <button
+          onClick={() => setSelectedPublication(null)}
+          className="
+            px-6
+            py-3
+            rounded-xl
+            bg-rose-600
+            hover:bg-rose-700
+            text-white
+            font-semibold
+            transition-all
+            duration-300
+          "
+        >
+          Close
+        </button>
+
+      </div>
+
     </div>
-  )
-}
+
+  </div>
+
+)}
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+);
+
+}; 
+
+export default Publications;                                 
+
+
+
+
+
+
+
+

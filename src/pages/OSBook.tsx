@@ -1,13 +1,13 @@
+
+
 import React, { useState, useEffect } from 'react';
 import book from "../assets/book.jpg"
-import { 
-  Book, 
-  Download, 
-  Search, 
-  User, 
-  Moon, 
-  Sun, 
-  FileText, 
+import {
+  Book,
+  Download,
+  Search,
+  User,
+  FileText,
   Quote,
   Mail,
   Share2,
@@ -19,7 +19,7 @@ import {
   Eye,
   Filter,
   Globe
-} from 'lucide-react';
+} from "lucide-react";
 
 interface Chapter {
   id: number;
@@ -115,7 +115,7 @@ const faqs: FAQ[] = [
   }
 ];
 
-  const [darkMode, setDarkMode] = useState(false);
+  
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedDifficulty, setSelectedDifficulty] = useState('All');
   const [userProgress, setUserProgress] = useState<number[]>([]);
@@ -123,20 +123,9 @@ const faqs: FAQ[] = [
   const [citationFormat, setCitationFormat] = useState('APA');
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
-  useEffect(() => {
-    // Check system preference for dark mode
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setDarkMode(true);
-    }
-  }, []);
+ 
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
+ 
 
   const filteredChapters = chapters.filter(chapter => {
     const matchesSearch = chapter.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -164,7 +153,7 @@ const faqs: FAQ[] = [
 
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-gray-900' : 'bg-gray-50'}`}>
+   <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       {/* Header */}
       <header className="bg-white dark:bg-gray-800 shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -181,15 +170,9 @@ const faqs: FAQ[] = [
                 onClick={() => setShowCitation(!showCitation)}
                 className="px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
-                <Quote className="h-4 w-4 inline mr-1" />
-                Cite
+                
               </button>
-              <button
-                onClick={() => setDarkMode(!darkMode)}
-                className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
-              >
-                {darkMode ? <Sun className="h-5 w-5 text-yellow-500" /> : <Moon className="h-5 w-5 text-gray-600" />}
-              </button>
+              
             </div>
           </div>
         </div>
