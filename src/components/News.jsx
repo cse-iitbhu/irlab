@@ -7,6 +7,14 @@ const news = [
   {
    name: (
   <>
+    Ms. Krishna Tewari has been selected as Adobe India AI Fellow for the year 2026.&nbsp;
+  </>
+),
+    year: " 2026",
+  },
+  {
+   name: (
+  <>
     The 2nd Edition of Multilingual Story Illustration: Bridging Cultures through AI Artistry (MUSIA) to be organized by Information Retrieval Lab (IReL), IIT (BHU) at FIRE 2026.&nbsp;
     <Link
       to="/musia"
@@ -18,6 +26,7 @@ const news = [
 ),
     year: " 2026",
   },
+  
  
  
 ]

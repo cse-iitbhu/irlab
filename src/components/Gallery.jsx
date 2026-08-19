@@ -2,6 +2,7 @@ import {React, useEffect} from 'react'
 import { Carousel } from 'react-carousel-minimal';
 import AOS from "aos"
 import lab from "../assets/lab.jpg"
+// import Adobe_group from "../assets/Adobe_group.JPG"
 import lab1 from "../assets/lab1.jpg"
 import lab2 from "../assets/lab2.jpg"
 import lab3 from "../assets/lab3.jpg"
@@ -31,21 +32,32 @@ import lab8 from "../assets/LAB1 (8).jpeg"
 import lab9 from "../assets/LAB1 (9).jpeg"
 import lab10 from "../assets/LAB1 (10).jpeg"
 import lab11 from "../assets/LAB1 (11).jpeg"
+import Adobe_group from "../assets/Adobe_group.JPG" 
+import Adobe_krishna from "../assets/Adobe_krishna.JPG"
+
 
 
 
 
 export const Gallery = () => {
   const data = [
-    {
-      image: fire,
-      caption: ""
-    },
+    
     {
       image: osbook,
       caption: "Operating Systems Book by Dr. Sukomal Pal"
     },
-
+    {
+    image: Adobe_group,
+      caption: "Adobe India AI Fellowship Felicitation ceremony at Adobe Bengaluru, 2026"
+    },
+    {
+    image: Adobe_krishna,
+      caption: "Adobe India AI Fellowship Felicitation"
+    },
+    {
+      image: fire,
+      caption: ""
+    },
      {
       image: idd,
       caption: "IDD Graduates Thesis Submission."

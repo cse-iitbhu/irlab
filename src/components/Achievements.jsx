@@ -4,6 +4,12 @@ import { AchievementCard } from './AchievementCard'
 
 export const Achievements = () => {
     const achievements = [
+        {
+  category: "Adobe India AI Fellowship",
+  title: "MS. KRISHNA TEWARI",
+  date: "JULY 2026",
+  desc: "Selected as Adobe India AI Fellow for the year 2026."
+},
 {
   category: "FIRE 2025",
   title: "FIRE 2025",
@@ -11,12 +17,12 @@ export const Achievements = () => {
   desc: "Successfully Held and Completed."
 },
 
-        {
-            category:"Institute day",
-            title:"MR. TRIBIKRAM PRADHAN",
-            date:"Feb 2018",
-            desc:'Runner up prize in Poster Presentation on topic "SNAVER:A social network analysis based scholarly venue recommender system."'
-        },
+{
+    category:"Institute day",
+    title:"MR. TRIBIKRAM PRADHAN",
+    date:"Feb 2018",
+    desc:'Runner up prize in Poster Presentation on topic "SNAVER:A social network analysis based scholarly venue recommender system."'
+},
         
 
     ]
