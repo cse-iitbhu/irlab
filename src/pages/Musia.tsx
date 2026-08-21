@@ -7,6 +7,8 @@ import spal from "../assets/spalsir.jpg";
 import jasvindar from "../assets/jasvinder_sir.jpeg"
 import ishita from "../assets/ishita_maam.jpeg"
 import supriya from "../assets/supriya_chanda_sir.jpeg"
+import pritam from "../assets/Pritam_Sir.jpeg"
+import nandini from "../assets/nandini.jpeg"
 import { Link,NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
@@ -26,8 +28,8 @@ const timeline = [
   ["12 June 2026", "Track Website Opens"],
   ["25 June 2026", "Training Data Release"],
   ["17 July 2026", "Subtask 1 & 2 Test Release"],
-  ["16 August 2026", "Subtask 1 & 2 Submission Deadline"],
-  ["17 August 2026", "Subtask 3 Test Release"],
+  ["21 August 2026", "Subtask 1 & 2 Submission Deadline"],
+  ["21 August 2026", "Subtask 3 Test Release"],
   ["31 Aug 2026", "Subtask 3 Submission Deadline"],
   ["31 Aug 2026", "Results Announcement (Subtask 1 and 2)"],
   ["10 Sep 2026", "Results Announcement (Subtask 3)"],
@@ -67,6 +69,18 @@ const organizers = [
     role: "Student Collaborator",
     affiliation: "Banaras Hindu University, Varanasi",
     image: ishita,
+  },
+  {
+    name: "Pritam",
+    role: "Research Scholar",
+    affiliation: "Department of Computer Science & Engineering, IIT (BHU) Varanasi",
+    image: pritam,
+  },
+  {
+    name: "Nandini Surendra Sharma",
+    role: "M.Tech. Student",
+    affiliation: "Department of Computer Science & Engineering, IIT (BHU) Varanasi",
+    image: nandini,
   },
   {
     name: "Sukomal Pal",
