@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/irlab/static/css/main.9404f68d.css",
-    "main.js": "/irlab/static/js/main.adaf82ca.js",
+    "main.css": "/irlab/static/css/main.d567ec1b.css",
+    "main.js": "/irlab/static/js/main.8f15a465.js",
     "static/media/finalphd1.jpg": "/irlab/static/media/finalphd1.1a8c26aa0df60d70b874.jpg",
     "static/media/LAB1 (6).jpeg": "/irlab/static/media/LAB1 (6).0de168d5819d13abecd4.jpeg",
     "static/media/datascience2.jpg": "/irlab/static/media/datascience2.c32f9ab5d884e655fcbb.jpg",
@@ -41,6 +41,7 @@
     "static/media/Dr_T_Pradhan_2.jpg": "/irlab/static/media/Dr_T_Pradhan_2.25364d1849ee53d224af.jpg",
     "static/media/sushil.jpg": "/irlab/static/media/sushil.05722b80700a6432adc1.jpg",
     "static/media/backg-logo.jpg": "/irlab/static/media/backg-logo.1c8fa0fe63a5d3f3156b.jpg",
+    "static/media/nandini.jpeg": "/irlab/static/media/nandini.3ab53a8fe5eb05fd16c7.jpeg",
     "static/media/th_01.jpg": "/irlab/static/media/th_01.d7fd790f161328cc6ac9.jpg",
     "static/media/Dr_T_Pradhan_1.jpg": "/irlab/static/media/Dr_T_Pradhan_1.cb3e57d570d3ce2b5bf6.jpg",
     "static/media/krishna.jpeg": "/irlab/static/media/krishna.2b34cdb9cae67e96407c.jpeg",
@@ -52,11 +53,11 @@
     "static/media/spalsir.jpg": "/irlab/static/media/spalsir.93d072defd9f9c2a7760.jpg",
     "static/media/download.png": "/irlab/static/media/download.2db0768c5cd33d22bd9a.png",
     "index.html": "/irlab/index.html",
-    "main.9404f68d.css.map": "/irlab/static/css/main.9404f68d.css.map",
-    "main.adaf82ca.js.map": "/irlab/static/js/main.adaf82ca.js.map"
+    "main.d567ec1b.css.map": "/irlab/static/css/main.d567ec1b.css.map",
+    "main.8f15a465.js.map": "/irlab/static/js/main.8f15a465.js.map"
   },
   "entrypoints": [
-    "static/css/main.9404f68d.css",
-    "static/js/main.adaf82ca.js"
+    "static/css/main.d567ec1b.css",
+    "static/js/main.8f15a465.js"
   ]
 }
