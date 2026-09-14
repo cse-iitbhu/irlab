@@ -334,7 +334,7 @@ const Subtask3: React.FC = () => {
                   </a>
 
                   <a
-                    href="https://drive.google.com/file/d/1KeRxX-AFwHat2zxg6NFb95M4bNLMnGZz/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1IxBI06IFIiRQ47EtMcdeNoG58rorVhDN/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between rounded-lg border border-slate-600 dark:bg-slate-800 px-4 py-3 transition-all duration-300 dark:hover:bg-slate-700 hover:border-blue-500 hover:shadow-lg"
@@ -347,7 +347,7 @@ const Subtask3: React.FC = () => {
                   </a>
 
                   <a
-                    href="https://drive.google.com/file/d/1gcI8LlONawmHmkJM0XEUK1PfmIasQ4ld/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1Txc8w_gE468vamuHaYCj06M-sH5vg5rc/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between rounded-lg border border-slate-600 dark:bg-slate-800 px-4 py-3 transition-all duration-300 dark:hover:bg-slate-700 hover:border-blue-500 hover:shadow-lg"
@@ -360,7 +360,7 @@ const Subtask3: React.FC = () => {
                   </a>
 
                   <a
-                    href="https://drive.google.com/file/d/18EiaFaDeWM6Q5fmYrA0cVRxjGvRHc1Zb/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1iyJYIXcAhpH_LZOebUqU6ImjpQST5k7H/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between rounded-lg border border-slate-600 dark:bg-slate-800 px-4 py-3 transition-all duration-300 dark:hover:bg-slate-700 hover:border-blue-500 hover:shadow-lg"

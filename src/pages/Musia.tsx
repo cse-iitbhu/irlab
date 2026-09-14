@@ -30,11 +30,11 @@ const timeline = [
   ["17 July 2026", "Subtask 1 & 2 Test Release"],
   ["21 August 2026", "Subtask 1 & 2 Submission Deadline"],
   ["21 August 2026", "Subtask 3 Test Release"],
-  ["05 Sep 2026", "Subtask 3 Submission Deadline"],
-  ["05 Sep 2026", "Results Announcement (Subtask 1 and 2)"],
-  ["10 Sep 2026", "Results Announcement (Subtask 3)"],
-  ["20 Sep 2026", "Working Notes Due"],
-  ["30 Sep 2026", "Camera Ready Due"],
+  ["25 Sep 2026", "Subtask 3 Submission Deadline"],
+  ["20 Sep 2026", "Results Announcement (Subtask 1 and 2)"],
+  ["30 Sep 2026", "Results Announcement (Subtask 3)"],
+  ["15 Oct 2026", "Working Notes Due"],
+  ["30 Oct 2026", "Camera Ready Due"],
   ["Dec 2026", "FIRE 2026 Conference"],
 ];
 
