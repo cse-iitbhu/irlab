@@ -385,6 +385,102 @@ const Subtask3: React.FC = () => {
 
           </div>
 
+          {/* DETAILED EVALUATION PROTOCOL */}
+<div className="mt-8 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-6 md:p-8">
+
+  <h4 className="text-xl font-bold mb-4">
+    Evaluation Protocol
+  </h4>
+
+  <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-7">
+    Evaluation is performed independently for each story. For a story
+    containing <em>n</em> images, the ground-truth and predicted
+    sequences are represented using ranks from 1 to <em>n</em>.
+    Perfect Match Rate (PMR) measures exact sequence reconstruction,
+    while Kendall&apos;s τ and Spearman&apos;s ρ measure partial
+    ordering agreement. Kendall&apos;s τ and Spearman&apos;s ρ are
+    calculated independently for each story and then macro-averaged
+    across all stories, giving equal weight to every story.
+  </p>
+
+  <div className="space-y-7">
+
+    {/* PMR */}
+    <div>
+      <h5 className="font-bold text-lg mb-2">
+        Perfect Match Rate (PMR)
+      </h5>
+
+      <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+        A story is considered a perfect match only when the complete
+        predicted image sequence exactly matches the ground-truth
+        sequence. If even one image is assigned an incorrect position,
+        the story is not counted as a perfect match. PMR is the
+        proportion of stories for which the complete ordering is
+        correctly predicted.
+      </p>
+
+      <div className="mt-3 rounded-lg bg-white dark:bg-slate-900 p-4 text-center font-mono text-sm md:text-base">
+        PMR = Number of perfectly ordered stories / Total number of stories
+      </div>
+    </div>
+
+
+    {/* KENDALL'S TAU */}
+    <div>
+      <h5 className="font-bold text-lg mb-2">
+        Kendall&apos;s Tau (τ)
+      </h5>
+
+      <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+        Kendall&apos;s τ measures pairwise ordering agreement between
+        the ground-truth and predicted sequence. For each story, a pair
+        of images is concordant when its relative order is the same in
+        both sequences and discordant when its relative order is
+        reversed.
+      </p>
+
+      <div className="mt-3 rounded-lg bg-white dark:bg-slate-900 p-4 text-center font-mono text-sm md:text-base">
+        τ = (C − D) / (C + D)
+      </div>
+
+      <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
+        C and D denote the numbers of concordant and discordant image
+        pairs, respectively. The score ranges from −1 to 1, where
+        1 indicates perfect ordering agreement.
+      </p>
+    </div>
+
+
+    {/* SPEARMAN'S RHO */}
+    <div>
+      <h5 className="font-bold text-lg mb-2">
+        Spearman&apos;s Rank Correlation (ρ)
+      </h5>
+
+      <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+        Spearman&apos;s ρ measures the agreement between the
+        ground-truth rank and predicted rank assigned to each image,
+        capturing how closely the predicted positions correspond to
+        their correct positions in the sequence.
+      </p>
+
+      <div className="mt-3 rounded-lg bg-white dark:bg-slate-900 p-4 text-center font-mono text-sm md:text-base">
+        ρ = 1 − [6 Σ dᵢ² / n(n² − 1)]
+      </div>
+
+      <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
+        Here, dᵢ is the difference between the ground-truth and
+        predicted rank of image i, and n is the number of images in
+        the story. The score ranges from −1 to 1, where 1 indicates
+        perfect rank agreement.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
           {/* PIPELINE
 
           <div className="mb-16">
