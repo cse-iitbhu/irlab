@@ -1,7 +1,212 @@
-import React from "react";
+import React, { useState } from "react";
 
+type Result = {
+  team: string;
+  run: string;
+  pmr: number;
+  kendall: number;
+  spearman: number;
+};
+
+type LanguageResults = {
+  [key: string]: Result[];
+};
+
+const leaderboardData: LanguageResults = {
+
+  // =========================================================
+  // HINDI
+  // =========================================================
+
+  Hindi: [
+    {
+      team: "Tasker",
+      run: "Run 1",
+      pmr: 0.6000,
+      kendall: 0.7222,
+      spearman: 0.7633,
+    },
+    {
+      team: "Darcarys",
+      run: "Run 1",
+      pmr: 0.5667,
+      kendall: 0.4889,
+      spearman: 0.5000,
+    },
+    {
+      team: "Darcarys",
+      run: "Run 2",
+      pmr: 0.4667,
+      kendall: 0.4778,
+      spearman: 0.5167,
+    },
+    {
+      team: "Varaprabha",
+      run: "Run 2",
+      pmr: 0.4000,
+      kendall: 0.2111,
+      spearman: 0.2133,
+    },
+    {
+      team: "Varaprabha",
+      run: "Run 1",
+      pmr: 0.3667,
+      kendall: 0.0778,
+      spearman: 0.0900,
+    },
+    {
+      team: "TeamIllusions",
+      run: "Run 1",
+      pmr: 0.3000,
+      kendall: 0.0778,
+      spearman: 0.0633,
+    },
+    {
+      team: "TokenX",
+      run: "Run 1",
+      pmr: 0.2667,
+      kendall: 0.1889,
+      spearman: 0.2367,
+    },
+  ],
+
+
+  // =========================================================
+  // BENGALI
+  // =========================================================
+
+  Bengali: [
+    {
+      team: "Tasker",
+      run: "Run 1",
+      pmr: 0.6364,
+      kendall: 0.7667,
+      spearman: 0.7779,
+    },
+    {
+      team: "Darcarys",
+      run: "Run 2",
+      pmr: 0.5455,
+      kendall: 0.6606,
+      spearman: 0.6909,
+    },
+    {
+      team: "Darcarys",
+      run: "Run 1",
+      pmr: 0.4091,
+      kendall: 0.6303,
+      spearman: 0.7071,
+    },
+    {
+      team: "Varaprabha",
+      run: "Run 1",
+      pmr: 0.2727,
+      kendall: 0.4121,
+      spearman: 0.4448,
+    },
+    {
+      team: "TokenX",
+      run: "Run 1",
+      pmr: 0.2273,
+      kendall: 0.2303,
+      spearman: 0.2526,
+    },
+    {
+      team: "TeamIllusions",
+      run: "Run 1",
+      pmr: 0.2273,
+      kendall: 0.2091,
+      spearman: 0.2208,
+    },
+    {
+      team: "Varaprabha",
+      run: "Run 2",
+      pmr: 0.1818,
+      kendall: 0.2576,
+      spearman: 0.3195,
+    },
+  ],
+
+
+  // =========================================================
+  // TO BE ADDED
+  // =========================================================
+
+  English: [],
+
+  Marathi: [
+  {
+    team: "Tasker",
+    run: "Run 1",
+    pmr: 0.6000,
+    kendall: 0.4822,
+    spearman: 0.4933,
+  },
+  {
+    team: "Varaprabha",
+    run: "Run 1",
+    pmr: 0.4667,
+    kendall: 0.4689,
+    spearman: 0.4914,
+  },
+  {
+    team: "Varaprabha",
+    run: "Run 2",
+    pmr: 0.4333,
+    kendall: 0.3578,
+    spearman: 0.3900,
+  },
+  {
+    team: "Darcarys",
+    run: "Run 1",
+    pmr: 0.4000,
+    kendall: 0.4622,
+    spearman: 0.5076,
+  },
+  {
+    team: "TokenX",
+    run: "Run 1",
+    pmr: 0.4000,
+    kendall: 0.3089,
+    spearman: 0.3214,
+  },
+  {
+    team: "TeamIllusions",
+    run: "Run 1",
+    pmr: 0.4000,
+    kendall: 0.1222,
+    spearman: 0.0929,
+  },
+  {
+    team: "Darcarys",
+    run: "Run 2",
+    pmr: 0.3667,
+    kendall: 0.3378,
+    spearman: 0.3657,
+  },
+],
+};
 const Subtask3: React.FC = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState("Hindi");
 
+  const languages = ["English", "Hindi", "Bengali", "Marathi"];
+
+  const results = [...(leaderboardData[selectedLanguage] || [])].sort(
+  (a, b) => {
+    // Primary metric: PMR
+    if (b.pmr !== a.pmr) {
+      return b.pmr - a.pmr;
+    }
+
+    // First tie-breaker: Kendall's Tau
+    if (b.kendall !== a.kendall) {
+      return b.kendall - a.kendall;
+    }
+
+    // Second tie-breaker: Spearman's Rho
+    return b.spearman - a.spearman;
+  }
+);
   return (
 
     <div className="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen">
@@ -226,71 +431,6 @@ const Subtask3: React.FC = () => {
 
           </div> */}
 
-          {/* METRICS */}
-          <div className="mb-14">
-
-            <h3 className="text-3xl font-bold mb-8">
-
-              Evaluation Metrics
-
-            </h3>
-
-            <div className="grid md:grid-cols-3 gap-6">
-
-              <div className="rounded-2xl border dark:border-slate-700 p-6">
-
-                <h4 className="font-bold text-xl mb-3">
-
-                  Kendall's τ
-
-                </h4>
-
-                <p className="text-slate-600 dark:text-slate-300">
-
-                  Measures ranking correlation between predicted and ground
-
-                  truth image order.
-
-                </p>
-
-              </div>
-
-              <div className="rounded-2xl border dark:border-slate-700 p-6">
-
-                <h4 className="font-bold text-xl mb-3">
-
-                  Spearman's ρ
-
-                </h4>
-
-                <p className="text-slate-600 dark:text-slate-300">
-
-                  Evaluates the monotonic relationship between two rankings.
-
-                </p>
-
-              </div>
-
-              <div className="rounded-2xl border dark:border-slate-700 p-6">
-
-                <h4 className="font-bold text-xl mb-3">
-
-                  PMR
-
-                </h4>
-
-                <p className="text-slate-600 dark:text-slate-300">
-
-                  Perfect Match Rate measures exact sequence recovery.
-
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
           {/* DATASET */}
           <div className="rounded-2xl border border-slate-700 dark:bg-slate-800 shadow-lg p-8 mt-12">
 
@@ -379,6 +519,186 @@ const Subtask3: React.FC = () => {
             </div>
 
           </div>
+          {/* RESULTS */}
+<div className="mb-16">
+  <div className="text-center mb-10">
+    <div className="inline-flex items-center rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 px-4 py-2 text-sm font-semibold mb-4">
+      Official Results
+    </div>
+
+    <h3 className="text-3xl md:text-4xl font-bold mb-4">
+      Leaderboard
+    </h3>
+
+    <p className="max-w-3xl mx-auto text-slate-600 dark:text-slate-300">
+      Systems are ranked primarily by Perfect Match Rate (PMR).
+      Kendall&apos;s τ is used as the first tie-breaking criterion,
+      followed by Spearman&apos;s ρ.
+    </p>
+  </div>
+
+  {/* LANGUAGE TABS */}
+  <div className="flex flex-wrap justify-center gap-3 mb-8">
+    {languages.map((language) => (
+      <button
+        key={language}
+        onClick={() => setSelectedLanguage(language)}
+        className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+          selectedLanguage === language
+            ? "bg-blue-600 text-white shadow-lg"
+            : "bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
+        }`}
+      >
+        {language}
+      </button>
+    ))}
+  </div>
+
+  {/* LANGUAGE TITLE */}
+  <div className="flex items-center justify-between mb-5">
+    <div>
+      <h4 className="text-2xl font-bold">
+        {selectedLanguage} Results
+      </h4>
+
+      <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
+        Narrative Image Ordering
+      </p>
+    </div>
+
+    {results.length > 0 && (
+      <div className="text-sm text-slate-500 dark:text-slate-400">
+        {results.length} submitted runs
+      </div>
+    )}
+  </div>
+
+  {/* RESULTS */}
+  {results.length > 0 ? (
+    <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-700 shadow-lg">
+      <table className="w-full text-left">
+        <thead className="bg-slate-100 dark:bg-slate-700">
+          <tr>
+            <th className="px-6 py-4 font-bold">
+              Rank
+            </th>
+
+            <th className="px-6 py-4 font-bold">
+              Team
+            </th>
+
+            <th className="px-6 py-4 font-bold">
+              Run
+            </th>
+
+            <th className="px-6 py-4 font-bold text-center">
+              PMR ↑
+            </th>
+
+            <th className="px-6 py-4 font-bold text-center">
+              Kendall&apos;s τ ↑
+            </th>
+
+            <th className="px-6 py-4 font-bold text-center">
+              Spearman&apos;s ρ ↑
+            </th>
+          </tr>
+        </thead>
+
+        <tbody className="divide-y divide-slate-200 dark:divide-slate-700">
+          {results.map((result, index) => (
+            <tr
+              key={`${result.team}-${result.run}`}
+              className={`transition-colors hover:bg-slate-50 dark:hover:bg-slate-700/50 ${
+                index === 0
+                  ? "bg-amber-50/70 dark:bg-amber-900/10"
+                  : ""
+              }`}
+            >
+              {/* RANK */}
+              <td className="px-6 py-5">
+                <div className="flex items-center gap-2">
+                  {index === 0 && (
+                    <span className="text-xl">
+                      🥇
+                    </span>
+                  )}
+
+                  {index === 1 && (
+                    <span className="text-xl">
+                      🥈
+                    </span>
+                  )}
+
+                  {index === 2 && (
+                    <span className="text-xl">
+                      🥉
+                    </span>
+                  )}
+
+                  <span className="font-bold">
+                    {index + 1}
+                  </span>
+                </div>
+              </td>
+
+              {/* TEAM */}
+              <td className="px-6 py-5">
+                <span className="font-semibold text-slate-900 dark:text-white">
+                  {result.team}
+                </span>
+              </td>
+
+              {/* RUN */}
+              <td className="px-6 py-5 text-slate-600 dark:text-slate-300">
+                {result.run}
+              </td>
+
+              {/* PMR */}
+              <td className="px-6 py-5 text-center">
+                <span
+                  className={
+                    index === 0
+                      ? "font-bold text-blue-600 dark:text-blue-400"
+                      : "font-medium"
+                  }
+                >
+                  {result.pmr.toFixed(4)}
+                </span>
+              </td>
+
+              {/* KENDALL */}
+              <td className="px-6 py-5 text-center">
+                {result.kendall.toFixed(4)}
+              </td>
+
+              {/* SPEARMAN */}
+              <td className="px-6 py-5 text-center">
+                {result.spearman.toFixed(4)}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  ) : (
+    /* NO RESULTS YET */
+    <div className="rounded-2xl border border-dashed border-slate-300 dark:border-slate-600 p-12 text-center">
+      <div className="text-4xl mb-4">
+        📊
+      </div>
+
+      <h4 className="text-xl font-bold mb-2">
+        Results Coming Soon
+      </h4>
+
+      <p className="text-slate-500 dark:text-slate-400">
+        The {selectedLanguage} leaderboard will be published here
+        after evaluation is complete.
+      </p>
+    </div>
+  )}
+</div>
 
         </div>
 
