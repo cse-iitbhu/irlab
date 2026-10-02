@@ -132,7 +132,64 @@ const leaderboardData: LanguageResults = {
   // TO BE ADDED
   // =========================================================
 
-  English: [],
+  English: [
+  {
+    team: "Tasker",
+    run: "Run 1",
+    pmr: 0.7667,
+    kendall: 0.7778,
+    spearman: 0.7833,
+  },
+  {
+    team: "Varaprabha",
+    run: "Run 1",
+    pmr: 0.3667,
+    kendall: 0.3444,
+    spearman: 0.3900,
+  },
+  {
+    team: "Darcarys",
+    run: "Run 1",
+    pmr: 0.3333,
+    kendall: 0.3867,
+    spearman: 0.4133,
+  },
+  {
+    team: "TokenX",
+    run: "Run 1",
+    pmr: 0.3000,
+    kendall: 0.2511,
+    spearman: 0.2867,
+  },
+  {
+    team: "Varaprabha",
+    run: "Run 2",
+    pmr: 0.3000,
+    kendall: 0.1444,
+    spearman: 0.1733,
+  },
+  {
+    team: "Darcarys",
+    run: "Run 2",
+    pmr: 0.2667,
+    kendall: 0.2444,
+    spearman: 0.2833,
+  },
+  {
+    team: "VisionForge",
+    run: "Run 1",
+    pmr: 0.2333,
+    kendall: 0.0067,
+    spearman: -0.0033,
+  },
+  {
+    team: "TeamIllusions",
+    run: "Run 1",
+    pmr: 0.1667,
+    kendall: -0.0356,
+    spearman: -0.0400,
+  },
+],
 
   Marathi: [
   {
@@ -187,7 +244,7 @@ const leaderboardData: LanguageResults = {
 ],
 };
 const Subtask3: React.FC = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("Hindi");
+  const [selectedLanguage, setSelectedLanguage] = useState("English");
 
   const languages = ["English", "Hindi", "Bengali", "Marathi"];
 
