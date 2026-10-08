@@ -381,7 +381,7 @@ const data = [
     name: "Proceedings of the 17th annual meeting of the Forum for Information Retrieval Evaluation, FIRE 2025",
     link: "https://doi.org/10.1145/3777867.3778255", // 
     bibtex: "@inproceedings{DBLP:conf/fire/TewariCP25,\n" +
-            "  author = {Krishna Tewari,  Supriya Chanda,  Sukomal Pal},\n" +
+            "  author = {Supriya Chanda, Krishna Tewari,  Sukomal Pal},\n" +
             "  title = {Overview of the {CMIR} Track at {FIRE} 2025: Code-Mixed Information Retrieval from Social Media Data},\n" +
             "  booktitle = {Proceedings of the 17th annual meeting of the Forum for Information Retrieval Evaluation, {FIRE} 2025},\n" +
             "  year = {2025},\n" +
